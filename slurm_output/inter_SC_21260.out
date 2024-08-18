@@ -1,0 +1,67 @@
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/jeongseokoh/.cache/huggingface/token
+Login successful
+Inter SC_llm
+Num Path: 10 + 5 x 2, Max steps: 12, Distance: levenshtein, Clustering: agglomerative
+INFO 08-13 20:11:34 llm_engine.py:161] Initializing an LLM engine (v0.5.0.post1) with config: model='meta-llama/Meta-Llama-3-8B-Instruct', speculative_config=None, tokenizer='meta-llama/Meta-Llama-3-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir='../../hub/model/', load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=0, served_model_name=meta-llama/Meta-Llama-3-8B-Instruct)
+INFO 08-13 20:11:37 weight_utils.py:218] Using model weights format ['*.safetensors']
+INFO 08-13 20:11:41 model_runner.py:160] Loading model weights took 14.9595 GB
+INFO 08-13 20:11:42 gpu_executor.py:83] # GPU blocks: 13407, # CPU blocks: 2048
+INFO 08-13 20:11:46 model_runner.py:889] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 08-13 20:11:46 model_runner.py:893] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 08-13 20:11:55 model_runner.py:965] Graph capturing finished in 9 secs.
+Model: llama3_8b is selected
+Dataset: gsm8k is selected
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.36it/s, est. speed input: 1585.90 toks/s, output: 272.48 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.36it/s, est. speed input: 1585.90 toks/s, output: 272.48 toks/s]
+Generation job: 0.7444423739798367 sec
+Added Probs: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Cluster Indices: {0: [0, 1, 2, 3, 4, 5], 1: [9], 2: [8], 3: [7], 4: [6]}
+Selected Indexes: [0, 9, 8, 7, 6]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.57s/it, est. speed input: 752.87 toks/s, output: 36.24 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.18it/s, est. speed input: 3763.55 toks/s, output: 181.18 toks/s]
+Generation job: 1.5848198500461876 sec
+Added Probs: [-0.025551346751550835, -0.030321749497433097, -0.025551346751550835, -0.030321749497433097, -0.025551346751550835, -0.030321749497433097, -0.025551346751550835, -0.030321749497433097, -0.025551346751550835, -0.030321749497433097]
+Cluster Indices: {0: [0, 2, 4, 6], 1: [1, 3, 5], 2: [9], 3: [8], 4: [7]}
+Selected Indexes: [0, 1, 9, 8, 7]
+step: 2
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.63s/it, est. speed input: 743.21 toks/s, output: 36.79 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.01it/s, est. speed input: 3653.17 toks/s, output: 182.66 toks/s]
+Generation job: 1.6709614251740277 sec
+Added Probs: [-0.02633760391901701, -0.029542732124145214, -0.03389714695513248, -0.03713822402531588, -0.03389714695513248, -0.03713822402531588, -0.02633760391901701, -0.029542732124145214, -0.03389714695513248, -0.03713822402531588]
+Cluster Indices: {0: [2, 4, 8], 1: [3, 5], 2: [1, 7], 3: [0, 6], 4: [9]}
+Selected Indexes: [2, 3, 1, 0, 9]
+step: 3
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.49s/it, est. speed input: 831.13 toks/s, output: 33.46 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.77it/s, est. speed input: 2782.11 toks/s, output: 121.57 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.80it/s, est. speed input: 3477.62 toks/s, output: 159.09 toks/s]
+Generation job: 1.7975849059876055 sec
+Added Probs: [-0.03555184616929009, -0.03555184616929009, -0.04171950083512526, -0.05251778117739237, -0.02981109479698566, -0.036266239196584935, -0.024130940574024796, -0.03523810090203034, -0.04171950083512526, -0.05251778117739237]
+Cluster Indices: {0: [4, 6], 1: [2, 3, 8, 9], 2: [0, 1], 3: [7], 4: [5]}
+Selected Indexes: [6, 2, 0, 7, 5]
+step: 4
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.17s/it, est. speed input: 1088.34 toks/s, output: 22.23 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.25it/s, est. speed input: 3419.99 toks/s, output: 85.93 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.36it/s, est. speed input: 4269.52 toks/s, output: 119.49 toks/s]
+Generation job: 1.5022880390752107 sec
+Added Probs: [-0.02155961084072707, -0.02155961084072707, -0.044929441093474395, -0.044929441093474395, -0.040677583332245165, -0.040677583332245165, -0.03163105120339731, -0.03163105120339731, -0.032553946995359705, -0.032553946995359705]
+Cluster Indices: {0: [4, 5], 1: [8, 9], 2: [2, 3], 3: [0, 1], 4: [6, 7]}
+Selected Indexes: [4, 8, 2, 0, 6]
+step: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.20it/s, est. speed input: 1546.15 toks/s, output: 2.40 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  4.48it/s, est. speed input: 4792.60 toks/s, output: 23.23 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.64it/s, est. speed input: 5989.49 toks/s, output: 41.81 toks/s]
+Generation job: 1.089034192962572 sec
+Added Probs: [-0.03921070833291326, -0.05028416709505397, -0.032553946995359705, -0.032553946995359705, -0.041697107201857535, -0.041697107201857535, -0.02155961084072707, -0.02155961084072707, -0.03163105120339731, -0.03163105120339731]
+Cluster Indices: {0: [0, 1], 1: [6, 7], 2: [4, 5], 3: [8, 9], 4: [2, 3]}
+Selected Indexes: [0, 6, 4, 8, 2]
+step: 6
+Found EoS token, Break
+completions: ["<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******\n\nStep 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******\n\nStep 5: The total amount she makes is 9 eggs x $2 per egg = $18. ******\n\nThe answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at $2 per egg, so she makes 9 * $2 = $18. ****** Step 5: The answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******\n\nStep 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******\n\nStep 5: The total amount she makes is 9 eggs x $2 per egg = $18. ******\n\nThe answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ****** Step 5: The answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes muffins with 4 eggs, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ****** Step 5: The answer is #### 18. ******"]
+Answer Probs: []
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  2.55it/s, est. speed input: 2065.66 toks/s, output: 30.56 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  2.55it/s, est. speed input: 2065.66 toks/s, output: 30.56 toks/s]
+Final_ Response: ['<|start_header_id|>assistant<|end_header_id|>\n\nThe answer is #### 18.']
+>> Processing time: 8.845123675884679
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm_to_llm.py", line 1029, in <module>
+[rank0]:     main()
+[rank0]:   File "/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm_to_llm.py", line 1014, in main
+[rank0]:     results = parallel_process(context=c_dataset, question=q_dataset, answer=a_dataset, option=o_dataset, cot_ex=cot_ex, model=model, model_name=selected_model, dataset=selected_dataset)
+[rank0]:   File "/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm_to_llm.py", line 635, in parallel_process
+[rank0]:     softsc_answer, softsc_conf = prob_process(original_answer_completion, ansProb, dataset)
+[rank0]:   File "/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm_to_llm.py", line 595, in prob_process
+[rank0]:     max_prob_rp = texts[max_index]
+[rank0]: IndexError: list index out of range
+srun: error: n02: task 0: Exited with exit code 1

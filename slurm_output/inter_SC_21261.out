@@ -1,0 +1,145 @@
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/jeongseokoh/.cache/huggingface/token
+Login successful
+Inter SC_llm
+Num Path: 10 + 5 x 2, Max steps: 12, Distance: levenshtein, Clustering: agglomerative
+INFO 08-13 20:16:52 llm_engine.py:161] Initializing an LLM engine (v0.5.0.post1) with config: model='meta-llama/Meta-Llama-3-8B-Instruct', speculative_config=None, tokenizer='meta-llama/Meta-Llama-3-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir='../../hub/model/', load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=0, served_model_name=meta-llama/Meta-Llama-3-8B-Instruct)
+INFO 08-13 20:16:56 weight_utils.py:218] Using model weights format ['*.safetensors']
+INFO 08-13 20:17:00 model_runner.py:160] Loading model weights took 14.9595 GB
+INFO 08-13 20:17:01 gpu_executor.py:83] # GPU blocks: 13407, # CPU blocks: 2048
+INFO 08-13 20:17:05 model_runner.py:889] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 08-13 20:17:05 model_runner.py:893] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 08-13 20:17:14 model_runner.py:965] Graph capturing finished in 10 secs.
+Model: llama3_8b is selected
+Dataset: gsm8k is selected
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.36it/s, est. speed input: 1586.83 toks/s, output: 272.64 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.36it/s, est. speed input: 1586.83 toks/s, output: 272.64 toks/s]
+Generation job: 0.7441367309074849 sec
+Added Probs: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Cluster Indices: {0: [0, 1, 2, 3, 4, 5], 1: [9], 2: [8], 3: [7], 4: [6]}
+Selected Indexes: [0, 9, 8, 7, 6]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.57s/it, est. speed input: 755.06 toks/s, output: 36.35 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.19it/s, est. speed input: 3774.38 toks/s, output: 181.70 toks/s]
+Generation job: 1.5827766289003193 sec
+Added Probs: [-0.025551346751550835, -0.030321749497433097, -0.025551346751550835, -0.030321749497433097, -0.025551346751550835, -0.030321749497433097, -0.025551346751550835, -0.030321749497433097, -0.025551346751550835, -0.030321749497433097]
+Cluster Indices: {0: [0, 2, 4, 6], 1: [1, 3, 5], 2: [9], 3: [8], 4: [7]}
+Selected Indexes: [0, 1, 9, 8, 7]
+step: 2
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.24it/s, est. speed input: 60.61 toks/s, output: 70.50 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  5.99it/s, est. speed input: 293.45 toks/s, output: 352.14 toks/s]
+Generation job: 0.8366791699081659 sec
+Added Probs: [-0.038931863455029275, -0.060203265006604945, -0.043507291452039645, -0.04446873097102853, -0.043507291452039645, -0.04446873097102853, -0.038931863455029275, -0.060203265006604945, -0.043507291452039645, -0.04446873097102853]
+Cluster Indices: {0: [2, 4, 8], 1: [3, 5], 2: [1, 7], 3: [0, 6], 4: [9]}
+Selected Indexes: [2, 3, 1, 0, 9]
+step: 3
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:13<00:53, 13.47s/it, est. speed input: 0.07 toks/s, output: 42.40 toks/s]Processed prompts: 100%|██████████| 5/5 [00:13<00:00,  2.69s/it, est. speed input: 0.37 toks/s, output: 211.99 toks/s]
+Generation job: 13.468742404133081 sec
+Added Probs: [-0.24570135734435442, -0.17921057140514532, -0.24625174663421037, -0.1793390887012538, -0.25959377355045743, -0.18206091805481586, -0.2460842998150517, -0.17907321759213413, -0.24625174663421037, -0.1793390887012538]
+Cluster Indices: {0: [0, 2, 4, 6], 1: [1, 3, 5], 2: [9], 3: [8], 4: [7]}
+Selected Indexes: [0, 1, 9, 8, 7]
+step: 4
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:13<00:53, 13.46s/it, est. speed input: 0.07 toks/s, output: 42.42 toks/s]Processed prompts: 100%|██████████| 5/5 [00:13<00:00,  2.69s/it, est. speed input: 0.37 toks/s, output: 212.09 toks/s]
+Generation job: 13.462376459967345 sec
+Added Probs: [-0.32678425686462276, -0.20982024459884716, -0.20982024459884716, -0.18893002663297429, -0.20993709647884737, -0.1889988876683325, -0.32716980875294827, -0.20993709647884737, -0.2097898710657049, -0.18887420239554656]
+Cluster Indices: {0: [0, 2, 4, 6], 1: [1, 3, 5], 2: [9], 3: [8], 4: [7]}
+Selected Indexes: [2, 3, 9, 8, 7]
+step: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:13<00:53, 13.45s/it, est. speed input: 0.07 toks/s, output: 42.46 toks/s]Processed prompts: 100%|██████████| 5/5 [00:13<00:00,  2.69s/it, est. speed input: 0.37 toks/s, output: 212.30 toks/s]
+Generation job: 13.44939670409076 sec
+Added Probs: [-0.23533550109740542, -0.20555897647588675, -0.20555897647588675, -0.19248680560489187, -0.20553466217785046, -0.19245311129152295, -0.23537984121553968, -0.20553466217785046, -0.23544262905509247, -0.2056243411247681]
+Cluster Indices: {0: [0, 2, 4, 6], 1: [1, 3, 5], 2: [9], 3: [8], 4: [7]}
+Selected Indexes: [4, 5, 9, 8, 7]
+step: 6
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:13<00:53, 13.45s/it, est. speed input: 0.07 toks/s, output: 42.44 toks/s]Processed prompts: 100%|██████████| 5/5 [00:13<00:00,  2.69s/it, est. speed input: 0.37 toks/s, output: 212.19 toks/s]
+Generation job: 13.456213522935286 sec
+Added Probs: [-0.2205823785193735, -0.20388551423566764, -0.20388551423566764, -0.1943074071477441, -0.22064307590154816, -0.20394973480448644, -0.25702934282404993, -0.22064307590154816, -0.2205823785193735, -0.20388551423566764]
+Cluster Indices: {0: [0, 2, 4, 6], 1: [1, 3, 5], 2: [9], 3: [8], 4: [7]}
+Selected Indexes: [2, 3, 9, 8, 7]
+step: 7
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:13<00:53, 13.45s/it, est. speed input: 0.07 toks/s, output: 42.44 toks/s]Processed prompts: 100%|██████████| 5/5 [00:13<00:00,  2.69s/it, est. speed input: 0.37 toks/s, output: 212.19 toks/s]
+Generation job: 13.45601675985381 sec
+Added Probs: [-0.2145385852633426, -0.2030095931674753, -0.2030095931674753, -0.19544164272456807, -0.2145385852633426, -0.2030095931674753, -0.23424071260088114, -0.2145385852633426, -0.2342772710660938, -0.21458832507300638]
+Cluster Indices: {0: [0, 2, 4, 6], 1: [1, 3, 5], 2: [9], 3: [8], 4: [7]}
+Selected Indexes: [2, 3, 9, 8, 7]
+step: 8
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:13<00:53, 13.46s/it, est. speed input: 0.07 toks/s, output: 42.43 toks/s]Processed prompts: 100%|██████████| 5/5 [00:13<00:00,  2.69s/it, est. speed input: 0.37 toks/s, output: 212.16 toks/s]
+Generation job: 13.458055905997753 sec
+Added Probs: [-0.2112539735918751, -0.2024663661548575, -0.2024663661548575, -0.1962070446301733, -0.22452638316982693, -0.21129529578051218, -0.24670994641778182, -0.22452638316982693, -0.224489386804277, -0.2112539735918751]
+Cluster Indices: {0: [0, 2, 4, 6], 1: [1, 3, 5], 2: [9], 3: [8], 4: [7]}
+Selected Indexes: [2, 3, 9, 8, 7]
+step: 9
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:13<00:53, 13.46s/it, est. speed input: 0.07 toks/s, output: 42.42 toks/s]Processed prompts: 100%|██████████| 5/5 [00:13<00:00,  2.69s/it, est. speed input: 0.37 toks/s, output: 212.10 toks/s]
+Generation job: 13.461940190987661 sec
+Added Probs: [-0.2091902121387679, -0.20209653828841195, -0.20209653828841195, -0.19675835979681658, -0.2190757489380476, -0.2091902121387679, -0.23380514530474072, -0.2190757489380476, -0.23383089677425153, -0.2191092232274564]
+Cluster Indices: {0: [0, 2, 4, 6], 1: [1, 3, 5], 2: [9], 3: [8], 4: [7]}
+Selected Indexes: [2, 3, 9, 8, 7]
+step: 10
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:13<00:53, 13.46s/it, est. speed input: 0.07 toks/s, output: 42.41 toks/s]Processed prompts: 100%|██████████| 5/5 [00:13<00:00,  2.69s/it, est. speed input: 0.37 toks/s, output: 212.07 toks/s]
+Generation job: 13.464042601874098 sec
+Added Probs: [-0.207773310718713, -0.20182851250133207, -0.20182851250133207, -0.19717438938218915, -0.2265329503194538, -0.2156619396277661, -0.2425605765539002, -0.2265329503194538, -0.22650660116230215, -0.21563210580352357]
+Cluster Indices: {0: [0, 2, 4, 6], 1: [1, 3, 5], 2: [9], 3: [8], 4: [7]}
+Selected Indexes: [2, 3, 9, 8, 7]
+step: 11
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:13<00:53, 13.46s/it, est. speed input: 0.07 toks/s, output: 42.42 toks/s]Processed prompts: 100%|██████████| 5/5 [00:13<00:00,  2.69s/it, est. speed input: 0.37 toks/s, output: 212.09 toks/s]
+Generation job: 13.462525062030181 sec
+Added Probs: [-0.2067403487149418, -0.20162533983475545, -0.20162533983475545, -0.19749948742104695, -0.22180941768880094, -0.2132486823231645, -0.23357512257562196, -0.22180941768880094, -0.23359499293710947, -0.22183434201064317]
+Cluster Indices: {0: [0, 2, 4, 6], 1: [1, 3, 5], 2: [9], 3: [8], 4: [7]}
+Selected Indexes: [2, 3, 9, 8, 7]
+step: 12
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:13<00:53, 13.46s/it, est. speed input: 0.07 toks/s, output: 42.42 toks/s]Processed prompts: 100%|██████████| 5/5 [00:13<00:00,  2.69s/it, est. speed input: 0.37 toks/s, output: 212.10 toks/s]
+Generation job: 13.462073578964919 sec
+Added Probs: [-0.20595389174306566, -0.2014660223137468, -0.2014660223137468, -0.19776052919825568, -0.22775850189823071, -0.21855627545211953, -0.24032115444679117, -0.22775850189823071, -0.22773812015986866, -0.2185331842527784]
+Cluster Indices: {0: [0, 2, 4, 6], 1: [1, 3, 5], 2: [9], 3: [8], 4: [7]}
+Selected Indexes: [2, 3, 9, 8, 7]
+step: 13
+conversations: ["<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nYou are a methodical mathematician, adept at solving complex mathematical problems. Conclude your explanation with the answer in a '#### {numeric answer}' format, where the answer is solely a number.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nI have generated the following responses to the question: Janet’s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?\nResponse 0: \nResponse 1: \nResponse 2: \nResponse 3: \nResponse 4: \nPlease integrate and generate the final response based on the major consensus of generated responses.<|eot_id|>"]
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.34s/it, est. speed input: 49.68 toks/s, output: 40.40 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.34s/it, est. speed input: 49.68 toks/s, output: 40.40 toks/s]
+Final_ Response: ["<|start_header_id|>assistant<|end_header_id|>\n\nLet's break down the problem step by step:\n\n1. Janet's ducks lay 16 eggs per day.\n2. She eats 3 eggs for breakfast, leaving 16 - 3 = 13 eggs.\n3. She bakes muffins with 4 eggs, leaving 13 - 4 = 9 eggs.\n4. She sells the remaining 9 eggs at the farmers' market for $2 per egg.\n\nTo find the total amount she makes at the farmers' market, multiply the number of eggs sold (9) by the price per egg ($2):\n\n9 eggs × $2/egg = $18\n\n#### 18"]
+>> Processing time: 141.28371364297345
+>> Answer lists: ['18']
+>> Original Correct: 18, True
+>> Golden    Answer: 18
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.42it/s, est. speed input: 1598.91 toks/s, output: 283.74 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.42it/s, est. speed input: 1598.91 toks/s, output: 283.74 toks/s]
+Generation job: 0.7080814300570637 sec
+Added Probs: [-0.05836120843887329, -0.05836120843887329, -0.05836120843887329, -0.05836120843887329, -0.05836120843887329, -0.05836120843887329, -0.05836120843887329, -0.05836120843887329, -0.08336120843887329, -0.08336120843887329]
+Cluster Indices: {0: [0, 2, 3, 4, 5], 1: [1, 6], 2: [9], 3: [7], 4: [8]}
+Selected Indexes: [0, 1, 9, 7, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.47s/it, est. speed input: 778.35 toks/s, output: 34.61 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.39it/s, est. speed input: 3891.03 toks/s, output: 173.01 toks/s]
+Generation job: 1.4844294330105186 sec
+Added Probs: [-0.04409069924250893, -0.05618160367012024, -0.04663389662037725, -0.05878131654527452, -0.05496026445990023, -0.06729271478123135, -0.04663389662037725, -0.05878131654527452, -0.05496026445990023, -0.06729271478123135]
+Cluster Indices: {0: [0, 4, 8], 1: [3, 7], 2: [1, 5], 3: [2, 6], 4: [9]}
+Selected Indexes: [0, 3, 1, 2, 9]
+step: 2
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.26it/s, est. speed input: 58.01 toks/s, output: 56.75 toks/s]Processed prompts:  40%|████      | 2/5 [00:00<00:01,  2.39it/s, est. speed input: 96.97 toks/s, output: 118.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  7.00it/s, est. speed input: 220.94 toks/s, output: 273.31 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.76it/s, est. speed input: 220.94 toks/s, output: 273.31 toks/s]
+Generation job: 1.0516504510305822 sec
+Added Probs: [-0.08819965456352859, -0.18568667278570286, -0.11024893893570197, -0.1192772183063868, -0.1190724851563573, -0.13419913819858006, -0.10451861158494026, -0.16442912817001343, -0.1253224851563573, -0.14069264469208656]
+Cluster Indices: {0: [0, 2, 6], 1: [4, 8], 2: [1, 7], 3: [5, 9], 4: [3]}
+Selected Indexes: [0, 4, 7, 5, 3]
+step: 3
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:13<00:53, 13.46s/it, est. speed input: 0.07 toks/s, output: 42.42 toks/s]Processed prompts: 100%|██████████| 5/5 [00:13<00:00,  2.69s/it, est. speed input: 0.37 toks/s, output: 212.07 toks/s]
+Generation job: 13.463244973914698 sec
+Added Probs: [-0.2987490851432085, -0.188231327406815, -0.2877374827432975, -0.18919285555445664, -0.30966264374189445, -0.1951147960436424, -0.300022389191915, -0.19152751327168152, -0.2954603416803188, -0.1899366652395945]
+Cluster Indices: {0: [0, 2, 4, 6], 1: [1, 3, 5], 2: [9], 3: [8], 4: [7]}
+Selected Indexes: [2, 1, 9, 8, 7]
+step: 4
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:13<00:53, 13.46s/it, est. speed input: 0.07 toks/s, output: 42.41 toks/s]Processed prompts: 100%|██████████| 5/5 [00:13<00:00,  2.69s/it, est. speed input: 0.37 toks/s, output: 212.04 toks/s]
+Generation job: 13.465690477052703 sec
+Added Probs: [-0.35588495651579866, -0.21885081686182506, -0.21887066755208034, -0.19385522790768178, -0.2198024761538173, -0.19469877732798918, -0.36336425381402176, -0.2198024761538173, -0.22111021081146634, -0.1955368546709811]
+Cluster Indices: {0: [0, 2, 4, 6], 1: [1, 3, 5], 2: [9], 3: [8], 4: [7]}
+Selected Indexes: [2, 3, 9, 8, 7]
+step: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:13<00:54, 13.65s/it, est. speed input: 0.07 toks/s, output: 41.82 toks/s]Processed prompts: 100%|██████████| 5/5 [00:13<00:00,  2.73s/it, est. speed input: 0.37 toks/s, output: 209.08 toks/s]
+Generation job: 13.656125970883295 sec
+Added Probs: [-0.24427781936573742, -0.21049181256000396, -0.21049181256000396, -0.19587307072984628, -0.21185843817375857, -0.1970008981205703, -0.24575548499949076, -0.21185843817375857, -0.2446623698977584, -0.21110541814601722]
+Cluster Indices: {0: [0, 2, 4, 6], 1: [1, 3, 5], 2: [9], 3: [8], 4: [7]}
+Selected Indexes: [2, 3, 9, 8, 7]
+step: 6
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:13<00:53, 13.47s/it, est. speed input: 0.07 toks/s, output: 42.38 toks/s]Processed prompts: 100%|██████████| 5/5 [00:13<00:00,  2.69s/it, est. speed input: 0.37 toks/s, output: 211.90 toks/s]
+Generation job: 13.474703849991783 sec
+Added Probs: [-0.2254965460161715, -0.20729408529249654, -0.20729408529249654, -0.19691117384129647, -0.2259199671741379, -0.2077443621753575, -0.2656776142815619, -0.2259199671741379, -0.22660008168200962, -0.20827282294096275]
+Cluster Indices: {0: [0, 2, 4, 6], 1: [1, 3, 5], 2: [9], 3: [8], 4: [7]}
+Selected Indexes: [2, 3, 9, 8, 7]
+step: 7
+srun: got SIGCONT
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd-n02: error: *** JOB 21261 ON n02 CANCELLED AT 2024-08-13T20:20:40 ***
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]slurmstepd-n02: error: *** STEP 21261.0 ON n02 CANCELLED AT 2024-08-13T20:20:40 ***
+srun: forcing job termination

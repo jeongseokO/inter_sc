@@ -1,0 +1,9 @@
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/jeongseokoh/.cache/huggingface/token
+Login successful
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd-n02: error: *** STEP 19779.0 ON n02 CANCELLED AT 2024-08-11T02:17:48 ***
+srun: got SIGCONT
+slurmstepd-n02: error: *** JOB 19779 ON n02 CANCELLED AT 2024-08-11T02:17:48 ***
+srun: forcing job termination

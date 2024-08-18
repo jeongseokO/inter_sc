@@ -1,0 +1,136 @@
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/jeongseokoh/.cache/huggingface/token
+Login successful
+Inter SC
+Num Path: 20 + 5 x 4
+INFO 08-08 01:33:36 llm_engine.py:161] Initializing an LLM engine (v0.5.0.post1) with config: model='meta-llama/Meta-Llama-3-8B-Instruct', speculative_config=None, tokenizer='meta-llama/Meta-Llama-3-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir='../../hub/model/', load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=0, served_model_name=meta-llama/Meta-Llama-3-8B-Instruct)
+INFO 08-08 01:33:39 weight_utils.py:218] Using model weights format ['*.safetensors']
+INFO 08-08 01:33:42 model_runner.py:160] Loading model weights took 14.9595 GB
+INFO 08-08 01:33:44 gpu_executor.py:83] # GPU blocks: 13407, # CPU blocks: 2048
+INFO 08-08 01:33:46 model_runner.py:889] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 08-08 01:33:46 model_runner.py:893] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 08-08 01:33:54 model_runner.py:965] Graph capturing finished in 7 secs.
+Model: llama3_8b is selected
+Dataset: gsm8k is selected
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.63s/it, est. speed input: 568.52 toks/s, output: 611.96 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.63s/it, est. speed input: 568.52 toks/s, output: 611.96 toks/s]
+Generation job: 1.6447495787870139 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.11s/it, est. speed input: 464.68 toks/s, output: 94.93 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.37it/s, est. speed input: 2323.07 toks/s, output: 474.58 toks/s]
+Generation job: 2.114700332051143 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.51s/it, est. speed input: 680.01 toks/s, output: 74.01 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.17it/s, est. speed input: 2540.26 toks/s, output: 279.57 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.09it/s, est. speed input: 3175.09 toks/s, output: 358.55 toks/s]
+Generation job: 1.6288104080595076 sec
+Found EoS token, Break
+>> Processing time: 5.426880782004446
+>> Answer lists: ['18', '18', '18', '18', '18']
+>> Original Correct: 18, True
+>> Golden    Answer: 18
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.60s/it, est. speed input: 558.12 toks/s, output: 625.68 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.60s/it, est. speed input: 558.12 toks/s, output: 625.68 toks/s]
+Generation job: 1.601222651079297 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.34s/it, est. speed input: 702.23 toks/s, output: 70.07 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.61it/s, est. speed input: 1294.24 toks/s, output: 133.96 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.52it/s, est. speed input: 1780.85 toks/s, output: 202.91 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.52it/s, est. speed input: 2376.98 toks/s, output: 291.19 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.52it/s, est. speed input: 2376.98 toks/s, output: 291.19 toks/s]
+Generation job: 1.9894839839544147 sec
+Found EoS token, Break
+>> Processing time: 3.591395602095872
+>> Answer lists: ['3', '3', '3', '3', '3']
+>> Original Correct: 3, True
+>> Golden    Answer: 3
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it, est. speed input: 565.82 toks/s, output: 618.37 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it, est. speed input: 565.82 toks/s, output: 618.37 toks/s]
+Generation job: 1.6197300639469177 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.10s/it, est. speed input: 460.29 toks/s, output: 95.40 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.38it/s, est. speed input: 2301.21 toks/s, output: 476.93 toks/s]
+Generation job: 2.104124007979408 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.13s/it, est. speed input: 476.35 toks/s, output: 93.86 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.35it/s, est. speed input: 2381.41 toks/s, output: 466.90 toks/s]
+Generation job: 2.1385934341233224 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.12s/it, est. speed input: 946.85 toks/s, output: 49.79 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.25it/s, est. speed input: 4524.05 toks/s, output: 254.87 toks/s]
+Generation job: 1.1856586581561714 sec
+Found EoS token, Break
+>> Processing time: 7.0491572509054095
+>> Answer lists: ['40000', '40000', '40000', '40000', '40000']
+>> Original Correct: 40000, False
+>> Golden    Answer: 70000
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it, est. speed input: 557.24 toks/s, output: 619.15 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it, est. speed input: 557.24 toks/s, output: 619.15 toks/s]
+Generation job: 1.617777501931414 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.10s/it, est. speed input: 864.60 toks/s, output: 61.89 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.33it/s, est. speed input: 4115.33 toks/s, output: 301.50 toks/s]
+Generation job: 1.1616653900127858 sec
+Found EoS token, Break
+>> Processing time: 2.780128939077258
+>> Answer lists: ['540', '540', '540', '540', '540']
+>> Original Correct: 540, True
+>> Golden    Answer: 540
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it, est. speed input: 601.83 toks/s, output: 617.89 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it, est. speed input: 601.83 toks/s, output: 617.89 toks/s]
+Generation job: 1.621135539142415 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.14s/it, est. speed input: 478.87 toks/s, output: 93.53 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.34it/s, est. speed input: 2394.00 toks/s, output: 467.58 toks/s]
+Generation job: 2.146279992070049 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.20s/it, est. speed input: 896.90 toks/s, output: 60.13 toks/s]Processed prompts:  40%|████      | 2/5 [00:02<00:03,  1.04s/it, est. speed input: 1007.20 toks/s, output: 127.54 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.34it/s, est. speed input: 2517.72 toks/s, output: 408.84 toks/s]
+Generation job: 2.1417002589441836 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.36it/s, est. speed input: 1488.02 toks/s, output: 5.46 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.27it/s, est. speed input: 1424.04 toks/s, output: 60.43 toks/s]Processed prompts:  60%|██████    | 3/5 [00:02<00:01,  1.44it/s, est. speed input: 1562.16 toks/s, output: 99.18 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  3.04it/s, est. speed input: 2495.09 toks/s, output: 220.61 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.23it/s, est. speed input: 2495.09 toks/s, output: 220.61 toks/s]
+Generation job: 2.2476145080290735 sec
+Found EoS token, Break
+>> Processing time: 8.15779735520482
+>> Answer lists: ['20', '20', '20', '20', '20']
+>> Original Correct: 20, True
+>> Golden    Answer: 20
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it, est. speed input: 569.37 toks/s, output: 618.87 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it, est. speed input: 569.37 toks/s, output: 618.87 toks/s]
+Generation job: 1.6182970139198005 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.10s/it, est. speed input: 461.74 toks/s, output: 95.20 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.38it/s, est. speed input: 2308.37 toks/s, output: 475.95 toks/s]
+Generation job: 2.1082482459023595 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.14s/it, est. speed input: 477.51 toks/s, output: 92.69 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.34it/s, est. speed input: 2387.29 toks/s, output: 466.22 toks/s]
+Generation job: 2.144493426894769 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.38it/s, est. speed input: 1481.16 toks/s, output: 11.07 toks/s]Processed prompts:  60%|██████    | 3/5 [00:00<00:00,  4.15it/s, est. speed input: 3704.13 toks/s, output: 50.77 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  5.77it/s, est. speed input: 6172.59 toks/s, output: 115.37 toks/s]
+Generation job: 0.8747010049410164 sec
+Found EoS token, Break
+>> Processing time: 6.746517879888415
+>> Answer lists: ['64', '64', '64', '64', '64']
+>> Original Correct: 64, True
+>> Golden    Answer: 64
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it, est. speed input: 560.78 toks/s, output: 618.27 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it, est. speed input: 560.78 toks/s, output: 618.27 toks/s]
+Generation job: 1.6193721869494766 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.10s/it, est. speed input: 456.52 toks/s, output: 95.41 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.38it/s, est. speed input: 2282.32 toks/s, output: 476.97 toks/s]
+Generation job: 2.104036572854966 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.02s/it, est. speed input: 982.55 toks/s, output: 50.74 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s, est. speed input: 4911.84 toks/s, output: 253.64 toks/s]
+Generation job: 1.0331016359850764 sec
+Found EoS token, Break
+>> Processing time: 4.757303302874789
+>> Answer lists: ['260', '260', '260', '260', '260']
+>> Original Correct: 260, True
+>> Golden    Answer: 260
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it, est. speed input: 574.59 toks/s, output: 617.17 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it, est. speed input: 574.59 toks/s, output: 617.17 toks/s]
+Generation job: 1.6222230368293822 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.12s/it, est. speed input: 463.01 toks/s, output: 94.39 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.36it/s, est. speed input: 2314.75 toks/s, output: 471.91 toks/s]
+Generation job: 2.1263571018353105 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.15s/it, est. speed input: 478.81 toks/s, output: 92.88 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.32it/s, est. speed input: 2393.76 toks/s, output: 464.35 toks/s]
+Generation job: 2.1615451350808144 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.20s/it, est. speed input: 491.57 toks/s, output: 90.95 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.27it/s, est. speed input: 2457.61 toks/s, output: 454.69 toks/s]
+Generation job: 2.2076284179929644 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.75s/it, est. speed input: 645.37 toks/s, output: 64.48 toks/s]Processed prompts:  40%|████      | 2/5 [00:02<00:02,  1.01it/s, est. speed input: 1021.45 toks/s, output: 137.28 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.26it/s, est. speed input: 2553.43 toks/s, output: 389.67 toks/s]
+Generation job: 2.2230507030617446 sec
+Found EoS token, Break
+>> Processing time: 10.342268229927868
+>> Answer lists: ['80', '80', '120', '100', '80']
+>> Original Correct: 80, False
+>> Golden    Answer: 160
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.63s/it, est. speed input: 594.94 toks/s, output: 615.23 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.63s/it, est. speed input: 594.94 toks/s, output: 615.23 toks/s]
+Generation job: 1.627684888895601 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.14s/it, est. speed input: 474.42 toks/s, output: 93.30 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.33it/s, est. speed input: 2371.77 toks/s, output: 466.42 toks/s]
+Generation job: 2.1518699179869145 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.17s/it, est. speed input: 492.37 toks/s, output: 92.29 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.31it/s, est. speed input: 2461.61 toks/s, output: 461.41 toks/s]
+Generation job: 2.1755645798984915 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.23s/it, est. speed input: 501.27 toks/s, output: 89.75 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.24it/s, est. speed input: 2506.09 toks/s, output: 448.72 toks/s]
+Generation job: 2.236911141080782 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.69s/it, est. speed input: 690.01 toks/s, output: 72.73 toks/s]Processed prompts:  40%|████      | 2/5 [00:02<00:03,  1.03s/it, est. speed input: 1037.31 toks/s, output: 143.55 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.22it/s, est. speed input: 2593.09 toks/s, output: 395.52 toks/s]
+Generation job: 2.2586926058866084 sec
+Found EoS token, Break
+>> Processing time: 10.451884591020644
+>> Answer lists: ['355', '355', '355', '355', '355']
+>> Original Correct: 355, False
+>> Golden    Answer: 45
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it, est. speed input: 569.49 toks/s, output: 616.99 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it, est. speed input: 569.49 toks/s, output: 616.99 toks/s]
+Generation job: 1.6228584430646151 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.12s/it, est. speed input: 459.07 toks/s, output: 94.36 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.36it/s, est. speed input: 2295.04 toks/s, output: 471.74 toks/s]
+Generation job: 2.1273472970351577 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.53s/it, est. speed input: 667.13 toks/s, output: 71.08 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.51it/s, est. speed input: 2117.52 toks/s, output: 248.90 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.59it/s, est. speed input: 2646.73 toks/s, output: 333.23 toks/s]
+Generation job: 1.9405074920505285 sec
+Found EoS token, Break
+>> Processing time: 5.69160251878202
+>> Answer lists: ['460', '460', '460', '460', '460']
+>> Original Correct: 460, True
+>> Golden    Answer: 460
+Total Accuracy: 0.7

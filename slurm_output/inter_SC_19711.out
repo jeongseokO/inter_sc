@@ -1,0 +1,585 @@
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/jeongseokoh/.cache/huggingface/token
+Login successful
+Inter SC_beam
+Num Path: 10 + 5 x 2, Interval: 100
+INFO 08-10 16:58:52 llm_engine.py:161] Initializing an LLM engine (v0.5.0.post1) with config: model='meta-llama/Meta-Llama-3-8B-Instruct', speculative_config=None, tokenizer='meta-llama/Meta-Llama-3-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir='../../hub/model/', load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=0, served_model_name=meta-llama/Meta-Llama-3-8B-Instruct)
+INFO 08-10 16:58:56 weight_utils.py:218] Using model weights format ['*.safetensors']
+INFO 08-10 16:59:00 model_runner.py:160] Loading model weights took 14.9595 GB
+INFO 08-10 16:59:02 gpu_executor.py:83] # GPU blocks: 13407, # CPU blocks: 2048
+INFO 08-10 16:59:05 model_runner.py:889] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 08-10 16:59:05 model_runner.py:893] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 08-10 16:59:14 model_runner.py:965] Graph capturing finished in 9 secs.
+Model: llama3_8b is selected
+Dataset: gsm8k is selected
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.36it/s, est. speed input: 1580.57 toks/s, output: 272.03 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.36it/s, est. speed input: 1580.57 toks/s, output: 272.03 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 0.7464737449772656 sec
+Cluster Indices: {1: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 2: [], 3: [], 4: [], 5: []}
+Selected Indexes: [0, 9, 8, 7, 6]
+new_convs: ["<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******"]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.54s/it, est. speed input: 766.79 toks/s, output: 36.33 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.81it/s, est. speed input: 2658.66 toks/s, output: 133.83 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.70it/s, est. speed input: 3189.18 toks/s, output: 165.66 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.864302878966555 sec
+Cluster Indices: {1: [1, 2, 3, 5, 8, 9], 2: [0], 3: [4], 4: [6], 5: [7]}
+Selected Indexes: [2, 0, 4, 6, 7]
+new_convs: [' Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******', '\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******', '\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******', '\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******', '\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.62s/it, est. speed input: 746.58 toks/s, output: 37.02 toks/s]Processed prompts:  40%|████      | 2/5 [00:03<00:04,  1.60s/it, est. speed input: 755.95 toks/s, output: 69.66 toks/s]Processed prompts:  60%|██████    | 3/5 [00:03<00:01,  1.09it/s, est. speed input: 1097.36 toks/s, output: 119.11 toks/s]Processed prompts: 100%|██████████| 5/5 [00:03<00:00,  1.48it/s, est. speed input: 1788.41 toks/s, output: 219.04 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 3.3940023849718273 sec
+Cluster Indices: {1: [2, 3, 5, 7, 8, 9], 2: [0], 3: [1], 4: [4], 5: [6]}
+Selected Indexes: [2, 0, 1, 4, 6]
+new_convs: ["\n\nStep 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ******\n\nStep 5: The answer is #### 18. ******", ' Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******', ' Step 3: She bakes muffins with 4 eggs, so she has 13 - 4 = 9 eggs left. ******', "\n\nStep 3: She bakes muffins with 4 eggs, so she has 13 - 4 = 9 eggs left. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******\n\nStep 5: The total amount she makes is 9 eggs x $2 per egg = $18. ******\n\nStep 6: The answer is #### 18. ******", "\n\nStep 3: She bakes muffins with 4 eggs, so she has 13 - 4 = 9 eggs left. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******\n\nStep 5: The total amount she makes is 9 eggs x $2 per egg = $18. ******\n\nStep 6: The answer is #### 18. ******"]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.21it/s, est. speed input: 1564.80 toks/s, output: 2.43 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.70it/s, est. speed input: 3167.26 toks/s, output: 37.65 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.31it/s, est. speed input: 3651.70 toks/s, output: 73.37 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.87it/s, est. speed input: 3651.70 toks/s, output: 73.37 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.7565764340106398 sec
+Cluster Indices: {1: [2, 3, 4, 5], 2: [0, 1, 6, 7, 8, 9], 3: [], 4: [], 5: []}
+Selected Indexes: [2, 0, 5, 4, 3]
+new_convs: [' Step 4: She sells the remaining 9 eggs at $2 per egg, so she makes 9 * $2 = $18. ******', '******', " Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ******", ' Step 4: She sells the remaining 9 eggs at $2 per egg, so she makes 9 * $2 = $18. ******', " Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******"]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.21it/s, est. speed input: 1565.21 toks/s, output: 2.43 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.88it/s, est. speed input: 2220.80 toks/s, output: 24.29 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.58it/s, est. speed input: 4441.62 toks/s, output: 87.14 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.49it/s, est. speed input: 4441.62 toks/s, output: 87.14 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.4459357680752873 sec
+Cluster Indices: {1: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 2: [], 3: [], 4: [], 5: []}
+Selected Indexes: [0, 9, 8, 7, 6]
+new_convs: [' Step 5: The answer is #### 18. ******', " Step 5: So, she makes 9 * $2 = $18 at the farmers' market. ******", ' Step 5: The total amount she makes is 9 * $2 = $18. ******', ' Step 5: The answer is #### 18. ******', ' Step 5: The answer is #### 18. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.20it/s, est. speed input: 1540.93 toks/s, output: 2.40 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  4.09it/s, est. speed input: 4451.80 toks/s, output: 27.72 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.33it/s, est. speed input: 5564.01 toks/s, output: 50.23 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.166395953972824 sec
+Cluster Indices: {1: [0, 1, 6, 7, 8, 9], 2: [2, 3, 4, 5], 3: [], 4: [], 5: []}
+Selected Indexes: [0, 2, 9, 8, 7]
+new_convs: ['******', ' Step 6: The answer is #### 18. ******', '******', '******', '******']
+Found EoS token, Break
+>> Processing time: 10.734646501019597
+>> Answer lists: ['18', '18', '18', '18', '18', '18', '18', '18', '18', '18']
+>> Original Correct: 18, True
+>> Golden    Answer: 18
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:02<00:00,  2.88s/it, est. speed input: 391.07 toks/s, output: 269.40 toks/s]Processed prompts: 100%|██████████| 1/1 [00:02<00:00,  2.88s/it, est. speed input: 391.07 toks/s, output: 269.40 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 2.87990156293381 sec
+Cluster Indices: {1: [2, 3, 6, 7, 8, 9], 2: [4], 3: [5], 4: [0], 5: [1]}
+Selected Indexes: [2, 4, 5, 0, 1]
+new_convs: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The robe takes 2 bolts of blue fiber. ******\n\nStep 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ******\n\nStep 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ******\n\nStep 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: A robe takes 2 bolts of blue fiber. ******\n\nStep 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ******\n\nStep 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ******\n\nStep 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: A robe takes 2 bolts of blue fiber. ******\n\nStep 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ******\n\nStep 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber. ******\n\nStep 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: A robe takes 2 bolts of blue fiber. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The robe takes 2 bolts of blue fiber. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.28it/s, est. speed input: 1564.17 toks/s, output: 2.56 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.06it/s, est. speed input: 3323.34 toks/s, output: 39.50 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.46it/s, est. speed input: 4116.28 toks/s, output: 74.83 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.454268072033301 sec
+Cluster Indices: {1: [6, 7, 8, 9], 2: [0, 1, 2, 3, 4, 5], 3: [], 4: [], 5: []}
+Selected Indexes: [8, 0, 9, 7, 6]
+new_convs: [' Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ******', '******', ' Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ******', ' Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ******', ' Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.28it/s, est. speed input: 1565.55 toks/s, output: 2.57 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.52it/s, est. speed input: 1766.72 toks/s, output: 33.25 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.60it/s, est. speed input: 3404.74 toks/s, output: 119.41 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.88it/s, est. speed input: 3404.74 toks/s, output: 119.41 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.7445561470231041 sec
+Cluster Indices: {1: [0, 1, 4, 5, 6, 7, 8, 9], 2: [2], 3: [3], 4: [], 5: []}
+Selected Indexes: [8, 2, 3, 9, 7]
+new_convs: [' Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ******', '******', '******', ' Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ******', ' Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.25it/s, est. speed input: 1520.24 toks/s, output: 2.49 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  3.14it/s, est. speed input: 3303.32 toks/s, output: 25.44 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.43it/s, est. speed input: 5356.68 toks/s, output: 70.96 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.1383913459721953 sec
+Cluster Indices: {1: [0, 1, 6, 7, 8, 9], 2: [2], 3: [3], 4: [4], 5: [5]}
+Selected Indexes: [6, 2, 3, 4, 5]
+new_convs: [' Step 4: The answer is #### 3. ******', '******', '******', '******', '******']
+Found EoS token, Break
+>> Processing time: 7.423197005991824
+>> Answer lists: ['3', '3', '3', '3', '3', '3', '3', '3', '3', '3']
+>> Original Correct: 3, True
+>> Golden    Answer: 3
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.06it/s, est. speed input: 1214.39 toks/s, output: 259.16 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.06it/s, est. speed input: 1214.39 toks/s, output: 259.16 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 0.948003874043934 sec
+Cluster Indices: {1: [0, 1, 2, 3, 4, 8, 9], 2: [5], 3: [6], 4: [7], 5: []}
+Selected Indexes: [0, 5, 6, 7, 9]
+new_convs: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys a house for $80,000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys a house for $80,000 and puts in $50,000 in repairs. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys a house for $80,000 and puts in $50,000 in repairs. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys a house for $80,000 and puts in $50,000 in repairs. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.42s/it, est. speed input: 820.90 toks/s, output: 28.11 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.35it/s, est. speed input: 3068.11 toks/s, output: 126.67 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.11it/s, est. speed input: 3657.44 toks/s, output: 157.47 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.6172499710228294 sec
+Cluster Indices: {1: [0, 1, 4, 5, 6, 7], 2: [9], 3: [2], 4: [3], 5: [8]}
+Selected Indexes: [0, 9, 2, 3, 8]
+new_convs: [' Step 2: He puts in $50,000 in repairs. ******', ' Step 2: The total amount he spends is $80,000 + $50,000 = $130,000. ******', ' Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ******', ' Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ******', ' Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.58s/it, est. speed input: 762.03 toks/s, output: 36.71 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.86it/s, est. speed input: 2716.24 toks/s, output: 128.56 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  3.05it/s, est. speed input: 2941.28 toks/s, output: 151.96 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.45it/s, est. speed input: 2941.28 toks/s, output: 151.96 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 2.05162859801203 sec
+Cluster Indices: {1: [0, 1, 2, 5, 6, 7, 9], 2: [3], 3: [4], 4: [8], 5: []}
+Selected Indexes: [0, 3, 4, 8, 9]
+new_convs: [' Step 3: The value of the house increases by 150%. ******', ' Step 3: The value of the house increases by 150%, so the new value is 1.5 * $80,000 = $120,000. ******', ' Step 3: The value of the house increased by 150%, which means it is now 150% of the original value. ******', ' Step 3: The value of the house increased by 150%, which means it is now 150% of the original value. ******', ' Step 3: The value of the house increased by 150%, so the new value is 150% of the original value. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.80s/it, est. speed input: 687.28 toks/s, output: 39.91 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.24it/s, est. speed input: 1292.83 toks/s, output: 77.37 toks/s]Processed prompts:  80%|████████  | 4/5 [00:02<00:00,  2.86it/s, est. speed input: 2386.61 toks/s, output: 146.41 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.36it/s, est. speed input: 2896.37 toks/s, output: 184.94 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 2.1310279660392553 sec
+Cluster Indices: {1: [0, 1, 6, 7, 8, 9], 2: [4], 3: [5], 4: [2], 5: [3]}
+Selected Indexes: [8, 4, 5, 2, 3]
+new_convs: [' Step 4: The original value is $80,000, so 150% of $80,000 is 1.5 x $80,000 = $120,000. ******', ' Step 4: The new value of the house is 150% of $80,000, which is 1.5 * $80,000 = $120,000. ******', ' Step 4: The original value is $80,000, so the new value is 150% of $80,000, which is $80,000 * 1.5 = $120,000. ******', ' Step 4: The profit is the difference between the new value and the total amount spent: $120,000 - $130,000 = -$10,000. ******', ' Step 4: The profit is the difference between the new value and the total amount spent: $120,000 - $130,000 = -$10,000. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.40s/it, est. speed input: 909.85 toks/s, output: 28.59 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.39it/s, est. speed input: 1551.35 toks/s, output: 55.38 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.82it/s, est. speed input: 1922.41 toks/s, output: 77.90 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  3.64it/s, est. speed input: 3010.60 toks/s, output: 141.65 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.36it/s, est. speed input: 3010.60 toks/s, output: 141.65 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 2.129634362994693 sec
+Cluster Indices: {1: [0, 1, 4, 7, 8, 9], 2: [2], 3: [6], 4: [5], 5: [3]}
+Selected Indexes: [0, 2, 6, 5, 3]
+new_convs: [' Step 5: The profit is the difference between the new value and the total amount spent. ******', ' Step 5: Josh sells the house for $120,000, so his profit is $120,000 - $130,000 = -$10,000. ******', " Step 5: Since Josh didn't make a profit, the answer is #### 0. ******", ' Step 5: Josh sells the house for $120,000, so his profit is the difference between the selling price and the total cost: $120,000 - $130,000 = -$10,000. ******', ' Step 5: Since Josh sold the house for $120,000, his profit is the difference between the selling price and the total amount he spent: $120,000 - $130,000 = -$10,000. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.17it/s, est. speed input: 1522.65 toks/s, output: 2.35 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.38it/s, est. speed input: 1746.89 toks/s, output: 33.04 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.31it/s, est. speed input: 3296.79 toks/s, output: 90.67 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.05it/s, est. speed input: 3993.69 toks/s, output: 119.63 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.6500066389562562 sec
+Cluster Indices: {1: [0, 1, 3, 7, 8, 9], 2: [2], 3: [6], 4: [4], 5: [5]}
+Selected Indexes: [0, 2, 6, 4, 5]
+new_convs: [' Step 6: The profit is $120,000 - $130,000 = -$10,000. ******', ' Step 6: Since Josh spent more than he made, he actually lost $10,000. ******', ' Step 6: However, this is a loss, not a profit. Josh actually lost $10,000. ******', '******', '******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.17it/s, est. speed input: 1518.57 toks/s, output: 2.34 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.76it/s, est. speed input: 3175.79 toks/s, output: 26.71 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.24it/s, est. speed input: 4491.20 toks/s, output: 74.95 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.41it/s, est. speed input: 4491.20 toks/s, output: 74.95 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.4794441419653594 sec
+Cluster Indices: {1: [0, 1, 2, 3, 4, 5], 2: [6], 3: [7], 4: [8], 5: [9]}
+Selected Indexes: [4, 6, 7, 8, 9]
+new_convs: [' Step 7: The answer is #### -10,000. ******', '******', '******', '******', '******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.17it/s, est. speed input: 1595.36 toks/s, output: 2.34 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  5.84it/s, est. speed input: 7656.71 toks/s, output: 11.68 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 0.8680482290219516 sec
+Cluster Indices: {1: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 2: [], 3: [], 4: [], 5: []}
+Selected Indexes: [0, 9, 8, 7, 6]
+new_convs: ['******', '******', '******', '******', '******']
+Found EoS token, Break
+>> Processing time: 13.286751327919774
+>> Answer lists: ['-10000', '-10000', '0', '0', '0', '0', '0', '0', '0', '0']
+>> Original Correct: 0, False
+>> Golden    Answer: 70000
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.21it/s, est. speed input: 1366.67 toks/s, output: 254.51 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.21it/s, est. speed input: 1366.67 toks/s, output: 254.51 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 0.8316926560364664 sec
+Cluster Indices: {1: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 2: [], 3: [], 4: [], 5: []}
+Selected Indexes: [0, 9, 8, 7, 6]
+new_convs: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints 3 times a week. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints per day, 3 times a week. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints per day. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints each time. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints each time. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.12s/it, est. speed input: 1032.89 toks/s, output: 23.31 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.50it/s, est. speed input: 1570.68 toks/s, output: 53.10 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.44it/s, est. speed input: 2883.81 toks/s, output: 109.30 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.07it/s, est. speed input: 3547.64 toks/s, output: 146.36 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.636731949984096 sec
+Cluster Indices: {1: [0, 4, 6, 7, 8, 9], 2: [5], 3: [1], 4: [2], 5: [3]}
+Selected Indexes: [0, 5, 1, 2, 3]
+new_convs: [' Step 2: That means he runs a total of 3 * 3 = 9 sprints a week. ******', ' Step 2: Since he runs 3 times a week, he runs 3 * 3 = 9 sprints in a week. ******', ' Step 2: So, he runs a total of 3 x 3 = 9 sprints a week. ******', ' Step 2: So, he runs a total of 3 * 3 = 9 sprints per week. ******', ' Step 2: So, he runs a total of 3 * 3 = 9 sprints per week. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.60s/it, est. speed input: 736.43 toks/s, output: 37.41 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.97it/s, est. speed input: 3517.67 toks/s, output: 182.63 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.6920072849607095 sec
+Cluster Indices: {1: [3, 4, 6, 7], 2: [0, 1, 2, 5, 8, 9], 3: [], 4: [], 5: []}
+Selected Indexes: [4, 0, 7, 6, 3]
+new_convs: [' Step 3: Each sprint is 60 meters, so the total distance he runs is 9 x 60 = 540 meters. ******', ' Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ******', ' Step 3: Each sprint is 60 meters, so he runs a total of 9 * 60 = 540 meters per week. ******', ' Step 3: Each sprint is 60 meters, so he runs a total of 9 * 60 = 540 meters per week. ******', ' Step 3: Each sprint is 60 meters, so in total he runs 9 * 60 = 540 meters in a week. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.14s/it, est. speed input: 1058.74 toks/s, output: 22.73 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.37it/s, est. speed input: 5302.16 toks/s, output: 113.63 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.1552583819720894 sec
+Cluster Indices: {1: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 2: [], 3: [], 4: [], 5: []}
+Selected Indexes: [0, 9, 8, 7, 6]
+new_convs: [' Step 4: The answer is #### 540. ******', ' Step 4: The answer is #### 540. ******', ' Step 4: The answer is #### 540. ******', ' Step 4: The answer is #### 540. ******', ' Step 4: The answer is #### 540. ******']
+Found EoS token, Break
+>> Processing time: 5.5210183509625494
+>> Answer lists: ['540', '540', '540', '540', '540', '540', '540', '540', '540', '540']
+>> Original Correct: 540, True
+>> Golden    Answer: 540
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.43s/it, est. speed input: 843.89 toks/s, output: 184.58 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.43s/it, est. speed input: 843.89 toks/s, output: 184.58 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.4331711060367525 sec
+Cluster Indices: {1: [0, 1, 2, 3, 4, 5, 7, 8, 9], 2: [6], 3: [], 4: [], 5: []}
+Selected Indexes: [0, 6, 9, 8, 7]
+new_convs: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi gives her chickens 15 cups of feed in the morning. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi gives the chickens 15 cups of feed in the morning. ******', "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi's chickens need 3 cups of feed each. Since there are 20 chickens, they need 20 * 3 = 60 cups of feed in total for the day. ******", '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi needs to give her chickens 3 cups of feed each, and there are 20 chickens. ******', "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi's flock of chickens is 20 chickens. ******"]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.30s/it, est. speed input: 946.84 toks/s, output: 27.69 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.08it/s, est. speed input: 3114.56 toks/s, output: 104.97 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.54it/s, est. speed input: 3502.48 toks/s, output: 125.75 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.83it/s, est. speed input: 3502.48 toks/s, output: 125.75 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.7767438950249925 sec
+Cluster Indices: {1: [1, 4, 5, 6, 7, 8, 9], 2: [0], 3: [2], 4: [3], 5: []}
+Selected Indexes: [1, 0, 2, 3, 9]
+new_convs: [' Step 2: She gives her chickens 25 cups of feed in the afternoon. ******', ' Step 2: She gives them 25 cups of feed in the afternoon. ******', ' Step 2: She gives them 25 cups of feed in the afternoon. ******', ' Step 2: She gives them 25 cups of feed in the afternoon. ******', ' Step 2: Each chicken needs 3 cups of feed, so the total amount of feed needed for the day is 20 * 3 = 60 cups. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.33s/it, est. speed input: 953.53 toks/s, output: 27.91 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.48it/s, est. speed input: 1627.50 toks/s, output: 57.64 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.90it/s, est. speed input: 2865.24 toks/s, output: 136.37 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.29it/s, est. speed input: 2865.24 toks/s, output: 136.37 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 2.196681002038531 sec
+Cluster Indices: {1: [2, 3, 5, 7, 8, 9], 2: [0], 3: [1], 4: [4], 5: [6]}
+Selected Indexes: [8, 0, 1, 4, 6]
+new_convs: [' Step 3: In the morning, she gives 15 cups of feed. ******', ' Step 3: In total, she has given her chickens 15 + 25 = 40 cups of feed so far. ******', ' Step 3: In total, she has given her chickens 15 + 25 = 40 cups of feed so far. ******', ' Step 3: In total, she has given them 15 + 25 = 40 cups of feed so far. ******', ' Step 3: In total, she has given them 15 + 25 = 40 cups of feed so far. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.31s/it, est. speed input: 975.87 toks/s, output: 27.40 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.10it/s, est. speed input: 1319.37 toks/s, output: 59.78 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  3.46it/s, est. speed input: 3086.48 toks/s, output: 166.16 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.41it/s, est. speed input: 3086.48 toks/s, output: 166.16 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 2.0820102769648656 sec
+Cluster Indices: {1: [2, 3, 6, 7, 8, 9], 2: [4], 3: [0], 4: [1], 5: [5]}
+Selected Indexes: [6, 4, 0, 1, 5]
+new_convs: [' Step 4: Since there are 20 chickens, each chicken gets 3 cups of feed. ******', ' Step 4: Since she feeds each chicken 3 cups of feed, and she has 20 chickens, she has already given them 20 * 3 = 60 cups of feed. ******', ' Step 4: In the afternoon, she gives 25 cups of feed. ******', ' Step 4: In the afternoon, she gives 25 cups of feed. ******', ' Step 4: Since she gives each chicken 3 cups of feed, and she has 20 chickens, the total feed needed is 20 * 3 = 60 cups. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.51s/it, est. speed input: 860.99 toks/s, output: 31.79 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.26it/s, est. speed input: 2380.51 toks/s, output: 92.38 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.85it/s, est. speed input: 3001.54 toks/s, output: 136.89 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.30it/s, est. speed input: 3001.54 toks/s, output: 136.89 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 2.189317204989493 sec
+Cluster Indices: {1: [0, 1, 2, 3, 8, 9], 2: [4], 3: [5], 4: [6], 5: [7]}
+Selected Indexes: [8, 4, 5, 6, 7]
+new_convs: [' Step 5: She still needs to give her chickens 60 - 40 = 20 cups of feed in the final meal. ******', ' Step 5: So far, she has given 15 + 25 = 40 cups of feed. ******', ' Step 5: So far, she has given 15 + 25 = 40 cups of feed. ******', ' Step 5: So far, she has given 15 + 25 = 40 cups of feed. ******', ' Step 5: So far, she has given 15 + 25 = 40 cups of feed. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.20s/it, est. speed input: 1124.64 toks/s, output: 21.72 toks/s]Processed prompts:  40%|████      | 2/5 [00:02<00:03,  1.04s/it, est. speed input: 1255.01 toks/s, output: 54.99 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.96it/s, est. speed input: 2881.58 toks/s, output: 174.40 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.17it/s, est. speed input: 2881.58 toks/s, output: 174.40 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 2.317240093019791 sec
+Cluster Indices: {1: [2, 3, 4, 6, 7, 8], 2: [5], 3: [9], 4: [0], 5: [1]}
+Selected Indexes: [4, 5, 9, 0, 1]
+new_convs: [' Step 6: To find out how many cups of feed she needs to give in the final meal, subtract the total amount given from the total amount needed: 60 - 40 = 20 cups. ******', ' Step 6: To find out how many cups of feed she needs to give in the final meal, we subtract the total amount given so far from the total amount needed: 60 - 40 = 20 cups. ******', ' Step 6: To find out how many cups of feed she needs to give in the final meal, we subtract the total amount of feed given so far from the total amount of feed needed for the day: 60 - 40 = 20 cups. ******', ' Step 6: The answer is #### 20. ******', ' Step 6: The answer is #### 20. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.11it/s, est. speed input: 1511.97 toks/s, output: 2.23 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.83it/s, est. speed input: 3335.16 toks/s, output: 24.49 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.08it/s, est. speed input: 5578.15 toks/s, output: 66.92 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.237650638911873 sec
+Cluster Indices: {1: [0, 1, 2, 3, 4, 5], 2: [6, 7, 8, 9], 3: [], 4: [], 5: []}
+Selected Indexes: [0, 6, 5, 4, 3]
+new_convs: [' Step 7: The answer is #### 20. ******', '******', ' Step 7: The answer is #### 20. ******', ' Step 7: The answer is #### 20. ******', ' Step 7: The answer is #### 20. ******']
+Found EoS token, Break
+>> Processing time: 13.589581554057077
+>> Answer lists: ['20', '20', '20', '20', '20', '20', '20', '20', '20', '20']
+>> Original Correct: 20, True
+>> Golden    Answer: 20
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:06<00:00,  6.52s/it, est. speed input: 176.72 toks/s, output: 82.92 toks/s]Processed prompts: 100%|██████████| 1/1 [00:06<00:00,  6.52s/it, est. speed input: 176.72 toks/s, output: 82.92 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 6.527072387980297 sec
+Cluster Indices: {1: [4, 5, 6, 7, 8, 9], 2: [0], 3: [1], 4: [2], 5: [3]}
+Selected Indexes: [4, 0, 1, 2, 3]
+new_convs: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The first glass costs $5. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Kylar wants to buy 16 glasses. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Kylar wants to buy 16 glasses. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Kylar wants to buy 16 glasses. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Kylar wants to buy 16 glasses. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.43s/it, est. speed input: 822.18 toks/s, output: 32.24 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.46it/s, est. speed input: 1474.87 toks/s, output: 66.72 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.38it/s, est. speed input: 2728.37 toks/s, output: 125.10 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.75it/s, est. speed input: 3223.90 toks/s, output: 147.94 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.829584062914364 sec
+Cluster Indices: {1: [1, 3, 5, 7, 8, 9], 2: [0], 3: [2], 4: [4], 5: [6]}
+Selected Indexes: [1, 0, 2, 4, 6]
+new_convs: [' Step 2: The second glass costs 60% of $5, which is 0.6 * $5 = $3. ******', ' Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ******', ' Step 2: The first 8 glasses will cost 8 x $5 = $40. ******', ' Step 2: The first 8 glasses will cost 8 x $5 = $40. ******', ' Step 2: The first 8 glasses will cost 8 * $5 = $40. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.27s/it, est. speed input: 945.91 toks/s, output: 28.38 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.34it/s, est. speed input: 1451.40 toks/s, output: 58.18 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.13it/s, est. speed input: 3368.75 toks/s, output: 164.92 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.81it/s, est. speed input: 3368.75 toks/s, output: 164.92 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.7876407139701769 sec
+Cluster Indices: {1: [0, 1, 2, 3, 4, 6, 8], 2: [9], 3: [5], 4: [7], 5: []}
+Selected Indexes: [0, 9, 5, 7, 8]
+new_convs: [' Step 3: The third glass costs $5 again, and so on. ******', ' Step 3: The next 8 glasses are 60% of the price, which is 0.6 * $5 = $3. ******', ' Step 3: The next 8 glasses are 60% of $5, which is 0.6 x $5 = $3. ******', ' Step 3: The next 8 glasses are 60% of $5, which is 0.6 x $5 = $3. ******', ' Step 3: The remaining 8 glasses are 60% of the price, which is 0.6 * $5 = $3 each. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.46s/it, est. speed input: 839.45 toks/s, output: 32.15 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.28it/s, est. speed input: 3127.69 toks/s, output: 122.55 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.19it/s, est. speed input: 3910.53 toks/s, output: 156.37 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.5781128200469539 sec
+Cluster Indices: {1: [0, 1, 2, 4, 5, 7, 9], 2: [3], 3: [6], 4: [8], 5: []}
+Selected Indexes: [0, 3, 6, 8, 9]
+new_convs: [' Step 4: The pattern is: $5, $3, $5, $3, ... ******', ' Step 4: So the cost of the next 8 glasses is 8 * $3 = $24. ******', ' Step 4: The cost of the next 8 glasses is 8 x $3 = $24. ******', ' Step 4: The cost of the remaining 8 glasses is 8 * $3 = $24. ******', ' Step 4: The remaining 8 glasses will cost 8 * $3 = $24. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.33s/it, est. speed input: 939.82 toks/s, output: 28.57 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.59it/s, est. speed input: 1705.57 toks/s, output: 58.62 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.43it/s, est. speed input: 3028.77 toks/s, output: 114.62 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.04it/s, est. speed input: 3473.09 toks/s, output: 139.01 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.78it/s, est. speed input: 3473.09 toks/s, output: 139.01 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.8100757510401309 sec
+Cluster Indices: {1: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 2: [], 3: [], 4: [], 5: []}
+Selected Indexes: [2, 9, 8, 7, 6]
+new_convs: [' Step 5: In total, Kylar needs to pay $40 + $24 = $64. ******', ' Step 5: The total cost is $40 + $24 = $64. ******', ' Step 5: The total cost is $40 + $24 = $64. ******', ' Step 5: The total cost is the sum of the cost of the first 8 glasses and the remaining 8 glasses: $40 + $24 = $64. ******', ' Step 5: In total, Kylar needs to pay $40 + $24 = $64. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.18s/it, est. speed input: 1085.22 toks/s, output: 22.11 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.25it/s, est. speed input: 5424.09 toks/s, output: 110.54 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.1875299799721688 sec
+Cluster Indices: {1: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 2: [], 3: [], 4: [], 5: []}
+Selected Indexes: [0, 9, 8, 7, 6]
+new_convs: [' Step 6: The answer is #### 64. ******', ' Step 6: The answer is #### 64. ******', ' Step 6: The answer is #### 64. ******', ' Step 6: The answer is #### 64. ******', ' Step 6: The answer is #### 64. ******']
+Found EoS token, Break
+>> Processing time: 15.029658715007827
+>> Answer lists: ['64', '64', '64', '64', '64', '64', '64', '64', '64', '64']
+>> Original Correct: 64, True
+>> Golden    Answer: 64
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.81s/it, est. speed input: 299.11 toks/s, output: 210.42 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.81s/it, est. speed input: 299.11 toks/s, output: 210.42 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 3.8140708450227976 sec
+Cluster Indices: {1: [0, 1, 2, 4, 5, 6, 7, 9], 2: [3], 3: [8], 4: [], 5: []}
+Selected Indexes: [0, 3, 8, 9, 7]
+new_convs: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Seattle has 20 sheep. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Seattle has 20 sheep. ******\n\nStep 2: Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. ******\n\nStep 3: Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. ******\n\nStep 4: In total, they have 20 + 80 + 160 = 260 sheep. ******\n\nStep 5: The answer is #### 260. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. ******\n\nStep 2: Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. ******\n\nStep 3: Seattle has 20 sheep. Charleston has 80 sheep. Toulouse has 160 sheep. ******\n\nStep 4: In total, they have 20 + 80 + 160 = 260 sheep. ******\n\nStep 5: The answer is #### 260. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. ******\n\nStep 2: Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. ******\n\nStep 3: Seattle has 20 sheep. Charleston has 80 sheep. Toulouse has 160 sheep. ******\n\nStep 4: To find the total number of sheep, add the number of sheep each has: 20 + 80 + 160 = 260 sheep. ******\n\nStep 5: The answer is #### 260. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Seattle has 20 sheep. ******\n\nStep 2: Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. ******\n\nStep 3: Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. ******\n\nStep 4: To find the total number of sheep, add the number of sheep each has: 20 + 80 + 160 = 260. ******\n\nStep 5: The answer is #### 260. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.22it/s, est. speed input: 1531.70 toks/s, output: 2.44 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.49it/s, est. speed input: 3899.67 toks/s, output: 43.29 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.14it/s, est. speed input: 3899.67 toks/s, output: 43.29 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.605120301945135 sec
+Cluster Indices: {1: [0, 1], 2: [2, 3, 4, 5, 6, 7, 8, 9], 3: [], 4: [], 5: []}
+Selected Indexes: [0, 2, 1, 1, 1]
+new_convs: ['\n\nStep 2: Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. ******', '******', ' Step 2: Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. ******', ' Step 2: Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. ******', ' Step 2: Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.27it/s, est. speed input: 1589.74 toks/s, output: 2.54 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.26it/s, est. speed input: 1543.25 toks/s, output: 39.23 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.18it/s, est. speed input: 2339.48 toks/s, output: 124.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  1.95it/s, est. speed input: 2339.48 toks/s, output: 124.05 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 2.5752291480312124 sec
+Cluster Indices: {1: [0, 1, 4, 5, 6, 7, 8, 9], 2: [2], 3: [3], 4: [], 5: []}
+Selected Indexes: [4, 2, 3, 9, 8]
+new_convs: [' Step 3: Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. ******', '******', '******', ' Step 3: Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. ******', ' Step 3: Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.22it/s, est. speed input: 1524.76 toks/s, output: 2.43 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.26it/s, est. speed input: 2580.20 toks/s, output: 36.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.47it/s, est. speed input: 4265.57 toks/s, output: 101.89 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.4542277939617634 sec
+Cluster Indices: {1: [0, 1, 6, 7, 8, 9], 2: [2], 3: [3], 4: [4], 5: [5]}
+Selected Indexes: [0, 2, 3, 4, 5]
+new_convs: [' Step 4: In total, they have 20 + 80 + 160 = 260 sheep. ******', '******', '******', '******', '******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.22it/s, est. speed input: 1528.05 toks/s, output: 2.44 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  5.30it/s, est. speed input: 5517.48 toks/s, output: 31.79 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.41it/s, est. speed input: 5517.48 toks/s, output: 31.79 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.1438355999998748 sec
+Cluster Indices: {1: [0, 1], 2: [2, 3, 4, 5, 6, 7, 8, 9], 3: [], 4: [], 5: []}
+Selected Indexes: [0, 2, 1, 1, 1]
+new_convs: [' Step 5: The answer is #### 260. ******', '******', ' Step 5: The answer is #### 260. ******', ' Step 5: The answer is #### 260. ******', ' Step 5: The answer is #### 260. ******']
+Found EoS token, Break
+>> Processing time: 10.847444353974424
+>> Answer lists: ['260', '260', '260', '260', '260', '260', '260', '260', '260', '260']
+>> Original Correct: 260, True
+>> Golden    Answer: 260
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.16it/s, est. speed input: 1346.91 toks/s, output: 229.11 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.16it/s, est. speed input: 1346.91 toks/s, output: 229.11 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 0.8671756139956415 sec
+Cluster Indices: {1: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 2: [], 3: [], 4: [], 5: []}
+Selected Indexes: [0, 9, 8, 7, 6]
+new_convs: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Carla is downloading a 200 GB file. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Carla needs to download 200 GB, which is 200,000 MB. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Carla needs to download a 200 GB file. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Carla is downloading a 200 GB file. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Carla is downloading a 200 GB file. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.24s/it, est. speed input: 952.29 toks/s, output: 25.76 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.06it/s, est. speed input: 3103.35 toks/s, output: 111.08 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.62it/s, est. speed input: 3103.35 toks/s, output: 111.08 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.9194767720764503 sec
+Cluster Indices: {1: [0, 2, 3, 5, 8, 9], 2: [6], 3: [1], 4: [4], 5: [7]}
+Selected Indexes: [0, 6, 1, 4, 7]
+new_convs: [' Step 2: She can download 2 GB per minute. ******', ' Step 2: She can download 2 GB/minute. ******', ' Step 2: Normally, she can download 2 GB/minute. ******', ' Step 2: Normally, she can download 2 GB/minute. ******', ' Step 2: Normally, she can download 2 GB/minute. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.92s/it, est. speed input: 625.23 toks/s, output: 37.58 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.54it/s, est. speed input: 3047.16 toks/s, output: 196.64 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.9791617119917646 sec
+Cluster Indices: {1: [3, 4, 5, 6, 7, 9], 2: [1], 3: [0], 4: [2], 5: [8]}
+Selected Indexes: [6, 1, 0, 2, 8]
+new_convs: [' Step 3: To find the time it would take to download the file normally, divide the total size by the rate: 200 GB / 2 GB/minute = 100 minutes. ******', ' Step 3: To find out how many minutes it takes to download the file, divide the total size by the rate: 200 GB / 2 GB/minute = 100 minutes. ******', ' Step 3: 40% of the way through the download means she has downloaded 0.4 * 200 = 80 GB. ******', ' Step 3: To find the time it takes to download the file normally, divide the file size by the download speed: 200 GB / 2 GB/minute = 100 minutes. ******', ' Step 3: To find the time it takes to download the file normally, we divide the file size by the download rate: 200 GB / 2 GB/minute = 100 minutes. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.37s/it, est. speed input: 898.20 toks/s, output: 29.23 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.53it/s, est. speed input: 2510.79 toks/s, output: 90.01 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.06it/s, est. speed input: 3668.16 toks/s, output: 148.72 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.96it/s, est. speed input: 3668.16 toks/s, output: 148.72 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.6991418119287118 sec
+Cluster Indices: {1: [0, 4, 5], 2: [6], 3: [7], 4: [1, 3, 8, 9], 5: [2]}
+Selected Indexes: [4, 6, 7, 8, 2]
+new_convs: [' Step 4: The remaining download is 200 - 80 = 120 GB. ******', ' Step 4: 40% of the way through the download means she has downloaded 40% * 200 GB = 80 GB. ******', ' Step 4: 40% of the way through the download means she has downloaded 40% * 200 GB = 80 GB. ******', ' Step 4: However, 40% of the way through the download, Windows forces a restart. ******', ' Step 4: But, 40% of the way through the download, Windows forces a restart. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.46s/it, est. speed input: 869.95 toks/s, output: 28.77 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.86it/s, est. speed input: 2014.48 toks/s, output: 88.94 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  3.40it/s, est. speed input: 3131.33 toks/s, output: 149.23 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.48it/s, est. speed input: 3131.33 toks/s, output: 149.23 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 2.028622897923924 sec
+Cluster Indices: {1: [0, 1, 2, 3, 4, 9], 2: [5], 3: [8], 4: [6], 5: [7]}
+Selected Indexes: [2, 5, 8, 6, 7]
+new_convs: [' Step 5: The remaining file size is 200 GB - 80 GB = 120 GB. ******', ' Step 5: She has to restart the download from the beginning, so she still has 200 GB - 80 GB = 120 GB left to download. ******', ' Step 5: 40% of 200 GB is 0.4 x 200 = 80 GB. ******', ' Step 5: 40% of 200 GB is 0.4 * 200 = 80 GB. ******', ' Step 5: 40% of 200 GB is 0.4 * 200 = 80 GB. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.36s/it, est. speed input: 947.83 toks/s, output: 27.16 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.31it/s, est. speed input: 2451.54 toks/s, output: 82.31 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.80it/s, est. speed input: 2881.17 toks/s, output: 108.26 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  3.16it/s, est. speed input: 3192.13 toks/s, output: 139.17 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.47it/s, est. speed input: 3192.13 toks/s, output: 139.17 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 2.038795582950115 sec
+Cluster Indices: {1: [0, 1, 5, 6, 7, 9], 2: [2], 3: [3], 4: [4], 5: [8]}
+Selected Indexes: [6, 2, 3, 4, 8]
+new_convs: [' Step 6: Carla has to restart the download from the beginning, so she has to download the remaining 120 GB (200 - 80 = 120). ******', ' Step 6: To find the time it takes to download the remaining 120 GB, divide the remaining file size by the download speed: 120 GB / 2 GB/minute = 60 minutes. ******', ' Step 6: To find the time it takes to download the remaining 120 GB, divide the remaining file size by the download speed: 120 GB / 2 GB/minute = 60 minutes. ******', ' Step 6: So, she has downloaded 80 GB before the restart. ******', ' Step 6: So, she has downloaded 80 GB before the restart. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.43s/it, est. speed input: 912.73 toks/s, output: 29.29 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.18it/s, est. speed input: 1397.74 toks/s, output: 52.92 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.96it/s, est. speed input: 1992.42 toks/s, output: 91.51 toks/s]Processed prompts:  80%|████████  | 4/5 [00:02<00:00,  2.78it/s, est. speed input: 2509.22 toks/s, output: 123.80 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.26it/s, est. speed input: 3006.68 toks/s, output: 157.15 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 2.2203391359653324 sec
+Cluster Indices: {1: [0, 1, 2, 3, 5, 7], 2: [4], 3: [6], 4: [8], 5: [9]}
+Selected Indexes: [0, 4, 6, 8, 9]
+new_convs: [' Step 7: Since she can download 2 GB/minute, it will take her 120 GB / 2 GB/minute = 60 minutes to download the remaining 120 GB. ******', ' Step 7: Add the time it takes to download the initial 80 GB and the remaining 120 GB: 100 minutes + 20 minutes (for the restart) + 60 minutes = 180 minutes. ******', ' Step 7: The remaining size is 200 - 80 = 120 GB. ******', ' Step 7: The remaining file size is 200 - 80 = 120 GB. ******', ' Step 7: The remaining file size is 200 - 80 = 120 GB. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.24s/it, est. speed input: 1124.50 toks/s, output: 20.96 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.45it/s, est. speed input: 1767.07 toks/s, output: 47.34 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.44it/s, est. speed input: 3262.59 toks/s, output: 104.89 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.37it/s, est. speed input: 2851.57 toks/s, output: 117.48 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.11it/s, est. speed input: 2851.57 toks/s, output: 117.48 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 2.3786707159597427 sec
+Cluster Indices: {1: [0, 1, 2, 3, 7, 9], 2: [4], 3: [6], 4: [5], 5: [8]}
+Selected Indexes: [2, 4, 6, 5, 8]
+new_convs: [' Step 8: The answer is #### 180. ******', ' Step 8: She has to restart the download from the beginning, so she has to download the entire 200 GB again. ******', ' Step 8: She has to restart the download from the beginning, so she starts again from 0 GB. ******', ' Step 8: She has to restart the download from the beginning, so she has to download the 120 GB again. ******', ' Step 8: She has to restart the download from the beginning, so she starts from 0 GB. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.10it/s, est. speed input: 1553.35 toks/s, output: 2.21 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.17it/s, est. speed input: 1596.80 toks/s, output: 34.12 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.85it/s, est. speed input: 2176.56 toks/s, output: 68.76 toks/s]Processed prompts:  80%|████████  | 4/5 [00:02<00:00,  2.44it/s, est. speed input: 2601.14 toks/s, output: 104.16 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  3.16it/s, est. speed input: 3029.87 toks/s, output: 127.87 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.22it/s, est. speed input: 3029.87 toks/s, output: 127.87 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 2.2648000420304015 sec
+Cluster Indices: {1: [2, 3, 4, 5, 6, 7], 2: [8], 3: [9], 4: [0], 5: [1]}
+Selected Indexes: [6, 8, 9, 0, 1]
+new_convs: [' Step 9: It will take her 120 GB / 2 GB/minute = 60 minutes to download the remaining 120 GB. ******', ' Step 9: To find the time it takes to download the remaining 120 GB, we divide the remaining file size by the download rate: 120 GB / 2 GB/minute = 60 minutes. ******', ' Step 9: To find the time it takes to download the remaining 120 GB, we divide the file size by the download rate: 120 GB / 2 GB/minute = 60 minutes. ******', '******', '******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.09it/s, est. speed input: 1528.70 toks/s, output: 2.17 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.70it/s, est. speed input: 3305.40 toks/s, output: 25.09 toks/s]Processed prompts:  80%|████████  | 4/5 [00:02<00:00,  1.64it/s, est. speed input: 2390.14 toks/s, output: 55.92 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.14it/s, est. speed input: 2779.66 toks/s, output: 96.93 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  1.99it/s, est. speed input: 2779.66 toks/s, output: 96.93 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 2.5297389560146257 sec
+Cluster Indices: {1: [0, 1, 2, 3, 4, 5], 2: [6], 3: [7], 4: [8], 5: [9]}
+Selected Indexes: [2, 6, 7, 8, 9]
+new_convs: [' Step 10: The restart itself takes 20 minutes. ******', '******', '******', '******', '******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.07it/s, est. speed input: 1512.65 toks/s, output: 2.15 toks/s]Processed prompts: 100%|██████████| 5/5 [00:03<00:00,  1.66it/s, est. speed input: 2267.92 toks/s, output: 49.90 toks/s]Processed prompts: 100%|██████████| 5/5 [00:03<00:00,  1.61it/s, est. speed input: 2267.92 toks/s, output: 49.90 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 3.1191123850876465 sec
+Cluster Indices: {1: [0, 1], 2: [2, 3, 4, 5, 6, 7, 8, 9], 3: [], 4: [], 5: []}
+Selected Indexes: [0, 2, 1, 1, 1]
+new_convs: [' Step 11: So, the total time it takes to download the file is the time it takes to download the first 80 GB plus the time it takes to download the remaining 120 GB plus the time it takes for the restart: 40 minutes (80 GB / 2 GB/minute) + 60 minutes (120 GB / 2 GB/minute) + 20 minutes = 120 minutes. ******', '******', ' Step 11: So, the total time it takes to download the file is the time it takes to download the first 80 GB (40 minutes) + the time it takes to download the remaining 120 GB (60 minutes) + the time it takes for the restart (20 minutes). ******', ' Step 11: So, the total time it takes to download the file is the time it takes to download the first 80 GB (40 minutes) + the time it takes to download the remaining 120 GB (60 minutes) + the time it takes for the restart (20 minutes). ******', ' Step 11: So, the total time it takes to download the file is the time it takes to download the first 80 GB (40 minutes) + the time it takes to download the remaining 120 GB (60 minutes) + the time it takes for the restart (20 minutes). ******']
+>> Processing time: 23.608710364904255
+>> Answer lists: ['8', '180', '8', '8', '8']
+>> Original Correct: 8, False
+>> Golden    Answer: 160
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:06<00:00,  6.10s/it, est. speed input: 196.59 toks/s, output: 150.06 toks/s]Processed prompts: 100%|██████████| 1/1 [00:06<00:00,  6.10s/it, est. speed input: 196.59 toks/s, output: 150.06 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 6.107708323048428 sec
+Cluster Indices: {1: [4, 5, 6, 7, 8, 9], 2: [0], 3: [1], 4: [2], 5: [3]}
+Selected Indexes: [4, 0, 1, 2, 3]
+new_convs: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: John drives for 3 hours at 60 mph, so he covers a distance of 3 x 60 = 180 miles. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: John drives for 3 hours at 60 mph. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: John drives for 3 hours at 60 mph. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: John drives for 3 hours at 60 mph. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: John drives for 3 hours at 60 mph. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.41s/it, est. speed input: 864.40 toks/s, output: 30.44 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.46it/s, est. speed input: 2419.71 toks/s, output: 89.45 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.70it/s, est. speed input: 3393.70 toks/s, output: 143.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.77it/s, est. speed input: 3393.70 toks/s, output: 143.04 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.8155844300054014 sec
+Cluster Indices: {1: [0, 1, 8], 2: [5, 6, 7, 9], 3: [4], 4: [2], 5: [3]}
+Selected Indexes: [0, 5, 4, 2, 3]
+new_convs: ['\n\nStep 2: He turns around and tries to get home in 4 hours. ******', ' Step 2: Distance covered in 3 hours at 60 mph is 3 * 60 = 180 miles. ******', ' Step 2: Distance covered = Speed * Time = 60 * 3 = 180 miles. ******', ' Step 2: Distance = Speed * Time = 60 * 3 = 180 miles. ******', ' Step 2: The distance he covers is 3 * 60 = 180 miles. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.33s/it, est. speed input: 932.75 toks/s, output: 26.26 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.41it/s, est. speed input: 2462.57 toks/s, output: 83.55 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.29it/s, est. speed input: 4100.30 toks/s, output: 141.43 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.5315741969970986 sec
+Cluster Indices: {1: [4, 5, 7], 2: [0, 1, 3, 9], 3: [8], 4: [2], 5: [6]}
+Selected Indexes: [7, 0, 8, 2, 6]
+new_convs: [' Step 3: He turns around and drives for 4 hours. ******', " Step 3: He spends the first 2 hours in standstill traffic, so he doesn't cover any distance. ******", ' Step 3: Then he turns around and drives for 4 hours. ******', ' Step 3: He turns around and tries to get home in 4 hours. ******', ' Step 3: He turns around and tries to get home in 4 hours. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.49s/it, est. speed input: 842.89 toks/s, output: 32.14 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.53it/s, est. speed input: 3556.25 toks/s, output: 150.03 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.81it/s, est. speed input: 3556.25 toks/s, output: 150.03 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.791248477064073 sec
+Cluster Indices: {1: [1, 2, 3, 4, 5, 6, 9], 2: [0], 3: [7], 4: [8], 5: []}
+Selected Indexes: [4, 0, 7, 8, 9]
+new_convs: [" Step 4: He spends the first 2 hours in standstill traffic, so he doesn't cover any distance. ******", " Step 4: He spends the first 2 hours in standstill traffic, so he doesn't move. ******", " Step 4: He spends the first 2 hours in standstill traffic, so he doesn't move. ******", " Step 4: He spends the first 2 hours in standstill traffic, so he doesn't move. ******", " Step 4: He spends the first 2 hours in standstill traffic, so he hasn't moved. ******"]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.45s/it, est. speed input: 888.18 toks/s, output: 29.01 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.94it/s, est. speed input: 2111.29 toks/s, output: 77.77 toks/s]Processed prompts:  80%|████████  | 4/5 [00:02<00:00,  2.49it/s, est. speed input: 2554.83 toks/s, output: 110.34 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.90it/s, est. speed input: 2868.57 toks/s, output: 144.07 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.23it/s, est. speed input: 2868.57 toks/s, output: 144.07 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 2.2536654139403254 sec
+Cluster Indices: {1: [0, 1, 3, 5, 7, 8], 2: [2], 3: [4], 4: [6], 5: [9]}
+Selected Indexes: [8, 2, 4, 6, 9]
+new_convs: [' Step 5: Then he drives at 30 mph for half an hour (0.5 hours). ******', ' Step 5: He drives for 0.5 hours at 30 mph. ******', ' Step 5: Then, he drives at 30 mph for half an hour, which is 0.5 hours. Distance covered in 0.5 hours at 30 mph is 0.5 * 30 = 15 miles. ******', ' Step 5: He drives at 30 mph for half an hour (0.5 hours). ******', ' Step 5: He drives at 30 mph for half an hour (0.5 hours). ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.52s/it, est. speed input: 860.25 toks/s, output: 31.54 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  3.03it/s, est. speed input: 3269.49 toks/s, output: 136.35 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.49it/s, est. speed input: 3269.49 toks/s, output: 136.35 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 2.021986451931298 sec
+Cluster Indices: {1: [4, 5], 2: [0, 1, 2, 3, 6, 7, 8, 9], 3: [], 4: [], 5: []}
+Selected Indexes: [4, 0, 5, 5, 5]
+new_convs: [' Step 6: After that, he drives at 80 mph for the remaining 2 hours. Distance covered in 2 hours at 80 mph is 2 * 80 = 160 miles. ******', ' Step 6: Distance = Speed * Time = 30 * 0.5 = 15 miles. ******', ' Step 6: He drives the remaining 2 hours at 80 mph. Distance covered in 2 hours at 80 mph is 2 * 80 = 160 miles. ******', ' Step 6: He drives the remaining 2 hours at 80 mph. Distance covered in 2 hours at 80 mph is 2 * 80 = 160 miles. ******', ' Step 6: He drives the remaining 2 hours at 80 mph. Distance covered in 2 hours at 80 mph is 2 * 80 = 160 miles. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.51s/it, est. speed input: 880.81 toks/s, output: 27.75 toks/s]Processed prompts:  40%|████      | 2/5 [00:02<00:02,  1.08it/s, est. speed input: 1339.54 toks/s, output: 52.71 toks/s]Processed prompts:  80%|████████  | 4/5 [00:02<00:00,  2.38it/s, est. speed input: 2420.16 toks/s, output: 115.64 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.21it/s, est. speed input: 3029.97 toks/s, output: 150.50 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 2.2782433739630505 sec
+Cluster Indices: {1: [0, 1, 3, 5, 7, 9], 2: [2], 3: [8], 4: [4], 5: [6]}
+Selected Indexes: [3, 2, 8, 4, 6]
+new_convs: [' Step 7: He then drives at 80 mph for the remaining 2 hours. ******', ' Step 7: After that, he drives at 80 mph for the remaining 2 hours. ******', ' Step 7: Total distance traveled is the sum of the distances: 180 + 15 + 160 = 355 miles. ******', ' Step 7: Total distance covered is the sum of the distances covered in each segment: 180 + 15 + 160 = 355 miles. ******', ' Step 7: Total distance covered is the sum of the distances: 180 + 15 + 160 = 355 miles. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.27s/it, est. speed input: 1114.10 toks/s, output: 20.47 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.57it/s, est. speed input: 1932.54 toks/s, output: 45.13 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.14it/s, est. speed input: 4045.99 toks/s, output: 114.77 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.91it/s, est. speed input: 4045.99 toks/s, output: 114.77 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.729227480944246 sec
+Cluster Indices: {1: [4, 5, 6, 7, 8, 9], 2: [0], 3: [1], 4: [2], 5: [3]}
+Selected Indexes: [6, 0, 1, 2, 3]
+new_convs: [' Step 8: The answer is #### 355. ******', ' Step 8: Distance = Speed * Time = 80 * 2 = 160 miles. ******', ' Step 8: Distance = Speed * Time = 80 * 2 = 160 miles. ******', ' Step 8: Distance = Speed * Time = 80 * 2 = 160 miles. ******', ' Step 8: Distance = Speed * Time = 80 * 2 = 160 miles. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.08it/s, est. speed input: 1546.73 toks/s, output: 2.17 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.18it/s, est. speed input: 1630.65 toks/s, output: 33.74 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.72it/s, est. speed input: 2103.43 toks/s, output: 60.92 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.43it/s, est. speed input: 3362.91 toks/s, output: 127.59 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 2.0736241560662165 sec
+Cluster Indices: {1: [2, 3, 5, 6, 7, 8], 2: [9], 3: [4], 4: [0], 5: [1]}
+Selected Indexes: [5, 9, 4, 0, 1]
+new_convs: [' Step 9: Total distance from home is the sum of the distances: 180 - 15 + 160 = 325 miles. ******', ' Step 9: Total distance from the original location is 180 + 15 + 160 = 355 miles. ******', ' Step 9: Total distance traveled = 180 (initial) + 15 + 160 = 355 miles. ******', '******', '******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.07it/s, est. speed input: 1525.25 toks/s, output: 2.14 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.75it/s, est. speed input: 3372.07 toks/s, output: 23.74 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.33it/s, est. speed input: 4050.03 toks/s, output: 62.48 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.87it/s, est. speed input: 4050.03 toks/s, output: 62.48 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.7570409670006484 sec
+Cluster Indices: {1: [0, 1, 2, 3, 4, 5], 2: [6], 3: [7], 4: [8], 5: [9]}
+Selected Indexes: [0, 6, 7, 8, 9]
+new_convs: [' Step 10: The answer is #### 325. ******', '******', '******', '******', '******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.07it/s, est. speed input: 1511.83 toks/s, output: 2.13 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  5.33it/s, est. speed input: 7599.85 toks/s, output: 10.66 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 0.9507274079369381 sec
+Cluster Indices: {1: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 2: [], 3: [], 4: [], 5: []}
+Selected Indexes: [0, 9, 8, 7, 6]
+new_convs: ['******', '******', '******', '******', '******']
+Found EoS token, Break
+>> Processing time: 24.875562940025702
+>> Answer lists: ['325', '325', '355', '355', '355', '355', '355', '355', '355', '355']
+>> Original Correct: 355, False
+>> Golden    Answer: 45
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.08s/it, est. speed input: 1066.27 toks/s, output: 242.58 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.08s/it, est. speed input: 1066.27 toks/s, output: 242.58 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.0869355970062315 sec
+Cluster Indices: {1: [0, 1, 4, 5, 6, 7, 9], 2: [2], 3: [3], 4: [8], 5: []}
+Selected Indexes: [0, 2, 3, 8, 9]
+new_convs: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Eliza earns $10 per hour for the first 40 hours she works. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Eliza earns $10 per hour for the first 40 hours. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Eliza earns $10 per hour for the first 40 hours. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Eliza works for 40 hours at $10 per hour. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Eliza works 40 hours at $10 per hour, so she earns 40 * $10 = $400. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.45s/it, est. speed input: 815.48 toks/s, output: 33.20 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.99it/s, est. speed input: 2944.70 toks/s, output: 139.98 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.49it/s, est. speed input: 2944.70 toks/s, output: 139.98 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 2.0189033600036055 sec
+Cluster Indices: {1: [2, 3, 5, 8, 9], 2: [1, 6, 7], 3: [0], 4: [4], 5: []}
+Selected Indexes: [5, 6, 0, 4, 9]
+new_convs: [' Step 2: For 40 hours, her earnings are 40 * $10 = $400. ******', ' Step 2: Her earnings for the first 40 hours are 40 * $10 = $400. ******', ' Step 2: For the first 40 hours, her earnings are 40 * $10 = $400. ******', ' Step 2: For the first 40 hours, her earnings are 40 * $10 = $400. ******', '\n\nStep 2: She works 45 hours in total, but the first 40 hours are at the regular rate. The remaining 5 hours are overtime. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.80s/it, est. speed input: 667.97 toks/s, output: 36.65 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.65it/s, est. speed input: 2491.12 toks/s, output: 135.98 toks/s]Processed prompts: 100%|██████████| 5/5 [00:04<00:00,  1.24it/s, est. speed input: 1493.28 toks/s, output: 123.82 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 4.060094622080214 sec
+Cluster Indices: {1: [1, 2, 3, 6, 8, 9], 2: [5], 3: [0], 4: [7], 5: [4]}
+Selected Indexes: [2, 5, 0, 7, 4]
+new_convs: [' Step 3: For the remaining 5 hours, she works overtime. ******', ' Step 3: For the next 5 hours (45 - 40 = 5), she receives overtime pay, which is 1.2 times her regular rate. ******', ' Step 3: For the remaining 5 hours, she receives overtime pay, which is 1.2 times her regular hourly rate. ******', ' Step 3: For the remaining 5 hours (45 - 40 = 5), she receives overtime pay which is 1.2 times her regular rate. ******', ' Step 3: For the remaining 5 hours (45 - 40 = 5), she receives overtime pay, which is 1.2 times her regular rate. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.46s/it, est. speed input: 854.51 toks/s, output: 31.60 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.61it/s, est. speed input: 3552.29 toks/s, output: 144.80 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.87it/s, est. speed input: 3552.29 toks/s, output: 144.80 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.752017050050199 sec
+Cluster Indices: {1: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 2: [], 3: [], 4: [], 5: []}
+Selected Indexes: [0, 9, 8, 7, 6]
+new_convs: [' Step 4: Her overtime rate is 1.2 times her regular rate, which is 1.2 * $10 = $12 per hour. ******', ' Step 4: Her overtime rate is 1.2 * $10 = $12 per hour. ******', ' Step 4: Her overtime rate is 1.2 * $10 = $12 per hour. ******', ' Step 4: Her overtime rate is $10 * 1.2 = $12 per hour. ******', ' Step 4: Her overtime rate is $10 * 1.2 = $12 per hour. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.44s/it, est. speed input: 873.25 toks/s, output: 28.55 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.29it/s, est. speed input: 4157.97 toks/s, output: 158.65 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.5304142339155078 sec
+Cluster Indices: {1: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 2: [], 3: [], 4: [], 5: []}
+Selected Indexes: [2, 9, 8, 7, 6]
+new_convs: [' Step 5: For the 5 overtime hours, her earnings are 5 * $12 = $60. ******', ' Step 5: For the 5 overtime hours, her earnings are 5 * $12 = $60. ******', ' Step 5: For the 5 overtime hours, her earnings are 5 * $12 = $60. ******', ' Step 5: For the 5 overtime hours, her earnings are 5 * $12 = $60. ******', ' Step 5: For the 5 overtime hours, her earnings are 5 * $12 = $60. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.51s/it, est. speed input: 855.91 toks/s, output: 29.88 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.27it/s, est. speed input: 2355.56 toks/s, output: 91.98 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.16it/s, est. speed input: 3699.90 toks/s, output: 150.91 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.87it/s, est. speed input: 3699.90 toks/s, output: 150.91 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.7543800689745694 sec
+Cluster Indices: {1: [1, 3, 4, 5, 7, 8, 9], 2: [0], 3: [2], 4: [6], 5: []}
+Selected Indexes: [7, 0, 2, 6, 9]
+new_convs: [' Step 6: In total, her earnings for the week are $400 + $60 = $460. ******', ' Step 6: In total, her earnings are $400 + $60 = $460. ******', ' Step 6: Total earnings for the week are $400 (from regular hours) + $60 (from overtime) = $460. ******', ' Step 6: In total, her earnings are $400 + $60 = $460. ******', ' Step 6: Her total earnings are the sum of her regular earnings and overtime earnings: $400 + $60 = $460. ******']
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.21s/it, est. speed input: 1087.00 toks/s, output: 21.52 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.14it/s, est. speed input: 5440.46 toks/s, output: 107.60 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 1.2200024459743872 sec
+Cluster Indices: {1: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 2: [], 3: [], 4: [], 5: []}
+Selected Indexes: [0, 9, 8, 7, 6]
+new_convs: [' Step 7: The answer is #### 460. ******', ' Step 7: The answer is #### 460. ******', ' Step 7: The answer is #### 460. ******', ' Step 7: The answer is #### 460. ******', ' Step 7: The answer is #### 460. ******']
+Found EoS token, Break
+>> Processing time: 13.779912656056695
+>> Answer lists: ['460', '460', '460', '460', '460', '460', '460', '460', '460', '460']
+>> Original Correct: 460, True
+>> Golden    Answer: 460
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:05<00:00,  5.89s/it, est. speed input: 196.36 toks/s, output: 152.91 toks/s]Processed prompts: 100%|██████████| 1/1 [00:05<00:00,  5.89s/it, est. speed input: 196.36 toks/s, output: 152.91 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 5.895302268094383 sec
+Cluster Indices: {1: [5, 6, 7, 8, 9], 2: [0, 1, 2, 3, 4], 3: [], 4: [], 5: []}
+Selected Indexes: [5, 0, 9, 8, 7]
+new_convs: ["<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The program had 60 downloads in the first month. ******\n\nStep 2: The number of downloads in the second month was three times as many as the downloads in the first month, so it's 3 * 60 = 180 downloads. ******\n\nStep 3: In the third month, the downloads were reduced by 30%, so the number of downloads is 180 * (1 - 0.30) = 126. ******\n\nStep 4: The total number of downloads over the three months is 60 + 180 + 126 = 366. ******\n\nStep 5: The answer is #### 366. ******", '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The program had 60 downloads in the first month. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The program had 60 downloads in the first month. ******\n\nStep 2: The number of downloads in the second month was three times as many as the downloads in the first month, so it was 3 * 60 = 180 downloads. ******\n\nStep 3: In the third month, the number of downloads was reduced by 30%. To find the number of downloads in the third month, we need to find 30% of 180 and subtract it from 180.\n\nStep 4: 30% of 180 is 0.3 * 180 = 54. ******\n\nStep 5: So, the number of downloads in the third month is 180 - 54 = 126. ******\n\nStep 6: To find the total number of downloads over the three months, we add the downloads from each month:\n\n60 (first month) + 180 (second month) + 126 (third month) = 366\n\nStep 7: The answer is #### 366. ******', "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The program had 60 downloads in the first month. ******\n\nStep 2: The number of downloads in the second month was three times as many as the downloads in the first month, so it's 3 * 60 = 180 downloads. ******\n\nStep 3: In the third month, the downloads reduced by 30%, so it's 180 - 0.3 * 180 = 126 downloads. ******\n\nStep 4: To find the total number of downloads, we add the downloads from each month: 60 + 180 + 126 = 366. ******\n\nStep 5: The answer is #### 366. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The program had 60 downloads in the first month. ******\n\nStep 2: The number of downloads in the second month was three times as many as the downloads in the first month, so it's 3 * 60 = 180 downloads. ******\n\nStep 3: In the third month, the number of downloads was reduced by 30%, so it's 180 * (1 - 0.30) = 180 * 0.70 = 126 downloads. ******\n\nStep 4: The total number of downloads over the three months is 60 + 180 + 126 = 366. ******\n\nStep 5: The answer is #### 366. ******"]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.18it/s, est. speed input: 1528.52 toks/s, output: 2.35 toks/s]Processed prompts: 100%|██████████| 5/5 [00:04<00:00,  1.21it/s, est. speed input: 1556.75 toks/s, output: 43.86 toks/s]Processed prompts: 100%|██████████| 5/5 [00:04<00:00,  1.20it/s, est. speed input: 1556.75 toks/s, output: 43.86 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 4.162688413984142 sec
+Cluster Indices: {1: [2, 3], 2: [0, 1, 4, 5, 6, 7, 8, 9], 3: [], 4: [], 5: []}
+Selected Indexes: [2, 0, 3, 3, 3]
+new_convs: ["\n\nStep 2: In the second month, the number of downloads was three times as many as the downloads in the first month, so it's 3 x 60 = 180 downloads. ******", '******', "\n\nStep 2: The number of downloads in the second month was three times as many as the downloads in the first month, so it's 3 * 60 = 180 downloads. ******\n\nStep 3: In the third month, the downloads were reduced by 30%, so the number of downloads is 180 - 0.3 * 180 = 180 - 54 = 126. ******\n\nStep 4: To find the total number of downloads, add the downloads from each month: 60 + 180 + 126 = 366. ******\n\nStep 5: The answer is #### 366. ******", "\n\nStep 2: The number of downloads in the second month was three times as many as the downloads in the first month, so it's 3 * 60 = 180 downloads. ******\n\nStep 3: In the third month, the downloads were reduced by 30%, so the number of downloads is 180 - 0.3 * 180 = 180 - 54 = 126. ******\n\nStep 4: To find the total number of downloads, add the downloads from each month: 60 + 180 + 126 = 366. ******\n\nStep 5: The answer is #### 366. ******", "\n\nStep 2: The number of downloads in the second month was three times as many as the downloads in the first month, so it's 3 * 60 = 180 downloads. ******\n\nStep 3: In the third month, the downloads were reduced by 30%, so the number of downloads is 180 - 0.3 * 180 = 180 - 54 = 126. ******\n\nStep 4: To find the total number of downloads, add the downloads from each month: 60 + 180 + 126 = 366. ******\n\nStep 5: The answer is #### 366. ******"]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.18it/s, est. speed input: 1530.13 toks/s, output: 2.36 toks/s]Processed prompts: 100%|██████████| 5/5 [00:03<00:00,  1.42it/s, est. speed input: 1805.43 toks/s, output: 56.59 toks/s]Processed prompts: 100%|██████████| 5/5 [00:03<00:00,  1.40it/s, est. speed input: 1805.43 toks/s, output: 56.59 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 3.5817009930033237 sec
+Cluster Indices: {1: [0, 1], 2: [2, 3, 4, 5, 6, 7, 8, 9], 3: [], 4: [], 5: []}
+Selected Indexes: [0, 2, 1, 1, 1]
+new_convs: ["\n\nStep 3: In the third month, the number of downloads reduced by 30%, so it's 180 - (30% of 180) = 180 - 54 = 126 downloads. ******\n\nStep 4: The total number of downloads over the three months is 60 + 180 + 126 = 366 downloads. ******\n\nStep 5: The answer is #### 366. ******", '******', '\n\nStep 3: In the third month, the number of downloads reduced by 30% of 180, which is 0.7 x 180 = 126. So, the number of downloads in the third month is 180 - 126 = 54. ******\n\nStep 4: The total number of downloads over the three months is the sum of downloads in each month: 60 + 180 + 54 = 294. ******\n\nStep 5: The answer is #### 294. ******', '\n\nStep 3: In the third month, the number of downloads reduced by 30% of 180, which is 0.7 x 180 = 126. So, the number of downloads in the third month is 180 - 126 = 54. ******\n\nStep 4: The total number of downloads over the three months is the sum of downloads in each month: 60 + 180 + 54 = 294. ******\n\nStep 5: The answer is #### 294. ******', '\n\nStep 3: In the third month, the number of downloads reduced by 30% of 180, which is 0.7 x 180 = 126. So, the number of downloads in the third month is 180 - 126 = 54. ******\n\nStep 4: The total number of downloads over the three months is the sum of downloads in each month: 60 + 180 + 54 = 294. ******\n\nStep 5: The answer is #### 294. ******']
+Found EoS token, Break
+>> Processing time: 13.795106675941497
+>> Answer lists: ['366', '294', '366', '366', '366', '366', '366', '366', '366', '366']
+>> Original Correct: 366, True
+>> Golden    Answer: 366
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.13it/s, est. speed input: 1307.11 toks/s, output: 290.71 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.13it/s, est. speed input: 1307.11 toks/s, output: 290.71 toks/s]
+/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py:243: ClusterWarning: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  linked = linkage(jaccard_matrix, 'single')
+Generation job: 0.8904294749954715 sec
+Cluster Indices: {1: [3, 4, 5, 6, 7, 8, 9], 2: [0], 3: [1], 4: [2], 5: []}
+Selected Indexes: [3, 0, 1, 2, 9]
+new_convs: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Toula bought 3 dozen donuts, which cost $68 per dozen. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Toula bought 3 dozen donuts, which cost $68 per dozen. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Toula bought 3 dozen donuts, which cost $68 per dozen. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Toula bought 3 dozen donuts, which cost $68 per dozen. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Toula bought 3 dozen donuts for $68 per dozen. ******']
+srun: got SIGCONT
+slurmstepd-n02: error: *** JOB 19711 ON n02 CANCELLED AT 2024-08-10T17:01:54 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]slurmstepd-n02: error: *** STEP 19711.0 ON n02 CANCELLED AT 2024-08-10T17:01:54 ***
+srun: forcing job termination
