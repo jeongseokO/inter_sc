@@ -1,0 +1,753 @@
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/jeongseokoh/.cache/huggingface/token
+Login successful
+Inter SC
+Num Path: 10 + 5 x 2
+INFO 08-08 02:00:08 llm_engine.py:161] Initializing an LLM engine (v0.5.0.post1) with config: model='meta-llama/Meta-Llama-3-8B-Instruct', speculative_config=None, tokenizer='meta-llama/Meta-Llama-3-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir='../../hub/model/', load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=0, served_model_name=meta-llama/Meta-Llama-3-8B-Instruct)
+INFO 08-08 02:00:12 weight_utils.py:218] Using model weights format ['*.safetensors']
+INFO 08-08 02:00:15 model_runner.py:160] Loading model weights took 14.9595 GB
+INFO 08-08 02:00:16 gpu_executor.py:83] # GPU blocks: 13407, # CPU blocks: 2048
+INFO 08-08 02:00:19 model_runner.py:889] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 08-08 02:00:19 model_runner.py:893] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 08-08 02:00:27 model_runner.py:965] Graph capturing finished in 8 secs.
+Model: llama3_8b is selected
+Dataset: gsm8k is selected
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.51s/it, est. speed input: 614.71 toks/s, output: 330.84 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.51s/it, est. speed input: 614.71 toks/s, output: 330.84 toks/s]
+Generation job: 1.5195620930753648 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  2.00s/it, est. speed input: 490.59 toks/s, output: 50.11 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.51it/s, est. speed input: 2452.55 toks/s, output: 250.52 toks/s]
+Generation job: 2.0034712699707597 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.47s/it, est. speed input: 700.77 toks/s, output: 40.86 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.24it/s, est. speed input: 3329.35 toks/s, output: 194.13 toks/s]
+Generation job: 1.5538094979710877 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1586.63 toks/s, output: 3.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.50it/s, est. speed input: 7933.81 toks/s, output: 14.99 toks/s]
+Generation job: 0.6755630359984934 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1579.39 toks/s, output: 2.99 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.46it/s, est. speed input: 7893.62 toks/s, output: 14.92 toks/s]
+Generation job: 0.6780540780164301 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1580.66 toks/s, output: 2.99 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.47it/s, est. speed input: 7900.93 toks/s, output: 14.94 toks/s]
+Generation job: 0.6777024981565773 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1581.80 toks/s, output: 2.99 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.47it/s, est. speed input: 7906.42 toks/s, output: 14.95 toks/s]
+Generation job: 0.6768134590238333 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1588.51 toks/s, output: 3.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.50it/s, est. speed input: 7939.64 toks/s, output: 15.01 toks/s]
+Generation job: 0.6740958981681615 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.51it/s, est. speed input: 1597.84 toks/s, output: 3.02 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.55it/s, est. speed input: 7986.84 toks/s, output: 15.10 toks/s]
+Generation job: 0.6703213290311396 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.51it/s, est. speed input: 1593.59 toks/s, output: 3.01 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.53it/s, est. speed input: 7965.77 toks/s, output: 15.06 toks/s]
+Generation job: 0.6718206140212715 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.51it/s, est. speed input: 1600.12 toks/s, output: 3.02 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.56it/s, est. speed input: 7997.98 toks/s, output: 15.12 toks/s]
+Generation job: 0.6689712919760495 sec
+>> Processing time: 10.515496549895033
+>> Answer lists: ['18', '18', '18', '18', '18']
+>> Original Correct: 18, True
+>> Golden    Answer: 18
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.47s/it, est. speed input: 606.07 toks/s, output: 339.72 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.47s/it, est. speed input: 606.07 toks/s, output: 339.72 toks/s]
+Generation job: 1.473711163038388 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.22s/it, est. speed input: 774.04 toks/s, output: 34.51 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.54it/s, est. speed input: 1979.67 toks/s, output: 101.57 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.41it/s, est. speed input: 2460.09 toks/s, output: 140.37 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.11it/s, est. speed input: 2934.06 toks/s, output: 176.91 toks/s]
+Generation job: 1.6122861029580235 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.62it/s, est. speed input: 1578.65 toks/s, output: 3.23 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.08it/s, est. speed input: 7829.52 toks/s, output: 16.17 toks/s]
+Generation job: 0.6260830031242222 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.62it/s, est. speed input: 1577.95 toks/s, output: 3.23 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.08it/s, est. speed input: 7861.18 toks/s, output: 16.16 toks/s]
+Generation job: 0.6257543039973825 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.59it/s, est. speed input: 1552.76 toks/s, output: 3.18 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.95it/s, est. speed input: 7760.93 toks/s, output: 15.90 toks/s]
+Generation job: 0.6360729709267616 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.59it/s, est. speed input: 1555.22 toks/s, output: 3.19 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.96it/s, est. speed input: 7773.51 toks/s, output: 15.93 toks/s]
+Generation job: 0.6351214530877769 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.59it/s, est. speed input: 1553.33 toks/s, output: 3.18 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.95it/s, est. speed input: 7764.50 toks/s, output: 15.91 toks/s]
+Generation job: 0.6356839512009174 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.60it/s, est. speed input: 1557.42 toks/s, output: 3.19 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.98it/s, est. speed input: 7784.74 toks/s, output: 15.95 toks/s]
+Generation job: 0.6338141260202974 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.59it/s, est. speed input: 1549.77 toks/s, output: 3.18 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.94it/s, est. speed input: 7746.57 toks/s, output: 15.87 toks/s]
+Generation job: 0.6369868349283934 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.59it/s, est. speed input: 1553.81 toks/s, output: 3.18 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.96it/s, est. speed input: 7766.23 toks/s, output: 15.91 toks/s]
+Generation job: 0.6353910900652409 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.59it/s, est. speed input: 1553.39 toks/s, output: 3.18 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.95it/s, est. speed input: 7763.77 toks/s, output: 15.91 toks/s]
+Generation job: 0.6358691880013794 sec
+>> Processing time: 8.78768166503869
+>> Answer lists: ['3', '3', '3', '3', '3']
+>> Original Correct: 3, True
+>> Golden    Answer: 3
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.49s/it, est. speed input: 612.26 toks/s, output: 334.56 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.49s/it, est. speed input: 612.26 toks/s, output: 334.56 toks/s]
+Generation job: 1.4965924120042473 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.98s/it, est. speed input: 488.60 toks/s, output: 50.63 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.53it/s, est. speed input: 2442.71 toks/s, output: 253.13 toks/s]
+Generation job: 1.9825895191170275 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.01s/it, est. speed input: 504.75 toks/s, output: 49.73 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.49it/s, est. speed input: 2523.40 toks/s, output: 247.62 toks/s]
+Generation job: 2.018707408104092 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.59s/it, est. speed input: 669.71 toks/s, output: 42.76 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.33it/s, est. speed input: 1216.77 toks/s, output: 82.26 toks/s]Processed prompts:  60%|██████    | 3/5 [00:02<00:01,  1.89it/s, est. speed input: 1585.41 toks/s, output: 121.08 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.48it/s, est. speed input: 2642.17 toks/s, output: 220.30 toks/s]
+Generation job: 2.0237773251719773 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.38it/s, est. speed input: 1515.06 toks/s, output: 2.75 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  5.47it/s, est. speed input: 5120.10 toks/s, output: 27.85 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.64it/s, est. speed input: 5120.10 toks/s, output: 27.85 toks/s]
+Generation job: 1.085431672167033 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.39it/s, est. speed input: 1534.15 toks/s, output: 2.79 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.97it/s, est. speed input: 7677.10 toks/s, output: 13.94 toks/s]
+Generation job: 0.7250375859439373 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.41it/s, est. speed input: 1553.94 toks/s, output: 2.83 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.06it/s, est. speed input: 7773.32 toks/s, output: 14.12 toks/s]
+Generation job: 0.7158048639539629 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.41it/s, est. speed input: 1548.58 toks/s, output: 2.82 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.04it/s, est. speed input: 7740.49 toks/s, output: 14.07 toks/s]
+Generation job: 0.7182778760325164 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.41it/s, est. speed input: 1550.95 toks/s, output: 2.82 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.05it/s, est. speed input: 7752.69 toks/s, output: 14.10 toks/s]
+Generation job: 0.717483727959916 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.42it/s, est. speed input: 1556.62 toks/s, output: 2.83 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.07it/s, est. speed input: 7780.87 toks/s, output: 14.15 toks/s]
+Generation job: 0.7160292509943247 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.41it/s, est. speed input: 1549.83 toks/s, output: 2.82 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.04it/s, est. speed input: 7747.13 toks/s, output: 14.09 toks/s]
+Generation job: 0.717662415932864 sec
+>> Processing time: 12.918587645050138
+>> Answer lists: ['-10000', '-10000', '-10000', '-10000', '-10000']
+>> Original Correct: -10000, False
+>> Golden    Answer: 70000
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 601.96 toks/s, output: 334.42 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 601.96 toks/s, output: 334.42 toks/s]
+Generation job: 1.4969653529115021 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.09s/it, est. speed input: 871.93 toks/s, output: 33.04 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  4.03it/s, est. speed input: 3049.60 toks/s, output: 128.40 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.01it/s, est. speed input: 3811.66 toks/s, output: 159.69 toks/s]
+Generation job: 1.2533447470050305 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.60it/s, est. speed input: 1551.77 toks/s, output: 3.21 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.02it/s, est. speed input: 7779.08 toks/s, output: 16.04 toks/s]
+Generation job: 0.6304581300355494 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.59it/s, est. speed input: 1535.78 toks/s, output: 3.18 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.94it/s, est. speed input: 7680.02 toks/s, output: 15.88 toks/s]
+Generation job: 0.6367715490050614 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.61it/s, est. speed input: 1555.14 toks/s, output: 3.22 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.04it/s, est. speed input: 7773.48 toks/s, output: 16.08 toks/s]
+Generation job: 0.6289216240402311 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.61it/s, est. speed input: 1554.79 toks/s, output: 3.22 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.04it/s, est. speed input: 7771.60 toks/s, output: 16.07 toks/s]
+Generation job: 0.6291338629089296 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.60it/s, est. speed input: 1550.57 toks/s, output: 3.21 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.01it/s, est. speed input: 7750.28 toks/s, output: 16.03 toks/s]
+Generation job: 0.6308163770008832 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.61it/s, est. speed input: 1554.57 toks/s, output: 3.22 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.04it/s, est. speed input: 7770.53 toks/s, output: 16.07 toks/s]
+Generation job: 0.6295655709691346 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.61it/s, est. speed input: 1552.73 toks/s, output: 3.21 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.02it/s, est. speed input: 7760.63 toks/s, output: 16.05 toks/s]
+Generation job: 0.6299652790185064 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.61it/s, est. speed input: 1553.29 toks/s, output: 3.21 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.03it/s, est. speed input: 7763.98 toks/s, output: 16.06 toks/s]
+Generation job: 0.6300754868425429 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.61it/s, est. speed input: 1552.63 toks/s, output: 3.21 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.03it/s, est. speed input: 7760.92 toks/s, output: 16.05 toks/s]
+Generation job: 0.6299391470383853 sec
+>> Processing time: 8.426831873133779
+>> Answer lists: ['540', '540', '540', '540', '540']
+>> Original Correct: 540, True
+>> Golden    Answer: 540
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 649.90 toks/s, output: 333.62 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 649.90 toks/s, output: 333.62 toks/s]
+Generation job: 1.5006876131519675 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.02s/it, est. speed input: 506.43 toks/s, output: 49.46 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.47it/s, est. speed input: 2531.91 toks/s, output: 247.26 toks/s]
+Generation job: 2.0299326670356095 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.24s/it, est. speed input: 865.21 toks/s, output: 33.83 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.01it/s, est. speed input: 1878.12 toks/s, output: 93.26 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.46it/s, est. speed input: 2203.76 toks/s, output: 120.55 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.50it/s, est. speed input: 2684.09 toks/s, output: 167.44 toks/s]
+Generation job: 2.008614047896117 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.41it/s, est. speed input: 1541.67 toks/s, output: 2.81 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.03it/s, est. speed input: 7714.73 toks/s, output: 14.06 toks/s]
+Generation job: 0.7190472860820591 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.41it/s, est. speed input: 1542.03 toks/s, output: 2.81 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.03it/s, est. speed input: 7705.28 toks/s, output: 14.07 toks/s]
+Generation job: 0.7187526170164347 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.40it/s, est. speed input: 1538.66 toks/s, output: 2.81 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.02it/s, est. speed input: 7690.73 toks/s, output: 14.03 toks/s]
+Generation job: 0.7203387510962784 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.41it/s, est. speed input: 1540.94 toks/s, output: 2.81 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.03it/s, est. speed input: 7702.59 toks/s, output: 14.06 toks/s]
+Generation job: 0.7195505520794541 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.41it/s, est. speed input: 1541.60 toks/s, output: 2.81 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.03it/s, est. speed input: 7705.83 toks/s, output: 14.06 toks/s]
+Generation job: 0.7189042440149933 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.40it/s, est. speed input: 1539.01 toks/s, output: 2.81 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.02it/s, est. speed input: 7692.29 toks/s, output: 14.04 toks/s]
+Generation job: 0.720209299121052 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.41it/s, est. speed input: 1542.72 toks/s, output: 2.82 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.04it/s, est. speed input: 7711.61 toks/s, output: 14.07 toks/s]
+Generation job: 0.7187964220065624 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.41it/s, est. speed input: 1540.59 toks/s, output: 2.81 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.03it/s, est. speed input: 7700.73 toks/s, output: 14.05 toks/s]
+Generation job: 0.7193786408752203 sec
+>> Processing time: 11.295282008126378
+>> Answer lists: ['20', '20', '20', '20', '20']
+>> Original Correct: 20, True
+>> Golden    Answer: 20
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 614.55 toks/s, output: 333.99 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 614.55 toks/s, output: 333.99 toks/s]
+Generation job: 1.4989080450031906 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.99s/it, est. speed input: 487.82 toks/s, output: 50.29 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.51it/s, est. speed input: 2438.85 toks/s, output: 251.43 toks/s]
+Generation job: 1.9960021839942783 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.77s/it, est. speed input: 575.30 toks/s, output: 43.99 toks/s]Processed prompts:  40%|████      | 2/5 [00:02<00:02,  1.15it/s, est. speed input: 1012.91 toks/s, output: 88.38 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.48it/s, est. speed input: 2532.06 toks/s, output: 237.32 toks/s]
+Generation job: 2.021679176017642 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.47it/s, est. speed input: 1556.57 toks/s, output: 2.95 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.49it/s, est. speed input: 2474.73 toks/s, output: 38.84 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.84it/s, est. speed input: 2749.21 toks/s, output: 76.22 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.73it/s, est. speed input: 2743.84 toks/s, output: 104.07 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.58it/s, est. speed input: 2743.84 toks/s, output: 104.07 toks/s]
+Generation job: 1.9488539448939264 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1563.92 toks/s, output: 2.96 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.40it/s, est. speed input: 7898.72 toks/s, output: 14.81 toks/s]
+Generation job: 0.6830832399427891 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1565.62 toks/s, output: 2.97 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.41it/s, est. speed input: 7831.95 toks/s, output: 14.82 toks/s]
+Generation job: 0.6821505918633193 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1561.25 toks/s, output: 2.96 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.39it/s, est. speed input: 7803.50 toks/s, output: 14.78 toks/s]
+Generation job: 0.6841011350043118 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1567.90 toks/s, output: 2.97 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.42it/s, est. speed input: 7837.38 toks/s, output: 14.84 toks/s]
+Generation job: 0.681480091996491 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1564.82 toks/s, output: 2.96 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.41it/s, est. speed input: 7821.97 toks/s, output: 14.81 toks/s]
+Generation job: 0.6824853590223938 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1563.25 toks/s, output: 2.96 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.40it/s, est. speed input: 7814.12 toks/s, output: 14.80 toks/s]
+Generation job: 0.6831766250543296 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1563.43 toks/s, output: 2.96 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.40it/s, est. speed input: 7814.26 toks/s, output: 14.80 toks/s]
+Generation job: 0.6832113550044596 sec
+>> Processing time: 12.24624171294272
+>> Answer lists: ['64', '64', '64', '64', '64']
+>> Original Correct: 64, True
+>> Golden    Answer: 64
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 605.75 toks/s, output: 333.93 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 605.75 toks/s, output: 333.93 toks/s]
+Generation job: 1.4994921481702477 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.98s/it, est. speed input: 482.40 toks/s, output: 50.41 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.52it/s, est. speed input: 2411.73 toks/s, output: 252.01 toks/s]
+Generation job: 1.9912143861874938 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.04it/s, est. speed input: 1042.56 toks/s, output: 24.85 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  5.04it/s, est. speed input: 5070.75 toks/s, output: 124.88 toks/s]
+Generation job: 1.000607315916568 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.53it/s, est. speed input: 1555.29 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.63it/s, est. speed input: 7772.74 toks/s, output: 15.26 toks/s]
+Generation job: 0.6626936260145158 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.53it/s, est. speed input: 1562.14 toks/s, output: 3.07 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.66it/s, est. speed input: 7808.49 toks/s, output: 15.33 toks/s]
+Generation job: 0.6597653948701918 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1552.71 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.62it/s, est. speed input: 7761.38 toks/s, output: 15.23 toks/s]
+Generation job: 0.6637225330341607 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.25it/s, est. speed input: 1270.89 toks/s, output: 2.49 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.23it/s, est. speed input: 6352.60 toks/s, output: 12.47 toks/s]
+Generation job: 0.8093256000429392 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.53it/s, est. speed input: 1560.30 toks/s, output: 3.06 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.65it/s, est. speed input: 7799.40 toks/s, output: 15.31 toks/s]
+Generation job: 0.6609176499769092 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.53it/s, est. speed input: 1554.30 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.62it/s, est. speed input: 7769.34 toks/s, output: 15.25 toks/s]
+Generation job: 0.6630772328935564 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.53it/s, est. speed input: 1559.48 toks/s, output: 3.06 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.65it/s, est. speed input: 7795.29 toks/s, output: 15.30 toks/s]
+Generation job: 0.6608365778811276 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.53it/s, est. speed input: 1558.03 toks/s, output: 3.06 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.64it/s, est. speed input: 7787.92 toks/s, output: 15.29 toks/s]
+Generation job: 0.6614807969890535 sec
+>> Processing time: 9.93415799899958
+>> Answer lists: ['260', '260', '260', '260', '260']
+>> Original Correct: 260, True
+>> Golden    Answer: 260
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 621.22 toks/s, output: 333.63 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 621.22 toks/s, output: 333.63 toks/s]
+Generation job: 1.500573085155338 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.00s/it, est. speed input: 489.89 toks/s, output: 49.94 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.50it/s, est. speed input: 2449.19 toks/s, output: 249.66 toks/s]
+Generation job: 2.0102315680123866 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.03s/it, est. speed input: 506.72 toks/s, output: 49.15 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.46it/s, est. speed input: 2533.22 toks/s, output: 245.70 toks/s]
+Generation job: 2.0425526679027826 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.08s/it, est. speed input: 520.53 toks/s, output: 48.15 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.41it/s, est. speed input: 2602.36 toks/s, output: 240.74 toks/s]
+Generation job: 2.08516994304955 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.12s/it, est. speed input: 533.75 toks/s, output: 47.19 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.36it/s, est. speed input: 2668.52 toks/s, output: 235.94 toks/s]
+Generation job: 2.1274886408355087 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.09s/it, est. speed input: 565.72 toks/s, output: 41.20 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.33it/s, est. speed input: 2757.01 toks/s, output: 220.84 toks/s]
+Generation job: 2.1502959299832582 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.24it/s, est. speed input: 1510.98 toks/s, output: 2.48 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.54it/s, est. speed input: 1822.98 toks/s, output: 30.53 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.25it/s, est. speed input: 3162.30 toks/s, output: 80.51 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.67it/s, est. speed input: 2957.12 toks/s, output: 102.08 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.41it/s, est. speed input: 2957.12 toks/s, output: 102.08 toks/s]
+Generation job: 2.0854965860489756 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.23it/s, est. speed input: 1492.07 toks/s, output: 2.45 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.13it/s, est. speed input: 7567.23 toks/s, output: 12.26 toks/s]
+Generation job: 0.8246025021653622 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.25it/s, est. speed input: 1524.37 toks/s, output: 2.51 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.26it/s, est. speed input: 7658.88 toks/s, output: 12.52 toks/s]
+Generation job: 0.8073698070365936 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.25it/s, est. speed input: 1520.43 toks/s, output: 2.50 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.24it/s, est. speed input: 7600.22 toks/s, output: 12.49 toks/s]
+Generation job: 0.8091319710947573 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.25it/s, est. speed input: 1521.48 toks/s, output: 2.50 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.25it/s, est. speed input: 7605.65 toks/s, output: 12.50 toks/s]
+Generation job: 0.8086093009915203 sec
+>> Processing time: 17.252664441009983
+>> Answer lists: ['160', '160', '160', '160', '160']
+>> Original Correct: 160, True
+>> Golden    Answer: 160
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 643.61 toks/s, output: 332.78 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 643.61 toks/s, output: 332.78 toks/s]
+Generation job: 1.504488528938964 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.03s/it, est. speed input: 502.12 toks/s, output: 49.37 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.47it/s, est. speed input: 2510.31 toks/s, output: 246.83 toks/s]
+Generation job: 2.033526656916365 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.05s/it, est. speed input: 521.43 toks/s, output: 48.87 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.44it/s, est. speed input: 2606.88 toks/s, output: 244.32 toks/s]
+Generation job: 2.054585532983765 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.10s/it, est. speed input: 530.88 toks/s, output: 47.53 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.38it/s, est. speed input: 2654.12 toks/s, output: 237.61 toks/s]
+Generation job: 2.112329898867756 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.75s/it, est. speed input: 667.08 toks/s, output: 41.16 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.25it/s, est. speed input: 1239.57 toks/s, output: 81.79 toks/s]Processed prompts:  60%|██████    | 3/5 [00:02<00:01,  1.84it/s, est. speed input: 1651.86 toks/s, output: 112.29 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.36it/s, est. speed input: 2752.92 toks/s, output: 195.79 toks/s]
+Generation job: 2.1279543719720095 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.25it/s, est. speed input: 1487.18 toks/s, output: 2.49 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.34it/s, est. speed input: 6134.00 toks/s, output: 24.43 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  5.09it/s, est. speed input: 6134.00 toks/s, output: 24.43 toks/s]
+Generation job: 0.9910545530728996 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.28it/s, est. speed input: 1532.42 toks/s, output: 2.57 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.42it/s, est. speed input: 7713.78 toks/s, output: 12.84 toks/s]
+Generation job: 0.7871173901949078 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.29it/s, est. speed input: 1535.12 toks/s, output: 2.57 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.43it/s, est. speed input: 7691.68 toks/s, output: 12.86 toks/s]
+Generation job: 0.7860399829223752 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.29it/s, est. speed input: 1534.34 toks/s, output: 2.57 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.43it/s, est. speed input: 7669.82 toks/s, output: 12.86 toks/s]
+Generation job: 0.7860180719289929 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.28it/s, est. speed input: 1532.20 toks/s, output: 2.57 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.42it/s, est. speed input: 7658.55 toks/s, output: 12.84 toks/s]
+Generation job: 0.7872384570073336 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.29it/s, est. speed input: 1536.65 toks/s, output: 2.58 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.44it/s, est. speed input: 7681.22 toks/s, output: 12.88 toks/s]
+Generation job: 0.7852787340525538 sec
+>> Processing time: 14.756891906028613
+>> Answer lists: ['355', '355', '355', '355', '355']
+>> Original Correct: 355, False
+>> Golden    Answer: 45
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 614.96 toks/s, output: 333.13 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 614.96 toks/s, output: 333.13 toks/s]
+Generation job: 1.502794925821945 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.00s/it, est. speed input: 485.60 toks/s, output: 49.91 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.50it/s, est. speed input: 2427.72 toks/s, output: 249.51 toks/s]
+Generation job: 2.0110886639449745 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.55s/it, est. speed input: 659.88 toks/s, output: 42.57 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.27it/s, est. speed input: 1852.83 toks/s, output: 116.52 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.32it/s, est. speed input: 2563.19 toks/s, output: 196.94 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.51it/s, est. speed input: 2563.19 toks/s, output: 196.94 toks/s]
+Generation job: 2.0033317839261144 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1557.22 toks/s, output: 2.95 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.38it/s, est. speed input: 7783.84 toks/s, output: 14.77 toks/s]
+Generation job: 0.684772338019684 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1564.15 toks/s, output: 2.97 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.42it/s, est. speed input: 7834.97 toks/s, output: 14.84 toks/s]
+Generation job: 0.6815422880463302 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1560.94 toks/s, output: 2.96 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.40it/s, est. speed input: 7806.99 toks/s, output: 14.81 toks/s]
+Generation job: 0.6828729931730777 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1565.76 toks/s, output: 2.97 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.42it/s, est. speed input: 7826.43 toks/s, output: 14.85 toks/s]
+Generation job: 0.6808780680876225 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1561.24 toks/s, output: 2.96 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.40it/s, est. speed input: 7804.14 toks/s, output: 14.81 toks/s]
+Generation job: 0.6827969430014491 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1563.19 toks/s, output: 2.97 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.41it/s, est. speed input: 7813.68 toks/s, output: 14.83 toks/s]
+Generation job: 0.681915924185887 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1559.23 toks/s, output: 2.96 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.39it/s, est. speed input: 7793.68 toks/s, output: 14.79 toks/s]
+Generation job: 0.68371870694682 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1561.06 toks/s, output: 2.96 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.40it/s, est. speed input: 7803.01 toks/s, output: 14.81 toks/s]
+Generation job: 0.6831350189168006 sec
+>> Processing time: 10.979818580904976
+>> Answer lists: ['460', '460', '460', '460', '460']
+>> Original Correct: 460, True
+>> Golden    Answer: 460
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 616.71 toks/s, output: 333.71 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 616.71 toks/s, output: 333.71 toks/s]
+Generation job: 1.500125345075503 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.00s/it, est. speed input: 485.91 toks/s, output: 49.89 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.49it/s, est. speed input: 2429.21 toks/s, output: 249.40 toks/s]
+Generation job: 2.0120600929949433 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.03s/it, est. speed input: 505.07 toks/s, output: 49.32 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.47it/s, est. speed input: 2525.09 toks/s, output: 246.59 toks/s]
+Generation job: 2.035622701048851 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.10it/s, est. speed input: 1179.36 toks/s, output: 19.77 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.79it/s, est. speed input: 1805.66 toks/s, output: 69.49 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.49it/s, est. speed input: 2274.37 toks/s, output: 114.35 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.58it/s, est. speed input: 2767.53 toks/s, output: 160.79 toks/s]
+Generation job: 1.948386732954532 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.40it/s, est. speed input: 1559.24 toks/s, output: 2.80 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.99it/s, est. speed input: 7661.29 toks/s, output: 13.98 toks/s]
+Generation job: 0.7231705000158399 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.37it/s, est. speed input: 1529.31 toks/s, output: 2.74 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.86it/s, est. speed input: 7602.10 toks/s, output: 13.71 toks/s]
+Generation job: 0.737130113877356 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.37it/s, est. speed input: 1524.33 toks/s, output: 2.73 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.83it/s, est. speed input: 7619.68 toks/s, output: 13.67 toks/s]
+Generation job: 0.7395170039962977 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.36it/s, est. speed input: 1521.40 toks/s, output: 2.73 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.82it/s, est. speed input: 7605.04 toks/s, output: 13.64 toks/s]
+Generation job: 0.7410163290333003 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.37it/s, est. speed input: 1525.16 toks/s, output: 2.74 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.84it/s, est. speed input: 7623.98 toks/s, output: 13.68 toks/s]
+Generation job: 0.7391876049805433 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.37it/s, est. speed input: 1523.54 toks/s, output: 2.73 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.83it/s, est. speed input: 7615.70 toks/s, output: 13.66 toks/s]
+Generation job: 0.7400864008814096 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.37it/s, est. speed input: 1523.57 toks/s, output: 2.73 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.83it/s, est. speed input: 7615.99 toks/s, output: 13.66 toks/s]
+Generation job: 0.7398337419144809 sec
+>> Processing time: 12.657195134088397
+>> Answer lists: ['366', '366', '366', '366', '366']
+>> Original Correct: 366, True
+>> Golden    Answer: 366
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 617.81 toks/s, output: 333.22 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 617.81 toks/s, output: 333.22 toks/s]
+Generation job: 1.502486594952643 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.76s/it, est. speed input: 556.68 toks/s, output: 46.72 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.16it/s, est. speed input: 979.06 toks/s, output: 91.19 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.50it/s, est. speed input: 2447.44 toks/s, output: 241.49 toks/s]
+Generation job: 2.0035307200159878 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1520.71 toks/s, output: 2.99 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.41it/s, est. speed input: 2358.26 toks/s, output: 54.09 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.88it/s, est. speed input: 2948.73 toks/s, output: 100.11 toks/s]
+Generation job: 1.7459141109138727 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1521.16 toks/s, output: 2.99 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.48it/s, est. speed input: 7657.35 toks/s, output: 14.95 toks/s]
+Generation job: 0.6760636582039297 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1548.70 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.61it/s, est. speed input: 7759.68 toks/s, output: 15.22 toks/s]
+Generation job: 0.6643252570647746 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1546.20 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.60it/s, est. speed input: 7728.70 toks/s, output: 15.20 toks/s]
+Generation job: 0.6651420420967042 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1548.13 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.61it/s, est. speed input: 7738.51 toks/s, output: 15.22 toks/s]
+Generation job: 0.6643114250618964 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1550.33 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.62it/s, est. speed input: 7749.44 toks/s, output: 15.24 toks/s]
+Generation job: 0.6633918171282858 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1544.93 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.59it/s, est. speed input: 7722.53 toks/s, output: 15.19 toks/s]
+Generation job: 0.6657127391081303 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.53it/s, est. speed input: 1551.20 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.62it/s, est. speed input: 7753.95 toks/s, output: 15.25 toks/s]
+Generation job: 0.6630476580467075 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1545.57 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.60it/s, est. speed input: 7725.67 toks/s, output: 15.19 toks/s]
+Generation job: 0.6654032398946583 sec
+>> Processing time: 10.580210648011416
+>> Answer lists: ['694', '694', '694', '694', '694']
+>> Original Correct: 694, True
+>> Golden    Answer: 694
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 621.56 toks/s, output: 333.45 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 621.56 toks/s, output: 333.45 toks/s]
+Generation job: 1.5014013699255884 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.01s/it, est. speed input: 489.21 toks/s, output: 49.82 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.49it/s, est. speed input: 2445.72 toks/s, output: 249.05 toks/s]
+Generation job: 2.0148264600429684 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.04s/it, est. speed input: 506.09 toks/s, output: 49.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.45it/s, est. speed input: 2530.19 toks/s, output: 245.17 toks/s]
+Generation job: 2.0472283971030265 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.94s/it, est. speed input: 558.74 toks/s, output: 27.89 toks/s]Processed prompts:  40%|████      | 2/5 [00:02<00:02,  1.14it/s, est. speed input: 1044.96 toks/s, output: 74.36 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.41it/s, est. speed input: 2612.20 toks/s, output: 219.21 toks/s]
+Generation job: 2.078971075825393 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.36it/s, est. speed input: 1480.23 toks/s, output: 2.72 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  2.09it/s, est. speed input: 2151.29 toks/s, output: 25.17 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  3.25it/s, est. speed input: 2944.92 toks/s, output: 50.93 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.69it/s, est. speed input: 2786.63 toks/s, output: 78.27 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.60it/s, est. speed input: 2783.57 toks/s, output: 111.98 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.48it/s, est. speed input: 2783.57 toks/s, output: 111.98 toks/s]
+Generation job: 2.0268694751430303 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.36it/s, est. speed input: 1479.01 toks/s, output: 2.71 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.78it/s, est. speed input: 7614.18 toks/s, output: 13.57 toks/s]
+Generation job: 0.7454377838876098 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.40it/s, est. speed input: 1530.81 toks/s, output: 2.81 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.02it/s, est. speed input: 7726.55 toks/s, output: 14.04 toks/s]
+Generation job: 0.7200017380528152 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.40it/s, est. speed input: 1524.96 toks/s, output: 2.80 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.99it/s, est. speed input: 7622.80 toks/s, output: 13.99 toks/s]
+Generation job: 0.7226484699640423 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.40it/s, est. speed input: 1529.37 toks/s, output: 2.81 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.01it/s, est. speed input: 7644.73 toks/s, output: 14.03 toks/s]
+Generation job: 0.7206259849481285 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.40it/s, est. speed input: 1528.65 toks/s, output: 2.80 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.01it/s, est. speed input: 7641.41 toks/s, output: 14.02 toks/s]
+Generation job: 0.7209586140234023 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.40it/s, est. speed input: 1528.70 toks/s, output: 2.80 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.01it/s, est. speed input: 7641.34 toks/s, output: 14.02 toks/s]
+Generation job: 0.7209229529835284 sec
+>> Processing time: 14.021091937087476
+>> Answer lists: ['12', '12', '12', '12', '12']
+>> Original Correct: 12, False
+>> Golden    Answer: 13
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 615.54 toks/s, output: 333.44 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 615.54 toks/s, output: 333.44 toks/s]
+Generation job: 1.5014030360616744 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.00s/it, est. speed input: 485.47 toks/s, output: 49.89 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.49it/s, est. speed input: 2427.02 toks/s, output: 249.44 toks/s]
+Generation job: 2.0117696770466864 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.03s/it, est. speed input: 504.10 toks/s, output: 49.28 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.46it/s, est. speed input: 2520.17 toks/s, output: 246.35 toks/s]
+Generation job: 2.037505207117647 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.06s/it, est. speed input: 521.33 toks/s, output: 48.59 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.43it/s, est. speed input: 2606.36 toks/s, output: 242.90 toks/s]
+Generation job: 2.0665854949038476 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.11s/it, est. speed input: 531.99 toks/s, output: 47.37 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.37it/s, est. speed input: 2659.66 toks/s, output: 236.83 toks/s]
+Generation job: 2.119318764191121 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.70s/it, est. speed input: 690.94 toks/s, output: 40.05 toks/s]Processed prompts:  40%|████      | 2/5 [00:02<00:02,  1.05it/s, est. speed input: 1103.69 toks/s, output: 74.80 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.35it/s, est. speed input: 2759.01 toks/s, output: 204.16 toks/s]
+Generation job: 2.134327017934993 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.24it/s, est. speed input: 1495.91 toks/s, output: 2.48 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.10it/s, est. speed input: 3365.02 toks/s, output: 39.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.48it/s, est. speed input: 4216.28 toks/s, output: 73.81 toks/s]
+Generation job: 1.4446673670317978 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.24it/s, est. speed input: 1498.90 toks/s, output: 2.49 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.21it/s, est. speed input: 7481.43 toks/s, output: 12.43 toks/s]
+Generation job: 0.8131833530496806 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.25it/s, est. speed input: 1513.13 toks/s, output: 2.51 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.27it/s, est. speed input: 7563.88 toks/s, output: 12.54 toks/s]
+Generation job: 0.8055693071801215 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.25it/s, est. speed input: 1508.77 toks/s, output: 2.50 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.25it/s, est. speed input: 7541.99 toks/s, output: 12.51 toks/s]
+Generation job: 0.8078494088258594 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.25it/s, est. speed input: 1509.65 toks/s, output: 2.50 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.26it/s, est. speed input: 7546.27 toks/s, output: 12.51 toks/s]
+Generation job: 0.8074155389331281 sec
+>> Processing time: 16.55088789598085
+>> Answer lists: ['7', '7', '7', '7', '7']
+>> Original Correct: 7, False
+>> Golden    Answer: 18
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 610.53 toks/s, output: 333.62 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 610.53 toks/s, output: 333.62 toks/s]
+Generation job: 1.5007608400192112 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.99s/it, est. speed input: 484.67 toks/s, output: 50.22 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.51it/s, est. speed input: 2423.00 toks/s, output: 251.09 toks/s]
+Generation job: 1.998505356023088 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.03s/it, est. speed input: 500.20 toks/s, output: 49.28 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.46it/s, est. speed input: 2500.70 toks/s, output: 246.37 toks/s]
+Generation job: 2.0372848510742188 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.65s/it, est. speed input: 646.63 toks/s, output: 34.61 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.30it/s, est. speed input: 1179.23 toks/s, output: 69.20 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.04it/s, est. speed input: 1627.40 toks/s, output: 104.93 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.48it/s, est. speed input: 2642.10 toks/s, output: 195.99 toks/s]
+Generation job: 2.0234493620228022 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.35it/s, est. speed input: 1490.08 toks/s, output: 2.71 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.32it/s, est. speed input: 6970.79 toks/s, output: 20.21 toks/s]
+Generation job: 0.7995746289379895 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.41it/s, est. speed input: 1551.89 toks/s, output: 2.82 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.05it/s, est. speed input: 7719.38 toks/s, output: 14.10 toks/s]
+Generation job: 0.7167785670608282 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.40it/s, est. speed input: 1537.55 toks/s, output: 2.80 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.99it/s, est. speed input: 7664.67 toks/s, output: 13.97 toks/s]
+Generation job: 0.7233164941426367 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.40it/s, est. speed input: 1536.76 toks/s, output: 2.79 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.98it/s, est. speed input: 7681.86 toks/s, output: 13.97 toks/s]
+Generation job: 0.7237637219950557 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.40it/s, est. speed input: 1540.79 toks/s, output: 2.80 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.00it/s, est. speed input: 7701.82 toks/s, output: 14.00 toks/s]
+Generation job: 0.7218999681062996 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.40it/s, est. speed input: 1540.27 toks/s, output: 2.80 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.00it/s, est. speed input: 7699.38 toks/s, output: 14.00 toks/s]
+Generation job: 0.7221091871615499 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.40it/s, est. speed input: 1538.88 toks/s, output: 2.80 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.99it/s, est. speed input: 7692.31 toks/s, output: 13.99 toks/s]
+Generation job: 0.7228064029477537 sec
+>> Processing time: 12.691377765964717
+>> Answer lists: ['60', '60', '60', '60', '60']
+>> Original Correct: 60, True
+>> Golden    Answer: 60
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 636.40 toks/s, output: 332.84 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 636.40 toks/s, output: 332.84 toks/s]
+Generation job: 1.504240219015628 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.03s/it, est. speed input: 495.37 toks/s, output: 49.24 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.46it/s, est. speed input: 2476.62 toks/s, output: 246.18 toks/s]
+Generation job: 2.038810320897028 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.05s/it, est. speed input: 515.99 toks/s, output: 48.86 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.44it/s, est. speed input: 2579.57 toks/s, output: 244.28 toks/s]
+Generation job: 2.0545711738523096 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.10s/it, est. speed input: 526.22 toks/s, output: 47.58 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.38it/s, est. speed input: 2630.84 toks/s, output: 230.26 toks/s]
+Generation job: 2.110409160843119 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.30it/s, est. speed input: 1490.15 toks/s, output: 2.60 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.31it/s, est. speed input: 5901.10 toks/s, output: 28.68 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  5.12it/s, est. speed input: 5901.10 toks/s, output: 28.68 toks/s]
+Generation job: 0.9847320320550352 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.33it/s, est. speed input: 1529.94 toks/s, output: 2.67 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.67it/s, est. speed input: 7677.07 toks/s, output: 13.34 toks/s]
+Generation job: 0.7580484868958592 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.33it/s, est. speed input: 1527.03 toks/s, output: 2.66 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.65it/s, est. speed input: 7646.55 toks/s, output: 13.31 toks/s]
+Generation job: 0.7593814530409873 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.33it/s, est. speed input: 1530.10 toks/s, output: 2.67 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.67it/s, est. speed input: 7648.45 toks/s, output: 13.34 toks/s]
+Generation job: 0.757906666956842 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.33it/s, est. speed input: 1529.15 toks/s, output: 2.67 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.66it/s, est. speed input: 7644.04 toks/s, output: 13.33 toks/s]
+Generation job: 0.7583173848688602 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.34it/s, est. speed input: 1533.62 toks/s, output: 2.67 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.68it/s, est. speed input: 7666.19 toks/s, output: 13.37 toks/s]
+Generation job: 0.7560547820758075 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.33it/s, est. speed input: 1528.13 toks/s, output: 2.66 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.66it/s, est. speed input: 7638.76 toks/s, output: 13.32 toks/s]
+Generation job: 0.7587886720430106 sec
+>> Processing time: 13.242311849957332
+>> Answer lists: ['96', '96', '96', '96', '96']
+>> Original Correct: 96, False
+>> Golden    Answer: 125
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 610.62 toks/s, output: 333.30 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 610.62 toks/s, output: 333.30 toks/s]
+Generation job: 1.5020491550676525 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.96s/it, est. speed input: 493.26 toks/s, output: 48.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.52it/s, est. speed input: 2432.88 toks/s, output: 243.29 toks/s]
+Generation job: 1.992858128855005 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.51it/s, est. speed input: 1535.39 toks/s, output: 3.03 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.56it/s, est. speed input: 7655.85 toks/s, output: 15.12 toks/s]
+Generation job: 0.6688268131110817 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1547.02 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.62it/s, est. speed input: 7731.48 toks/s, output: 15.24 toks/s]
+Generation job: 0.6640329898800701 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1539.86 toks/s, output: 3.03 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.58it/s, est. speed input: 7696.77 toks/s, output: 15.17 toks/s]
+Generation job: 0.6666677300818264 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1547.21 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.62it/s, est. speed input: 7734.00 toks/s, output: 15.24 toks/s]
+Generation job: 0.6634987099096179 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1545.43 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.61it/s, est. speed input: 7724.83 toks/s, output: 15.22 toks/s]
+Generation job: 0.6647345460951328 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1543.09 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.60it/s, est. speed input: 7713.33 toks/s, output: 15.20 toks/s]
+Generation job: 0.6655170330777764 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1544.50 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.61it/s, est. speed input: 7720.23 toks/s, output: 15.21 toks/s]
+Generation job: 0.6646692249923944 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1544.17 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.60it/s, est. speed input: 7718.69 toks/s, output: 15.21 toks/s]
+Generation job: 0.6648067240603268 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1547.13 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.62it/s, est. speed input: 7733.40 toks/s, output: 15.24 toks/s]
+Generation job: 0.6635387970600277 sec
+>> Processing time: 9.482168338960037
+>> Answer lists: ['230', '230', '230', '230', '230']
+>> Original Correct: 230, True
+>> Golden    Answer: 230
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 612.17 toks/s, output: 333.42 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 612.17 toks/s, output: 333.42 toks/s]
+Generation job: 1.501533861970529 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.00s/it, est. speed input: 483.90 toks/s, output: 49.99 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.50it/s, est. speed input: 2419.27 toks/s, output: 249.92 toks/s]
+Generation job: 2.007924608886242 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.06it/s, est. speed input: 1081.55 toks/s, output: 23.37 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.95it/s, est. speed input: 1762.18 toks/s, output: 51.93 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.53it/s, est. speed input: 1546.18 toks/s, output: 81.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.53it/s, est. speed input: 2576.74 toks/s, output: 182.24 toks/s]
+Generation job: 1.982886950019747 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1529.11 toks/s, output: 2.97 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  5.73it/s, est. speed input: 5081.92 toks/s, output: 28.36 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s, est. speed input: 5081.92 toks/s, output: 28.36 toks/s]
+Generation job: 1.0302051070611924 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1537.01 toks/s, output: 2.99 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.47it/s, est. speed input: 7694.94 toks/s, output: 14.95 toks/s]
+Generation job: 0.6767416589427739 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1543.36 toks/s, output: 3.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.50it/s, est. speed input: 7714.78 toks/s, output: 15.01 toks/s]
+Generation job: 0.6735742380842566 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1531.93 toks/s, output: 2.98 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.45it/s, est. speed input: 7656.90 toks/s, output: 14.90 toks/s]
+Generation job: 0.6785950011108071 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1541.85 toks/s, output: 3.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.50it/s, est. speed input: 7707.06 toks/s, output: 14.99 toks/s]
+Generation job: 0.674670783104375 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1536.35 toks/s, output: 2.99 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.47it/s, est. speed input: 7679.68 toks/s, output: 14.94 toks/s]
+Generation job: 0.6766146270092577 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1543.14 toks/s, output: 3.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.50it/s, est. speed input: 7713.71 toks/s, output: 15.01 toks/s]
+Generation job: 0.673781594960019 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1539.91 toks/s, output: 3.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.49it/s, est. speed input: 7696.94 toks/s, output: 14.97 toks/s]
+Generation job: 0.6751166910398751 sec
+>> Processing time: 11.252706469036639
+>> Answer lists: ['57500', '57500', '57500', '57500', '57500']
+>> Original Correct: 57500, True
+>> Golden    Answer: 57500
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.48s/it, est. speed input: 604.80 toks/s, output: 338.25 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.48s/it, est. speed input: 604.80 toks/s, output: 338.25 toks/s]
+Generation job: 1.4801304980646819 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.98s/it, est. speed input: 475.78 toks/s, output: 50.40 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.52it/s, est. speed input: 2378.63 toks/s, output: 251.97 toks/s]
+Generation job: 1.9913896720390767 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.01s/it, est. speed input: 986.71 toks/s, output: 27.79 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  2.03it/s, est. speed input: 1742.53 toks/s, output: 57.85 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.29it/s, est. speed input: 1974.86 toks/s, output: 86.76 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.39it/s, est. speed input: 2091.50 toks/s, output: 119.41 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.56it/s, est. speed input: 2545.78 toks/s, output: 167.50 toks/s]
+Generation job: 1.959585946984589 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1511.60 toks/s, output: 2.99 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.47it/s, est. speed input: 7661.88 toks/s, output: 14.93 toks/s]
+Generation job: 0.6771785200107843 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1542.66 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.62it/s, est. speed input: 7731.08 toks/s, output: 15.24 toks/s]
+Generation job: 0.6634632861241698 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1537.60 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.59it/s, est. speed input: 7685.75 toks/s, output: 15.19 toks/s]
+Generation job: 0.665617868071422 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1540.97 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.61it/s, est. speed input: 7702.33 toks/s, output: 15.22 toks/s]
+Generation job: 0.6642563119530678 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1541.92 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.62it/s, est. speed input: 7707.39 toks/s, output: 15.23 toks/s]
+Generation job: 0.6641490028705448 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1539.27 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.60it/s, est. speed input: 7694.24 toks/s, output: 15.21 toks/s]
+Generation job: 0.6648831600323319 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.53it/s, est. speed input: 1543.54 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.62it/s, est. speed input: 7715.58 toks/s, output: 15.25 toks/s]
+Generation job: 0.6630459551233798 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1541.10 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.61it/s, est. speed input: 7702.65 toks/s, output: 15.22 toks/s]
+Generation job: 0.6642158010508865 sec
+>> Processing time: 10.758963430067524
+>> Answer lists: ['7', '7', '7', '7', '7']
+>> Original Correct: 7, True
+>> Golden    Answer: 7
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 620.26 toks/s, output: 333.47 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 620.26 toks/s, output: 333.47 toks/s]
+Generation job: 1.501571828033775 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.00s/it, est. speed input: 488.91 toks/s, output: 49.89 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.49it/s, est. speed input: 2444.27 toks/s, output: 249.41 toks/s]
+Generation job: 2.0120355009566993 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.04s/it, est. speed input: 505.25 toks/s, output: 49.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.45it/s, est. speed input: 2526.00 toks/s, output: 245.24 toks/s]
+Generation job: 2.046620288165286 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.08s/it, est. speed input: 518.11 toks/s, output: 47.97 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.40it/s, est. speed input: 2590.27 toks/s, output: 239.84 toks/s]
+Generation job: 2.092593517154455 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.01s/it, est. speed input: 562.29 toks/s, output: 41.80 toks/s]Processed prompts:  40%|████      | 2/5 [00:02<00:02,  1.12it/s, est. speed input: 1067.14 toks/s, output: 86.88 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.36it/s, est. speed input: 2667.65 toks/s, output: 228.52 toks/s]
+Generation job: 2.126166348112747 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.28it/s, est. speed input: 1500.60 toks/s, output: 2.55 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.21it/s, est. speed input: 1431.89 toks/s, output: 37.70 toks/s]Processed prompts:  60%|██████    | 3/5 [00:02<00:01,  1.52it/s, est. speed input: 1685.97 toks/s, output: 77.26 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.38it/s, est. speed input: 2811.34 toks/s, output: 172.64 toks/s]
+Generation job: 2.105335794854909 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.24it/s, est. speed input: 1458.80 toks/s, output: 2.48 toks/s]Processed prompts:  80%|████████  | 4/5 [00:02<00:00,  2.00it/s, est. speed input: 2291.60 toks/s, output: 50.69 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.39it/s, est. speed input: 2879.49 toks/s, output: 98.50 toks/s]
+Generation job: 2.1002385781612247 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.28it/s, est. speed input: 1501.49 toks/s, output: 2.56 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.39it/s, est. speed input: 7552.83 toks/s, output: 12.78 toks/s]
+Generation job: 0.7916005740407854 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.30it/s, est. speed input: 1530.26 toks/s, output: 2.60 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.51it/s, est. speed input: 7649.44 toks/s, output: 13.02 toks/s]
+Generation job: 0.7765883258543909 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.29it/s, est. speed input: 1520.43 toks/s, output: 2.59 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.47it/s, est. speed input: 7600.19 toks/s, output: 12.94 toks/s]
+Generation job: 0.7812293081078678 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.30it/s, est. speed input: 1524.38 toks/s, output: 2.59 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.48it/s, est. speed input: 7619.86 toks/s, output: 12.97 toks/s]
+Generation job: 0.7792844360228628 sec
+>> Processing time: 17.114648347953334
+>> Answer lists: ['6', '6', '6', '6', '6']
+>> Original Correct: 6, True
+>> Golden    Answer: 6
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 616.89 toks/s, output: 333.09 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 616.89 toks/s, output: 333.09 toks/s]
+Generation job: 1.503184209112078 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.01s/it, est. speed input: 486.74 toks/s, output: 49.87 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.49it/s, est. speed input: 2433.44 toks/s, output: 249.33 toks/s]
+Generation job: 2.0126850260421634 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.04s/it, est. speed input: 503.30 toks/s, output: 49.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.45it/s, est. speed input: 2516.25 toks/s, output: 245.25 toks/s]
+Generation job: 2.0463312959764153 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.08s/it, est. speed input: 516.46 toks/s, output: 48.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.40it/s, est. speed input: 2581.96 toks/s, output: 239.96 toks/s]
+Generation job: 2.0916288760490716 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.58s/it, est. speed input: 713.85 toks/s, output: 38.67 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.37it/s, est. speed input: 1315.54 toks/s, output: 76.53 toks/s]Processed prompts:  60%|██████    | 3/5 [00:02<00:01,  1.77it/s, est. speed input: 1620.90 toks/s, output: 110.84 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.40it/s, est. speed input: 2701.31 toks/s, output: 206.80 toks/s]
+Generation job: 2.0926764789037406 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.11s/it, est. speed input: 1055.77 toks/s, output: 23.34 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.92it/s, est. speed input: 1925.34 toks/s, output: 49.12 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  3.01it/s, est. speed input: 2656.58 toks/s, output: 76.81 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.02it/s, est. speed input: 2958.24 toks/s, output: 117.73 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.52it/s, est. speed input: 2958.24 toks/s, output: 117.73 toks/s]
+Generation job: 1.9961914669256657 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.28it/s, est. speed input: 1526.81 toks/s, output: 2.55 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.38it/s, est. speed input: 7621.81 toks/s, output: 12.76 toks/s]
+Generation job: 0.7923369209747761 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.29it/s, est. speed input: 1537.08 toks/s, output: 2.57 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.42it/s, est. speed input: 7683.41 toks/s, output: 12.85 toks/s]
+Generation job: 0.7866550099570304 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.28it/s, est. speed input: 1534.05 toks/s, output: 2.57 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.41it/s, est. speed input: 7668.33 toks/s, output: 12.82 toks/s]
+Generation job: 0.788386233150959 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.28it/s, est. speed input: 1533.10 toks/s, output: 2.56 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.41it/s, est. speed input: 7663.75 toks/s, output: 12.82 toks/s]
+Generation job: 0.7886238221544772 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.28it/s, est. speed input: 1533.68 toks/s, output: 2.56 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.41it/s, est. speed input: 7666.43 toks/s, output: 12.82 toks/s]
+Generation job: 0.7883150428533554 sec
+>> Processing time: 15.688336089020595
+>> Answer lists: ['15', '15', '15', '15', '15']
+>> Original Correct: 15, True
+>> Golden    Answer: 15
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 606.04 toks/s, output: 333.35 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 606.04 toks/s, output: 333.35 toks/s]
+Generation job: 1.501712823053822 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.99s/it, est. speed input: 482.37 toks/s, output: 50.30 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.51it/s, est. speed input: 2411.62 toks/s, output: 251.47 toks/s]
+Generation job: 1.995394276920706 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.13it/s, est. speed input: 1142.88 toks/s, output: 20.39 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.72it/s, est. speed input: 1606.72 toks/s, output: 46.18 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.17it/s, est. speed input: 1925.17 toks/s, output: 72.50 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.31it/s, est. speed input: 2056.52 toks/s, output: 108.02 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.55it/s, est. speed input: 2570.43 toks/s, output: 155.40 toks/s]
+Generation job: 1.9701334300916642 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.51it/s, est. speed input: 1537.05 toks/s, output: 3.02 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.55it/s, est. speed input: 7734.33 toks/s, output: 15.11 toks/s]
+Generation job: 0.6697215680032969 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1545.69 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.60it/s, est. speed input: 7744.55 toks/s, output: 15.19 toks/s]
+Generation job: 0.6654521918389946 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1544.86 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.59it/s, est. speed input: 7722.05 toks/s, output: 15.19 toks/s]
+Generation job: 0.6657751598395407 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.53it/s, est. speed input: 1553.11 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.63it/s, est. speed input: 7763.50 toks/s, output: 15.27 toks/s]
+Generation job: 0.6622850720304996 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1544.93 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.59it/s, est. speed input: 7721.55 toks/s, output: 15.18 toks/s]
+Generation job: 0.6658434600103647 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1546.04 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.60it/s, est. speed input: 7727.91 toks/s, output: 15.20 toks/s]
+Generation job: 0.6656975999940187 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1550.88 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.62it/s, est. speed input: 7752.36 toks/s, output: 15.25 toks/s]
+Generation job: 0.6632740271743387 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1544.73 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.59it/s, est. speed input: 7721.36 toks/s, output: 15.18 toks/s]
+Generation job: 0.6658498879987746 sec
+>> Processing time: 10.792230702005327
+>> Answer lists: ['2', '2', '2', '2', '2']
+>> Original Correct: 2, False
+>> Golden    Answer: 14
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.64s/it, est. speed input: 560.21 toks/s, output: 304.13 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.64s/it, est. speed input: 560.21 toks/s, output: 304.13 toks/s]
+Generation job: 1.6461078869178891 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.90s/it, est. speed input: 509.97 toks/s, output: 48.32 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.52it/s, est. speed input: 2448.25 toks/s, output: 243.06 toks/s]
+Generation job: 1.990574804134667 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.51it/s, est. speed input: 1535.68 toks/s, output: 3.03 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.56it/s, est. speed input: 7694.48 toks/s, output: 15.13 toks/s]
+Generation job: 0.6685211558360606 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1546.37 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.61it/s, est. speed input: 7744.94 toks/s, output: 15.23 toks/s]
+Generation job: 0.6639179619960487 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1544.08 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.60it/s, est. speed input: 7724.43 toks/s, output: 15.21 toks/s]
+Generation job: 0.6648193788714707 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1544.98 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.61it/s, est. speed input: 7722.60 toks/s, output: 15.22 toks/s]
+Generation job: 0.6644538089167327 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.53it/s, est. speed input: 1548.01 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.62it/s, est. speed input: 7737.98 toks/s, output: 15.25 toks/s]
+Generation job: 0.6631395639851689 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1541.44 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.59it/s, est. speed input: 7704.99 toks/s, output: 15.18 toks/s]
+Generation job: 0.66599683300592 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1547.43 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.62it/s, est. speed input: 7735.16 toks/s, output: 15.24 toks/s]
+Generation job: 0.6633974320720881 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1543.11 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.60it/s, est. speed input: 7712.89 toks/s, output: 15.20 toks/s]
+Generation job: 0.6653103451244533 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1543.96 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.60it/s, est. speed input: 7717.64 toks/s, output: 15.21 toks/s]
+Generation job: 0.6651937160640955 sec
+>> Processing time: 9.622398961801082
+>> Answer lists: ['7', '7', '7', '7', '7']
+>> Original Correct: 7, True
+>> Golden    Answer: 7
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 603.29 toks/s, output: 333.67 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 603.29 toks/s, output: 333.67 toks/s]
+Generation job: 1.5004018591716886 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.35it/s, est. speed input: 1290.45 toks/s, output: 13.53 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.59it/s, est. speed input: 1486.91 toks/s, output: 62.34 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.60it/s, est. speed input: 2477.97 toks/s, output: 166.24 toks/s]
+Generation job: 1.9324351190589368 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.59it/s, est. speed input: 1524.25 toks/s, output: 3.18 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.47it/s, est. speed input: 3903.43 toks/s, output: 43.59 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.04it/s, est. speed input: 3903.43 toks/s, output: 43.59 toks/s]
+Generation job: 1.2462152058724314 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.60it/s, est. speed input: 1530.32 toks/s, output: 3.19 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.98it/s, est. speed input: 7649.45 toks/s, output: 15.97 toks/s]
+Generation job: 0.6334059319924563 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.60it/s, est. speed input: 1535.81 toks/s, output: 3.21 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.01it/s, est. speed input: 7676.71 toks/s, output: 16.03 toks/s]
+Generation job: 0.6309032901190221 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.60it/s, est. speed input: 1536.02 toks/s, output: 3.21 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.01it/s, est. speed input: 7677.87 toks/s, output: 16.03 toks/s]
+Generation job: 0.6308564099017531 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.60it/s, est. speed input: 1534.22 toks/s, output: 3.20 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.00it/s, est. speed input: 7668.72 toks/s, output: 16.01 toks/s]
+Generation job: 0.6315354679245502 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.60it/s, est. speed input: 1535.57 toks/s, output: 3.21 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.01it/s, est. speed input: 7675.61 toks/s, output: 16.02 toks/s]
+Generation job: 0.6309669688344002 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.60it/s, est. speed input: 1532.62 toks/s, output: 3.20 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.00it/s, est. speed input: 7660.79 toks/s, output: 15.99 toks/s]
+Generation job: 0.6322287051007152 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.61it/s, est. speed input: 1538.72 toks/s, output: 3.21 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.03it/s, est. speed input: 7691.27 toks/s, output: 16.06 toks/s]
+Generation job: 0.6297045529354364 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.60it/s, est. speed input: 1532.97 toks/s, output: 3.20 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.00it/s, est. speed input: 7662.62 toks/s, output: 16.00 toks/s]
+Generation job: 0.6320970950182527 sec
+>> Processing time: 9.731623752042651
+>> Answer lists: ['8', '8', '8', '8', '8']
+>> Original Correct: 8, True
+>> Golden    Answer: 8
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 602.04 toks/s, output: 333.72 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 602.04 toks/s, output: 333.72 toks/s]
+Generation job: 1.5000140080228448 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.99s/it, est. speed input: 478.45 toks/s, output: 50.26 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.51it/s, est. speed input: 2391.99 toks/s, output: 251.26 toks/s]
+Generation job: 1.9971295869909227 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.92s/it, est. speed input: 522.18 toks/s, output: 47.94 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  3.25it/s, est. speed input: 2478.18 toks/s, output: 231.49 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.47it/s, est. speed input: 2478.18 toks/s, output: 231.49 toks/s]
+Generation job: 2.0294837809633464 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1557.97 toks/s, output: 2.98 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.44it/s, est. speed input: 7787.71 toks/s, output: 14.88 toks/s]
+Generation job: 0.680532701080665 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1560.03 toks/s, output: 2.98 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.45it/s, est. speed input: 7797.93 toks/s, output: 14.90 toks/s]
+Generation job: 0.6788037281949073 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1564.60 toks/s, output: 2.99 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.47it/s, est. speed input: 7820.88 toks/s, output: 14.94 toks/s]
+Generation job: 0.6768117540050298 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1560.26 toks/s, output: 2.98 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.45it/s, est. speed input: 7798.69 toks/s, output: 14.90 toks/s]
+Generation job: 0.6787642471026629 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1564.02 toks/s, output: 2.99 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.47it/s, est. speed input: 7817.88 toks/s, output: 14.93 toks/s]
+Generation job: 0.6772576321382076 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1562.19 toks/s, output: 2.98 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.46it/s, est. speed input: 7808.69 toks/s, output: 14.92 toks/s]
+Generation job: 0.6778925589751452 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1564.97 toks/s, output: 2.99 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.47it/s, est. speed input: 7822.53 toks/s, output: 14.94 toks/s]
+Generation job: 0.676666934043169 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1562.11 toks/s, output: 2.98 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.46it/s, est. speed input: 7808.19 toks/s, output: 14.92 toks/s]
+Generation job: 0.6779119679704309 sec
+>> Processing time: 10.952297418145463
+>> Answer lists: ['26.00', '26.00', '26.00', '26.00', '26.00']
+>> Original Correct: 26.00, True
+>> Golden    Answer: 26
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 619.27 toks/s, output: 333.30 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 619.27 toks/s, output: 333.30 toks/s]
+Generation job: 1.5020311570260674 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.01s/it, est. speed input: 487.88 toks/s, output: 49.83 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.49it/s, est. speed input: 2439.14 toks/s, output: 249.15 toks/s]
+Generation job: 2.0141636200714856 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.73s/it, est. speed input: 596.41 toks/s, output: 42.89 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.52it/s, est. speed input: 2074.42 toks/s, output: 154.72 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.49it/s, est. speed input: 2560.98 toks/s, output: 196.12 toks/s]
+Generation job: 2.0166473668068647 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.47it/s, est. speed input: 1563.47 toks/s, output: 2.94 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.35it/s, est. speed input: 7832.76 toks/s, output: 14.70 toks/s]
+Generation job: 0.6882655390072614 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.47it/s, est. speed input: 1567.93 toks/s, output: 2.95 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.37it/s, est. speed input: 7840.56 toks/s, output: 14.75 toks/s]
+Generation job: 0.6857121679931879 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1570.59 toks/s, output: 2.95 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.39it/s, est. speed input: 7850.88 toks/s, output: 14.77 toks/s]
+Generation job: 0.6845302211586386 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.47it/s, est. speed input: 1567.71 toks/s, output: 2.95 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.37it/s, est. speed input: 7835.49 toks/s, output: 14.74 toks/s]
+Generation job: 0.6858930860180408 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1572.59 toks/s, output: 2.96 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.39it/s, est. speed input: 7860.88 toks/s, output: 14.79 toks/s]
+Generation job: 0.6841512520331889 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1569.12 toks/s, output: 2.95 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.38it/s, est. speed input: 7843.29 toks/s, output: 14.76 toks/s]
+Generation job: 0.6851923270151019 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1571.66 toks/s, output: 2.96 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.39it/s, est. speed input: 7856.25 toks/s, output: 14.78 toks/s]
+Generation job: 0.6841757209040225 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1568.69 toks/s, output: 2.95 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.38it/s, est. speed input: 7841.03 toks/s, output: 14.75 toks/s]
+Generation job: 0.685418306151405 sec
+>> Processing time: 11.01732600107789
+>> Answer lists: ['2', '2', '2', '2', '2']
+>> Original Correct: 2, True
+>> Golden    Answer: 2
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 619.34 toks/s, output: 333.33 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 619.34 toks/s, output: 333.33 toks/s]
+Generation job: 1.5019841131288558 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.76s/it, est. speed input: 557.54 toks/s, output: 46.70 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.16it/s, est. speed input: 981.11 toks/s, output: 91.20 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.51it/s, est. speed input: 2452.60 toks/s, output: 236.99 toks/s]
+Generation job: 2.003016160102561 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1524.14 toks/s, output: 2.99 toks/s]Processed prompts:  80%|████████  | 4/5 [00:00<00:00,  5.25it/s, est. speed input: 4525.76 toks/s, output: 30.94 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  5.52it/s, est. speed input: 5662.01 toks/s, output: 53.03 toks/s]
+Generation job: 0.9126052099745721 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1562.49 toks/s, output: 3.03 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.58it/s, est. speed input: 7760.16 toks/s, output: 15.17 toks/s]
+Generation job: 0.6667062190826982 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1538.77 toks/s, output: 2.99 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.47it/s, est. speed input: 7675.40 toks/s, output: 14.94 toks/s]
+Generation job: 0.6768637518398464 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1541.46 toks/s, output: 2.99 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.48it/s, est. speed input: 7705.16 toks/s, output: 14.96 toks/s]
+Generation job: 0.675720427185297 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1545.67 toks/s, output: 3.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.50it/s, est. speed input: 7726.30 toks/s, output: 15.00 toks/s]
+Generation job: 0.6738802727777511 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1543.73 toks/s, output: 3.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.49it/s, est. speed input: 7716.51 toks/s, output: 14.98 toks/s]
+Generation job: 0.6747110798023641 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1541.15 toks/s, output: 2.99 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.48it/s, est. speed input: 7703.28 toks/s, output: 14.96 toks/s]
+Generation job: 0.6758676751051098 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1541.21 toks/s, output: 2.99 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.48it/s, est. speed input: 7703.83 toks/s, output: 14.96 toks/s]
+Generation job: 0.6762064329814166 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1542.37 toks/s, output: 2.99 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.48it/s, est. speed input: 7709.82 toks/s, output: 14.97 toks/s]
+Generation job: 0.6753153859172016 sec
+>> Processing time: 9.813831493956968
+>> Answer lists: ['243', '243', '243', '243', '243']
+>> Original Correct: 243, True
+>> Golden    Answer: 243
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 613.98 toks/s, output: 333.31 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 613.98 toks/s, output: 333.31 toks/s]
+Generation job: 1.5020478297956288 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.66s/it, est. speed input: 585.88 toks/s, output: 44.05 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.34it/s, est. speed input: 1101.03 toks/s, output: 85.04 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  2.00it/s, est. speed input: 1475.00 toks/s, output: 126.59 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.53it/s, est. speed input: 2458.18 toks/s, output: 227.84 toks/s]
+Generation job: 1.9826790059451014 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.51it/s, est. speed input: 1531.51 toks/s, output: 3.03 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  4.20it/s, est. speed input: 3749.88 toks/s, output: 37.07 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.33it/s, est. speed input: 4384.08 toks/s, output: 69.22 toks/s]
+Generation job: 1.1632461540866643 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1533.87 toks/s, output: 3.03 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.58it/s, est. speed input: 7644.50 toks/s, output: 15.15 toks/s]
+Generation job: 0.6674894809257239 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.53it/s, est. speed input: 1543.50 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.62it/s, est. speed input: 7709.24 toks/s, output: 15.25 toks/s]
+Generation job: 0.663090285146609 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1538.74 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.60it/s, est. speed input: 7691.34 toks/s, output: 15.20 toks/s]
+Generation job: 0.6651781180407852 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1542.69 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.62it/s, est. speed input: 7711.29 toks/s, output: 15.24 toks/s]
+Generation job: 0.663477502996102 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.53it/s, est. speed input: 1543.78 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.62it/s, est. speed input: 7716.57 toks/s, output: 15.25 toks/s]
+Generation job: 0.6630054749548435 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1542.00 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.62it/s, est. speed input: 7707.91 toks/s, output: 15.23 toks/s]
+Generation job: 0.6637458719778806 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1539.81 toks/s, output: 3.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.60it/s, est. speed input: 7696.79 toks/s, output: 15.21 toks/s]
+Generation job: 0.664616049034521 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.53it/s, est. speed input: 1544.27 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.63it/s, est. speed input: 7719.12 toks/s, output: 15.26 toks/s]
+Generation job: 0.6628472548909485 sec
+>> Processing time: 9.962313173804432
+>> Answer lists: ['16', '16', '16', '16', '16']
+>> Original Correct: 16, True
+>> Golden    Answer: 16
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 609.13 toks/s, output: 333.58 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 609.13 toks/s, output: 333.58 toks/s]
+Generation job: 1.500646664062515 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.99s/it, est. speed input: 483.26 toks/s, output: 50.18 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.51it/s, est. speed input: 2416.00 toks/s, output: 248.37 toks/s]
+Generation job: 2.0001944270916283 sec
+srun: got SIGCONT
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd-n01: error: *** JOB 19460 ON n01 CANCELLED AT 2024-08-08T02:06:12 ***
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1526.27 toks/s, output: 3.03 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.15it/s, est. speed input: 1204.42 toks/s, output: 47.70 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.80it/s, est. speed input: 1630.12 toks/s, output: 89.22 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.70it/s, est. speed input: 2579.43 toks/s, output: 174.37 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.55it/s, est. speed input: 2579.43 toks/s, output: 174.37 toks/s]
+slurmstepd-n01: error: *** STEP 19460.0 ON n01 CANCELLED AT 2024-08-08T02:06:12 ***
+srun: forcing job termination

@@ -1,0 +1,11 @@
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/jeongseokoh/.cache/huggingface/token
+Login successful
+usage: inter_SC_beam.py [-h] [--model MODEL] [--dataset DATASET]
+                        [--n_tokens_per_iter N_TOKENS_PER_ITER]
+                        [--n_init N_INIT] [--n_inter N_INTER]
+                        [--n_filter N_FILTER]
+                        [--n_output_per_one N_OUTPUT_PER_ONE]
+inter_SC_beam.py: error: unrecognized arguments: --max_tokens 512
+srun: error: n01: task 0: Exited with exit code 2

@@ -1,0 +1,65 @@
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/jeongseokoh/.cache/huggingface/token
+Login successful
+Inter SC_beam
+Num Path: 10 + 5 x 2, Interval: 5
+INFO 08-10 23:21:28 llm_engine.py:161] Initializing an LLM engine (v0.5.0.post1) with config: model='meta-llama/Meta-Llama-3-8B-Instruct', speculative_config=None, tokenizer='meta-llama/Meta-Llama-3-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir='../../hub/model/', load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=0, served_model_name=meta-llama/Meta-Llama-3-8B-Instruct)
+INFO 08-10 23:21:32 weight_utils.py:218] Using model weights format ['*.safetensors']
+INFO 08-10 23:21:36 model_runner.py:160] Loading model weights took 14.9595 GB
+INFO 08-10 23:21:38 gpu_executor.py:83] # GPU blocks: 13407, # CPU blocks: 2048
+INFO 08-10 23:21:41 model_runner.py:889] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 08-10 23:21:41 model_runner.py:893] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 08-10 23:21:50 model_runner.py:965] Graph capturing finished in 9 secs.
+Model: llama3_8b is selected
+Dataset: gsm8k is selected
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.36it/s, est. speed input: 1584.48 toks/s, output: 272.71 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.36it/s, est. speed input: 1584.48 toks/s, output: 272.71 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (1) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 0.7438760490622371 sec
+Cluster Indices: {0: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 1: [], 2: [], 3: [], 4: []}
+Selected Indexes: [0, 1, 2, 3, 4]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.60s/it, est. speed input: 739.14 toks/s, output: 36.89 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.13it/s, est. speed input: 3695.10 toks/s, output: 184.44 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (2) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 1.6343459270428866 sec
+Cluster Indices: {0: [1, 3, 5, 7, 9], 1: [0, 2, 4, 6, 8], 2: [], 3: [], 4: []}
+Selected Indexes: [1, 0, 3, 5, 7]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.71s/it, est. speed input: 708.06 toks/s, output: 38.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.92it/s, est. speed input: 3538.91 toks/s, output: 189.40 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (4) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 1.722363892942667 sec
+Cluster Indices: {0: [1, 5, 7, 9], 1: [0, 4, 6, 8], 2: [2], 3: [3], 4: []}
+Selected Indexes: [1, 0, 2, 3, 5]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.49s/it, est. speed input: 834.96 toks/s, output: 33.59 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.36it/s, est. speed input: 4170.73 toks/s, output: 167.90 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.5008925020229071 sec
+Cluster Indices: {0: [4, 5], 1: [0, 8], 2: [2, 3], 3: [6, 7], 4: [1, 9]}
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py", line 896, in <module>
+[rank0]:     main()
+[rank0]:   File "/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py", line 881, in main
+[rank0]:     results = parallel_process(context=c_dataset, question=q_dataset, answer=a_dataset, option=o_dataset, cot_ex=cot_ex, model=model, model_name=selected_model, dataset=selected_dataset)
+[rank0]:   File "/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py", line 503, in parallel_process
+[rank0]:     original_answer_completion, logProb, ansProb = get_completion(context=c, question=q, choices=o, cot_ex=cot_ex, model=model, model_name=model_name, dataset=dataset)
+[rank0]:   File "/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py", line 311, in get_completion
+[rank0]:     generated_texts, top_k_indices, further_completions, logProb, ans_prob = generate_and_filter(init=False, conversations=new_conversations, n_generate=n_output_per_one, n_filter=n_intermediate, prompt_length=prompt_length, former_prob=logProb, tokenizer=tokenizer, ans_prob=ans_probs)
+[rank0]:   File "/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py", line 270, in generate_and_filter
+[rank0]:     max_index = max(ids, key=lambda i: added_log_probs[i])
+[rank0]: TypeError: '>' not supported between instances of 'dict' and 'dict'
+srun: error: n02: task 0: Exited with exit code 1

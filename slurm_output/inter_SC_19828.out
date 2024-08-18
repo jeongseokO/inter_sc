@@ -1,0 +1,1961 @@
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/jeongseokoh/.cache/huggingface/token
+Login successful
+Inter SC_beam
+Num Path: 10 + 5 x 2, Interval: 85
+INFO 08-11 18:00:20 llm_engine.py:161] Initializing an LLM engine (v0.5.0.post1) with config: model='meta-llama/Meta-Llama-3-8B-Instruct', speculative_config=None, tokenizer='meta-llama/Meta-Llama-3-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir='../../hub/model/', load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=0, served_model_name=meta-llama/Meta-Llama-3-8B-Instruct)
+INFO 08-11 18:00:23 weight_utils.py:218] Using model weights format ['*.safetensors']
+INFO 08-11 18:00:28 model_runner.py:160] Loading model weights took 14.9595 GB
+INFO 08-11 18:00:29 gpu_executor.py:83] # GPU blocks: 13407, # CPU blocks: 2048
+INFO 08-11 18:00:33 model_runner.py:889] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 08-11 18:00:33 model_runner.py:893] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 08-11 18:00:42 model_runner.py:965] Graph capturing finished in 10 secs.
+Model: llama3_8b is selected
+Dataset: gsm8k is selected
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.36it/s, est. speed input: 1587.31 toks/s, output: 272.72 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.36it/s, est. speed input: 1587.31 toks/s, output: 272.72 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (1) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 0.7438863079296425 sec
+Added Probs: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Cluster Indices: {0: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 1: [], 2: [], 3: [], 4: []}
+Selected Indexes: [0, 1, 2, 3, 4]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.57s/it, est. speed input: 755.42 toks/s, output: 36.37 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.19it/s, est. speed input: 3776.49 toks/s, output: 181.81 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (2) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 1.6177826169878244 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+LogProbs: -1.22646464407444
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+LogProbs: -1.4857657253742218
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+LogProbs: -1.22646464407444
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+LogProbs: -1.4857657253742218
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+LogProbs: -1.22646464407444
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+LogProbs: -1.4857657253742218
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+LogProbs: -1.22646464407444
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+LogProbs: -1.4857657253742218
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+LogProbs: -1.22646464407444
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+LogProbs: -1.4857657253742218
+Added Probs: [-0.025551346751550835, -0.030321749497433097, -0.025551346751550835, -0.030321749497433097, -0.025551346751550835, -0.030321749497433097, -0.025551346751550835, -0.030321749497433097, -0.025551346751550835, -0.030321749497433097]
+Cluster Indices: {0: [1, 3, 5, 7, 9], 1: [0, 2, 4, 6, 8], 2: [], 3: [], 4: []}
+Selected Indexes: [1, 0, 3, 5, 7]
+step: 2
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.62s/it, est. speed input: 745.90 toks/s, output: 36.92 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.02it/s, est. speed input: 3665.36 toks/s, output: 183.87 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (4) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 1.664207294001244 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******
+LogProbs: -1.226006031036377
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******
+LogProbs: -1.4481539726257324
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******
+LogProbs: -0.8278684616088867
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes muffins with 4 eggs, so she has 13 - 4 = 9 eggs left. ******
+LogProbs: -1.0778684616088867
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******
+LogProbs: -1.226006031036377
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******
+LogProbs: -1.4481539726257324
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******
+LogProbs: -1.226006031036377
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******
+LogProbs: -1.4481539726257324
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******
+LogProbs: -1.226006031036377
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******
+LogProbs: -1.4481539726257324
+Added Probs: [-0.03389714695513248, -0.03713822402531588, -0.02633760391901701, -0.029542732124145214, -0.03389714695513248, -0.03713822402531588, -0.03389714695513248, -0.03713822402531588, -0.03389714695513248, -0.03713822402531588]
+Cluster Indices: {0: [1, 5, 7, 9], 1: [0, 4, 6, 8], 2: [2], 3: [3], 4: []}
+Selected Indexes: [1, 0, 2, 3, 5]
+step: 3
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.49s/it, est. speed input: 833.02 toks/s, output: 33.56 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.78it/s, est. speed input: 2789.98 toks/s, output: 121.91 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.81it/s, est. speed input: 3487.42 toks/s, output: 159.54 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.7919282579096034 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******
+LogProbs: -1.4049083888530731
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******
+LogProbs: -2.5279295444488525
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******
+LogProbs: -1.0211720913648605
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******
+LogProbs: -1.0211720913648605
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at $2 per egg, so she makes 9 * $2 = $18. ******
+LogProbs: -0.575939416885376
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ******
+LogProbs: -1.9628103971481323
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes muffins with 4 eggs, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at $2 per egg, so she makes 9 * $2 = $18. ******
+LogProbs: -0.9450762271881104
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes muffins with 4 eggs, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ******
+LogProbs: -1.830018162727356
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******
+LogProbs: -1.4049083888530731
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******
+LogProbs: -2.5279295444488525
+Added Probs: [-0.04171950083512526, -0.05251778117739237, -0.03555184616929009, -0.03555184616929009, -0.024130940574024796, -0.03523810090203034, -0.02981109479698566, -0.036266239196584935, -0.04171950083512526, -0.05251778117739237]
+Cluster Indices: {0: [5, 7], 1: [0, 8], 2: [4, 6], 3: [2, 3], 4: [1, 9]}
+Selected Indexes: [5, 0, 4, 2, 1]
+step: 4
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.16s/it, est. speed input: 1098.95 toks/s, output: 22.36 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.36it/s, est. speed input: 2558.72 toks/s, output: 68.39 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.35it/s, est. speed input: 4255.68 toks/s, output: 135.42 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.502913068048656 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ****** Step 5: The answer is #### 18. ******
+LogProbs: 0.0
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ****** Step 5: The answer is #### 18. ******
+LogProbs: 0.0
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******
+
+Step 5: The total amount she makes is 9 eggs x $2 per egg = $18. ******
+LogProbs: -1.4570698142051697
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******
+
+Step 5: The total amount she makes is 9 eggs * $2 per egg = $18. ******
+LogProbs: -1.4570698142051697
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at $2 per egg, so she makes 9 * $2 = $18. ****** Step 5: The answer is #### 18. ******
+LogProbs: 0.0
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at $2 per egg, so she makes 9 * $2 = $18. ****** Step 5: The answer is #### 18. ******
+LogProbs: 0.0
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******
+
+Step 5: The total amount she makes is 9 eggs x $2 per egg = $18. ******
+LogProbs: -1.5551419854164124
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******
+
+Step 5: The total amount she makes is 9 eggs * $2 per egg = $18. ******
+LogProbs: -1.5551419854164124
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******
+
+Step 5: The total amount she makes is 9 eggs * $2 per egg = $18. ******
+LogProbs: -1.434849500656128
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******
+
+Step 5: The total amount she makes is 9 eggs x $2 per egg = $18. ******
+LogProbs: -1.9083330780267715
+Added Probs: [-0.03163105120339731, -0.03163105120339731, -0.044929441093474395, -0.044929441093474395, -0.02155961084072707, -0.02155961084072707, -0.040677583332245165, -0.040677583332245165, -0.05346278095430182, -0.05713319628275642]
+Cluster Indices: {0: [4, 5], 1: [3, 8], 2: [6, 7], 3: [0, 1], 4: [2, 9]}
+Selected Indexes: [4, 3, 6, 0, 2]
+step: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.20it/s, est. speed input: 1539.85 toks/s, output: 2.39 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  3.25it/s, est. speed input: 3576.94 toks/s, output: 22.21 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.63it/s, est. speed input: 5962.05 toks/s, output: 58.28 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.0940358360530809 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at $2 per egg, so she makes 9 * $2 = $18. ****** Step 5: The answer is #### 18. ******
+LogProbs: 0.0
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at $2 per egg, so she makes 9 * $2 = $18. ****** Step 5: The answer is #### 18. ******
+LogProbs: 0.0
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******
+
+Step 5: The total amount she makes is 9 eggs * $2 per egg = $18. ******
+
+The answer is #### 18. ******
+LogProbs: 0.0
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******
+
+Step 5: The total amount she makes is 9 eggs * $2 per egg = $18. ******
+
+The answer is #### 18. ******
+LogProbs: 0.0
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******
+
+Step 5: The total amount she makes is 9 eggs x $2 per egg = $18. ******
+
+The answer is #### 18. ******
+LogProbs: -0.2014133334159851
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******
+
+Step 5: The total amount she makes is 9 eggs x $2 per egg = $18. ******
+
+The answer is #### 18.******
+LogProbs: -1.7014133930206299
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ****** Step 5: The answer is #### 18. ******
+LogProbs: 0.0
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ****** Step 5: The answer is #### 18. ******
+LogProbs: 0.0
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******
+
+Step 5: The total amount she makes is 9 eggs x $2 per egg = $18. ******
+
+The answer is #### 18. ******
+LogProbs: 0.0
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Janet's ducks lay 16 eggs per day. ******
+
+Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******
+
+Step 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******
+
+Step 5: The total amount she makes is 9 eggs x $2 per egg = $18. ******
+
+The answer is #### 18. ******
+LogProbs: 0.0
+Added Probs: [-0.02155961084072707, -0.02155961084072707, -0.041697107201857535, -0.041697107201857535, -0.03921070833291326, -0.05028416709505397, -0.03163105120339731, -0.03163105120339731, -0.041697107201857535, -0.041697107201857535]
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+Found EoS token, Break
+completions: ["<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at $2 per egg, so she makes 9 * $2 = $18. ****** Step 5: The answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at $2 per egg, so she makes 9 * $2 = $18. ****** Step 5: The answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******\n\nStep 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******\n\nStep 5: The total amount she makes is 9 eggs * $2 per egg = $18. ******\n\nThe answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******\n\nStep 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******\n\nStep 5: The total amount she makes is 9 eggs * $2 per egg = $18. ******\n\nThe answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******\n\nStep 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******\n\nStep 5: The total amount she makes is 9 eggs x $2 per egg = $18. ******\n\nThe answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******\n\nStep 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******\n\nStep 5: The total amount she makes is 9 eggs x $2 per egg = $18. ******\n\nThe answer is #### 18.******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ****** Step 5: The answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ****** Step 5: The answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******\n\nStep 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******\n\nStep 5: The total amount she makes is 9 eggs x $2 per egg = $18. ******\n\nThe answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******\n\nStep 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******\n\nStep 5: The total amount she makes is 9 eggs x $2 per egg = $18. ******\n\nThe answer is #### 18. ******"]
+Answer Probs: []
+>> Processing time: 8.876285961014219
+>> Answer lists: ['18', '18', '18', '18', '18', '18', '18', '18', '18', '18']
+>> Original Correct: 18, True
+>> Soft SC  Correct: 18, True
+>> Golden    Answer: 18
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.42it/s, est. speed input: 1598.92 toks/s, output: 283.73 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.42it/s, est. speed input: 1598.92 toks/s, output: 283.73 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (2) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 0.7080867489567026 sec
+Added Probs: [-0.05836120843887329, -0.05836120843887329, -0.05836120843887329, -0.05836120843887329, -0.05836120843887329, -0.05836120843887329, -0.05836120843887329, -0.05836120843887329, -0.08336120843887329, -0.08336120843887329]
+Cluster Indices: {0: [0, 2, 3, 4, 5, 8, 9], 1: [1, 6, 7], 2: [], 3: [], 4: []}
+Selected Indexes: [0, 1, 2, 3, 4]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.46s/it, est. speed input: 786.36 toks/s, output: 34.96 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.43it/s, est. speed input: 3931.12 toks/s, output: 174.79 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (4) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 1.4696140650194138 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ******
+LogProbs: -0.860947996377945
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ******
+LogProbs: -1.360947996377945
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: A robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ******
+LogProbs: -0.9779350757598877
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: A robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ******
+LogProbs: -1.4779350757598877
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ******
+LogProbs: -0.860947996377945
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ******
+LogProbs: -1.360947996377945
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ******
+LogProbs: -0.860947996377945
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ******
+LogProbs: -1.360947996377945
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ******
+LogProbs: -0.860947996377945
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ******
+LogProbs: -1.360947996377945
+Added Probs: [-0.04409069924250893, -0.05618160367012024, -0.04663389662037725, -0.05878131654527452, -0.04409069924250893, -0.05618160367012024, -0.04409069924250893, -0.05618160367012024, -0.04409069924250893, -0.05618160367012024]
+Cluster Indices: {0: [1, 5, 7, 9], 1: [0, 4, 6, 8], 2: [2], 3: [3], 4: []}
+Selected Indexes: [1, 0, 2, 3, 5]
+step: 2
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.45s/it, est. speed input: 807.71 toks/s, output: 34.43 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.98it/s, est. speed input: 1957.30 toks/s, output: 90.71 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.78it/s, est. speed input: 3262.02 toks/s, output: 160.82 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.8078915539663285 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ******
+LogProbs: -0.6388000547885895
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ******
+LogProbs: -2.5797975063323975
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ******
+LogProbs: -0.952061802148819
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ****** Step 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ******
+LogProbs: -2.6742097437381744
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: A robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ******
+LogProbs: -0.3132617473602295
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: A robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ******
+LogProbs: -0.3132617473602295
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: A robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ******
+LogProbs: -0.5146750807762146
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: A robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ******
+LogProbs: -0.5146750807762146
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ******
+LogProbs: -0.6388000547885895
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ******
+LogProbs: -2.5797975063323975
+Added Probs: [-0.04524246028491429, -0.061541803270937445, -0.041975126300059576, -0.05598073701063792, -0.03462564777320539, -0.03462564777320539, -0.045140490361622404, -0.045140490361622404, -0.04524246028491429, -0.061541803270937445]
+Cluster Indices: {0: [2, 4, 5], 1: [3], 2: [6, 7], 3: [1, 9], 4: [0, 8]}
+Selected Indexes: [4, 3, 6, 1, 0]
+step: 3
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.12s/it, est. speed input: 1068.68 toks/s, output: 22.30 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.46it/s, est. speed input: 5362.61 toks/s, output: 113.26 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.1320270030992106 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: A robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ****** Step 4: The answer is #### 3. ******
+LogProbs: -0.4740769863128662
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: A robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ****** Step 4: The answer is #### 3.******
+LogProbs: -0.9740769863128662
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ****** Step 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ****** Step 4: The answer is #### 3. ******
+LogProbs: 0.0
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ****** Step 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ****** Step 4: The answer is #### 3. ******
+LogProbs: 0.0
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: A robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ****** Step 4: The answer is #### 3. ******
+LogProbs: -0.4740769863128662
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: A robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ****** Step 4: The answer is #### 3.******
+LogProbs: -0.9740769863128662
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ****** Step 4: The answer is #### 3. ******
+LogProbs: 0.0
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ****** Step 4: The answer is #### 3. ******
+LogProbs: 0.0
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ****** Step 4: The answer is #### 3. ******
+LogProbs: -0.4740769863128662
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ****** Step 4: The answer is #### 3.******
+LogProbs: -0.9740769863128662
+Added Probs: [-0.034910690216791065, -0.04135539732783674, -0.04847816400921222, -0.04847816400921222, -0.04378206399549921, -0.05041355258081018, -0.05320801741133133, -0.05320801741133133, -0.04386806272598634, -0.05050060007630325]
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [0, 1], 3: [2, 3], 4: [8, 9]}
+Selected Indexes: [4, 6, 0, 2, 8]
+step: 4
+Found EoS token, Break
+completions: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: A robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ****** Step 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: A robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ****** Step 4: The answer is #### 3.******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ****** Step 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ****** Step 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ****** Step 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ****** Step 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: A robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ****** Step 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: A robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ****** Step 4: The answer is #### 3.******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ****** Step 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ****** Step 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ****** Step 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ****** Step 4: The answer is #### 3.******']
+Answer Probs: []
+>> Processing time: 5.214090793975629
+>> Answer lists: ['3', '3', '3', '3', '3', '3', '3', '3', '3', '3']
+>> Original Correct: 3, True
+>> Soft SC  Correct: 3, True
+>> Golden    Answer: 3
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.44s/it, est. speed input: 800.01 toks/s, output: 165.56 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.44s/it, est. speed input: 800.01 toks/s, output: 165.56 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (4) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 1.440478920005262 sec
+Added Probs: [-0.035006637871265414, -0.035006637871265414, -0.035006637871265414, -0.035006637871265414, -0.035006637871265414, -0.035006637871265414, -0.08936693668365478, -0.08936693668365478, -0.0983630870950633, -0.0981183867065274]
+Cluster Indices: {0: [0, 1, 2, 3, 4, 5], 1: [9], 2: [8], 3: [6, 7], 4: []}
+Selected Indexes: [0, 9, 8, 6, 1]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.51s/it, est. speed input: 779.90 toks/s, output: 35.06 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.30it/s, est. speed input: 1336.10 toks/s, output: 71.10 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.73it/s, est. speed input: 2475.21 toks/s, output: 163.53 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.10it/s, est. speed input: 2475.21 toks/s, output: 163.53 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.3902604170143604 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys a house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+LogProbs: -2.25833797454834
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys a house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+LogProbs: -2.25833797454834
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increases by 150%, so the new value is 1.5 times the original value. The original value is $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+LogProbs: -5.959411516785622
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increased by 150%, so the new value is 1.5 times the original value. The original value was $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+LogProbs: -6.207017824053764
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ******
+LogProbs: -1.1787572652101517
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount spent is $80,000 + $50,000 = $130,000. ******
+LogProbs: -3.089572489261627
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+LogProbs: -2.118805706501007
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+LogProbs: -2.118805706501007
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys a house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+LogProbs: -2.25833797454834
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys a house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+LogProbs: -2.25833797454834
+Added Probs: [-0.05282983449952943, -0.05282983449952943, -0.09878176573766481, -0.10105338323553768, -0.07198726412441049, -0.10803821845488115, -0.06975257928882327, -0.06975257928882327, -0.05282983449952943, -0.05282983449952943]
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2], 3: [0, 1, 8, 9], 4: [3]}
+Selected Indexes: [4, 6, 2, 0, 3]
+step: 2
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.06s/it, est. speed input: 610.76 toks/s, output: 43.69 toks/s]Processed prompts:  40%|████      | 2/5 [00:02<00:02,  1.08it/s, est. speed input: 1145.97 toks/s, output: 84.72 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.25it/s, est. speed input: 2759.89 toks/s, output: 214.62 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.2348068839637563 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is $80,000 + (150% of $80,000) = $80,000 + $120,000 = $200,000. ******
+LogProbs: -3.3386371731758118
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 150% of the original value, which is 1.5 x $80,000 = $120,000. ******
+LogProbs: -4.0305023193359375
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is $80,000 + (150% of $80,000) = $80,000 + $120,000 = $200,000. ******
+LogProbs: -4.773868799209595
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 130% of the original value, which is 1.5 x $80,000 = $120,000. ******
+LogProbs: -5.789602994918823
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increases by 150%, so the new value is 1.5 times the original value. The original value is $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+
+Step 3: The profit is the difference between the new value and the total cost. The profit is $120,000 - $130,000 = -$10,000. However, this is a loss, not a profit. ******
+LogProbs: -4.963378354907036
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increases by 150%, so the new value is 1.5 times the original value. The original value is $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+
+Step 3: Since Josh spent $130,000 and the house is now worth $120,000, he has made a loss of $130,000 - $120,000 = $10,000. ******
+LogProbs: -7.186119318008423
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys a house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is $80,000 + (150% of $80,000) = $80,000 + $120,000 = $200,000. ******
+LogProbs: -4.627816721796989
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys a house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 130% of the original value, which is 1.5 x $80,000 = $120,000. ******
+LogProbs: -6.097964659333229
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increased by 150%, so the new value is 1.5 times the original value. The original value was $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+
+Step 3: Since Josh spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ******
+LogProbs: -4.101055100560188
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increased by 150%, so the new value is 1.5 times the original value. The original value was $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+
+Step 3: Since Josh spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ******
+LogProbs: -4.101055100560188
+Added Probs: [-0.06887779405740933, -0.07903714814022475, -0.08112161905966073, -0.09505634740287182, -0.09893453346108491, -0.11582794698976702, -0.07089988274551998, -0.08878858226771448, -0.0981550251508688, -0.0981550251508688]
+Cluster Indices: {0: [5, 8, 9], 1: [3, 7], 2: [0, 2, 6], 3: [1], 4: [4]}
+Selected Indexes: [8, 7, 0, 1, 4]
+step: 3
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.42s/it, est. speed input: 918.16 toks/s, output: 27.40 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.26it/s, est. speed input: 1441.54 toks/s, output: 61.28 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.89it/s, est. speed input: 1914.07 toks/s, output: 93.80 toks/s]Processed prompts:  80%|████████  | 4/5 [00:02<00:00,  2.68it/s, est. speed input: 2385.31 toks/s, output: 131.31 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.44it/s, est. speed input: 2451.35 toks/s, output: 139.31 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  1.92it/s, est. speed input: 2451.35 toks/s, output: 139.31 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.610554560087621 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increased by 150%, so the new value is 1.5 times the original value. The original value was $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+
+Step 3: Since Josh spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ******
+
+Step 4: The answer is #### -10,000. ******
+LogProbs: -1.8603713512420654
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increased by 150%, so the new value is 1.5 times the original value. The original value was $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+
+Step 3: Since Josh spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ******
+
+Step 4: However, the problem states that the house increased in value by 150%, so the new value is 150% of the original value, which is 1.5 times the original value. This means the new value is 1.5 * $80,000 = $120,000. ******
+LogProbs: -10.936640977859497
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys a house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 130% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he sold the house for $120,000, his profit is $120,000 - $130,000 = -$10,000. ******
+LogProbs: -2.067742884159088
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys a house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 130% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he bought the house for $80,000 and sold it for $120,000, his profit is $120,000 - $80,000 = $40,000. ******
+LogProbs: -3.7452119886875153
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is $80,000 + (150% of $80,000) = $80,000 + $120,000 = $200,000. ****** Step 4: Josh sold the house for $200,000, so his profit is $200,000 - $130,000 = $70,000. ******
+LogProbs: -2.368774026632309
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is $80,000 + (150% of $80,000) = $80,000 + $120,000 = $200,000. ****** Step 4: He sold the house for $200,000, so his profit is $200,000 - $130,000 = $70,000. ******
+LogProbs: -2.994649052619934
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 150% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ******
+LogProbs: -3.3901358544826508
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 150% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he sold the house for $120,000, his profit is the difference between the selling price and the total amount he spent: $120,000 - $130,000 = -$10,000. ******
+LogProbs: -4.46125403046608
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increases by 150%, so the new value is 1.5 times the original value. The original value is $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+
+Step 3: The profit is the difference between the new value and the total cost. The profit is $120,000 - $130,000 = -$10,000. However, this is a loss, not a profit. *******
+
+Step 4: Since Josh didn't make a profit, the answer is #### 0. ******
+LogProbs: -2.4976687878370285
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increases by 150%, so the new value is 1.5 times the original value. The original value is $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+
+Step 3: The profit is the difference between the new value and the total cost. The profit is $120,000 - $130,000 = -$10,000. However, this is a loss, not a profit. ******
+
+
+Since Josh did not make a profit, the answer is #### 0.******
+LogProbs: -4.759578585624695
+Added Probs: [-0.0998602660263286, -0.11788468258413254, -0.08119838157274427, -0.08828722331030615, -0.06858238021672612, -0.07298995082227278, -0.07843784222455874, -0.08348695427179337, -0.10070861661961066, -0.11642141707918861]
+Cluster Indices: {0: [4, 5], 1: [8, 9], 2: [2, 3, 7], 3: [0, 1], 4: [6]}
+Selected Indexes: [4, 8, 2, 0, 6]
+step: 4
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.19it/s, est. speed input: 1583.25 toks/s, output: 2.38 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.87it/s, est. speed input: 3300.58 toks/s, output: 26.82 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.58it/s, est. speed input: 4025.59 toks/s, output: 66.67 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.09it/s, est. speed input: 4025.59 toks/s, output: 66.67 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.6321143420645967 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is $80,000 + (150% of $80,000) = $80,000 + $120,000 = $200,000. ****** Step 4: Josh sold the house for $200,000, so his profit is $200,000 - $130,000 = $70,000. ****** Step 5: The answer is #### 70000. ******
+LogProbs: 0.0
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is $80,000 + (150% of $80,000) = $80,000 + $120,000 = $200,000. ****** Step 4: Josh sold the house for $200,000, so his profit is $200,000 - $130,000 = $70,000. ****** Step 5: The answer is #### 70000. ******
+LogProbs: 0.0
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increases by 150%, so the new value is 1.5 times the original value. The original value is $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+
+Step 3: The profit is the difference between the new value and the total cost. The profit is $120,000 - $130,000 = -$10,000. However, this is a loss, not a profit. *******
+
+Step 4: Since Josh didn't make a profit, the answer is #### 0. ******
+LogProbs: 0.0
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increases by 150%, so the new value is 1.5 times the original value. The original value is $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+
+Step 3: The profit is the difference between the new value and the total cost. The profit is $120,000 - $130,000 = -$10,000. However, this is a loss, not a profit. *******
+
+Step 4: Since Josh didn't make a profit, the answer is #### 0. ******
+LogProbs: 0.0
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys a house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 130% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he sold the house for $120,000, his profit is $120,000 - $130,000 = -$10,000. ****** Step 5: However, this is a loss, not a profit. ******
+LogProbs: -1.9274892508983612
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys a house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 130% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he sold the house for $120,000, his profit is $120,000 - $130,000 = -$10,000. ****** Step 5: However, Josh didn't sell the house, so he didn't make a profit. He actually lost $10,000. ******
+LogProbs: -5.158426836133003
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increased by 150%, so the new value is 1.5 times the original value. The original value was $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+
+Step 3: Since Josh spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ******
+
+Step 4: The answer is #### -10,000. ******
+LogProbs: 0.0
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increased by 150%, so the new value is 1.5 times the original value. The original value was $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+
+Step 3: Since Josh spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ******
+
+Step 4: The answer is #### -10,000. ******
+LogProbs: 0.0
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 150% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ****** Step 5: The answer is #### -10000. ******
+LogProbs: -0.25192904472351074
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 150% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ****** Step 5: The answer is #### -10000. ******
+LogProbs: -0.25192904472351074
+Added Probs: [-0.06242755122291736, -0.06242755122291736, -0.10070861661961066, -0.10070861661961066, -0.08475108783353459, -0.09692026852142244, -0.0998602660263286, -0.0998602660263286, -0.0731490875594318, -0.0731490875594318]
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [0, 1], 3: [2, 3], 4: [8, 9]}
+Selected Indexes: [4, 6, 0, 2, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.17it/s, est. speed input: 1544.65 toks/s, output: 2.35 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.90it/s, est. speed input: 5407.82 toks/s, output: 29.65 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.12it/s, est. speed input: 5407.82 toks/s, output: 29.65 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.2276665900135413 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys a house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 130% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he sold the house for $120,000, his profit is $120,000 - $130,000 = -$10,000. ****** Step 5: However, this is a loss, not a profit. ****** Step 6: The answer is #### -10,000. ******
+LogProbs: -0.5767844915390015
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys a house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 130% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he sold the house for $120,000, his profit is $120,000 - $130,000 = -$10,000. ****** Step 5: However, this is a loss, not a profit. ****** Step 6: Josh did not make a profit. ******
+LogProbs: -4.514210343360901
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increased by 150%, so the new value is 1.5 times the original value. The original value was $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+
+Step 3: Since Josh spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ******
+
+Step 4: The answer is #### -10,000. ******
+LogProbs: 0.0
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increased by 150%, so the new value is 1.5 times the original value. The original value was $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+
+Step 3: Since Josh spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ******
+
+Step 4: The answer is #### -10,000. ******
+LogProbs: 0.0
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is $80,000 + (150% of $80,000) = $80,000 + $120,000 = $200,000. ****** Step 4: Josh sold the house for $200,000, so his profit is $200,000 - $130,000 = $70,000. ****** Step 5: The answer is #### 70000. ******
+LogProbs: 0.0
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is $80,000 + (150% of $80,000) = $80,000 + $120,000 = $200,000. ****** Step 4: Josh sold the house for $200,000, so his profit is $200,000 - $130,000 = $70,000. ****** Step 5: The answer is #### 70000. ******
+LogProbs: 0.0
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increases by 150%, so the new value is 1.5 times the original value. The original value is $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+
+Step 3: The profit is the difference between the new value and the total cost. The profit is $120,000 - $130,000 = -$10,000. However, this is a loss, not a profit. *******
+
+Step 4: Since Josh didn't make a profit, the answer is #### 0. ******
+LogProbs: 0.0
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increases by 150%, so the new value is 1.5 times the original value. The original value is $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+
+Step 3: The profit is the difference between the new value and the total cost. The profit is $120,000 - $130,000 = -$10,000. However, this is a loss, not a profit. *******
+
+Step 4: Since Josh didn't make a profit, the answer is #### 0. ******
+LogProbs: 0.0
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 150% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ****** Step 5: The answer is #### -10000. ******
+LogProbs: 0.0
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 150% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ****** Step 5: The answer is #### -10000. ******
+LogProbs: 0.0
+Added Probs: [-0.08064172791658773, -0.10518489742350436, -0.0998602660263286, -0.0998602660263286, -0.06242755122291736, -0.06242755122291736, -0.10070861661961066, -0.10070861661961066, -0.0731490875594318, -0.0731490875594318]
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.17it/s, est. speed input: 1532.06 toks/s, output: 2.35 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  5.86it/s, est. speed input: 7717.90 toks/s, output: 11.73 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 0.864251525956206 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is $80,000 + (150% of $80,000) = $80,000 + $120,000 = $200,000. ****** Step 4: Josh sold the house for $200,000, so his profit is $200,000 - $130,000 = $70,000. ****** Step 5: The answer is #### 70000. ******
+LogProbs: 0.0
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is $80,000 + (150% of $80,000) = $80,000 + $120,000 = $200,000. ****** Step 4: Josh sold the house for $200,000, so his profit is $200,000 - $130,000 = $70,000. ****** Step 5: The answer is #### 70000. ******
+LogProbs: 0.0
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increases by 150%, so the new value is 1.5 times the original value. The original value is $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+
+Step 3: The profit is the difference between the new value and the total cost. The profit is $120,000 - $130,000 = -$10,000. However, this is a loss, not a profit. *******
+
+Step 4: Since Josh didn't make a profit, the answer is #### 0. ******
+LogProbs: 0.0
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increases by 150%, so the new value is 1.5 times the original value. The original value is $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+
+Step 3: The profit is the difference between the new value and the total cost. The profit is $120,000 - $130,000 = -$10,000. However, this is a loss, not a profit. *******
+
+Step 4: Since Josh didn't make a profit, the answer is #### 0. ******
+LogProbs: 0.0
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increased by 150%, so the new value is 1.5 times the original value. The original value was $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+
+Step 3: Since Josh spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ******
+
+Step 4: The answer is #### -10,000. ******
+LogProbs: 0.0
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******
+
+Step 2: The value of the house increased by 150%, so the new value is 1.5 times the original value. The original value was $80,000, so the new value is 1.5 * $80,000 = $120,000. ******
+
+Step 3: Since Josh spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ******
+
+Step 4: The answer is #### -10,000. ******
+LogProbs: 0.0
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys a house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 130% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he sold the house for $120,000, his profit is $120,000 - $130,000 = -$10,000. ****** Step 5: However, this is a loss, not a profit. ****** Step 6: The answer is #### -10,000. ******
+LogProbs: 0.0
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys a house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 130% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he sold the house for $120,000, his profit is $120,000 - $130,000 = -$10,000. ****** Step 5: However, this is a loss, not a profit. ****** Step 6: The answer is #### -10,000. ******
+LogProbs: 0.0
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 150% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ****** Step 5: The answer is #### -10000. ******
+LogProbs: 0.0
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 150% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ****** Step 5: The answer is #### -10000. ******
+LogProbs: 0.0
+Added Probs: [-0.06242755122291736, -0.06242755122291736, -0.10070861661961066, -0.10070861661961066, -0.0998602660263286, -0.0998602660263286, -0.08064172791658773, -0.08064172791658773, -0.0731490875594318, -0.0731490875594318]
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [0, 1], 3: [2, 3], 4: [8, 9]}
+Selected Indexes: [4, 6, 0, 2, 8]
+Found EoS token, Break
+completions: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is $80,000 + (150% of $80,000) = $80,000 + $120,000 = $200,000. ****** Step 4: Josh sold the house for $200,000, so his profit is $200,000 - $130,000 = $70,000. ****** Step 5: The answer is #### 70000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is $80,000 + (150% of $80,000) = $80,000 + $120,000 = $200,000. ****** Step 4: Josh sold the house for $200,000, so his profit is $200,000 - $130,000 = $70,000. ****** Step 5: The answer is #### 70000. ******', "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******\n\nStep 2: The value of the house increases by 150%, so the new value is 1.5 times the original value. The original value is $80,000, so the new value is 1.5 * $80,000 = $120,000. ******\n\nStep 3: The profit is the difference between the new value and the total cost. The profit is $120,000 - $130,000 = -$10,000. However, this is a loss, not a profit. *******\n\nStep 4: Since Josh didn't make a profit, the answer is #### 0. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******\n\nStep 2: The value of the house increases by 150%, so the new value is 1.5 times the original value. The original value is $80,000, so the new value is 1.5 * $80,000 = $120,000. ******\n\nStep 3: The profit is the difference between the new value and the total cost. The profit is $120,000 - $130,000 = -$10,000. However, this is a loss, not a profit. *******\n\nStep 4: Since Josh didn't make a profit, the answer is #### 0. ******", '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******\n\nStep 2: The value of the house increased by 150%, so the new value is 1.5 times the original value. The original value was $80,000, so the new value is 1.5 * $80,000 = $120,000. ******\n\nStep 3: Since Josh spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ******\n\nStep 4: The answer is #### -10,000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******\n\nStep 2: The value of the house increased by 150%, so the new value is 1.5 times the original value. The original value was $80,000, so the new value is 1.5 * $80,000 = $120,000. ******\n\nStep 3: Since Josh spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ******\n\nStep 4: The answer is #### -10,000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys a house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 130% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he sold the house for $120,000, his profit is $120,000 - $130,000 = -$10,000. ****** Step 5: However, this is a loss, not a profit. ****** Step 6: The answer is #### -10,000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys a house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 130% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he sold the house for $120,000, his profit is $120,000 - $130,000 = -$10,000. ****** Step 5: However, this is a loss, not a profit. ****** Step 6: The answer is #### -10,000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 150% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ****** Step 5: The answer is #### -10000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 150% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ****** Step 5: The answer is #### -10000. ******']
+Answer Probs: []
+>> Processing time: 12.563801199081354
+>> Answer lists: ['70000', '70000', '0', '0', '-10000', '-10000', '-10000', '-10000', '-10000', '-10000']
+>> Original Correct: -10000, False
+>> Soft SC  Correct: 70000, True
+>> Golden    Answer: 70000
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.32it/s, est. speed input: 1501.75 toks/s, output: 283.14 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.32it/s, est. speed input: 1501.75 toks/s, output: 283.14 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (3) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 0.7585927990730852 sec
+Added Probs: [-0.022656064141880383, -0.022656064141880383, -0.022656064141880383, -0.022656064141880383, -0.022656064141880383, -0.022656064141880383, -0.022656064141880383, -0.022656064141880383, -0.08474056736419075, -0.15131351822300962]
+Cluster Indices: {0: [0, 1, 2, 3, 4, 5, 6, 7], 1: [9], 2: [8], 3: [], 4: []}
+Selected Indexes: [0, 9, 8, 1, 2]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.14s/it, est. speed input: 1010.05 toks/s, output: 24.51 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.47it/s, est. speed input: 1542.39 toks/s, output: 54.06 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.47it/s, est. speed input: 3553.74 toks/s, output: 153.12 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.07it/s, est. speed input: 3553.74 toks/s, output: 153.12 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.636857403907925 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints 3 times a week. ****** Step 2: That means he runs a total of 3 * 3 = 9 sprints a week. ******
+LogProbs: -0.939846582710743
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints 3 times a week. ****** 
+Step 2: So, he runs a total of 3 x 3 = 9 sprints a week. ******
+LogProbs: -4.138615787029266
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so he runs 3 * 3 = 9 sprints a week. ******
+LogProbs: -3.3969714641571045
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so in total he runs 3 * 3 = 9 sprints a week. ******
+LogProbs: -3.68933367729187
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints each time. ****** Step 2: He runs 60 meters each sprint. ******
+LogProbs: -1.3000164031982422
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints each time. ****** Step 2: He runs 60 meters each sprint. ******
+LogProbs: -1.3000164031982422
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints 3 times a week. ****** Step 2: That means he runs a total of 3 * 3 = 9 sprints a week. ******
+LogProbs: -0.939846582710743
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints 3 times a week. ****** 
+Step 2: So, he runs a total of 3 x 3 = 9 sprints a week. ******
+LogProbs: -4.138615787029266
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints 3 times a week. ****** Step 2: That means he runs a total of 3 * 3 = 9 sprints a week. ******
+LogProbs: -0.939846582710743
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints 3 times a week. ****** 
+Step 2: So, he runs a total of 3 x 3 = 9 sprints a week. ******
+LogProbs: -4.138615787029266
+Added Probs: [-0.029964166538168985, -0.094633657105115, -0.12799853694682217, -0.12871157889272652, -0.0881844600944808, -0.0881844600944808, -0.029964166538168985, -0.094633657105115, -0.029964166538168985, -0.094633657105115]
+Cluster Indices: {0: [4, 5], 1: [0, 6, 8], 2: [3], 3: [1, 7, 9], 4: [2]}
+Selected Indexes: [4, 0, 3, 1, 2]
+step: 2
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.46s/it, est. speed input: 797.83 toks/s, output: 32.10 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.46it/s, est. speed input: 1468.70 toks/s, output: 66.84 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.03it/s, est. speed input: 3573.04 toks/s, output: 174.87 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.663895669975318 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints each time. ****** Step 2: He runs 60 meters each sprint. ****** Step 3: So, he runs 3 * 60 = 180 meters each time. ******
+LogProbs: -2.070085048675537
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints each time. ****** Step 2: He runs 60 meters each sprint. ****** Step 3: So, he runs a total of 3 * 60 = 180 meters each time. ******
+LogProbs: -2.760681390762329
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints 3 times a week. ****** Step 2: That means he runs a total of 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ******
+LogProbs: -0.6098992824554443
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints 3 times a week. ****** Step 2: That means he runs a total of 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ******
+LogProbs: -0.6098992824554443
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so in total he runs 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ******
+LogProbs: -1.1343010812997818
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so in total he runs 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ******
+LogProbs: -1.1343010812997818
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints 3 times a week. ****** 
+Step 2: So, he runs a total of 3 x 3 = 9 sprints a week. ****** 
+Step 3: Each sprint is 60 meters, so the total distance he runs is 9 x 60 = 540 meters. ******
+LogProbs: -0.3132617473602295
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints 3 times a week. ****** 
+Step 2: So, he runs a total of 3 x 3 = 9 sprints a week. ****** 
+Step 3: Each sprint is 60 meters, so the total distance he runs is 9 x 60 = 540 meters. ******
+LogProbs: -0.3132617473602295
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so he runs 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so he runs 9 * 60 = 540 meters a week. ******
+LogProbs: -1.807776927947998
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so he runs 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs per week is 9 * 60 = 540 meters. ******
+LogProbs: -2.434828221797943
+Added Probs: [-0.09054858603260733, -0.09777187196345165, -0.02625870867035328, -0.02625870867035328, -0.09504434080035598, -0.09504434080035598, -0.0618788868188858, -0.0618788868188858, -0.10493123686158812, -0.10749082138508927]
+Cluster Indices: {0: [4, 5, 9], 1: [0, 1], 2: [6, 7], 3: [2, 3], 4: [8]}
+Selected Indexes: [4, 0, 6, 2, 8]
+step: 3
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.15s/it, est. speed input: 1061.35 toks/s, output: 22.69 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.64it/s, est. speed input: 3694.49 toks/s, output: 102.66 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.05it/s, est. speed input: 3694.49 toks/s, output: 102.66 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.6475256179692224 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so in total he runs 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ****** Step 4: The answer is #### 540. ******
+LogProbs: 0.0
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so in total he runs 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ****** Step 4: The answer is #### 540. ******
+LogProbs: 0.0
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints each time. ****** Step 2: He runs 60 meters each sprint. ****** Step 3: So, he runs 3 * 60 = 180 meters each time. ****** Step 4: He does this 3 times a week, so he runs 180 * 3 = 540 meters a week. ******
+LogProbs: -1.9010961055755615
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints each time. ****** Step 2: He runs 60 meters each sprint. ****** Step 3: So, he runs 3 * 60 = 180 meters each time. ****** Step 4: He runs this 3 times a week, so in total he runs 3 * 180 = 540 meters a week. ******
+LogProbs: -5.9064247608184814
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints 3 times a week. ****** 
+Step 2: So, he runs a total of 3 x 3 = 9 sprints a week. ****** 
+Step 3: Each sprint is 60 meters, so the total distance he runs is 9 x 60 = 540 meters. ****** 
+Step 4: The answer is #### 540. ******
+LogProbs: 0.0
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints 3 times a week. ****** 
+Step 2: So, he runs a total of 3 x 3 = 9 sprints a week. ****** 
+Step 3: Each sprint is 60 meters, so the total distance he runs is 9 x 60 = 540 meters. ****** 
+Step 4: The answer is #### 540. ******
+LogProbs: 0.0
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints 3 times a week. ****** Step 2: That means he runs a total of 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ****** Step 4: The answer is #### 540. ******
+LogProbs: 0.0
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints 3 times a week. ****** Step 2: That means he runs a total of 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ****** Step 4: The answer is #### 540. ******
+LogProbs: 0.0
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so he runs 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so he runs 9 * 60 = 540 meters a week. ****** Step 4: The answer is #### 540. ******
+LogProbs: 0.0
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so he runs 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so he runs 9 * 60 = 540 meters a week. ****** Step 4: The answer is #### 540. ******
+LogProbs: 0.0
+Added Probs: [-0.08189991068966845, -0.08189991068966845, -0.08095609808669371, -0.12513329876565385, -0.052662882399051744, -0.052662882399051744, -0.022507464574588524, -0.022507464574588524, -0.08977450264824761, -0.08977450264824761]
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [8, 9], 3: [6, 7], 4: [0, 1]}
+Selected Indexes: [4, 2, 8, 6, 0]
+step: 4
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.24it/s, est. speed input: 1529.45 toks/s, output: 2.49 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  5.38it/s, est. speed input: 5496.10 toks/s, output: 30.49 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.48it/s, est. speed input: 5496.10 toks/s, output: 30.49 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.1263802259927616 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints 3 times a week. ****** 
+Step 2: So, he runs a total of 3 x 3 = 9 sprints a week. ****** 
+Step 3: Each sprint is 60 meters, so the total distance he runs is 9 x 60 = 540 meters. ****** 
+Step 4: The answer is #### 540. ******
+LogProbs: 0.0
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints 3 times a week. ****** 
+Step 2: So, he runs a total of 3 x 3 = 9 sprints a week. ****** 
+Step 3: Each sprint is 60 meters, so the total distance he runs is 9 x 60 = 540 meters. ****** 
+Step 4: The answer is #### 540. ******
+LogProbs: 0.0
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints each time. ****** Step 2: He runs 60 meters each sprint. ****** Step 3: So, he runs 3 * 60 = 180 meters each time. ****** Step 4: He does this 3 times a week, so he runs 180 * 3 = 540 meters a week. ****** Step 5: The answer is #### 540. ******
+LogProbs: 0.0
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints each time. ****** Step 2: He runs 60 meters each sprint. ****** Step 3: So, he runs 3 * 60 = 180 meters each time. ****** Step 4: He does this 3 times a week, so he runs 180 * 3 = 540 meters a week. ****** Step 5: The answer is #### 540. ******
+LogProbs: 0.0
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so he runs 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so he runs 9 * 60 = 540 meters a week. ****** Step 4: The answer is #### 540. ******
+LogProbs: 0.0
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so he runs 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so he runs 9 * 60 = 540 meters a week. ****** Step 4: The answer is #### 540. ******
+LogProbs: 0.0
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints 3 times a week. ****** Step 2: That means he runs a total of 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ****** Step 4: The answer is #### 540. ******
+LogProbs: 0.0
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints 3 times a week. ****** Step 2: That means he runs a total of 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ****** Step 4: The answer is #### 540. ******
+LogProbs: 0.0
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so in total he runs 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ****** Step 4: The answer is #### 540. ******
+LogProbs: 0.0
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so in total he runs 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ****** Step 4: The answer is #### 540. ******
+LogProbs: 0.0
+Added Probs: [-0.052662882399051744, -0.052662882399051744, -0.07021702385070372, -0.07021702385070372, -0.08977450264824761, -0.08977450264824761, -0.022507464574588524, -0.022507464574588524, -0.08189991068966845, -0.08189991068966845]
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [6, 7], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 2, 6, 0, 8]
+Found EoS token, Break
+completions: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints 3 times a week. ****** \nStep 2: So, he runs a total of 3 x 3 = 9 sprints a week. ****** \nStep 3: Each sprint is 60 meters, so the total distance he runs is 9 x 60 = 540 meters. ****** \nStep 4: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints 3 times a week. ****** \nStep 2: So, he runs a total of 3 x 3 = 9 sprints a week. ****** \nStep 3: Each sprint is 60 meters, so the total distance he runs is 9 x 60 = 540 meters. ****** \nStep 4: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints each time. ****** Step 2: He runs 60 meters each sprint. ****** Step 3: So, he runs 3 * 60 = 180 meters each time. ****** Step 4: He does this 3 times a week, so he runs 180 * 3 = 540 meters a week. ****** Step 5: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints each time. ****** Step 2: He runs 60 meters each sprint. ****** Step 3: So, he runs 3 * 60 = 180 meters each time. ****** Step 4: He does this 3 times a week, so he runs 180 * 3 = 540 meters a week. ****** Step 5: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so he runs 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so he runs 9 * 60 = 540 meters a week. ****** Step 4: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so he runs 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so he runs 9 * 60 = 540 meters a week. ****** Step 4: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints 3 times a week. ****** Step 2: That means he runs a total of 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ****** Step 4: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints 3 times a week. ****** Step 2: That means he runs a total of 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ****** Step 4: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so in total he runs 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ****** Step 4: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so in total he runs 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ****** Step 4: The answer is #### 540. ******']
+Answer Probs: []
+>> Processing time: 6.94339074997697
+>> Answer lists: ['540', '540', '540', '540', '540', '540', '540', '540', '540', '540']
+>> Original Correct: 540, True
+>> Soft SC  Correct: 540, True
+>> Golden    Answer: 540
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.43s/it, est. speed input: 846.21 toks/s, output: 181.97 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.43s/it, est. speed input: 846.21 toks/s, output: 181.97 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.4322889000177383 sec
+Added Probs: [-0.03930414840579033, -0.03930414840579033, -0.03930414840579033, -0.03930414840579033, -0.07696815918792378, -0.07696815918792378, -0.0913874792555968, -0.1641218850487157, -0.12680769377741322, -0.16927228992184004]
+Cluster Indices: {0: [4, 5], 1: [8], 2: [9], 3: [7], 4: [0, 1, 2, 3, 6]}
+Selected Indexes: [4, 8, 9, 7, 0]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.27s/it, est. speed input: 968.56 toks/s, output: 26.75 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.18it/s, est. speed input: 2284.17 toks/s, output: 79.59 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.13it/s, est. speed input: 3097.01 toks/s, output: 125.64 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.50it/s, est. speed input: 3097.01 toks/s, output: 125.64 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.0092853440437466 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi gives 15 cups of feed in the morning. ****** Step 2: She gives 25 cups of feed in the afternoon. ******
+LogProbs: 0.0
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi gives 15 cups of feed in the morning. ****** Step 2: She gives 25 cups of feed in the afternoon. ******
+LogProbs: 0.0
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's chickens need 3 cups of feed each, and there are 20 chickens. ****** Step 2: So, in total, they need 20 * 3 = 60 cups of feed per day. ******
+LogProbs: -2.289414167404175
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's chickens need 3 cups of feed each, and there are 20 chickens. ****** Step 2: So, the total feed needed for the day is 20 chickens * 3 cups/chicken = 60 cups. ******
+LogProbs: -3.6706375032663345
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi needs to give each chicken 3 cups of feed per day. Since she has 20 chickens, she needs 20 x 3 = 60 cups of feed per day. ****** Step 2: She has already given them 15 cups in the morning and 25 cups in the afternoon. ******
+LogProbs: -3.8829022645950317
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi needs to give each chicken 3 cups of feed per day. Since she has 20 chickens, she needs 20 x 3 = 60 cups of feed per day. ****** Step 2: She has already given 15 cups of feed in the morning and 25 cups in the afternoon, so she has given a total of 15 + 25 = 40 cups of feed. ******
+LogProbs: -7.120455890893936
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ******
+LogProbs: -1.388800024986267
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: Each chicken needs 3 cups of feed, so the total feed needed per meal is 20 * 3 = 60 cups. ******
+LogProbs: -4.289008289575577
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi gives her chickens 15 cups of feed in the morning. ****** Step 2: She gives her chickens 25 cups of feed in the afternoon. ******
+LogProbs: -1.9552714228630066
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi gives her chickens 15 cups of feed in the morning. ****** Step 2: She gives them another 25 cups of feed in the afternoon. ******
+LogProbs: -2.018533170223236
+Added Probs: [-0.04341793595216213, -0.04341793595216213, -0.10655066583837781, -0.1245434003866325, -0.1644927696005939, -0.16393038502303503, -0.11860831160294383, -0.1424485404904072, -0.06740862754888313, -0.06887983097586521]
+Cluster Indices: {0: [4, 5], 1: [0, 1, 8, 9], 2: [2, 3], 3: [6], 4: [7]}
+Selected Indexes: [5, 0, 2, 6, 7]
+step: 2
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.42s/it, est. speed input: 890.19 toks/s, output: 28.24 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.45it/s, est. speed input: 2474.60 toks/s, output: 87.21 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.10it/s, est. speed input: 3709.03 toks/s, output: 141.95 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.93it/s, est. speed input: 3709.03 toks/s, output: 141.95 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.7164481790969148 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi needs to give each chicken 3 cups of feed per day. Since she has 20 chickens, she needs 20 x 3 = 60 cups of feed per day. ****** Step 2: She has already given 15 cups of feed in the morning and 25 cups in the afternoon, so she has given a total of 15 + 25 = 40 cups of feed. ****** Step 3: She still needs to give 60 - 40 = 20 cups of feed in the final meal. ******
+LogProbs: -1.4997480511665344
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi needs to give each chicken 3 cups of feed per day. Since she has 20 chickens, she needs 20 x 3 = 60 cups of feed per day. ****** Step 2: She has already given 15 cups of feed in the morning and 25 cups in the afternoon, so she has given a total of 15 + 25 = 40 cups of feed. ****** Step 3: She still needs to give 60 - 40 = 20 cups of feed in the final meal of the day. ******
+LogProbs: -2.249748021364212
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi gives 15 cups of feed in the morning. ****** Step 2: She gives 25 cups of feed in the afternoon. ****** Step 3: In total, she has given 15 + 25 = 40 cups of feed so far. ******
+LogProbs: -0.9675107002258301
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi gives 15 cups of feed in the morning. ****** Step 2: She gives 25 cups of feed in the afternoon. ****** Step 3: She needs to give 3 cups of feed to each of the 20 chickens. ******
+LogProbs: -6.692937970161438
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's chickens need 3 cups of feed each, and there are 20 chickens. ****** Step 2: So, in total, they need 20 * 3 = 60 cups of feed per day. ****** Step 3: She has already given them 15 cups in the morning and 25 cups in the afternoon. ******
+LogProbs: -0.9878073036670685
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's chickens need 3 cups of feed each, and there are 20 chickens. ****** Step 2: So, in total, they need 20 * 3 = 60 cups of feed per day. ****** Step 3: In the morning, she gives them 15 cups of feed. ******
+LogProbs: -1.822709709405899
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ******
+LogProbs: -0.7252781391143799
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: Each chicken gets 3 cups of feed, so 20 chickens will need 20 * 3 = 60 cups of feed. ******
+LogProbs: -6.219700574874878
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: Each chicken needs 3 cups of feed, so the total feed needed per meal is 20 * 3 = 60 cups. ****** Step 3: In the morning, she gives 15 cups of feed. ******
+LogProbs: -1.5102670192718506
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: Each chicken needs 3 cups of feed, so the total feed needed per meal is 20 * 3 = 60 cups. ****** Step 3: She gives 15 cups in the morning and 25 cups in the afternoon. ******
+LogProbs: -3.0785866379737854
+Added Probs: [-0.13954394881923993, -0.14223799860574365, -0.04093554157477159, -0.13526189471444777, -0.08585980976069416, -0.10386062661806743, -0.09179638561449553, -0.15108192134910906, -0.12739415892532893, -0.1417014965334454]
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [6, 7], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 2, 6, 0, 8]
+step: 3
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.17s/it, est. speed input: 1132.03 toks/s, output: 22.15 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.77it/s, est. speed input: 1988.87 toks/s, output: 47.28 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.99it/s, est. speed input: 2238.84 toks/s, output: 70.64 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.45it/s, est. speed input: 3229.22 toks/s, output: 128.91 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.51it/s, est. speed input: 3229.22 toks/s, output: 128.91 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.0065239820396528 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's chickens need 3 cups of feed each, and there are 20 chickens. ****** Step 2: So, in total, they need 20 * 3 = 60 cups of feed per day. ****** Step 3: She has already given them 15 cups in the morning and 25 cups in the afternoon. ****** Step 4: She still needs to give them 60 - (15 + 25) = 60 - 40 = 20 cups of feed. ******
+LogProbs: -3.570454716682434
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's chickens need 3 cups of feed each, and there are 20 chickens. ****** Step 2: So, in total, they need 20 * 3 = 60 cups of feed per day. ****** Step 3: She has already given them 15 cups in the morning and 25 cups in the afternoon. ****** Step 4: That means she has given them a total of 15 + 25 = 40 cups so far. ******
+LogProbs: -6.203246831893921
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi gives 15 cups of feed in the morning. ****** Step 2: She gives 25 cups of feed in the afternoon. ****** Step 3: In total, she has given 15 + 25 = 40 cups of feed so far. ****** Step 4: She needs to give feed to 20 chickens, and each chicken needs 3 cups of feed. ******
+LogProbs: -2.99728786945343
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi gives 15 cups of feed in the morning. ****** Step 2: She gives 25 cups of feed in the afternoon. ****** Step 3: In total, she has given 15 + 25 = 40 cups of feed so far. ****** Step 4: Since she needs to give 3 cups of feed per chicken, and she has 20 chickens, she needs to give 20 * 3 = 60 cups of feed in total. ******
+LogProbs: -4.224813222885132
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ****** Step 4: In total, she has given them 15 + 25 = 40 cups of feed so far. ******
+LogProbs: -1.5682286322116852
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ****** Step 4: She gives them 3 cups of feed per chicken, so in the morning she gives 20 chickens * 3 cups = 60 cups of feed. ******
+LogProbs: -7.987352162599564
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi needs to give each chicken 3 cups of feed per day. Since she has 20 chickens, she needs 20 x 3 = 60 cups of feed per day. ****** Step 2: She has already given 15 cups of feed in the morning and 25 cups in the afternoon, so she has given a total of 15 + 25 = 40 cups of feed. ****** Step 3: She still needs to give 60 - 40 = 20 cups of feed in the final meal. ****** Step 4: The answer is #### 20. ******
+LogProbs: 0.0
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi needs to give each chicken 3 cups of feed per day. Since she has 20 chickens, she needs 20 x 3 = 60 cups of feed per day. ****** Step 2: She has already given 15 cups of feed in the morning and 25 cups in the afternoon, so she has given a total of 15 + 25 = 40 cups of feed. ****** Step 3: She still needs to give 60 - 40 = 20 cups of feed in the final meal. ****** Step 4: The answer is #### 20. ******
+LogProbs: 0.0
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: Each chicken needs 3 cups of feed, so the total feed needed per meal is 20 * 3 = 60 cups. ****** Step 3: In the morning, she gives 15 cups of feed. ****** Step 4: In the afternoon, she gives 25 cups of feed. ******
+LogProbs: 0.0
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: Each chicken needs 3 cups of feed, so the total feed needed per meal is 20 * 3 = 60 cups. ****** Step 3: In the morning, she gives 15 cups of feed. ****** Step 4: In the afternoon, she gives 25 cups of feed. ******
+LogProbs: 0.0
+Added Probs: [-0.09152260267216226, -0.12183232798620507, -0.06217690188806135, -0.06317085711234206, -0.0809597930028325, -0.1406355972619767, -0.12590431472412625, -0.12590431472412625, -0.10133626278151166, -0.10133626278151166]
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [0, 1], 3: [2, 3], 4: [8, 9]}
+Selected Indexes: [4, 6, 0, 2, 8]
+step: 4
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.19it/s, est. speed input: 1592.36 toks/s, output: 2.37 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.85it/s, est. speed input: 2273.11 toks/s, output: 23.87 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.33it/s, est. speed input: 2694.62 toks/s, output: 51.67 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.30it/s, est. speed input: 3483.12 toks/s, output: 108.38 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.66it/s, est. speed input: 3483.12 toks/s, output: 108.38 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.8939763440284878 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ****** Step 4: In total, she has given them 15 + 25 = 40 cups of feed so far. ****** Step 5: Since each chicken needs 3 cups of feed, and there are 20 chickens, the total amount of feed needed is 20 * 3 = 60 cups. ******
+LogProbs: -2.7081921324133873
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ****** Step 4: In total, she has given them 15 + 25 = 40 cups of feed so far. ****** Step 5: Each chicken needs 3 cups of feed, so for 20 chickens, she needs 20 * 3 = 60 cups of feed. ******
+LogProbs: -2.922805979847908
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi needs to give each chicken 3 cups of feed per day. Since she has 20 chickens, she needs 20 x 3 = 60 cups of feed per day. ****** Step 2: She has already given 15 cups of feed in the morning and 25 cups in the afternoon, so she has given a total of 15 + 25 = 40 cups of feed. ****** Step 3: She still needs to give 60 - 40 = 20 cups of feed in the final meal. ****** Step 4: The answer is #### 20. ******
+LogProbs: 0.0
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi needs to give each chicken 3 cups of feed per day. Since she has 20 chickens, she needs 20 x 3 = 60 cups of feed per day. ****** Step 2: She has already given 15 cups of feed in the morning and 25 cups in the afternoon, so she has given a total of 15 + 25 = 40 cups of feed. ****** Step 3: She still needs to give 60 - 40 = 20 cups of feed in the final meal. ****** Step 4: The answer is #### 20. ******
+LogProbs: 0.0
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's chickens need 3 cups of feed each, and there are 20 chickens. ****** Step 2: So, in total, they need 20 * 3 = 60 cups of feed per day. ****** Step 3: She has already given them 15 cups in the morning and 25 cups in the afternoon. ****** Step 4: She still needs to give them 60 - (15 + 25) = 60 - 40 = 20 cups of feed. ****** Step 5: The answer is #### 20. ******
+LogProbs: 0.0
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's chickens need 3 cups of feed each, and there are 20 chickens. ****** Step 2: So, in total, they need 20 * 3 = 60 cups of feed per day. ****** Step 3: She has already given them 15 cups in the morning and 25 cups in the afternoon. ****** Step 4: She still needs to give them 60 - (15 + 25) = 60 - 40 = 20 cups of feed. ****** Step 5: The answer is #### 20. ******
+LogProbs: 0.0
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi gives 15 cups of feed in the morning. ****** Step 2: She gives 25 cups of feed in the afternoon. ****** Step 3: In total, she has given 15 + 25 = 40 cups of feed so far. ****** Step 4: She needs to give feed to 20 chickens, and each chicken needs 3 cups of feed. ****** Step 5: So, she needs to give 20 * 3 = 60 cups of feed in total. ******
+LogProbs: -0.794376790523529
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi gives 15 cups of feed in the morning. ****** Step 2: She gives 25 cups of feed in the afternoon. ****** Step 3: In total, she has given 15 + 25 = 40 cups of feed so far. ****** Step 4: She needs to give feed to 20 chickens, and each chicken needs 3 cups of feed. ****** Step 5: So, in total, she needs to give 20 * 3 = 60 cups of feed. ******
+LogProbs: -1.4546009451150894
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: Each chicken needs 3 cups of feed, so the total feed needed per meal is 20 * 3 = 60 cups. ****** Step 3: In the morning, she gives 15 cups of feed. ****** Step 4: In the afternoon, she gives 25 cups of feed. ****** Step 5: So far, she has given 15 + 25 = 40 cups of feed. ******
+LogProbs: -0.704919695854187
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: Each chicken needs 3 cups of feed, so the total feed needed per meal is 20 * 3 = 60 cups. ****** Step 3: In the morning, she gives 15 cups of feed. ****** Step 4: In the afternoon, she gives 25 cups of feed. ****** Step 5: So far, she has given 15 + 25 = 40 cups of feed. ******
+LogProbs: -0.704919695854187
+Added Probs: [-0.0766839898762203, -0.08170948396710788, -0.12590431472412625, -0.12590431472412625, -0.08222733833827078, -0.08222733833827078, -0.055149357797753096, -0.06027711031295485, -0.08591527518417154, -0.08591527518417154]
+Cluster Indices: {0: [4, 5], 1: [1, 8, 9], 2: [2, 3], 3: [6, 7], 4: [0]}
+Selected Indexes: [4, 1, 2, 6, 0]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.14it/s, est. speed input: 1520.87 toks/s, output: 2.27 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.89it/s, est. speed input: 2370.71 toks/s, output: 35.50 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.54it/s, est. speed input: 3719.68 toks/s, output: 102.67 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.79it/s, est. speed input: 3719.68 toks/s, output: 102.67 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.8039864141028374 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's chickens need 3 cups of feed each, and there are 20 chickens. ****** Step 2: So, in total, they need 20 * 3 = 60 cups of feed per day. ****** Step 3: She has already given them 15 cups in the morning and 25 cups in the afternoon. ****** Step 4: She still needs to give them 60 - (15 + 25) = 60 - 40 = 20 cups of feed. ****** Step 5: The answer is #### 20. ******
+LogProbs: 0.0
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's chickens need 3 cups of feed each, and there are 20 chickens. ****** Step 2: So, in total, they need 20 * 3 = 60 cups of feed per day. ****** Step 3: She has already given them 15 cups in the morning and 25 cups in the afternoon. ****** Step 4: She still needs to give them 60 - (15 + 25) = 60 - 40 = 20 cups of feed. ****** Step 5: The answer is #### 20. ******
+LogProbs: 0.0
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ****** Step 4: In total, she has given them 15 + 25 = 40 cups of feed so far. ****** Step 5: Each chicken needs 3 cups of feed, so for 20 chickens, she needs 20 * 3 = 60 cups of feed. ****** Step 6: She still needs 60 - 40 = 20 cups of feed for the final meal. ******
+LogProbs: -2.0392677783966064
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ****** Step 4: In total, she has given them 15 + 25 = 40 cups of feed so far. ****** Step 5: Each chicken needs 3 cups of feed, so for 20 chickens, she needs 20 * 3 = 60 cups of feed. ****** Step 6: Since she has already given them 40 cups, she still needs 60 - 40 = 20 cups of feed. ******
+LogProbs: -2.35201159119606
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi needs to give each chicken 3 cups of feed per day. Since she has 20 chickens, she needs 20 x 3 = 60 cups of feed per day. ****** Step 2: She has already given 15 cups of feed in the morning and 25 cups in the afternoon, so she has given a total of 15 + 25 = 40 cups of feed. ****** Step 3: She still needs to give 60 - 40 = 20 cups of feed in the final meal. ****** Step 4: The answer is #### 20. ******
+LogProbs: 0.0
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi needs to give each chicken 3 cups of feed per day. Since she has 20 chickens, she needs 20 x 3 = 60 cups of feed per day. ****** Step 2: She has already given 15 cups of feed in the morning and 25 cups in the afternoon, so she has given a total of 15 + 25 = 40 cups of feed. ****** Step 3: She still needs to give 60 - 40 = 20 cups of feed in the final meal. ****** Step 4: The answer is #### 20. ******
+LogProbs: 0.0
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi gives 15 cups of feed in the morning. ****** Step 2: She gives 25 cups of feed in the afternoon. ****** Step 3: In total, she has given 15 + 25 = 40 cups of feed so far. ****** Step 4: She needs to give feed to 20 chickens, and each chicken needs 3 cups of feed. ****** Step 5: So, she needs to give 20 * 3 = 60 cups of feed in total. ****** Step 6: Since she has already given 40 cups, she needs to give 60 - 40 = 20 cups of feed in the final meal. ******
+LogProbs: -0.38687101006507874
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi gives 15 cups of feed in the morning. ****** Step 2: She gives 25 cups of feed in the afternoon. ****** Step 3: In total, she has given 15 + 25 = 40 cups of feed so far. ****** Step 4: She needs to give feed to 20 chickens, and each chicken needs 3 cups of feed. ****** Step 5: So, she needs to give 20 * 3 = 60 cups of feed in total. ****** Step 6: Since she has already given 40 cups, she needs to give 60 - 40 = 20 cups in the final meal. ******
+LogProbs: -1.1368709802627563
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ****** Step 4: In total, she has given them 15 + 25 = 40 cups of feed so far. ****** Step 5: Since each chicken needs 3 cups of feed, and there are 20 chickens, the total amount of feed needed is 20 * 3 = 60 cups. ****** Step 6: She still needs 60 - 40 = 20 cups of feed for the final meal. ******
+LogProbs: -3.9751553535461426
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ****** Step 4: In total, she has given them 15 + 25 = 40 cups of feed so far. ****** Step 5: Since each chicken needs 3 cups of feed, and there are 20 chickens, the total amount of feed needed is 20 * 3 = 60 cups. ****** Step 6: Since she has already given them 40 cups, she still needs 60 - 40 = 20 cups of feed. ******
+LogProbs: -4.276453197002411
+Added Probs: [-0.08222733833827078, -0.08222733833827078, -0.08168539146168365, -0.08050293455521265, -0.12590431472412625, -0.12590431472412625, -0.044995696528961786, -0.050595638950665794, -0.09049644361206349, -0.08893721252679825]
+Cluster Indices: {0: [4, 5], 1: [8, 9], 2: [0, 1], 3: [6, 7], 4: [2, 3]}
+Selected Indexes: [4, 9, 0, 6, 3]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.13it/s, est. speed input: 1517.71 toks/s, output: 2.26 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.86it/s, est. speed input: 3339.30 toks/s, output: 24.78 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.13it/s, est. speed input: 5584.96 toks/s, output: 67.72 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.223897682968527 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi needs to give each chicken 3 cups of feed per day. Since she has 20 chickens, she needs 20 x 3 = 60 cups of feed per day. ****** Step 2: She has already given 15 cups of feed in the morning and 25 cups in the afternoon, so she has given a total of 15 + 25 = 40 cups of feed. ****** Step 3: She still needs to give 60 - 40 = 20 cups of feed in the final meal. ****** Step 4: The answer is #### 20. ******
+LogProbs: 0.0
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi needs to give each chicken 3 cups of feed per day. Since she has 20 chickens, she needs 20 x 3 = 60 cups of feed per day. ****** Step 2: She has already given 15 cups of feed in the morning and 25 cups in the afternoon, so she has given a total of 15 + 25 = 40 cups of feed. ****** Step 3: She still needs to give 60 - 40 = 20 cups of feed in the final meal. ****** Step 4: The answer is #### 20. ******
+LogProbs: 0.0
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ****** Step 4: In total, she has given them 15 + 25 = 40 cups of feed so far. ****** Step 5: Since each chicken needs 3 cups of feed, and there are 20 chickens, the total amount of feed needed is 20 * 3 = 60 cups. ****** Step 6: Since she has already given them 40 cups, she still needs 60 - 40 = 20 cups of feed. ****** Step 7: The answer is #### 20. ******
+LogProbs: 0.0
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ****** Step 4: In total, she has given them 15 + 25 = 40 cups of feed so far. ****** Step 5: Since each chicken needs 3 cups of feed, and there are 20 chickens, the total amount of feed needed is 20 * 3 = 60 cups. ****** Step 6: Since she has already given them 40 cups, she still needs 60 - 40 = 20 cups of feed. ****** Step 7: The answer is #### 20. ******
+LogProbs: 0.0
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's chickens need 3 cups of feed each, and there are 20 chickens. ****** Step 2: So, in total, they need 20 * 3 = 60 cups of feed per day. ****** Step 3: She has already given them 15 cups in the morning and 25 cups in the afternoon. ****** Step 4: She still needs to give them 60 - (15 + 25) = 60 - 40 = 20 cups of feed. ****** Step 5: The answer is #### 20. ******
+LogProbs: 0.0
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's chickens need 3 cups of feed each, and there are 20 chickens. ****** Step 2: So, in total, they need 20 * 3 = 60 cups of feed per day. ****** Step 3: She has already given them 15 cups in the morning and 25 cups in the afternoon. ****** Step 4: She still needs to give them 60 - (15 + 25) = 60 - 40 = 20 cups of feed. ****** Step 5: The answer is #### 20. ******
+LogProbs: 0.0
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi gives 15 cups of feed in the morning. ****** Step 2: She gives 25 cups of feed in the afternoon. ****** Step 3: In total, she has given 15 + 25 = 40 cups of feed so far. ****** Step 4: She needs to give feed to 20 chickens, and each chicken needs 3 cups of feed. ****** Step 5: So, she needs to give 20 * 3 = 60 cups of feed in total. ****** Step 6: Since she has already given 40 cups, she needs to give 60 - 40 = 20 cups of feed in the final meal. ****** Step 7: The answer is #### 20. ******
+LogProbs: 0.0
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi gives 15 cups of feed in the morning. ****** Step 2: She gives 25 cups of feed in the afternoon. ****** Step 3: In total, she has given 15 + 25 = 40 cups of feed so far. ****** Step 4: She needs to give feed to 20 chickens, and each chicken needs 3 cups of feed. ****** Step 5: So, she needs to give 20 * 3 = 60 cups of feed in total. ****** Step 6: Since she has already given 40 cups, she needs to give 60 - 40 = 20 cups of feed in the final meal. ****** Step 7: The answer is #### 20. ******
+LogProbs: 0.0
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ****** Step 4: In total, she has given them 15 + 25 = 40 cups of feed so far. ****** Step 5: Each chicken needs 3 cups of feed, so for 20 chickens, she needs 20 * 3 = 60 cups of feed. ****** Step 6: Since she has already given them 40 cups, she still needs 60 - 40 = 20 cups of feed. ****** Step 7: The answer is #### 20. ******
+LogProbs: 0.0
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ****** Step 4: In total, she has given them 15 + 25 = 40 cups of feed so far. ****** Step 5: Each chicken needs 3 cups of feed, so for 20 chickens, she needs 20 * 3 = 60 cups of feed. ****** Step 6: Since she has already given them 40 cups, she still needs 60 - 40 = 20 cups of feed. ****** Step 7: The answer is #### 20. ******
+LogProbs: 0.0
+Added Probs: [-0.12590431472412625, -0.12590431472412625, -0.08205516631936743, -0.08205516631936743, -0.08222733833827078, -0.08222733833827078, -0.04145058104486177, -0.04145058104486177, -0.07408245511215888, -0.07408245511215888]
+Cluster Indices: {0: [4, 5], 1: [8, 9], 2: [6, 7], 3: [0, 1], 4: [2, 3]}
+Selected Indexes: [4, 8, 6, 0, 2]
+Found EoS token, Break
+completions: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi needs to give each chicken 3 cups of feed per day. Since she has 20 chickens, she needs 20 x 3 = 60 cups of feed per day. ****** Step 2: She has already given 15 cups of feed in the morning and 25 cups in the afternoon, so she has given a total of 15 + 25 = 40 cups of feed. ****** Step 3: She still needs to give 60 - 40 = 20 cups of feed in the final meal. ****** Step 4: The answer is #### 20. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi needs to give each chicken 3 cups of feed per day. Since she has 20 chickens, she needs 20 x 3 = 60 cups of feed per day. ****** Step 2: She has already given 15 cups of feed in the morning and 25 cups in the afternoon, so she has given a total of 15 + 25 = 40 cups of feed. ****** Step 3: She still needs to give 60 - 40 = 20 cups of feed in the final meal. ****** Step 4: The answer is #### 20. ******', "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ****** Step 4: In total, she has given them 15 + 25 = 40 cups of feed so far. ****** Step 5: Since each chicken needs 3 cups of feed, and there are 20 chickens, the total amount of feed needed is 20 * 3 = 60 cups. ****** Step 6: Since she has already given them 40 cups, she still needs 60 - 40 = 20 cups of feed. ****** Step 7: The answer is #### 20. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ****** Step 4: In total, she has given them 15 + 25 = 40 cups of feed so far. ****** Step 5: Since each chicken needs 3 cups of feed, and there are 20 chickens, the total amount of feed needed is 20 * 3 = 60 cups. ****** Step 6: Since she has already given them 40 cups, she still needs 60 - 40 = 20 cups of feed. ****** Step 7: The answer is #### 20. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi's chickens need 3 cups of feed each, and there are 20 chickens. ****** Step 2: So, in total, they need 20 * 3 = 60 cups of feed per day. ****** Step 3: She has already given them 15 cups in the morning and 25 cups in the afternoon. ****** Step 4: She still needs to give them 60 - (15 + 25) = 60 - 40 = 20 cups of feed. ****** Step 5: The answer is #### 20. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi's chickens need 3 cups of feed each, and there are 20 chickens. ****** Step 2: So, in total, they need 20 * 3 = 60 cups of feed per day. ****** Step 3: She has already given them 15 cups in the morning and 25 cups in the afternoon. ****** Step 4: She still needs to give them 60 - (15 + 25) = 60 - 40 = 20 cups of feed. ****** Step 5: The answer is #### 20. ******", '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi gives 15 cups of feed in the morning. ****** Step 2: She gives 25 cups of feed in the afternoon. ****** Step 3: In total, she has given 15 + 25 = 40 cups of feed so far. ****** Step 4: She needs to give feed to 20 chickens, and each chicken needs 3 cups of feed. ****** Step 5: So, she needs to give 20 * 3 = 60 cups of feed in total. ****** Step 6: Since she has already given 40 cups, she needs to give 60 - 40 = 20 cups of feed in the final meal. ****** Step 7: The answer is #### 20. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi gives 15 cups of feed in the morning. ****** Step 2: She gives 25 cups of feed in the afternoon. ****** Step 3: In total, she has given 15 + 25 = 40 cups of feed so far. ****** Step 4: She needs to give feed to 20 chickens, and each chicken needs 3 cups of feed. ****** Step 5: So, she needs to give 20 * 3 = 60 cups of feed in total. ****** Step 6: Since she has already given 40 cups, she needs to give 60 - 40 = 20 cups of feed in the final meal. ****** Step 7: The answer is #### 20. ******', "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ****** Step 4: In total, she has given them 15 + 25 = 40 cups of feed so far. ****** Step 5: Each chicken needs 3 cups of feed, so for 20 chickens, she needs 20 * 3 = 60 cups of feed. ****** Step 6: Since she has already given them 40 cups, she still needs 60 - 40 = 20 cups of feed. ****** Step 7: The answer is #### 20. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ****** Step 4: In total, she has given them 15 + 25 = 40 cups of feed so far. ****** Step 5: Each chicken needs 3 cups of feed, so for 20 chickens, she needs 20 * 3 = 60 cups of feed. ****** Step 6: Since she has already given them 40 cups, she still needs 60 - 40 = 20 cups of feed. ****** Step 7: The answer is #### 20. ******"]
+Answer Probs: []
+>> Processing time: 12.284798293956555
+>> Answer lists: ['20', '20', '20', '20', '20', '20', '20', '20', '20', '20']
+>> Original Correct: 20, True
+>> Soft SC  Correct: 20, True
+>> Golden    Answer: 20
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.47s/it, est. speed input: 333.13 toks/s, output: 104.12 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.47s/it, est. speed input: 333.13 toks/s, output: 104.12 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 3.4703899790765718 sec
+Added Probs: [-0.03440350294113159, -0.03440350294113159, -0.03440350294113159, -0.03440350294113159, -0.14788291033576517, -0.0827703512296444, -0.0827703512296444, -0.1389876902103424, -0.2090563941001892, -0.17293166594449863]
+Cluster Indices: {0: [5, 6, 7], 1: [0, 1, 2, 3], 2: [8], 3: [9], 4: [4]}
+Selected Indexes: [5, 0, 8, 9, 4]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.28it/s, est. speed input: 1644.07 toks/s, output: 2.56 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.27it/s, est. speed input: 1565.83 toks/s, output: 39.40 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.72it/s, est. speed input: 2669.20 toks/s, output: 108.82 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.70it/s, est. speed input: 2750.74 toks/s, output: 128.67 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.29it/s, est. speed input: 2750.74 toks/s, output: 128.67 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.1951831779442728 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: One glass costs $5, but every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 2: Kylar wants to buy 16 glasses, so the cost of the first 8 glasses will be 8 * $5 = $40. ******
+LogProbs: -4.660028323531151
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: One glass costs $5, but every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 2: Kylar wants to buy 16 glasses, so he will need to buy 8 regular glasses ($5 each) and 8 discounted glasses ($3 each). ******
+LogProbs: -9.448571190237999
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Kylar wants to buy 16 glasses. ****** Step 2: Every second glass costs 60% of $5, which is 0.6 x $5 = $3. ******
+LogProbs: -3.878568649291992
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Kylar wants to buy 16 glasses. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 times the price of the first glass. The first glass costs $5, so the second glass costs 0.6 * $5 = $3. ******
+LogProbs: -7.471191197633743
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Let's calculate the cost of the first glass, which is $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ******
+LogProbs: -2.521399050951004
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Let's calculate the cost of the first glass, which is $5. ****** Step 2: The second glass costs 60% of $5, which is 0.6 x $5 = $3. ******
+LogProbs: -3.747405081987381
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Let's calculate the cost of the first 8 glasses (since the 9th glass onwards will be at a discounted price). 8 glasses at $5 each will cost 8 * $5 = $40.
+
+Step 2: For the remaining 8 glasses, the cost will be 8 * (5 * 0.6) = 8 * $3 = $24.
+
+Step 3: Add the cost of the first 8 glasses and the remaining 8 glasses: $40 + $24 = $64.
+
+Step 4: The answer is #### 64.******
+LogProbs: 0.0
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Let's calculate the cost of the first 8 glasses (since the 9th glass onwards will be at a discounted price). 8 glasses at $5 each will cost 8 * $5 = $40.
+
+Step 2: For the remaining 8 glasses, the cost will be 8 * (5 * 0.6) = 8 * $3 = $24.
+
+Step 3: Add the cost of the first 8 glasses and the remaining 8 glasses: $40 + $24 = $64.
+
+Step 4: The answer is #### 64.******
+LogProbs: 0.0
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ******
+LogProbs: -1.2128104269504547
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of $5, which is 0.6 x $5 = $3. ******
+LogProbs: -2.276072174310684
+Added Probs: [-0.10459237303826716, -0.16052694488316774, -0.09133277416229248, -0.11026028724941048, -0.14086925279010426, -0.1631602715362202, -0.17293166594449863, -0.17293166594449863, -0.07929404048209494, -0.10191663085146153]
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.23it/s, est. speed input: 1585.17 toks/s, output: 2.47 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.38it/s, est. speed input: 1710.20 toks/s, output: 35.34 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.74it/s, est. speed input: 1984.54 toks/s, output: 66.19 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.59it/s, est. speed input: 2607.14 toks/s, output: 124.13 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.13it/s, est. speed input: 2607.14 toks/s, output: 124.13 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.3661580389598384 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Let's calculate the cost of the first glass, which is $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so the first 8 glasses will cost $5 each, and the remaining 8 glasses will cost $3 each. ******
+LogProbs: -3.139244258403778
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Let's calculate the cost of the first glass, which is $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so he will need to buy 8 regular glasses (at $5 each) and 8 discounted glasses (at $3 each). ******
+LogProbs: -7.661121383309364
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Let's calculate the cost of the first 8 glasses (since the 9th glass onwards will be at a discounted price). 8 glasses at $5 each will cost 8 * $5 = $40.
+
+Step 2: For the remaining 8 glasses, the cost will be 8 * (5 * 0.6) = 8 * $3 = $24.
+
+Step 3: Add the cost of the first 8 glasses and the remaining 8 glasses: $40 + $24 = $64.
+
+Step 4: The answer is #### 64.******
+LogProbs: 0.0
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Let's calculate the cost of the first 8 glasses (since the 9th glass onwards will be at a discounted price). 8 glasses at $5 each will cost 8 * $5 = $40.
+
+Step 2: For the remaining 8 glasses, the cost will be 8 * (5 * 0.6) = 8 * $3 = $24.
+
+Step 3: Add the cost of the first 8 glasses and the remaining 8 glasses: $40 + $24 = $64.
+
+Step 4: The answer is #### 64.******
+LogProbs: 0.0
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Kylar wants to buy 16 glasses. ****** Step 2: Every second glass costs 60% of $5, which is 0.6 x $5 = $3. ****** Step 3: So, the cost of the first 8 glasses is 8 x $5 = $40. ******
+LogProbs: -2.7973850667476654
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Kylar wants to buy 16 glasses. ****** Step 2: Every second glass costs 60% of $5, which is 0.6 x $5 = $3. ****** Step 3: So, the cost of 16 glasses is: 8 glasses at $5 each = 8 x $5 = $40 8 glasses at $3 each = 8 x $3 = $24 Total cost = $40 + $24 = $64 ******
+LogProbs: -5.059337675571442
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: One glass costs $5, but every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 2: Kylar wants to buy 16 glasses, so the cost of the first 8 glasses will be 8 * $5 = $40. ****** Step 3: The cost of the remaining 8 glasses will be 8 * $3 = $24. ******
+LogProbs: 0.0
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: One glass costs $5, but every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 2: Kylar wants to buy 16 glasses, so the cost of the first 8 glasses will be 8 * $5 = $40. ****** Step 3: The cost of the remaining 8 glasses will be 8 * $3 = $24. ******
+LogProbs: 0.0
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so the first 8 glasses will cost $5 each, and the remaining 8 glasses will cost $3 each. ******
+LogProbs: -4.181154191493988
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so he will need to buy 8 regular glasses and 8 discounted glasses. ******
+LogProbs: -8.039745599031448
+Added Probs: [-0.11460055959852118, -0.1572339825180112, -0.17293166594449863, -0.17293166594449863, -0.09689504966924065, -0.08831170994207399, -0.07895698748967227, -0.07895698748967227, -0.09089625395577529, -0.14894386710999888]
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [6, 7], 3: [1, 9], 4: [0, 8]}
+Selected Indexes: [5, 2, 6, 9, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.22it/s, est. speed input: 1561.15 toks/s, output: 2.43 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.88it/s, est. speed input: 2213.02 toks/s, output: 24.32 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.36it/s, est. speed input: 2628.89 toks/s, output: 49.74 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.39it/s, est. speed input: 4262.00 toks/s, output: 114.00 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.4861278419848531 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Kylar wants to buy 16 glasses. ****** Step 2: Every second glass costs 60% of $5, which is 0.6 x $5 = $3. ****** Step 3: So, the cost of 16 glasses is: 8 glasses at $5 each = 8 x $5 = $40 8 glasses at $3 each = 8 x $3 = $24 Total cost = $40 + $24 = $64 ****** Step 4: The answer is #### 64. ******
+LogProbs: 0.0
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Kylar wants to buy 16 glasses. ****** Step 2: Every second glass costs 60% of $5, which is 0.6 x $5 = $3. ****** Step 3: So, the cost of 16 glasses is: 8 glasses at $5 each = 8 x $5 = $40 8 glasses at $3 each = 8 x $3 = $24 Total cost = $40 + $24 = $64 ****** Step 4: The answer is #### 64. ******
+LogProbs: 0.0
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Let's calculate the cost of the first 8 glasses (since the 9th glass onwards will be at a discounted price). 8 glasses at $5 each will cost 8 * $5 = $40.
+
+Step 2: For the remaining 8 glasses, the cost will be 8 * (5 * 0.6) = 8 * $3 = $24.
+
+Step 3: Add the cost of the first 8 glasses and the remaining 8 glasses: $40 + $24 = $64.
+
+Step 4: The answer is #### 64.******
+LogProbs: 0.0
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Let's calculate the cost of the first 8 glasses (since the 9th glass onwards will be at a discounted price). 8 glasses at $5 each will cost 8 * $5 = $40.
+
+Step 2: For the remaining 8 glasses, the cost will be 8 * (5 * 0.6) = 8 * $3 = $24.
+
+Step 3: Add the cost of the first 8 glasses and the remaining 8 glasses: $40 + $24 = $64.
+
+Step 4: The answer is #### 64.******
+LogProbs: 0.0
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: One glass costs $5, but every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 2: Kylar wants to buy 16 glasses, so the cost of the first 8 glasses will be 8 * $5 = $40. ****** Step 3: The cost of the remaining 8 glasses will be 8 * $3 = $24. ****** Step 4: In total, Kylar needs to pay $40 + $24 = $64. ******
+LogProbs: -1.1368709802627563
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: One glass costs $5, but every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 2: Kylar wants to buy 16 glasses, so the cost of the first 8 glasses will be 8 * $5 = $40. ****** Step 3: The cost of the remaining 8 glasses will be 8 * $3 = $24. ****** Step 4: The total cost will be $40 + $24 = $64. ******
+LogProbs: -2.3628770411014557
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so he will need to buy 8 regular glasses and 8 discounted glasses. ****** Step 4: The total cost of the 8 regular glasses is 8 * $5 = $40. ******
+LogProbs: -1.5190865993499756
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so he will need to buy 8 regular glasses and 8 discounted glasses. ****** Step 4: The cost of the regular glasses is 8 * $5 = $40. ******
+LogProbs: -2.006408929824829
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so the first 8 glasses will cost $5 each, and the remaining 8 glasses will cost $3 each. ****** Step 4: The total cost of the first 8 glasses is 8 * $5 = $40. ******
+LogProbs: -0.38687101006507874
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so the first 8 glasses will cost $5 each, and the remaining 8 glasses will cost $3 each. ****** Step 4: The cost of the first 8 glasses is 8 * $5 = $40. ******
+LogProbs: -1.1368709802627563
+Added Probs: [-0.07890144576791858, -0.07890144576791858, -0.17293166594449863, -0.17293166594449863, -0.07294034685880418, -0.08538106364793464, -0.1277466548176912, -0.13636608348034396, -0.07406111700194222, -0.08148509076049736]
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [0, 1], 3: [8, 9], 4: [6, 7]}
+Selected Indexes: [4, 2, 0, 8, 6]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.21it/s, est. speed input: 1557.07 toks/s, output: 2.43 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.99it/s, est. speed input: 3341.32 toks/s, output: 26.09 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.04it/s, est. speed input: 3476.91 toks/s, output: 54.44 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.40it/s, est. speed input: 4333.27 toks/s, output: 88.46 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.4808528589783236 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: One glass costs $5, but every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 2: Kylar wants to buy 16 glasses, so the cost of the first 8 glasses will be 8 * $5 = $40. ****** Step 3: The cost of the remaining 8 glasses will be 8 * $3 = $24. ****** Step 4: In total, Kylar needs to pay $40 + $24 = $64. ****** Step 5: The answer is #### 64. ******
+LogProbs: 0.0
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: One glass costs $5, but every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 2: Kylar wants to buy 16 glasses, so the cost of the first 8 glasses will be 8 * $5 = $40. ****** Step 3: The cost of the remaining 8 glasses will be 8 * $3 = $24. ****** Step 4: In total, Kylar needs to pay $40 + $24 = $64. ****** Step 5: The answer is #### 64. ******
+LogProbs: 0.0
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Let's calculate the cost of the first 8 glasses (since the 9th glass onwards will be at a discounted price). 8 glasses at $5 each will cost 8 * $5 = $40.
+
+Step 2: For the remaining 8 glasses, the cost will be 8 * (5 * 0.6) = 8 * $3 = $24.
+
+Step 3: Add the cost of the first 8 glasses and the remaining 8 glasses: $40 + $24 = $64.
+
+Step 4: The answer is #### 64.******
+LogProbs: 0.0
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Let's calculate the cost of the first 8 glasses (since the 9th glass onwards will be at a discounted price). 8 glasses at $5 each will cost 8 * $5 = $40.
+
+Step 2: For the remaining 8 glasses, the cost will be 8 * (5 * 0.6) = 8 * $3 = $24.
+
+Step 3: Add the cost of the first 8 glasses and the remaining 8 glasses: $40 + $24 = $64.
+
+Step 4: The answer is #### 64.******
+LogProbs: 0.0
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Kylar wants to buy 16 glasses. ****** Step 2: Every second glass costs 60% of $5, which is 0.6 x $5 = $3. ****** Step 3: So, the cost of 16 glasses is: 8 glasses at $5 each = 8 x $5 = $40 8 glasses at $3 each = 8 x $3 = $24 Total cost = $40 + $24 = $64 ****** Step 4: The answer is #### 64. ******
+LogProbs: 0.0
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Kylar wants to buy 16 glasses. ****** Step 2: Every second glass costs 60% of $5, which is 0.6 x $5 = $3. ****** Step 3: So, the cost of 16 glasses is: 8 glasses at $5 each = 8 x $5 = $40 8 glasses at $3 each = 8 x $3 = $24 Total cost = $40 + $24 = $64 ****** Step 4: The answer is #### 64. ******
+LogProbs: 0.0
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so the first 8 glasses will cost $5 each, and the remaining 8 glasses will cost $3 each. ****** Step 4: The total cost of the first 8 glasses is 8 * $5 = $40. ****** Step 5: The total cost of the remaining 8 glasses is 8 * $3 = $24. ******
+LogProbs: 0.0
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so the first 8 glasses will cost $5 each, and the remaining 8 glasses will cost $3 each. ****** Step 4: The total cost of the first 8 glasses is 8 * $5 = $40. ****** Step 5: The total cost of the remaining 8 glasses is 8 * $3 = $24. ******
+LogProbs: 0.0
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so he will need to buy 8 regular glasses and 8 discounted glasses. ****** Step 4: The total cost of the 8 regular glasses is 8 * $5 = $40. ****** Step 5: The total cost of the 8 discounted glasses is 8 * $3 = $24. ******
+LogProbs: 0.0
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so he will need to buy 8 regular glasses and 8 discounted glasses. ****** Step 4: The total cost of the 8 regular glasses is 8 * $5 = $40. ****** Step 5: The total cost of the 8 discounted glasses is 8 * $3 = $24. ******
+LogProbs: 0.0
+Added Probs: [-0.0661185878000671, -0.0661185878000671, -0.17293166594449863, -0.17293166594449863, -0.07890144576791858, -0.07890144576791858, -0.06054631462932503, -0.06054631462932503, -0.10298955117085183, -0.10298955117085183]
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [6, 7], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 2, 6, 0, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.20it/s, est. speed input: 1529.12 toks/s, output: 2.39 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.08it/s, est. speed input: 3545.77 toks/s, output: 37.20 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.44it/s, est. speed input: 4429.40 toks/s, output: 70.25 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.4634712570114061 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Kylar wants to buy 16 glasses. ****** Step 2: Every second glass costs 60% of $5, which is 0.6 x $5 = $3. ****** Step 3: So, the cost of 16 glasses is: 8 glasses at $5 each = 8 x $5 = $40 8 glasses at $3 each = 8 x $3 = $24 Total cost = $40 + $24 = $64 ****** Step 4: The answer is #### 64. ******
+LogProbs: 0.0
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Kylar wants to buy 16 glasses. ****** Step 2: Every second glass costs 60% of $5, which is 0.6 x $5 = $3. ****** Step 3: So, the cost of 16 glasses is: 8 glasses at $5 each = 8 x $5 = $40 8 glasses at $3 each = 8 x $3 = $24 Total cost = $40 + $24 = $64 ****** Step 4: The answer is #### 64. ******
+LogProbs: 0.0
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Let's calculate the cost of the first 8 glasses (since the 9th glass onwards will be at a discounted price). 8 glasses at $5 each will cost 8 * $5 = $40.
+
+Step 2: For the remaining 8 glasses, the cost will be 8 * (5 * 0.6) = 8 * $3 = $24.
+
+Step 3: Add the cost of the first 8 glasses and the remaining 8 glasses: $40 + $24 = $64.
+
+Step 4: The answer is #### 64.******
+LogProbs: 0.0
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Let's calculate the cost of the first 8 glasses (since the 9th glass onwards will be at a discounted price). 8 glasses at $5 each will cost 8 * $5 = $40.
+
+Step 2: For the remaining 8 glasses, the cost will be 8 * (5 * 0.6) = 8 * $3 = $24.
+
+Step 3: Add the cost of the first 8 glasses and the remaining 8 glasses: $40 + $24 = $64.
+
+Step 4: The answer is #### 64.******
+LogProbs: 0.0
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so the first 8 glasses will cost $5 each, and the remaining 8 glasses will cost $3 each. ****** Step 4: The total cost of the first 8 glasses is 8 * $5 = $40. ****** Step 5: The total cost of the remaining 8 glasses is 8 * $3 = $24. ****** Step 6: The total cost of all 16 glasses is $40 + $24 = $64. ******
+LogProbs: -0.1602240949869156
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so the first 8 glasses will cost $5 each, and the remaining 8 glasses will cost $3 each. ****** Step 4: The total cost of the first 8 glasses is 8 * $5 = $40. ****** Step 5: The total cost of the remaining 8 glasses is 8 * $3 = $24. ****** Step 6: The total cost of all 16 glasses is $40 + $24 = $64. ******
+LogProbs: -0.1602240949869156
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: One glass costs $5, but every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 2: Kylar wants to buy 16 glasses, so the cost of the first 8 glasses will be 8 * $5 = $40. ****** Step 3: The cost of the remaining 8 glasses will be 8 * $3 = $24. ****** Step 4: In total, Kylar needs to pay $40 + $24 = $64. ****** Step 5: The answer is #### 64. ******
+LogProbs: 0.0
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: One glass costs $5, but every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 2: Kylar wants to buy 16 glasses, so the cost of the first 8 glasses will be 8 * $5 = $40. ****** Step 3: The cost of the remaining 8 glasses will be 8 * $3 = $24. ****** Step 4: In total, Kylar needs to pay $40 + $24 = $64. ****** Step 5: The answer is #### 64. ******
+LogProbs: 0.0
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so he will need to buy 8 regular glasses and 8 discounted glasses. ****** Step 4: The total cost of the 8 regular glasses is 8 * $5 = $40. ****** Step 5: The total cost of the 8 discounted glasses is 8 * $3 = $24. ****** Step 6: The total cost of all 16 glasses is $40 + $24 = $64. ******
+LogProbs: -0.12692804634571075
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so he will need to buy 8 regular glasses and 8 discounted glasses. ****** Step 4: The total cost of the 8 regular glasses is 8 * $5 = $40. ****** Step 5: The total cost of the 8 discounted glasses is 8 * $3 = $24. ****** Step 6: The total cost of all 16 glasses is $40 + $24 = $64. ******
+LogProbs: -0.12692804634571075
+Added Probs: [-0.07890144576791858, -0.07890144576791858, -0.17293166594449863, -0.17293166594449863, -0.05251595775903382, -0.05251595775903382, -0.0661185878000671, -0.0661185878000671, -0.087663922531932, -0.087663922531932]
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [0, 1], 3: [6, 7], 4: [8, 9]}
+Selected Indexes: [4, 2, 0, 6, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.19it/s, est. speed input: 1525.23 toks/s, output: 2.38 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  4.06it/s, est. speed input: 4444.03 toks/s, output: 27.50 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.30it/s, est. speed input: 5567.36 toks/s, output: 49.84 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.1759395119734108 sec
+Gen0: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so the first 8 glasses will cost $5 each, and the remaining 8 glasses will cost $3 each. ****** Step 4: The total cost of the first 8 glasses is 8 * $5 = $40. ****** Step 5: The total cost of the remaining 8 glasses is 8 * $3 = $24. ****** Step 6: The total cost of all 16 glasses is $40 + $24 = $64. ****** Step 7: The answer is #### 64. ******
+LogProbs: 0.0
+Gen1: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so the first 8 glasses will cost $5 each, and the remaining 8 glasses will cost $3 each. ****** Step 4: The total cost of the first 8 glasses is 8 * $5 = $40. ****** Step 5: The total cost of the remaining 8 glasses is 8 * $3 = $24. ****** Step 6: The total cost of all 16 glasses is $40 + $24 = $64. ****** Step 7: The answer is #### 64. ******
+LogProbs: 0.0
+Gen2: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Let's calculate the cost of the first 8 glasses (since the 9th glass onwards will be at a discounted price). 8 glasses at $5 each will cost 8 * $5 = $40.
+
+Step 2: For the remaining 8 glasses, the cost will be 8 * (5 * 0.6) = 8 * $3 = $24.
+
+Step 3: Add the cost of the first 8 glasses and the remaining 8 glasses: $40 + $24 = $64.
+
+Step 4: The answer is #### 64.******
+LogProbs: 0.0
+Gen3: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Let's calculate the cost of the first 8 glasses (since the 9th glass onwards will be at a discounted price). 8 glasses at $5 each will cost 8 * $5 = $40.
+
+Step 2: For the remaining 8 glasses, the cost will be 8 * (5 * 0.6) = 8 * $3 = $24.
+
+Step 3: Add the cost of the first 8 glasses and the remaining 8 glasses: $40 + $24 = $64.
+
+Step 4: The answer is #### 64.******
+LogProbs: 0.0
+Gen4: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Kylar wants to buy 16 glasses. ****** Step 2: Every second glass costs 60% of $5, which is 0.6 x $5 = $3. ****** Step 3: So, the cost of 16 glasses is: 8 glasses at $5 each = 8 x $5 = $40 8 glasses at $3 each = 8 x $3 = $24 Total cost = $40 + $24 = $64 ****** Step 4: The answer is #### 64. ******
+LogProbs: 0.0
+Gen5: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Kylar wants to buy 16 glasses. ****** Step 2: Every second glass costs 60% of $5, which is 0.6 x $5 = $3. ****** Step 3: So, the cost of 16 glasses is: 8 glasses at $5 each = 8 x $5 = $40 8 glasses at $3 each = 8 x $3 = $24 Total cost = $40 + $24 = $64 ****** Step 4: The answer is #### 64. ******
+LogProbs: 0.0
+Gen6: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: One glass costs $5, but every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 2: Kylar wants to buy 16 glasses, so the cost of the first 8 glasses will be 8 * $5 = $40. ****** Step 3: The cost of the remaining 8 glasses will be 8 * $3 = $24. ****** Step 4: In total, Kylar needs to pay $40 + $24 = $64. ****** Step 5: The answer is #### 64. ******
+LogProbs: 0.0
+Gen7: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: One glass costs $5, but every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 2: Kylar wants to buy 16 glasses, so the cost of the first 8 glasses will be 8 * $5 = $40. ****** Step 3: The cost of the remaining 8 glasses will be 8 * $3 = $24. ****** Step 4: In total, Kylar needs to pay $40 + $24 = $64. ****** Step 5: The answer is #### 64. ******
+LogProbs: 0.0
+Gen8: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so he will need to buy 8 regular glasses and 8 discounted glasses. ****** Step 4: The total cost of the 8 regular glasses is 8 * $5 = $40. ****** Step 5: The total cost of the 8 discounted glasses is 8 * $3 = $24. ****** Step 6: The total cost of all 16 glasses is $40 + $24 = $64. ****** Step 7: The answer is #### 64. ******
+LogProbs: 0.0
+Gen9: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so he will need to buy 8 regular glasses and 8 discounted glasses. ****** Step 4: The total cost of the 8 regular glasses is 8 * $5 = $40. ****** Step 5: The total cost of the 8 discounted glasses is 8 * $3 = $24. ****** Step 6: The total cost of all 16 glasses is $40 + $24 = $64. ****** Step 7: The answer is #### 64. ******
+LogProbs: 0.0
+Added Probs: [-0.048592351719565774, -0.048592351719565774, -0.17293166594449863, -0.17293166594449863, -0.07890144576791858, -0.07890144576791858, -0.0661185878000671, -0.0661185878000671, -0.08079867558666022, -0.08079867558666022]
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [6, 7], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 2, 6, 0, 8]
+Found EoS token, Break
+completions: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so the first 8 glasses will cost $5 each, and the remaining 8 glasses will cost $3 each. ****** Step 4: The total cost of the first 8 glasses is 8 * $5 = $40. ****** Step 5: The total cost of the remaining 8 glasses is 8 * $3 = $24. ****** Step 6: The total cost of all 16 glasses is $40 + $24 = $64. ****** Step 7: The answer is #### 64. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so the first 8 glasses will cost $5 each, and the remaining 8 glasses will cost $3 each. ****** Step 4: The total cost of the first 8 glasses is 8 * $5 = $40. ****** Step 5: The total cost of the remaining 8 glasses is 8 * $3 = $24. ****** Step 6: The total cost of all 16 glasses is $40 + $24 = $64. ****** Step 7: The answer is #### 64. ******', "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Let's calculate the cost of the first 8 glasses (since the 9th glass onwards will be at a discounted price). 8 glasses at $5 each will cost 8 * $5 = $40.\n\nStep 2: For the remaining 8 glasses, the cost will be 8 * (5 * 0.6) = 8 * $3 = $24.\n\nStep 3: Add the cost of the first 8 glasses and the remaining 8 glasses: $40 + $24 = $64.\n\nStep 4: The answer is #### 64.******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Let's calculate the cost of the first 8 glasses (since the 9th glass onwards will be at a discounted price). 8 glasses at $5 each will cost 8 * $5 = $40.\n\nStep 2: For the remaining 8 glasses, the cost will be 8 * (5 * 0.6) = 8 * $3 = $24.\n\nStep 3: Add the cost of the first 8 glasses and the remaining 8 glasses: $40 + $24 = $64.\n\nStep 4: The answer is #### 64.******", '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Kylar wants to buy 16 glasses. ****** Step 2: Every second glass costs 60% of $5, which is 0.6 x $5 = $3. ****** Step 3: So, the cost of 16 glasses is: 8 glasses at $5 each = 8 x $5 = $40 8 glasses at $3 each = 8 x $3 = $24 Total cost = $40 + $24 = $64 ****** Step 4: The answer is #### 64. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Kylar wants to buy 16 glasses. ****** Step 2: Every second glass costs 60% of $5, which is 0.6 x $5 = $3. ****** Step 3: So, the cost of 16 glasses is: 8 glasses at $5 each = 8 x $5 = $40 8 glasses at $3 each = 8 x $3 = $24 Total cost = $40 + $24 = $64 ****** Step 4: The answer is #### 64. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: One glass costs $5, but every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 2: Kylar wants to buy 16 glasses, so the cost of the first 8 glasses will be 8 * $5 = $40. ****** Step 3: The cost of the remaining 8 glasses will be 8 * $3 = $24. ****** Step 4: In total, Kylar needs to pay $40 + $24 = $64. ****** Step 5: The answer is #### 64. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: One glass costs $5, but every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 2: Kylar wants to buy 16 glasses, so the cost of the first 8 glasses will be 8 * $5 = $40. ****** Step 3: The cost of the remaining 8 glasses will be 8 * $3 = $24. ****** Step 4: In total, Kylar needs to pay $40 + $24 = $64. ****** Step 5: The answer is #### 64. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so he will need to buy 8 regular glasses and 8 discounted glasses. ****** Step 4: The total cost of the 8 regular glasses is 8 * $5 = $40. ****** Step 5: The total cost of the 8 discounted glasses is 8 * $3 = $24. ****** Step 6: The total cost of all 16 glasses is $40 + $24 = $64. ****** Step 7: The answer is #### 64. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses, so he will need to buy 8 regular glasses and 8 discounted glasses. ****** Step 4: The total cost of the 8 regular glasses is 8 * $5 = $40. ****** Step 5: The total cost of the 8 discounted glasses is 8 * $3 = $24. ****** Step 6: The total cost of all 16 glasses is $40 + $24 = $64. ****** Step 7: The answer is #### 64. ******']
+Answer Probs: []
+>> Processing time: 13.83384095900692
+>> Answer lists: ['64', '64', '64', '64', '64', '64', '64', '64', '64', '64']
+>> Original Correct: 64, True
+>> Soft SC  Correct: 64, True
+>> Golden    Answer: 64
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.22s/it, est. speed input: 936.18 toks/s, output: 195.10 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.22s/it, est. speed input: 936.18 toks/s, output: 195.10 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (2) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 1.223090457962826 sec
+Added Probs: [-0.06562602519989014, -0.06562602519989014, -0.08125102519989014, -0.08125102519989014, -0.08125102519989014, -0.08125102519989014, -0.07647155312930837, -0.08382449430577896, -0.08382449430577896, -0.09694712162017823]
+Cluster Indices: {0: [0, 1, 2, 3, 4, 5], 1: [6, 7, 8, 9], 2: [], 3: [], 4: []}
+Selected Indexes: [0, 6, 1, 2, 3]
+srun: got SIGCONT
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd-n02: error: *** JOB 19828 ON n02 CANCELLED AT 2024-08-11T18:01:51 ***
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]slurmstepd-n02: error: *** STEP 19828.0 ON n02 CANCELLED AT 2024-08-11T18:01:51 ***
+srun: forcing job termination

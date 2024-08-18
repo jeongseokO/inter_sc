@@ -1,0 +1,1422 @@
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/jeongseokoh/.cache/huggingface/token
+Login successful
+Inter SC_beam
+Num Path: 10 + 5 x 2, Interval: 5
+INFO 08-10 18:59:23 llm_engine.py:161] Initializing an LLM engine (v0.5.0.post1) with config: model='meta-llama/Meta-Llama-3-8B-Instruct', speculative_config=None, tokenizer='meta-llama/Meta-Llama-3-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir='../../hub/model/', load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=0, served_model_name=meta-llama/Meta-Llama-3-8B-Instruct)
+INFO 08-10 18:59:26 weight_utils.py:218] Using model weights format ['*.safetensors']
+INFO 08-10 18:59:30 model_runner.py:160] Loading model weights took 14.9595 GB
+INFO 08-10 18:59:32 gpu_executor.py:83] # GPU blocks: 13407, # CPU blocks: 2048
+INFO 08-10 18:59:35 model_runner.py:889] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 08-10 18:59:35 model_runner.py:893] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 08-10 18:59:44 model_runner.py:965] Graph capturing finished in 9 secs.
+Model: llama3_8b is selected
+Dataset: gsm8k is selected
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.36it/s, est. speed input: 1583.34 toks/s, output: 272.51 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.36it/s, est. speed input: 1583.34 toks/s, output: 272.51 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (1) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 0.7448526860680431 sec
+Cluster Indices: {0: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 1: [], 2: [], 3: [], 4: []}
+Selected Indexes: [0, 9, 8, 7, 6]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.54s/it, est. speed input: 766.29 toks/s, output: 36.30 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.81it/s, est. speed input: 2655.84 toks/s, output: 133.69 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.70it/s, est. speed input: 3186.09 toks/s, output: 165.50 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.8952067770296708 sec
+Cluster Indices: {0: [5], 1: [0, 4, 6, 7], 2: [2, 3, 8], 3: [9], 4: [1]}
+Selected Indexes: [5, 0, 2, 9, 1]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.62s/it, est. speed input: 745.13 toks/s, output: 36.95 toks/s]Processed prompts:  40%|████      | 2/5 [00:02<00:03,  1.28s/it, est. speed input: 912.10 toks/s, output: 72.79 toks/s]Processed prompts:  60%|██████    | 3/5 [00:02<00:01,  1.28it/s, est. speed input: 1278.08 toks/s, output: 116.98 toks/s]Processed prompts:  80%|████████  | 4/5 [00:03<00:00,  1.86it/s, est. speed input: 1612.35 toks/s, output: 162.89 toks/s]Processed prompts: 100%|██████████| 5/5 [00:03<00:00,  1.76it/s, est. speed input: 1669.36 toks/s, output: 185.91 toks/s]Processed prompts: 100%|██████████| 5/5 [00:03<00:00,  1.37it/s, est. speed input: 1669.36 toks/s, output: 185.91 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 3.6490001199999824 sec
+>>> 0th Gen: 
+
+Step 3: She has 16 - 7 = 9 eggs left for the farmers' market. ******
+
+Step 4: She sells the eggs for $2 each, so she makes 9 * $2 = $18. ******
+
+Step 5: The answer is #### 18. ******
+>>> 0th sentence logprob checked!
+>>> 1th Gen: 
+
+Step 3: This means she has 16 - 7 = 9 eggs left to sell at the farmers' market. ******
+
+Step 4: She sells each egg for $2, so she makes 9 * $2 = $18 per day at the farmers' market. ******
+
+Step 5: The answer is #### 18. ******
+>>> 1th sentence logprob checked!
+>>> 2th Gen: 
+
+Step 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ******
+
+Step 5: The answer is #### 18. ******
+>>> 2th sentence logprob checked!
+>>> 3th Gen: 
+
+Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******
+
+Step 5: To find the total amount she makes, multiply the number of eggs sold by the price per egg: 9 eggs * $2/egg = $18. ******
+
+Step 6: The answer is #### 18. ******
+>>> 3th sentence logprob checked!
+>>> 6th Gen: 
+
+Step 3: She bakes muffins with 4 eggs, so she is left with 13 - 4 = 9 eggs. ******
+
+Step 4: She sells the remaining 9 eggs at $2 per egg, so she makes 9 * $2 = $18. ******
+
+Step 5: The answer is #### 18. ******
+>>> 6th sentence logprob checked!
+>>> 7th Gen: 
+
+Step 3: She bakes 4 eggs for her friends, so she is left with 13 - 4 = 9 eggs. ******
+
+Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg, so she makes 9 x $2 = $18. ******
+
+Step 5: The answer is #### 18. ******
+>>> 7th sentence logprob checked!
+>>> 8th Gen: 
+
+Step 3: She has 16 - 7 = 9 eggs left. ******
+
+Step 4: She sells these 9 eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ******
+
+Step 5: The answer is #### 18. ******
+>>> 8th sentence logprob checked!
+>>> 9th Gen: 
+
+Step 3: She has 16 - 7 = 9 eggs left. ******
+
+Step 4: She sells these eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ******
+
+Step 5: The answer is #### 18. ******
+>>> 9th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [2, 7], 2: [0, 1, 8, 9], 3: [3], 4: [6]}
+Selected Indexes: [4, 2, 8, 3, 6]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.21it/s, est. speed input: 1552.27 toks/s, output: 2.41 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.48it/s, est. speed input: 4014.33 toks/s, output: 39.41 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.13it/s, est. speed input: 4014.33 toks/s, output: 39.41 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.611066690995358 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.21it/s, est. speed input: 1553.29 toks/s, output: 2.41 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.84it/s, est. speed input: 4371.66 toks/s, output: 39.37 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.39it/s, est. speed input: 4371.66 toks/s, output: 39.37 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.488594829919748 sec
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [0, 1], 3: [6, 7], 4: [8, 9]}
+Selected Indexes: [4, 2, 0, 6, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.20it/s, est. speed input: 1550.59 toks/s, output: 2.41 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  5.26it/s, est. speed input: 5659.28 toks/s, output: 29.76 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.38it/s, est. speed input: 5659.28 toks/s, output: 29.76 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.1541441640583798 sec
+>>> 6th Gen:  Step 6: The answer is #### 18. ******
+>>> 6th sentence logprob checked!
+>>> 7th Gen:  Step 6: The answer is #### 18. ******
+>>> 7th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [8, 9], 4: [0, 1]}
+Selected Indexes: [4, 6, 2, 8, 0]
+Found EoS token, Break
+completions: ["<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******\n\nStep 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ******\n\nStep 5: The answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******\n\nStep 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ******\n\nStep 5: The answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******\n\nStep 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******\n\nStep 5: To find the total amount she makes, multiply the number of eggs sold by the price per egg: 9 eggs * $2/egg = $18. ******\n\nStep 6: The answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******\n\nStep 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******\n\nStep 5: To find the total amount she makes, multiply the number of eggs sold by the price per egg: 9 eggs * $2/egg = $18. ******\n\nStep 6: The answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, and bakes 4 for her friends, so she uses a total of 3 + 4 = 7 eggs. ******\n\nStep 3: She has 16 - 7 = 9 eggs left. ******\n\nStep 4: She sells these 9 eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ******\n\nStep 5: The answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, and bakes 4 for her friends, so she uses a total of 3 + 4 = 7 eggs. ******\n\nStep 3: She has 16 - 7 = 9 eggs left. ******\n\nStep 4: She sells these 9 eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ******\n\nStep 5: The answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes muffins with 4 eggs, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ****** Step 5: The total amount she makes is 9 eggs * $2 per egg = $18. ****** Step 6: The answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes muffins with 4 eggs, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ****** Step 5: The total amount she makes is 9 eggs * $2 per egg = $18. ****** Step 6: The answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, so she is left with 16 - 3 = 13 eggs. ******\n\nStep 3: She bakes muffins with 4 eggs, so she is left with 13 - 4 = 9 eggs. ******\n\nStep 4: She sells the remaining 9 eggs at $2 per egg, so she makes 9 * $2 = $18. ******\n\nStep 5: The answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, so she is left with 16 - 3 = 13 eggs. ******\n\nStep 3: She bakes muffins with 4 eggs, so she is left with 13 - 4 = 9 eggs. ******\n\nStep 4: She sells the remaining 9 eggs at $2 per egg, so she makes 9 * $2 = $18. ******\n\nStep 5: The answer is #### 18. ******"]
+Answer Probs: {0: -5.072572775185108, 1: -6.150144554674625, 2: -3.4917306900024414, 3: -5.655205935239792, 4: 0, 5: 0, 6: 0.0, 7: 0.0, 8: -2.584832012653351, 9: -3.447961002588272}
+>> Processing time: 11.127018865896389
+>> Answer lists: ['18', '18', '18', '18', '18', '18', '18', '18', '18', '18']
+>> Original Correct: 18, True
+>> Soft SC  Correct: 18, True
+>> Golden    Answer: 18
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:02<00:00,  2.77s/it, est. speed input: 406.49 toks/s, output: 252.20 toks/s]Processed prompts: 100%|██████████| 1/1 [00:02<00:00,  2.77s/it, est. speed input: 406.49 toks/s, output: 252.20 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.7709105510730296 sec
+>>> 3th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ******
+
+Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ******
+
+Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ******
+
+Step 4: The answer is #### 3. ******
+>>> 3th sentence logprob checked!
+>>> 4th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ******
+
+Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ******
+
+Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ******
+
+Step 4: The answer is #### 3. ******
+>>> 4th sentence logprob checked!
+>>> 5th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ******
+
+Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ******
+
+Step 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ******
+
+Step 4: The answer is #### 3. ******
+>>> 5th sentence logprob checked!
+>>> 6th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: A robe takes 2 bolts of blue fiber. ******
+
+Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ******
+
+Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ******
+
+Step 4: The answer is #### 3. ******
+>>> 6th sentence logprob checked!
+>>> 7th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ******
+
+Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ******
+
+Step 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber. ******
+
+Step 4: The answer is #### 3. ******
+>>> 7th sentence logprob checked!
+>>> 8th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The robe takes 2 bolts of blue fiber. ******
+
+Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ******
+
+Step 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ******
+
+The answer is #### 3. ******
+>>> 8th sentence logprob checked!
+>>> 9th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: A robe takes 2 bolts of blue fiber. ******
+
+Step 2: It also takes half that much white fiber. Since half of 2 is 1, it takes 1 bolt of white fiber. ******
+
+Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ******
+
+Step 4: The answer is #### 3.******
+>>> 9th sentence logprob checked!
+Cluster Indices: {0: [5, 8], 1: [0, 1, 2], 2: [9], 3: [3, 4, 7], 4: [6]}
+Selected Indexes: [5, 0, 9, 3, 6]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.29it/s, est. speed input: 1572.51 toks/s, output: 2.57 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.95it/s, est. speed input: 4225.75 toks/s, output: 42.18 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.51it/s, est. speed input: 4225.75 toks/s, output: 42.18 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.4342849029926583 sec
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [6, 7], 3: [8, 9], 4: [0, 1]}
+Selected Indexes: [4, 2, 6, 8, 0]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.26it/s, est. speed input: 1535.10 toks/s, output: 2.53 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.20it/s, est. speed input: 3534.64 toks/s, output: 40.98 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.93it/s, est. speed input: 3534.64 toks/s, output: 40.98 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.7189414049498737 sec
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [0, 1], 3: [8, 9], 4: [6, 7]}
+Selected Indexes: [4, 2, 0, 8, 6]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.25it/s, est. speed input: 1513.68 toks/s, output: 2.51 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  5.41it/s, est. speed input: 5472.21 toks/s, output: 29.79 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.51it/s, est. speed input: 5472.21 toks/s, output: 29.79 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.1188162579201162 sec
+>>> 2th Gen:  Step 4: The answer is #### 3. ******
+>>> 2th sentence logprob checked!
+>>> 3th Gen:  Step 4: The answer is #### 3.******
+>>> 3th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+Found EoS token, Break
+completions: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The robe takes 2 bolts of blue fiber. ******\n\nStep 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ******\n\nStep 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ******\n\nStep 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The robe takes 2 bolts of blue fiber. ******\n\nStep 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ******\n\nStep 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ******\n\nStep 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: A robe takes 2 bolts of blue fiber. ****** Step 2: It also takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ****** Step 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: A robe takes 2 bolts of blue fiber. ****** Step 2: It also takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ****** Step 4: The answer is #### 3.******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: A robe takes 2 bolts of blue fiber. ******\n\nStep 2: It also takes half that much white fiber. Since half of 2 is 1, it takes 1 bolt of white fiber. ******\n\nStep 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ******\n\nStep 4: The answer is #### 3.******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: A robe takes 2 bolts of blue fiber. ******\n\nStep 2: It also takes half that much white fiber. Since half of 2 is 1, it takes 1 bolt of white fiber. ******\n\nStep 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ******\n\nStep 4: The answer is #### 3.******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The robe takes 2 bolts of blue fiber. ******\n\nStep 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ******\n\nStep 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ******\n\nStep 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The robe takes 2 bolts of blue fiber. ******\n\nStep 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ******\n\nStep 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ******\n\nStep 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: A robe takes 2 bolts of blue fiber. ******\n\nStep 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ******\n\nStep 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ******\n\nStep 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: A robe takes 2 bolts of blue fiber. ******\n\nStep 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ******\n\nStep 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ******\n\nStep 4: The answer is #### 3. ******']
+Answer Probs: {0: 0, 1: 0, 2: -0.3484445810317993, 3: -1.2234445810317993, 4: -3.7865101397037506, 5: -3.9721393138170242, 6: -4.048195526003838, 7: -4.549187809228897, 8: -5.196216270327568, 9: -5.574286416172981}
+>> Processing time: 7.151026488980278
+>> Answer lists: ['3', '3', '3', '3', '3', '3', '3', '3', '3', '3']
+>> Original Correct: 3, True
+>> Soft SC  Correct: 3, True
+>> Golden    Answer: 3
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.03it/s, est. speed input: 1182.79 toks/s, output: 254.47 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.03it/s, est. speed input: 1182.79 toks/s, output: 254.47 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 0.9739881419809535 sec
+Cluster Indices: {0: [5], 1: [6, 7, 8], 2: [0, 1, 2, 3], 3: [9], 4: [4]}
+Selected Indexes: [5, 6, 0, 9, 4]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.19s/it, est. speed input: 979.12 toks/s, output: 26.82 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.33it/s, est. speed input: 2320.13 toks/s, output: 71.97 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.30it/s, est. speed input: 3873.24 toks/s, output: 144.58 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.5258902619825676 sec
+Cluster Indices: {0: [0, 1, 4, 5], 1: [6, 7], 2: [8, 9], 3: [2], 4: [3]}
+Selected Indexes: [4, 6, 8, 2, 3]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.20s/it, est. speed input: 982.88 toks/s, output: 26.56 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.36it/s, est. speed input: 1479.68 toks/s, output: 55.77 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.11it/s, est. speed input: 2018.76 toks/s, output: 87.89 toks/s]Processed prompts:  80%|████████  | 4/5 [00:04<00:01,  1.51s/it, est. speed input: 982.04 toks/s, output: 85.73 toks/s] Processed prompts: 100%|██████████| 5/5 [00:05<00:00,  1.21s/it, est. speed input: 1078.99 toks/s, output: 136.70 toks/s]Processed prompts: 100%|██████████| 5/5 [00:05<00:00,  1.11s/it, est. speed input: 1078.99 toks/s, output: 136.70 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 5.564605536987074 sec
+>>> 2th Gen: 
+
+Step 3: The value of the house increases by 150%, which means it becomes 150% of the original value. To find the new value, multiply the original value by 1.5: $80,000 x 1.5 = $120,000. ******
+
+Step 4: The profit is the difference between the new value and the total amount spent: $120,000 - $130,000 = -$10,000. ******
+
+Step 5: However, Josh did make a profit because the house increased in value. To find the profit, subtract the original value from the new value: $120,000 - $80,000 = $40,000. ******
+
+Step 6: The answer is #### 40,000. ******
+>>> 2th sentence logprob checked!
+>>> 3th Gen: 
+
+Step 3: The value of the house increases by 150%, which means it becomes 150% of its original value. To find the new value, multiply the original value by 1.5: $80,000 x 1.5 = $120,000. ******
+
+Step 4: Since the value of the house increases by 150%, the new value is $120,000. ******
+
+Step 5: Josh sells the house for its new value, which is $120,000. ******
+
+Step 6: To find the profit, subtract the total amount spent ($130,000) from the selling price ($120,000): $120,000 - $130,000 = -$10,000. ******
+
+Step 7: Since Josh spent more than he earned, he made a loss. The answer is #### -10,000. ******
+>>> 3th sentence logprob checked!
+>>> 8th Gen: 
+
+Step 3: The value of the house increased by 150%, so the new value is $80,000 + (150% of $80,000) = $80,000 + $120,000 = $200,000. ******
+
+Step 4: Josh sold the house for $200,000. He spent $130,000, so his profit is $200,000 - $130,000 = $70,000. ******
+
+Step 5: The answer is #### 70000. ******
+>>> 8th sentence logprob checked!
+>>> 9th Gen: 
+
+Step 3: The value of the house increased by 150%, which means the new value is 150% of the original value. ******
+
+Step 4: The original value of the house is $80,000, so 150% of that is 1.5 * $80,000 = $120,000. ******
+
+Step 5: The profit is the difference between the new value and the total amount spent. ******
+
+Step 6: Profit = $120,000 - $130,000 = -$10,000. ******
+
+However, Josh didn't sell the house yet, so he doesn't have a profit. He has a loss of $10,000.
+
+The answer is #### -10,000. ******
+>>> 9th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [0, 1, 6, 7], 3: [9], 4: [8]}
+Selected Indexes: [4, 2, 0, 9, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.20it/s, est. speed input: 1634.32 toks/s, output: 2.40 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.50it/s, est. speed input: 3045.12 toks/s, output: 39.89 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.50it/s, est. speed input: 3040.29 toks/s, output: 67.70 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.35it/s, est. speed input: 3040.29 toks/s, output: 67.70 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.1395003559300676 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [8, 9], 4: [0, 1]}
+Selected Indexes: [4, 6, 2, 8, 0]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.20it/s, est. speed input: 1626.86 toks/s, output: 2.40 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.73it/s, est. speed input: 3276.75 toks/s, output: 41.15 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.88it/s, est. speed input: 3428.38 toks/s, output: 65.14 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.63it/s, est. speed input: 3428.38 toks/s, output: 65.14 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.916577483061701 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [0, 1], 3: [2, 3], 4: [8, 9]}
+Selected Indexes: [4, 6, 0, 2, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.18it/s, est. speed input: 1608.78 toks/s, output: 2.36 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.07it/s, est. speed input: 3621.65 toks/s, output: 37.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.86it/s, est. speed input: 3515.74 toks/s, output: 70.08 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.67it/s, est. speed input: 3515.74 toks/s, output: 70.08 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.8814806279260665 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.18it/s, est. speed input: 1599.40 toks/s, output: 2.36 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.62it/s, est. speed input: 4195.68 toks/s, output: 31.34 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.96it/s, est. speed input: 3734.74 toks/s, output: 54.62 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.81it/s, est. speed input: 3734.74 toks/s, output: 54.62 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.788240778958425 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [0, 1], 3: [8, 9], 4: [2, 3]}
+Selected Indexes: [4, 6, 0, 8, 2]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.13it/s, est. speed input: 1485.71 toks/s, output: 2.26 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.22it/s, est. speed input: 3794.61 toks/s, output: 28.96 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.57it/s, est. speed input: 4126.29 toks/s, output: 57.53 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.09it/s, est. speed input: 4126.29 toks/s, output: 57.53 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.6294245419558138 sec
+>>> 7th Gen:  Step 8: Since Josh did not make a profit, the answer is #### 0. ******
+>>> 7th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [0, 1], 3: [2, 3], 4: [8, 9]}
+Selected Indexes: [4, 6, 0, 2, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.12it/s, est. speed input: 1465.18 toks/s, output: 2.23 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.70it/s, est. speed input: 4241.24 toks/s, output: 28.35 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.78it/s, est. speed input: 5076.18 toks/s, output: 50.71 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.3344647769117728 sec
+>>> 0th Gen:  Step 9: The answer is #### 40000. ******
+>>> 0th sentence logprob checked!
+>>> 1th Gen:  Step 9: Josh made a profit of #### 40,000. ******
+>>> 1th sentence logprob checked!
+>>> 2th Gen:  Step 9: The answer is #### -10,000. ******
+>>> 2th sentence logprob checked!
+>>> 3th Gen:  Step 9: The answer is #### -10,000. ******
+>>> 3th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [6, 7], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 2, 6, 0, 8]
+Found EoS token, Break
+completions: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys a house for $80,000. ****** Step 2: He puts in $50,000 in repairs. ****** Step 3: The value of the house increases by 150%. ****** Step 4: This means the new value of the house is 1.5 times the original value. ****** Step 5: So, the new value of the house is 1.5 * $80,000 = $120,000. ****** Step 6: Josh bought the house for $80,000 and sold it for $120,000. ****** Step 7: His profit is the difference between the selling price and the buying price. ****** Step 8: Profit = $120,000 - $80,000 = $40,000. ****** Step 9: The answer is #### 40000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys a house for $80,000. ****** Step 2: He puts in $50,000 in repairs. ****** Step 3: The value of the house increases by 150%. ****** Step 4: This means the new value of the house is 1.5 times the original value. ****** Step 5: So, the new value of the house is 1.5 * $80,000 = $120,000. ****** Step 6: Josh bought the house for $80,000 and sold it for $120,000. ****** Step 7: His profit is the difference between the selling price and the buying price. ****** Step 8: Profit = $120,000 - $80,000 = $40,000. ****** Step 9: Josh made a profit of #### 40,000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys a house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, which means the new value is 1.5 times the original value. ****** Step 4: The original value was $80,000, so the new value is 1.5 * $80,000 = $120,000. ****** Step 5: Josh sells the house for $120,000. ****** Step 6: His profit is the difference between the selling price and the total amount he spent: $120,000 - $130,000 = -$10,000. ****** Step 7: However, this is a loss, not a profit. ****** Step 8: Josh actually lost $10,000. ****** Step 9: The answer is #### -10,000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys a house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, which means the new value is 1.5 times the original value. ****** Step 4: The original value was $80,000, so the new value is 1.5 * $80,000 = $120,000. ****** Step 5: Josh sells the house for $120,000. ****** Step 6: His profit is the difference between the selling price and the total amount he spent: $120,000 - $130,000 = -$10,000. ****** Step 7: However, this is a loss, not a profit. ****** Step 8: Josh actually lost $10,000. ****** Step 9: The answer is #### -10,000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys a house for $80,000 and then puts in $50,000 in repairs. ******\n\nStep 2: The total amount Josh spent is $80,000 + $50,000 = $130,000. ******\n\nStep 3: The value of the house increased by 150%, so the new value is $80,000 + (150% of $80,000) = $80,000 + $120,000 = $200,000. ******\n\nStep 4: Josh sold the house for $200,000. He spent $130,000, so his profit is $200,000 - $130,000 = $70,000. ******\n\nStep 5: The answer is #### 70000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys a house for $80,000 and then puts in $50,000 in repairs. ******\n\nStep 2: The total amount Josh spent is $80,000 + $50,000 = $130,000. ******\n\nStep 3: The value of the house increased by 150%, so the new value is $80,000 + (150% of $80,000) = $80,000 + $120,000 = $200,000. ******\n\nStep 4: Josh sold the house for $200,000. He spent $130,000, so his profit is $200,000 - $130,000 = $70,000. ******\n\nStep 5: The answer is #### 70000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000 and spends $50,000 on repairs. ******\n\nStep 2: The total amount he spends is $80,000 + $50,000 = $130,000. ******\n\nStep 3: The value of the house increases by 150%, which means it becomes 150% of the original value. To find the new value, multiply the original value by 1.5: $80,000 x 1.5 = $120,000. ******\n\nStep 4: The profit is the difference between the new value and the total amount spent: $120,000 - $130,000 = -$10,000. ******\n\nStep 5: However, Josh did make a profit because the house increased in value. To find the profit, subtract the original value from the new value: $120,000 - $80,000 = $40,000. ******\n\nStep 6: The answer is #### 40,000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000 and spends $50,000 on repairs. ******\n\nStep 2: The total amount he spends is $80,000 + $50,000 = $130,000. ******\n\nStep 3: The value of the house increases by 150%, which means it becomes 150% of the original value. To find the new value, multiply the original value by 1.5: $80,000 x 1.5 = $120,000. ******\n\nStep 4: The profit is the difference between the new value and the total amount spent: $120,000 - $130,000 = -$10,000. ******\n\nStep 5: However, Josh did make a profit because the house increased in value. To find the profit, subtract the original value from the new value: $120,000 - $80,000 = $40,000. ******\n\nStep 6: The answer is #### 40,000. ******', "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys a house for $80,000 and then puts in $50,000 in repairs. ******\n\nStep 2: The total amount Josh spent is $80,000 + $50,000 = $130,000. ******\n\nStep 3: The value of the house increased by 150%, which means the new value is 150% of the original value. ******\n\nStep 4: The original value of the house is $80,000, so 150% of that is 1.5 * $80,000 = $120,000. ******\n\nStep 5: The profit is the difference between the new value and the total amount spent. ******\n\nStep 6: Profit = $120,000 - $130,000 = -$10,000. ******\n\nHowever, Josh didn't sell the house yet, so he doesn't have a profit. He has a loss of $10,000.\n\nThe answer is #### -10,000. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys a house for $80,000 and then puts in $50,000 in repairs. ******\n\nStep 2: The total amount Josh spent is $80,000 + $50,000 = $130,000. ******\n\nStep 3: The value of the house increased by 150%, which means the new value is 150% of the original value. ******\n\nStep 4: The original value of the house is $80,000, so 150% of that is 1.5 * $80,000 = $120,000. ******\n\nStep 5: The profit is the difference between the new value and the total amount spent. ******\n\nStep 6: Profit = $120,000 - $130,000 = -$10,000. ******\n\nHowever, Josh didn't sell the house yet, so he doesn't have a profit. He has a loss of $10,000.\n\nThe answer is #### -10,000. ******"]
+Answer Probs: {0: -1.24050635099411, 1: -2.1082140877842903, 2: -0.43167369067668915, 3: -0.43167369067668915, 4: 0, 5: 0, 6: 0, 7: -3.8628809452056885, 8: -6.496877357363701, 9: -23.347769886255264}
+>> Processing time: 19.012139133992605
+>> Answer lists: ['40000', '40000', '-10000', '-10000', '70000', '70000', '40000', '40000', '-10000', '-10000']
+>> Original Correct: 40000, False
+>> Soft SC  Correct: 70000, True
+>> Golden    Answer: 70000
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.33it/s, est. speed input: 1504.79 toks/s, output: 268.28 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.33it/s, est. speed input: 1504.79 toks/s, output: 268.28 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (3) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 0.7563779699848965 sec
+Cluster Indices: {0: [4, 5, 6, 7, 8], 1: [0, 1, 2, 3], 2: [9], 3: [], 4: []}
+Selected Indexes: [4, 0, 9, 8, 7]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.46s/it, est. speed input: 789.54 toks/s, output: 35.55 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.50it/s, est. speed input: 1468.64 toks/s, output: 61.11 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.08it/s, est. speed input: 3553.01 toks/s, output: 152.28 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.6326609859243035 sec
+Cluster Indices: {0: [4, 5, 7], 1: [6, 8], 2: [2, 3], 3: [0, 9], 4: [1]}
+Selected Indexes: [4, 6, 2, 0, 1]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.43s/it, est. speed input: 815.37 toks/s, output: 33.56 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.49it/s, est. speed input: 1488.84 toks/s, output: 63.84 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.04it/s, est. speed input: 3567.75 toks/s, output: 173.01 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.6579756250139326 sec
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [6, 7, 9], 3: [8], 4: [0, 1]}
+Selected Indexes: [4, 2, 6, 8, 0]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.14s/it, est. speed input: 1058.99 toks/s, output: 22.74 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.89it/s, est. speed input: 2977.35 toks/s, output: 84.48 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.99it/s, est. speed input: 3599.95 toks/s, output: 119.64 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.6834397120401263 sec
+>>> 0th Gen:  Step 4: The answer is #### 540. ******
+>>> 0th sentence logprob checked!
+>>> 1th Gen:  Step 4: The answer is #### 540. ******
+>>> 1th sentence logprob checked!
+>>> 4th Gen:  Step 4: The answer is #### 540. ******
+>>> 4th sentence logprob checked!
+>>> 5th Gen:  Step 4: The answer is #### 540. ******
+>>> 5th sentence logprob checked!
+>>> 8th Gen:  Step 4: The answer is #### 540. ******
+>>> 8th sentence logprob checked!
+>>> 9th Gen:  Step 4: The answer is #### 540. ******
+>>> 9th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [8, 9], 2: [2, 3], 3: [6, 7], 4: [0, 1]}
+Selected Indexes: [4, 8, 2, 6, 0]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.24it/s, est. speed input: 1518.70 toks/s, output: 2.48 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  4.17it/s, est. speed input: 4339.79 toks/s, output: 28.35 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.43it/s, est. speed input: 5419.92 toks/s, output: 51.38 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.1402172659290954 sec
+>>> 4th Gen:  Step 5: The answer is #### 540. ******
+>>> 4th sentence logprob checked!
+>>> 5th Gen:  Step 5: The answer is #### 540. ******
+>>> 5th sentence logprob checked!
+>>> 6th Gen:  Step 5: The answer is #### 540. ******
+>>> 6th sentence logprob checked!
+>>> 7th Gen:  Step 5: The answer is #### 540. ******
+>>> 7th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [8, 9], 2: [6, 7], 3: [0, 1], 4: [2, 3]}
+Selected Indexes: [4, 8, 6, 0, 2]
+Found EoS token, Break
+completions: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints each time. ****** Step 2: Each sprint is 60 meters, so in total he runs 3 * 60 = 180 meters each time. ****** Step 3: He does this 3 times a week, so in total he runs 3 * 180 = 540 meters a week. ****** Step 4: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints each time. ****** Step 2: Each sprint is 60 meters, so in total he runs 3 * 60 = 180 meters each time. ****** Step 3: He does this 3 times a week, so in total he runs 3 * 180 = 540 meters a week. ****** Step 4: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints per day. ****** Step 2: Since he runs 3 times a week, he runs 3 * 3 = 9 sprints per week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs per week is 9 * 60 = 540 meters. ****** Step 4: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints per day. ****** Step 2: Since he runs 3 times a week, he runs 3 * 3 = 9 sprints per week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs per week is 9 * 60 = 540 meters. ****** Step 4: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints each time. ****** Step 2: He runs 60 meters each sprint. ****** Step 3: So, in one session, he runs 3 * 60 = 180 meters. ****** Step 4: He does this 3 times a week, so he runs 180 * 3 = 540 meters a week. ****** Step 5: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints each time. ****** Step 2: He runs 60 meters each sprint. ****** Step 3: So, in one session, he runs 3 * 60 = 180 meters. ****** Step 4: He does this 3 times a week, so he runs 180 * 3 = 540 meters a week. ****** Step 5: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints each time. ****** Step 2: He runs 3 times a week. ****** Step 3: So, he runs 3 * 3 = 9 sprints a week. ****** Step 4: Each sprint is 60 meters, so he runs a total of 9 * 60 = 540 meters a week. ****** Step 5: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints each time. ****** Step 2: He runs 3 times a week. ****** Step 3: So, he runs 3 * 3 = 9 sprints a week. ****** Step 4: Each sprint is 60 meters, so he runs a total of 9 * 60 = 540 meters a week. ****** Step 5: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints 3 times a week. ****** Step 2: That means he runs a total of 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ****** Step 4: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints 3 times a week. ****** Step 2: That means he runs a total of 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ****** Step 4: The answer is #### 540. ******']
+Answer Probs: {0: 0.0, 1: 0.0, 2: 0, 3: 0, 4: 0.0, 5: 0.0, 6: 0.0, 7: 0.0, 8: 0.0, 9: 0.0}
+>> Processing time: 7.007366103935055
+>> Answer lists: ['540', '540', '540', '540', '540', '540', '540', '540', '540', '540']
+>> Original Correct: 540, True
+>> Soft SC  Correct: 540, True
+>> Golden    Answer: 540
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.05it/s, est. speed input: 1267.40 toks/s, output: 242.55 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.05it/s, est. speed input: 1267.40 toks/s, output: 242.55 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 0.9558830589521676 sec
+Cluster Indices: {0: [3, 4, 5], 1: [9], 2: [8], 3: [0, 1, 2, 6], 4: [7]}
+Selected Indexes: [3, 9, 8, 0, 7]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.27s/it, est. speed input: 965.80 toks/s, output: 26.72 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.28it/s, est. speed input: 2360.40 toks/s, output: 79.19 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.10it/s, est. speed input: 2948.79 toks/s, output: 102.40 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.95it/s, est. speed input: 3628.51 toks/s, output: 131.57 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.7066021639620885 sec
+Cluster Indices: {0: [4, 5], 1: [0, 1, 6, 7], 2: [3, 9], 3: [8], 4: [2]}
+Selected Indexes: [4, 0, 9, 8, 2]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.30s/it, est. speed input: 968.76 toks/s, output: 26.93 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.46it/s, est. speed input: 2530.30 toks/s, output: 77.33 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.74it/s, est. speed input: 2825.26 toks/s, output: 95.90 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  3.06it/s, est. speed input: 3093.56 toks/s, output: 118.72 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.47it/s, est. speed input: 3093.56 toks/s, output: 118.72 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.0331168349366635 sec
+Cluster Indices: {0: [4, 5, 7], 1: [2, 3], 2: [0, 1], 3: [8, 9], 4: [6]}
+Selected Indexes: [4, 2, 0, 8, 6]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.31s/it, est. speed input: 971.91 toks/s, output: 27.40 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.00it/s, est. speed input: 2196.67 toks/s, output: 72.93 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.46it/s, est. speed input: 2576.77 toks/s, output: 98.74 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.50it/s, est. speed input: 3179.35 toks/s, output: 128.99 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.0123830450465903 sec
+Cluster Indices: {0: [4, 5], 1: [0, 1, 6, 7], 2: [2, 3], 3: [9], 4: [8]}
+Selected Indexes: [4, 0, 2, 9, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.19s/it, est. speed input: 1110.85 toks/s, output: 21.88 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.50it/s, est. speed input: 1754.98 toks/s, output: 49.66 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.86it/s, est. speed input: 2892.28 toks/s, output: 107.71 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.66it/s, est. speed input: 3411.13 toks/s, output: 143.24 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.61it/s, est. speed input: 3411.13 toks/s, output: 143.24 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.926039492012933 sec
+>>> 0th Gen:  Step 5: The answer is #### 20. ******
+>>> 0th sentence logprob checked!
+>>> 1th Gen:  Step 5: The answer is #### 20. ******
+>>> 1th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [6, 7, 8], 2: [0, 1], 3: [2, 3], 4: [9]}
+Selected Indexes: [4, 8, 0, 2, 9]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.13it/s, est. speed input: 1503.95 toks/s, output: 2.26 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.79it/s, est. speed input: 2204.46 toks/s, output: 23.01 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.63it/s, est. speed input: 2121.10 toks/s, output: 54.47 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.92it/s, est. speed input: 3075.80 toks/s, output: 117.80 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.31it/s, est. speed input: 3075.80 toks/s, output: 117.80 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.177100448985584 sec
+>>> 0th Gen:  Step 6: The answer is #### 20. ******
+>>> 0th sentence logprob checked!
+>>> 1th Gen:  Step 6: The answer is #### 20. ******
+>>> 1th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [8, 9], 2: [2, 3], 3: [0, 1], 4: [6, 7]}
+Selected Indexes: [4, 8, 2, 0, 6]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.12it/s, est. speed input: 1490.33 toks/s, output: 2.24 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.83it/s, est. speed input: 3324.26 toks/s, output: 24.56 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.09it/s, est. speed input: 5544.88 toks/s, output: 67.11 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.23423433303833 sec
+>>> 2th Gen:  Step 7: The answer is #### 20. ******
+>>> 2th sentence logprob checked!
+>>> 3th Gen:  Step 7: The answer is #### 20. ******
+>>> 3th sentence logprob checked!
+>>> 4th Gen:  Step 7: The answer is #### 20. ******
+>>> 4th sentence logprob checked!
+>>> 5th Gen:  Step 7: The answer is #### 20. ******
+>>> 5th sentence logprob checked!
+>>> 8th Gen:  Step 7: The answer is #### 20. ******
+>>> 8th sentence logprob checked!
+>>> 9th Gen:  Step 7: The answer is #### 20. ******
+>>> 9th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [8, 9], 2: [0, 1], 3: [2, 3], 4: [6, 7]}
+Selected Indexes: [4, 8, 0, 2, 6]
+Found EoS token, Break
+completions: ["<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi's chickens need 3 cups of feed each, and there are 20 chickens. ****** Step 2: So, in total, they need 20 * 3 = 60 cups of feed. ****** Step 3: She has already given them 15 cups in the morning and 25 cups in the afternoon. ****** Step 4: She still needs to give them 60 - (15 + 25) = 60 - 40 = 20 cups of feed. ****** Step 5: The answer is #### 20. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi's chickens need 3 cups of feed each, and there are 20 chickens. ****** Step 2: So, in total, they need 20 * 3 = 60 cups of feed. ****** Step 3: She has already given them 15 cups in the morning and 25 cups in the afternoon. ****** Step 4: She still needs to give them 60 - (15 + 25) = 60 - 40 = 20 cups of feed. ****** Step 5: The answer is #### 20. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ****** Step 4: So far, she has given them 15 + 25 = 40 cups of feed. ****** Step 5: Since each chicken needs 3 cups of feed, the total feed needed for the entire flock is 20 chickens * 3 cups/chicken = 60 cups. ****** Step 6: Since she has already given them 40 cups, she still needs to give them 60 - 40 = 20 cups of feed in the final meal. ****** Step 7: The answer is #### 20. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ****** Step 4: So far, she has given them 15 + 25 = 40 cups of feed. ****** Step 5: Since each chicken needs 3 cups of feed, the total feed needed for the entire flock is 20 chickens * 3 cups/chicken = 60 cups. ****** Step 6: Since she has already given them 40 cups, she still needs to give them 60 - 40 = 20 cups of feed in the final meal. ****** Step 7: The answer is #### 20. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ****** Step 4: So far, she has given them 15 + 25 = 40 cups of feed. ****** Step 5: Since each chicken needs 3 cups of feed, and there are 20 chickens, they need a total of 20 * 3 = 60 cups of feed. ****** Step 6: Since she has already given them 40 cups, she still needs to give them 60 - 40 = 20 cups of feed in the final meal. ****** Step 7: The answer is #### 20. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi's flock has 20 chickens. ****** Step 2: In the morning, she gives them 15 cups of feed. ****** Step 3: In the afternoon, she gives them 25 cups of feed. ****** Step 4: So far, she has given them 15 + 25 = 40 cups of feed. ****** Step 5: Since each chicken needs 3 cups of feed, and there are 20 chickens, they need a total of 20 * 3 = 60 cups of feed. ****** Step 6: Since she has already given them 40 cups, she still needs to give them 60 - 40 = 20 cups of feed in the final meal. ****** Step 7: The answer is #### 20. ******", '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi gives 15 cups of feed in the morning. ****** Step 2: She gives 25 cups of feed in the afternoon. ****** Step 3: In total, she has given 15 + 25 = 40 cups of feed. ****** Step 4: Since she needs to give each chicken 3 cups of feed, and there are 20 chickens, she needs to give 20 * 3 = 60 cups of feed in total. ****** Step 5: Since she has already given 40 cups, she needs to give 60 - 40 = 20 cups of feed in the final meal. ****** Step 6: The answer is #### 20. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi gives 15 cups of feed in the morning. ****** Step 2: She gives 25 cups of feed in the afternoon. ****** Step 3: In total, she has given 15 + 25 = 40 cups of feed. ****** Step 4: Since she needs to give each chicken 3 cups of feed, and there are 20 chickens, she needs to give 20 * 3 = 60 cups of feed in total. ****** Step 5: Since she has already given 40 cups, she needs to give 60 - 40 = 20 cups of feed in the final meal. ****** Step 6: The answer is #### 20. ******', "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi's flock has 20 chickens. ****** Step 2: Each chicken needs 3 cups of feed, so the total feed needed per meal is 20 * 3 = 60 cups. ****** Step 3: In the morning, she gives 15 cups of feed. ****** Step 4: In the afternoon, she gives 25 cups of feed. ****** Step 5: So far, she has given 15 + 25 = 40 cups of feed. ****** Step 6: She needs to give the remaining 60 - 40 = 20 cups of feed in the final meal. ****** Step 7: The answer is #### 20. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi's flock has 20 chickens. ****** Step 2: Each chicken needs 3 cups of feed, so the total feed needed per meal is 20 * 3 = 60 cups. ****** Step 3: In the morning, she gives 15 cups of feed. ****** Step 4: In the afternoon, she gives 25 cups of feed. ****** Step 5: So far, she has given 15 + 25 = 40 cups of feed. ****** Step 6: She needs to give the remaining 60 - 40 = 20 cups of feed in the final meal. ****** Step 7: The answer is #### 20. ******"]
+Answer Probs: {0: 0.0, 1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 0.0, 6: 0, 7: 0, 8: 0.0, 9: 0.0}
+>> Processing time: 12.267120043979958
+>> Answer lists: ['20', '20', '20', '20', '20', '20', '20', '20', '20', '20']
+>> Original Correct: 20, True
+>> Soft SC  Correct: 20, True
+>> Golden    Answer: 20
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:06<00:00,  6.92s/it, est. speed input: 166.55 toks/s, output: 82.91 toks/s]Processed prompts: 100%|██████████| 1/1 [00:06<00:00,  6.92s/it, est. speed input: 166.55 toks/s, output: 82.91 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 6.926585859968327 sec
+>>> 8th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Let's first calculate the cost of the first 8 glasses. 8 glasses will cost 8 * $5 = $40.
+
+Step 2: The next 8 glasses will cost 60% of $5, which is 0.6 * $5 = $3 per glass. So, the cost of the next 8 glasses will be 8 * $3 = $24.
+
+Step 3: In total, Kylar will pay $40 + $24 = $64.
+
+Step 4: The answer is #### 64. ******
+>>> 8th sentence logprob checked!
+>>> 9th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Let's calculate the cost of the first glass. Since it costs $5. ******
+
+Step 2: The second glass costs 60% of $5, which is 0.6 x $5 = $3. ******
+
+Step 3: The cost of the third glass is again $5, and so on. ******
+
+Step 4: The pattern is: $5, $3, $5, $3, ... (alternating between $5 and $3). ******
+
+Step 5: Kylar wants to buy 16 glasses. Since it's an alternating pattern, we can divide 16 by 2 to get the number of glasses at the full price ($5 each): 16 ÷ 2 = 8. ******
+
+Step 6: The remaining 8 glasses will be at the discounted price of $3 each. ******
+
+Step 7: Calculate the total cost: 8 glasses at $5 each = 8 x $5 = $40, and 8 glasses at $3 each = 8 x $3 = $24. ******
+
+Step 8: Add the costs: $40 + $24 = $64. ******
+
+Step 9: The answer is #### 64. ******
+>>> 9th sentence logprob checked!
+Cluster Indices: {0: [2, 3, 4, 5], 1: [8, 9], 2: [0, 1], 3: [6], 4: [7]}
+Selected Indexes: [2, 8, 0, 6, 7]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.27it/s, est. speed input: 1625.56 toks/s, output: 2.55 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.51it/s, est. speed input: 1803.86 toks/s, output: 27.25 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.19it/s, est. speed input: 2300.54 toks/s, output: 61.66 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.37it/s, est. speed input: 2480.96 toks/s, output: 92.27 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  1.89it/s, est. speed input: 2256.45 toks/s, output: 106.39 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  1.88it/s, est. speed input: 2256.45 toks/s, output: 106.39 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.67177245602943 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [8, 9], 4: [0, 1]}
+Selected Indexes: [4, 6, 2, 8, 0]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.24it/s, est. speed input: 1577.00 toks/s, output: 2.47 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.28it/s, est. speed input: 1595.40 toks/s, output: 38.09 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.05it/s, est. speed input: 2170.62 toks/s, output: 71.42 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.88it/s, est. speed input: 2666.99 toks/s, output: 96.18 toks/s]Processed prompts: 100%|██████████| 5/5 [00:06<00:00,  1.83s/it, est. speed input: 971.08 toks/s, output: 83.68 toks/s] Processed prompts: 100%|██████████| 5/5 [00:06<00:00,  1.26s/it, est. speed input: 971.08 toks/s, output: 83.68 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 6.322114860988222 sec
+>>> 6th Gen: 
+
+Step 3: The third glass costs $5 again, and so on. We can see a pattern that every other glass costs $5, and the ones in between cost $3. ******
+
+Step 4: To find the total cost, we can count the number of glasses that cost $5 and the number of glasses that cost $3. Since Kylar wants to buy 16 glasses, we can divide 16 by 2 to find the number of glasses that cost $5, which is 8. The remaining 8 glasses will cost $3 each. ******
+
+Step 5: The total cost of the 8 glasses that cost $5 is 8 * $5 = $40. The total cost of the 8 glasses that cost $3 is 8 * $3 = $24. ******
+
+Step 6: To find the total cost, we add the cost of the two types of glasses: $40 + $24 = $64. ******
+
+Step 7: The answer is #### 64. ******
+>>> 6th sentence logprob checked!
+>>> 7th Gen: 
+
+Step 3: The third glass is again the first type, costing $5. ******
+
+Step 4: The fourth glass is the second type, costing $3. ******
+
+Step 5: We can continue this pattern, alternating between $5 and $3 for the remaining 12 glasses. ******
+
+Step 6: We can calculate the total cost by adding the costs of each type of glass:
+
+$5 + $3 + $5 + $3 + ... (8 times) = $5 * 4 + $3 * 12 = $20 + $36 = $56
+
+Step 7: The answer is #### 56. ******
+>>> 7th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.19it/s, est. speed input: 1520.01 toks/s, output: 2.38 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.19it/s, est. speed input: 2644.59 toks/s, output: 32.96 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.56it/s, est. speed input: 2943.14 toks/s, output: 65.17 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  1.67it/s, est. speed input: 2317.66 toks/s, output: 79.13 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  1.81it/s, est. speed input: 2317.66 toks/s, output: 79.13 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.780604152008891 sec
+>>> 5th Gen:  
+
+Step 4: The total cost of the 8 glasses at $5 each is 8 * $5 = $40. ******
+
+Step 5: The total cost of all 16 glasses is the sum of the costs of the two types: $24 + $40 = $64. ******
+
+Step 6: The answer is #### 64. ******
+>>> 5th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.18it/s, est. speed input: 1695.68 toks/s, output: 2.37 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.94it/s, est. speed input: 3376.41 toks/s, output: 25.63 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.26it/s, est. speed input: 2903.78 toks/s, output: 50.91 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.77it/s, est. speed input: 3595.65 toks/s, output: 90.75 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.8199864859925583 sec
+>>> 2th Gen:  Step 5: The answer is #### 64. ******
+>>> 2th sentence logprob checked!
+>>> 3th Gen:  Step 5: The answer is #### 64. ******
+>>> 3th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [8, 9], 3: [2, 3], 4: [0, 1]}
+Selected Indexes: [4, 6, 8, 2, 0]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.17it/s, est. speed input: 1674.53 toks/s, output: 2.34 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  4.02it/s, est. speed input: 4463.67 toks/s, output: 27.19 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.16it/s, est. speed input: 5463.78 toks/s, output: 49.87 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.2157345830928534 sec
+>>> 4th Gen:  Step 6: The answer is #### 66. ******
+>>> 4th sentence logprob checked!
+>>> 5th Gen:  Step 6: The answer is #### 66. ******
+>>> 5th sentence logprob checked!
+>>> 8th Gen:  
+
+Step 6: The answer is #### 64. ******
+>>> 8th sentence logprob checked!
+>>> 9th Gen:  
+
+Step 6: The answer is #### 64. ******
+>>> 9th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [0, 1], 3: [2, 3], 4: [8, 9]}
+Selected Indexes: [4, 6, 0, 2, 8]
+Found EoS token, Break
+completions: ["<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Let's first calculate the cost of the first glass. Since it costs $5, we can move on to the next step. ******\n\nStep 2: The second glass costs 60% of $5, which is 0.6 * $5 = $3. ******\n\nStep 3: The third glass costs $5 again, and so on. We can see a pattern that every other glass costs $5, and the ones in between cost $3. ******\n\nStep 4: To find the total cost, we can count the number of glasses that cost $5 and the number of glasses that cost $3. Since Kylar wants to buy 16 glasses, we can divide 16 by 2 to find the number of glasses that cost $5, which is 8. The remaining 8 glasses will cost $3 each. ******\n\nStep 5: The total cost of the 8 glasses that cost $5 is 8 * $5 = $40. The total cost of the 8 glasses that cost $3 is 8 * $3 = $24. ******\n\nStep 6: To find the total cost, we add the cost of the two types of glasses: $40 + $24 = $64. ******\n\nStep 7: The answer is #### 64. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Let's first calculate the cost of the first glass. Since it costs $5, we can move on to the next step. ******\n\nStep 2: The second glass costs 60% of $5, which is 0.6 * $5 = $3. ******\n\nStep 3: The third glass costs $5 again, and so on. We can see a pattern that every other glass costs $5, and the ones in between cost $3. ******\n\nStep 4: To find the total cost, we can count the number of glasses that cost $5 and the number of glasses that cost $3. Since Kylar wants to buy 16 glasses, we can divide 16 by 2 to find the number of glasses that cost $5, which is 8. The remaining 8 glasses will cost $3 each. ******\n\nStep 5: The total cost of the 8 glasses that cost $5 is 8 * $5 = $40. The total cost of the 8 glasses that cost $3 is 8 * $3 = $24. ******\n\nStep 6: To find the total cost, we add the cost of the two types of glasses: $40 + $24 = $64. ******\n\nStep 7: The answer is #### 64. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Let's first calculate the cost of the first 8 glasses. 8 glasses will cost 8 * $5 = $40.\n\nStep 2: The next 8 glasses will cost 60% of $5, which is 0.6 * $5 = $3 per glass. So, the cost of the next 8 glasses will be 8 * $3 = $24.\n\nStep 3: In total, Kylar will pay $40 + $24 = $64.\n\nStep 4: The answer is #### 64. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Let's first calculate the cost of the first 8 glasses. 8 glasses will cost 8 * $5 = $40.\n\nStep 2: The next 8 glasses will cost 60% of $5, which is 0.6 * $5 = $3 per glass. So, the cost of the next 8 glasses will be 8 * $3 = $24.\n\nStep 3: In total, Kylar will pay $40 + $24 = $64.\n\nStep 4: The answer is #### 64. ******", '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses. ****** Step 4: The first glass is $5, then the next 7 glasses are $3 each, and the remaining 8 glasses are $5 each. ****** Step 5: The total cost is $5 + 7 * $3 + 8 * $5 = $5 + $21 + $40 = $66. ****** Step 6: The answer is #### 66. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The first glass costs $5. ****** Step 2: Every second glass costs 60% of the price, which is 0.6 * $5 = $3. ****** Step 3: Kylar wants to buy 16 glasses. ****** Step 4: The first glass is $5, then the next 7 glasses are $3 each, and the remaining 8 glasses are $5 each. ****** Step 5: The total cost is $5 + 7 * $3 + 8 * $5 = $5 + $21 + $40 = $66. ****** Step 6: The answer is #### 66. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Kylar wants to buy 16 glasses. ****** Step 2: The first 8 glasses will cost 8 * $5 = $40. ****** Step 3: The remaining 8 glasses will cost 8 * ($5 * 0.6) = $24. ****** Step 4: The total cost will be $40 + $24 = $64. ****** Step 5: The answer is #### 64. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Kylar wants to buy 16 glasses. ****** Step 2: The first 8 glasses will cost 8 * $5 = $40. ****** Step 3: The remaining 8 glasses will cost 8 * ($5 * 0.6) = $24. ****** Step 4: The total cost will be $40 + $24 = $64. ****** Step 5: The answer is #### 64. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: One glass costs $5, and every second glass costs 60% of the price, which is 0.6 * $5 = $3. ******\n\nStep 2: Kylar wants to buy 16 glasses. Since every second glass is $3, he will buy 8 glasses at $3 each and 8 glasses at $5 each. ****** \n\nStep 3: The total cost of the 8 glasses at $3 each is 8 * $3 = $24. ****** \n\nStep 4: The total cost of the 8 glasses at $5 each is 8 * $5 = $40. ****** \n\nStep 5: The total cost of all 16 glasses is $24 + $40 = $64. ****** \n\nStep 6: The answer is #### 64. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: One glass costs $5, and every second glass costs 60% of the price, which is 0.6 * $5 = $3. ******\n\nStep 2: Kylar wants to buy 16 glasses. Since every second glass is $3, he will buy 8 glasses at $3 each and 8 glasses at $5 each. ****** \n\nStep 3: The total cost of the 8 glasses at $3 each is 8 * $3 = $24. ****** \n\nStep 4: The total cost of the 8 glasses at $5 each is 8 * $5 = $40. ****** \n\nStep 5: The total cost of all 16 glasses is $24 + $40 = $64. ****** \n\nStep 6: The answer is #### 64. ******']
+Answer Probs: {0: 0, 1: 0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 0.0, 6: -13.130910083651543, 7: -22.3882924169302, 8: 0.0, 9: 0.0}
+>> Processing time: 21.914498707978055
+>> Answer lists: ['64', '64', '64', '64', '66', '66', '64', '64', '64', '64']
+>> Original Correct: 64, True
+>> Soft SC  Correct: 64, True
+>> Golden    Answer: 64
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.90s/it, est. speed input: 292.50 toks/s, output: 273.77 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.90s/it, est. speed input: 292.50 toks/s, output: 273.77 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 3.900705813895911 sec
+>>> 0th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Seattle has 20 sheep. ******
+
+Step 2: Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. ******
+
+Step 3: Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. ******
+
+Step 4: In total, they have 20 + 80 + 160 = 260 sheep. ******
+
+Step 5: The answer is #### 260. ******
+>>> 0th sentence logprob checked!
+>>> 1th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Seattle has 20 sheep. ******
+
+Step 2: Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. ******
+
+Step 3: Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. ******
+
+Step 4: In total, they have 20 + 80 + 160 = 260 sheep. ******
+
+Step 5: The answer is #### 260. ******
+>>> 1th sentence logprob checked!
+>>> 2th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Seattle has 20 sheep. ******
+
+Step 2: Charleston has 4 times as many sheep as Seattle, so Charleston has 20 * 4 = 80 sheep. ******
+
+Step 3: Toulouse has twice as many sheep as Charleston, so Toulouse has 80 * 2 = 160 sheep. ******
+
+Step 4: In total, they have 20 + 80 + 160 = 260 sheep. ******
+
+Step 5: The answer is #### 260. ******
+>>> 2th sentence logprob checked!
+>>> 5th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. ******
+
+Step 2: Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. ******
+
+Step 3: Seattle has 20 sheep, Charleston has 80 sheep, and Toulouse has 160 sheep. ******
+
+Step 4: To find the total number of sheep, add the number of sheep each has: 20 + 80 + 160 = 260. ******
+
+Step 5: The answer is #### 260. ******
+>>> 5th sentence logprob checked!
+>>> 6th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. ******
+
+Step 2: Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. ******
+
+Step 3: Seattle has 20 sheep, Charleston has 80 sheep, and Toulouse has 160 sheep. ******
+
+Step 4: To find the total number of sheep, add the number of sheep each has: 20 + 80 + 160 = 260 sheep. ******
+
+Step 5: The answer is #### 260. ******
+>>> 6th sentence logprob checked!
+>>> 7th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Seattle has 20 sheep. ******
+
+Step 2: Charleston has 4 times as many sheep as Seattle, so Charleston has 20 * 4 = 80 sheep. ******
+
+Step 3: Toulouse has twice as many sheep as Charleston, so Toulouse has 80 * 2 = 160 sheep. ******
+
+Step 4: In total, they have 20 + 80 + 160 = 260 sheep. ******
+
+The answer is #### 260. ******
+>>> 7th sentence logprob checked!
+>>> 8th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Seattle has 20 sheep. ******
+
+Step 2: Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. ******
+
+Step 3: Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. ******
+
+Step 4: To find the total number of sheep, add the number of sheep each has: 20 (Seattle) + 80 (Charleston) + 160 (Toulouse) = 260 sheep. ******
+
+Step 5: The answer is #### 260. ******
+>>> 8th sentence logprob checked!
+>>> 9th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: Seattle has 20 sheep. ******
+
+Step 2: Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. ******
+
+Step 3: Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. ******
+
+Step 4: To find the total number of sheep, add the number of sheep from Seattle, Charleston, and Toulouse: 20 + 80 + 160 = 260. ******
+
+Step 5: The answer is #### 260. ******
+>>> 9th sentence logprob checked!
+Cluster Indices: {0: [5, 6, 9], 1: [3, 4], 2: [0, 1, 2], 3: [8], 4: [7]}
+Selected Indexes: [5, 3, 0, 8, 7]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.22it/s, est. speed input: 1560.55 toks/s, output: 2.44 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.14it/s, est. speed input: 3576.96 toks/s, output: 43.61 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.87it/s, est. speed input: 3576.96 toks/s, output: 43.61 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.7546511000255123 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.23it/s, est. speed input: 1541.69 toks/s, output: 2.46 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.13it/s, est. speed input: 2556.53 toks/s, output: 50.97 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.04it/s, est. speed input: 2556.53 toks/s, output: 50.97 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.4641017080284655 sec
+>>> 4th Gen: 
+
+Step 3: Seattle has 20 sheep, Charleston has 80 sheep, and Toulouse has 160 sheep. To find the total number of sheep, add these numbers together: 20 + 80 + 160 = 260. ******
+
+Step 4: The answer is #### 260. ******
+>>> 4th sentence logprob checked!
+Cluster Indices: {0: [5], 1: [0, 1, 8, 9], 2: [2, 3], 3: [6, 7], 4: [4]}
+Selected Indexes: [5, 0, 2, 6, 4]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.21it/s, est. speed input: 1516.27 toks/s, output: 2.42 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  5.13it/s, est. speed input: 5460.53 toks/s, output: 30.94 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.30it/s, est. speed input: 5460.53 toks/s, output: 30.94 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.1756946420064196 sec
+>>> 0th Gen: 
+
+Step 4: The answer is #### 260. ******
+>>> 0th sentence logprob checked!
+>>> 1th Gen: 
+
+Step 4: The answer is #### 260. ******
+>>> 1th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [8, 9], 2: [2, 3], 3: [6, 7], 4: [0, 1]}
+Selected Indexes: [4, 8, 2, 6, 0]
+Found EoS token, Break
+completions: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Charleston has 4 times as many sheep as Seattle. Since Seattle has 20 sheep, Charleston has 4 * 20 = 80 sheep. ******\n\nStep 2: Toulouse has twice as many sheep as Charleston. Since Charleston has 80 sheep, Toulouse has 2 * 80 = 160 sheep. ******\r\n\r\nStep 3: Seattle has 20 sheep, Charleston has 80 sheep, and Toulouse has 160 sheep. To find the total number of sheep, add these numbers together: 20 + 80 + 160 = 260. ******\r\n\r\nStep 4: The answer is #### 260. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Charleston has 4 times as many sheep as Seattle. Since Seattle has 20 sheep, Charleston has 4 * 20 = 80 sheep. ******\n\nStep 2: Toulouse has twice as many sheep as Charleston. Since Charleston has 80 sheep, Toulouse has 2 * 80 = 160 sheep. ******\r\n\r\nStep 3: Seattle has 20 sheep, Charleston has 80 sheep, and Toulouse has 160 sheep. To find the total number of sheep, add these numbers together: 20 + 80 + 160 = 260. ******\r\n\r\nStep 4: The answer is #### 260. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Seattle has 20 sheep. ******\n\nStep 2: Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. ******\n\nStep 3: Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. ******\n\nStep 4: In total, they have 20 + 80 + 160 = 260 sheep. ******\n\nStep 5: The answer is #### 260. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Seattle has 20 sheep. ******\n\nStep 2: Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. ******\n\nStep 3: Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. ******\n\nStep 4: In total, they have 20 + 80 + 160 = 260 sheep. ******\n\nStep 5: The answer is #### 260. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Seattle has 20 sheep. ******\n\nStep 2: Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. ******\n\nStep 3: Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. ******\n\nStep 4: To find the total number of sheep, add the number of sheep each has: 20 (Seattle) + 80 (Charleston) + 160 (Toulouse) = 260 sheep. ******\n\nStep 5: The answer is #### 260. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Seattle has 20 sheep. ******\n\nStep 2: Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. ******\n\nStep 3: Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. ******\n\nStep 4: To find the total number of sheep, add the number of sheep each has: 20 (Seattle) + 80 (Charleston) + 160 (Toulouse) = 260 sheep. ******\n\nStep 5: The answer is #### 260. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. ******\n\nStep 2: Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. ******\n\nStep 3: Seattle has 20 sheep, Charleston has 80 sheep, and Toulouse has 160 sheep. ******\n\nStep 4: To find the total number of sheep, add the number of sheep each has: 20 + 80 + 160 = 260. ******\n\nStep 5: The answer is #### 260. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep. ******\n\nStep 2: Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep. ******\n\nStep 3: Seattle has 20 sheep, Charleston has 80 sheep, and Toulouse has 160 sheep. ******\n\nStep 4: To find the total number of sheep, add the number of sheep each has: 20 + 80 + 160 = 260. ******\n\nStep 5: The answer is #### 260. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Charleston has 4 times as many sheep as Seattle. Since Seattle has 20 sheep, Charleston has 4 * 20 = 80 sheep. ******\n\nStep 2: Toulouse has twice as many sheep as Charleston. Since Charleston has 80 sheep, Toulouse has 2 * 80 = 160 sheep. ******\n\nStep 3: Seattle has 20 sheep, Charleston has 80 sheep, and Toulouse has 160 sheep. To find the total number of sheep, add these numbers together: 20 + 80 + 160 = 260. ******\n\nStep 4: The answer is #### 260. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Charleston has 4 times as many sheep as Seattle. Since Seattle has 20 sheep, Charleston has 4 * 20 = 80 sheep. ******\n\nStep 2: Toulouse has twice as many sheep as Charleston. Since Charleston has 80 sheep, Toulouse has 2 * 80 = 160 sheep. ******\n\nStep 3: Seattle has 20 sheep, Charleston has 80 sheep, and Toulouse has 160 sheep. To find the total number of sheep, add these numbers together: 20 + 80 + 160 = 260. ******\n\nStep 4: The answer is #### 260. ******']
+Answer Probs: {0: 0.0, 1: 0.0, 2: -2.971358984708786, 3: 0, 4: -1.7462314516305923, 5: -3.4784696996212006, 6: -3.4784696996212006, 7: -4.221358984708786, 8: -4.521208360791206, 9: -5.374985694885254}
+>> Processing time: 9.406493939924985
+>> Answer lists: ['260', '260', '260', '260', '260', '260', '260', '260', '260', '260']
+>> Original Correct: 260, True
+>> Soft SC  Correct: 260, True
+>> Golden    Answer: 260
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.40it/s, est. speed input: 1630.18 toks/s, output: 270.29 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.40it/s, est. speed input: 1630.18 toks/s, output: 270.29 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (2) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 0.7171840199735016 sec
+Cluster Indices: {0: [0, 1, 2, 3, 4, 5, 6], 1: [7, 8, 9], 2: [], 3: [], 4: []}
+Selected Indexes: [0, 7, 6, 5, 4]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.18s/it, est. speed input: 999.42 toks/s, output: 25.34 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.95it/s, est. speed input: 3665.00 toks/s, output: 101.44 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.86it/s, est. speed input: 3385.62 toks/s, output: 112.17 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.7592830170178786 sec
+Cluster Indices: {0: [0, 1, 4, 5, 6, 7], 1: [8], 2: [2], 3: [9], 4: [3]}
+Selected Indexes: [0, 8, 2, 9, 3]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.59s/it, est. speed input: 765.55 toks/s, output: 35.77 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.30it/s, est. speed input: 1363.39 toks/s, output: 61.69 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.04it/s, est. speed input: 1868.36 toks/s, output: 99.28 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  4.02it/s, est. speed input: 2912.96 toks/s, output: 170.44 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.41it/s, est. speed input: 2912.96 toks/s, output: 170.44 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.0830631100106984 sec
+Cluster Indices: {0: [1, 4, 5], 1: [6, 7], 2: [2, 3], 3: [8, 9], 4: [0]}
+Selected Indexes: [4, 6, 2, 8, 0]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.44s/it, est. speed input: 864.05 toks/s, output: 31.18 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.45it/s, est. speed input: 1553.12 toks/s, output: 61.63 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.96it/s, est. speed input: 2809.57 toks/s, output: 146.63 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.27it/s, est. speed input: 2809.57 toks/s, output: 146.63 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.2145449090749025 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [8, 9], 3: [0, 1], 4: [2, 3]}
+Selected Indexes: [4, 6, 8, 0, 2]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.31s/it, est. speed input: 957.33 toks/s, output: 27.48 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.61it/s, est. speed input: 1747.61 toks/s, output: 49.77 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.51it/s, est. speed input: 2402.24 toks/s, output: 79.69 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.18it/s, est. speed input: 2874.43 toks/s, output: 104.15 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.05it/s, est. speed input: 3353.27 toks/s, output: 138.33 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.64it/s, est. speed input: 3353.27 toks/s, output: 138.33 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.9060159750515595 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [8, 9], 3: [2, 3], 4: [0, 1]}
+Selected Indexes: [4, 6, 8, 2, 0]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.35s/it, est. speed input: 959.38 toks/s, output: 28.13 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.43it/s, est. speed input: 1633.07 toks/s, output: 56.33 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.83it/s, est. speed input: 2739.30 toks/s, output: 119.56 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  3.45it/s, est. speed input: 3177.57 toks/s, output: 148.56 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.45it/s, est. speed input: 3177.57 toks/s, output: 148.56 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.0513002009829506 sec
+Cluster Indices: {0: [4, 5], 1: [8, 9], 2: [6, 7], 3: [2, 3], 4: [0, 1]}
+Selected Indexes: [4, 8, 6, 2, 0]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.68s/it, est. speed input: 780.67 toks/s, output: 35.73 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.91it/s, est. speed input: 2057.38 toks/s, output: 99.95 toks/s]Processed prompts:  80%|████████  | 4/5 [00:02<00:00,  2.64it/s, est. speed input: 2610.81 toks/s, output: 125.92 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.44it/s, est. speed input: 3230.86 toks/s, output: 164.86 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.062178318039514 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [8, 9], 3: [0, 1], 4: [2, 3]}
+Selected Indexes: [4, 6, 8, 0, 2]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.23s/it, est. speed input: 1117.69 toks/s, output: 21.12 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.23it/s, est. speed input: 1552.68 toks/s, output: 51.43 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.99it/s, est. speed input: 2156.07 toks/s, output: 77.51 toks/s]Processed prompts:  80%|████████  | 4/5 [00:02<00:00,  2.81it/s, est. speed input: 2688.39 toks/s, output: 106.22 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.98it/s, est. speed input: 2926.56 toks/s, output: 132.63 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.16it/s, est. speed input: 2926.56 toks/s, output: 132.63 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.32699087401852 sec
+>>> 6th Gen:  Step 8: The answer is #### 180. ******
+>>> 6th sentence logprob checked!
+>>> 7th Gen:  Step 8: The answer is #### 180. ******
+>>> 7th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [6, 7], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 2, 6, 0, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.10it/s, est. speed input: 1522.52 toks/s, output: 2.19 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.75it/s, est. speed input: 2221.11 toks/s, output: 22.52 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.96it/s, est. speed input: 3383.25 toks/s, output: 62.12 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.66it/s, est. speed input: 3292.70 toks/s, output: 89.48 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.38it/s, est. speed input: 3292.70 toks/s, output: 89.48 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.1147216740064323 sec
+>>> 0th Gen:  Step 9: The answer is #### 120. ******
+>>> 0th sentence logprob checked!
+>>> 1th Gen:  Step 9: The answer is #### 120. ******
+>>> 1th sentence logprob checked!
+>>> 6th Gen:  Step 9: The answer is #### 100. ******
+>>> 6th sentence logprob checked!
+>>> 7th Gen:  Step 9: The answer is #### 100. ******
+>>> 7th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [8, 9], 2: [6, 7], 3: [2, 3], 4: [0, 1]}
+Selected Indexes: [4, 8, 6, 2, 0]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.09it/s, est. speed input: 1519.27 toks/s, output: 2.19 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.31it/s, est. speed input: 2982.62 toks/s, output: 42.60 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.59it/s, est. speed input: 3630.97 toks/s, output: 81.39 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.9412399359280244 sec
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [6, 7], 3: [8, 9], 4: [0, 1]}
+Selected Indexes: [4, 2, 6, 8, 0]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.09it/s, est. speed input: 1547.05 toks/s, output: 2.17 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.83it/s, est. speed input: 4536.70 toks/s, output: 25.74 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  1.81it/s, est. speed input: 2779.18 toks/s, output: 57.32 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  1.96it/s, est. speed input: 2779.18 toks/s, output: 57.32 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.5598765849135816 sec
+>>> 4th Gen:  Step 11: The answer is #### 100. ******
+>>> 4th sentence logprob checked!
+>>> 5th Gen:  Step 11: The answer is #### 100. ******
+>>> 5th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [8, 9], 2: [2, 3], 3: [0, 1], 4: [6, 7]}
+Selected Indexes: [4, 8, 2, 0, 6]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.08it/s, est. speed input: 1571.08 toks/s, output: 2.16 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.65it/s, est. speed input: 5543.01 toks/s, output: 29.49 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.88it/s, est. speed input: 5543.01 toks/s, output: 29.49 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.3010969209717587 sec
+>>> 4th Gen:  Step 12: The answer is #### 100,000. ******
+>>> 4th sentence logprob checked!
+>>> 5th Gen:  Step 12: The answer is #### 100,000. ******
+>>> 5th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+Found EoS token, Break
+completions: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Carla needs to download a 200 GB file. ****** Step 2: She normally downloads at a rate of 2 GB/minute. ****** Step 3: To find the time it would take to download the file normally, we can divide the file size by the download rate: 200 GB / 2 GB/minute = 100 minutes. ****** Step 4: However, 40% of the way through the download, Windows forces a restart. ****** Step 5: 40% of 200 GB is 0.4 x 200 = 80 GB. ****** Step 6: So, Carla has downloaded 80 GB when the restart occurs. ****** Step 7: The time taken to download 80 GB is 80 GB / 2 GB/minute = 40 minutes. ****** Step 8: After the restart, Carla has to start again from the beginning. ****** Step 9: The time taken to download the remaining 120 GB (200 - 80 = 120) is 120 GB / 2 GB/minute = 60 minutes. ****** Step 10: Adding the time taken to download the first 80 GB and the remaining 120 GB, we get 40 minutes + 60 minutes = 100 minutes. ****** Step 11: The answer is #### 100. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Carla needs to download a 200 GB file. ****** Step 2: She normally downloads at a rate of 2 GB/minute. ****** Step 3: To find the time it would take to download the file normally, we can divide the file size by the download rate: 200 GB / 2 GB/minute = 100 minutes. ****** Step 4: However, 40% of the way through the download, Windows forces a restart. ****** Step 5: 40% of 200 GB is 0.4 x 200 = 80 GB. ****** Step 6: So, Carla has downloaded 80 GB when the restart occurs. ****** Step 7: The time taken to download 80 GB is 80 GB / 2 GB/minute = 40 minutes. ****** Step 8: After the restart, Carla has to start again from the beginning. ****** Step 9: The time taken to download the remaining 120 GB (200 - 80 = 120) is 120 GB / 2 GB/minute = 60 minutes. ****** Step 10: Adding the time taken to download the first 80 GB and the remaining 120 GB, we get 40 minutes + 60 minutes = 100 minutes. ****** Step 11: The answer is #### 100. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Carla is downloading a 200 GB file. ****** Step 2: She normally downloads 2 GB/minute, so to download the entire file would take 200 GB / 2 GB/minute = 100 minutes. ****** Step 3: 40% of the way through the download is 40% * 200 GB = 80 GB. ****** Step 4: The download is interrupted at 80 GB, and it takes 20 minutes to install updates. ****** Step 5: After the updates, Carla has to restart the download from the beginning, which means she has to download the remaining 120 GB (200 - 80 = 120). ****** Step 6: The remaining download takes 120 GB / 2 GB/minute = 60 minutes. ****** Step 7: In total, the download takes 100 minutes (initial download) + 20 minutes (update) + 60 minutes (remaining download) = 180 minutes. ****** Step 8: The answer is #### 180. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Carla is downloading a 200 GB file. ****** Step 2: She normally downloads 2 GB/minute, so to download the entire file would take 200 GB / 2 GB/minute = 100 minutes. ****** Step 3: 40% of the way through the download is 40% * 200 GB = 80 GB. ****** Step 4: The download is interrupted at 80 GB, and it takes 20 minutes to install updates. ****** Step 5: After the updates, Carla has to restart the download from the beginning, which means she has to download the remaining 120 GB (200 - 80 = 120). ****** Step 6: The remaining download takes 120 GB / 2 GB/minute = 60 minutes. ****** Step 7: In total, the download takes 100 minutes (initial download) + 20 minutes (update) + 60 minutes (remaining download) = 180 minutes. ****** Step 8: The answer is #### 180. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Carla is downloading a 200 GB file. ****** Step 2: 200 GB is equivalent to 200,000 MB (since 1 GB = 1000 MB). ****** Step 3: Normally, Carla can download 2 GB/minute. ****** Step 4: To find out how many minutes it would take to download the file normally, divide 200,000 MB by 2 GB/minute: 200,000 MB / 2 GB/minute = 100,000 minutes. ****** Step 5: But, 40% of the way through the download, Windows forces a restart. ****** Step 6: 40% of 200,000 MB is 0.4 * 200,000 = 80,000 MB. ****** Step 7: So, Carla has downloaded 80,000 MB before the restart. ****** Step 8: The remaining download is 200,000 - 80,000 = 120,000 MB. ****** Step 9: Since the download is restarted, Carla has to start from the beginning. ****** Step 10: It will take Carla 120,000 MB / 2 GB/minute = 60,000 minutes to download the remaining 120,000 MB. ****** Step 11: Add the time taken before the restart (40,000 minutes) to the time taken to download the remaining file (60,000 minutes): 40,000 + 60,000 = 100,000 minutes. ****** Step 12: The answer is #### 100,000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Carla is downloading a 200 GB file. ****** Step 2: 200 GB is equivalent to 200,000 MB (since 1 GB = 1000 MB). ****** Step 3: Normally, Carla can download 2 GB/minute. ****** Step 4: To find out how many minutes it would take to download the file normally, divide 200,000 MB by 2 GB/minute: 200,000 MB / 2 GB/minute = 100,000 minutes. ****** Step 5: But, 40% of the way through the download, Windows forces a restart. ****** Step 6: 40% of 200,000 MB is 0.4 * 200,000 = 80,000 MB. ****** Step 7: So, Carla has downloaded 80,000 MB before the restart. ****** Step 8: The remaining download is 200,000 - 80,000 = 120,000 MB. ****** Step 9: Since the download is restarted, Carla has to start from the beginning. ****** Step 10: It will take Carla 120,000 MB / 2 GB/minute = 60,000 minutes to download the remaining 120,000 MB. ****** Step 11: Add the time taken before the restart (40,000 minutes) to the time taken to download the remaining file (60,000 minutes): 40,000 + 60,000 = 100,000 minutes. ****** Step 12: The answer is #### 100,000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Carla needs to download a 200 GB file. ****** Step 2: Her normal download speed is 2 GB/minute. ****** Step 3: To find the time it takes to download the file normally, divide the file size by her download speed: 200 GB / 2 GB/minute = 100 minutes. ****** Step 4: 40% of the way through the download means she has downloaded 0.4 * 200 GB = 80 GB. ****** Step 5: The remaining file size is 200 GB - 80 GB = 120 GB. ****** Step 6: She has to restart the download from the beginning, so she has to download the entire 200 GB file again. ****** Step 7: The time it takes to download the remaining 120 GB is 120 GB / 2 GB/minute = 60 minutes. ****** Step 8: Adding the time it takes to download the first 80 GB (40 minutes) and the remaining 120 GB (60 minutes), the total time it takes to download the file is 40 minutes + 60 minutes = 100 minutes. ****** Step 9: The answer is #### 100. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Carla needs to download a 200 GB file. ****** Step 2: Her normal download speed is 2 GB/minute. ****** Step 3: To find the time it takes to download the file normally, divide the file size by her download speed: 200 GB / 2 GB/minute = 100 minutes. ****** Step 4: 40% of the way through the download means she has downloaded 0.4 * 200 GB = 80 GB. ****** Step 5: The remaining file size is 200 GB - 80 GB = 120 GB. ****** Step 6: She has to restart the download from the beginning, so she has to download the entire 200 GB file again. ****** Step 7: The time it takes to download the remaining 120 GB is 120 GB / 2 GB/minute = 60 minutes. ****** Step 8: Adding the time it takes to download the first 80 GB (40 minutes) and the remaining 120 GB (60 minutes), the total time it takes to download the file is 40 minutes + 60 minutes = 100 minutes. ****** Step 9: The answer is #### 100. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Carla is downloading a 200 GB file. ****** Step 2: She can download 2 GB/minute. ****** Step 3: 40% of 200 GB is 0.4 * 200 = 80 GB. ****** Step 4: It takes her 80 GB / 2 GB/minute = 40 minutes to download the first 80 GB. ****** Step 5: Then Windows forces a restart, which takes 20 minutes. ****** Step 6: After the restart, she has to restart the download from the beginning, so she has to download the remaining 120 GB (200 - 80 = 120). ****** Step 7: It takes her 120 GB / 2 GB/minute = 60 minutes to download the remaining 120 GB. ****** Step 8: In total, it takes her 40 minutes + 20 minutes + 60 minutes = 120 minutes to download the file. ****** Step 9: The answer is #### 120. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Carla is downloading a 200 GB file. ****** Step 2: She can download 2 GB/minute. ****** Step 3: 40% of 200 GB is 0.4 * 200 = 80 GB. ****** Step 4: It takes her 80 GB / 2 GB/minute = 40 minutes to download the first 80 GB. ****** Step 5: Then Windows forces a restart, which takes 20 minutes. ****** Step 6: After the restart, she has to restart the download from the beginning, so she has to download the remaining 120 GB (200 - 80 = 120). ****** Step 7: It takes her 120 GB / 2 GB/minute = 60 minutes to download the remaining 120 GB. ****** Step 8: In total, it takes her 40 minutes + 20 minutes + 60 minutes = 120 minutes to download the file. ****** Step 9: The answer is #### 120. ******']
+Answer Probs: {0: 0.0, 1: 0.0, 2: 0, 3: 0, 4: 0.0, 5: 0.0, 6: -0.6335039138793945, 7: -0.6335039138793945, 8: 0, 9: 0}
+>> Processing time: 23.385152266942896
+>> Answer lists: ['100', '100', '180', '180', '100000', '100000', '100', '100', '120', '120']
+>> Original Correct: 100, False
+>> Soft SC  Correct: 100, False
+>> Golden    Answer: 160
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:05<00:00,  5.48s/it, est. speed input: 218.99 toks/s, output: 135.23 toks/s]Processed prompts: 100%|██████████| 1/1 [00:05<00:00,  5.48s/it, est. speed input: 218.99 toks/s, output: 135.23 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 5.483196850982495 sec
+>>> 7th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: John drives for 3 hours at a speed of 60 mph, so he covers a distance of 3 * 60 = 180 miles.
+
+Step 2: He turns around and tries to get home in 4 hours. He spends the first 2 hours in standstill traffic, so he doesn't cover any distance.
+
+Step 3: He then spends the next half-hour driving at a speed of 30 mph, so he covers a distance of 0.5 * 30 = 15 miles.
+
+Step 4: He spends the remaining time of 4 - 2.5 = 1.5 hours driving at a speed of 80 mph, so he covers a distance of 1.5 * 80 = 120 miles.
+
+Step 5: In total, John covers a distance of 180 + 15 + 120 = 315 miles.
+
+Step 6: The answer is #### 315. ******
+>>> 7th sentence logprob checked!
+>>> 8th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: John drives for 3 hours at 60 mph, so he covers a distance of 3 * 60 = 180 miles.
+
+Step 2: Then, he spends 2 hours in standstill traffic, so his position doesn't change.
+
+Step 3: Next, he drives for half an hour at 30 mph, covering a distance of 0.5 * 30 = 15 miles.
+
+Step 4: Finally, he drives for the remaining 2 hours at 80 mph, covering a distance of 2 * 80 = 160 miles.
+
+Step 5: In total, John drives a distance of 180 + 15 + 160 = 355 miles.
+
+Step 6: Since he turned around after 3 hours, he is 355 miles away from home at the end of the 4 hours.
+
+#### 355******
+>>> 8th sentence logprob checked!
+>>> 9th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: John drives for 3 hours at a speed of 60 mph, so he covers a distance of 3 * 60 = 180 miles.
+
+Step 2: He then turns around and spends 2 hours in standstill traffic, which means he doesn't move at all.
+
+Step 3: He then drives for half an hour at a speed of 30 mph, so he covers a distance of 0.5 * 30 = 15 miles.
+
+Step 4: He then spends the remaining 2 hours driving at a speed of 80 mph, so he covers a distance of 2 * 80 = 160 miles.
+
+Step 5: The total distance he has covered is 180 + 15 + 160 = 355 miles.
+
+Step 6: Since he is now going back home, he is 355 miles away from home.
+
+#### 355******
+>>> 9th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [8, 9], 2: [6], 3: [0, 1, 2, 3], 4: [7]}
+Selected Indexes: [4, 8, 6, 0, 7]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.19it/s, est. speed input: 1648.87 toks/s, output: 2.38 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.24it/s, est. speed input: 2744.48 toks/s, output: 34.95 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.04it/s, est. speed input: 3349.27 toks/s, output: 68.36 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.50it/s, est. speed input: 3665.75 toks/s, output: 94.11 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.83it/s, est. speed input: 3665.75 toks/s, output: 94.11 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.7765864609973505 sec
+Cluster Indices: {0: [4, 5], 1: [1, 6, 7], 2: [2, 3], 3: [8, 9], 4: [0]}
+Selected Indexes: [4, 6, 2, 8, 0]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.17it/s, est. speed input: 1622.24 toks/s, output: 2.35 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.43it/s, est. speed input: 2948.89 toks/s, output: 32.21 toks/s]Processed prompts:  80%|████████  | 4/5 [00:05<00:01,  1.77s/it, est. speed input: 926.59 toks/s, output: 61.63 toks/s] Processed prompts: 100%|██████████| 5/5 [00:06<00:00,  1.35s/it, est. speed input: 1055.21 toks/s, output: 115.49 toks/s]Processed prompts: 100%|██████████| 5/5 [00:06<00:00,  1.24s/it, est. speed input: 1055.21 toks/s, output: 115.49 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 6.2210905640386045 sec
+>>> 0th Gen:  
+
+Step 3: He then drives at 30 mph for 0.5 hours, covering a distance of 0.5 x 30 = 15 miles. ******
+
+Step 4: He drives the remaining 2 hours at 80 mph, covering a distance of 2 x 80 = 160 miles. ******
+
+Step 5: In total, John has driven 180 + 15 + 160 = 355 miles. ******
+
+Step 6: Since he turned around, he is now 355 miles away from home. ******
+
+The answer is #### 355. ******
+>>> 0th sentence logprob checked!
+>>> 1th Gen: 
+
+
+Step 3: He drives for half an hour at 30 mph, so he covers a distance of 0.5 x 30 = 15 miles. ******
+
+Step 4: He drives for the remaining 2 hours at 80 mph, so he covers a distance of 2 x 80 = 160 miles. ******
+
+Step 5: The total distance he covers is the sum of the distances in steps 1, 3, and 4: 180 + 0 + 15 + 160 = 355 miles. ******
+
+Step 6: Since he is now going back home, the distance from home is the negative of the total distance: -355 miles. ******
+
+However, since distance cannot be negative, we take the absolute value: | -355 | = 355 miles. ******
+
+Step 7: The answer is #### 355. ******
+>>> 1th sentence logprob checked!
+>>> 8th Gen: 
+
+Step 3: He spends the first 2 hours in standstill traffic, so he doesn't cover any distance. ******
+
+Step 4: He drives at 30 mph for half an hour (0.5 hours). ******
+
+Distance = Speed * Time = 30 * 0.5 = 15 miles
+
+Step 5: He drives at 80 mph for the remaining 2 hours. ******
+
+Distance = Speed * Time = 80 * 2 = 160 miles
+
+Step 6: Total distance driven in the return trip = 180 (initial distance) + 15 (distance in the first half hour) + 160 (distance in the last 2 hours) = 355 miles
+
+Step 7: The answer is #### 355. ******
+>>> 8th sentence logprob checked!
+>>> 9th Gen: 
+
+Step 3: He spends the first 2 hours in standstill traffic. ******
+
+Total distance covered in the first 2 hours is 0 miles.
+
+Step 4: He spends the next half-hour driving at a speed of 30 mph. ******
+
+Distance covered in the next half-hour = Speed * Time = 30 * 0.5 = 15 miles
+
+Step 5: He spends the remaining time of the 4 hours going at 80 mph. ******
+
+Remaining time = 4 hours - 2 hours - 0.5 hours = 1.5 hours
+
+Distance covered in the remaining time = Speed * Time = 80 * 1.5 = 120 miles
+
+Step 6: Total distance covered = Distance covered in the first 3 hours + Distance covered in the next half-hour + Distance covered in the remaining time = 180 + 15 + 120 = 315 miles
+
+Step 7: The answer is #### 315. ******
+>>> 9th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [6, 7, 9], 2: [2, 3], 3: [0, 1], 4: [8]}
+Selected Indexes: [4, 6, 2, 0, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.11it/s, est. speed input: 1539.67 toks/s, output: 2.23 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.68it/s, est. speed input: 4434.36 toks/s, output: 38.81 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.23it/s, est. speed input: 4434.36 toks/s, output: 38.81 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.5594532110262662 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.11it/s, est. speed input: 1540.37 toks/s, output: 2.22 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.68it/s, est. speed input: 4444.39 toks/s, output: 38.75 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.23it/s, est. speed input: 4444.39 toks/s, output: 38.75 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.5614226520992815 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.11it/s, est. speed input: 1555.39 toks/s, output: 2.22 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.54it/s, est. speed input: 4321.05 toks/s, output: 39.41 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.13it/s, est. speed input: 4321.05 toks/s, output: 39.41 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.6111536759417504 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [8, 9], 3: [2, 3], 4: [0, 1]}
+Selected Indexes: [4, 6, 8, 2, 0]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.10it/s, est. speed input: 1521.06 toks/s, output: 2.19 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.18it/s, est. speed input: 3954.13 toks/s, output: 36.50 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.85it/s, est. speed input: 3954.13 toks/s, output: 36.50 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.7672755339881405 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.10it/s, est. speed input: 1555.36 toks/s, output: 2.19 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.73it/s, est. speed input: 4537.93 toks/s, output: 37.84 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.26it/s, est. speed input: 4537.93 toks/s, output: 37.84 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.5454994039610028 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.09it/s, est. speed input: 1515.36 toks/s, output: 2.18 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.63it/s, est. speed input: 3382.19 toks/s, output: 41.18 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.42it/s, est. speed input: 3382.19 toks/s, output: 41.18 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.0832407630514354 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [8, 9], 4: [0, 1]}
+Selected Indexes: [4, 6, 2, 8, 0]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.09it/s, est. speed input: 1510.21 toks/s, output: 2.18 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.79it/s, est. speed input: 4633.19 toks/s, output: 37.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.30it/s, est. speed input: 4633.19 toks/s, output: 37.00 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.5260221469216049 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [8, 9], 3: [0, 1], 4: [2, 3]}
+Selected Indexes: [4, 6, 8, 0, 2]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.09it/s, est. speed input: 1517.23 toks/s, output: 2.19 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.94it/s, est. speed input: 5739.00 toks/s, output: 27.73 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.08it/s, est. speed input: 5739.00 toks/s, output: 27.73 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.238771573989652 sec
+>>> 4th Gen:  Step 11: The answer is #### 5. ******
+>>> 4th sentence logprob checked!
+>>> 5th Gen:  Step 11: The answer is #### 5. ******
+>>> 5th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+Found EoS token, Break
+completions: ["<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: John drives for 3 hours at 60 mph, so he covers a distance of 3 x 60 = 180 miles. ******\n\nStep 2: He turns around and spends 2 hours in standstill traffic, so he doesn't cover any distance. ****** \n\nStep 3: He then drives at 30 mph for 0.5 hours, covering a distance of 0.5 x 30 = 15 miles. ******\n\nStep 4: He drives the remaining 2 hours at 80 mph, covering a distance of 2 x 80 = 160 miles. ******\n\nStep 5: In total, John has driven 180 + 15 + 160 = 355 miles. ******\n\nStep 6: Since he turned around, he is now 355 miles away from home. ******\n\nThe answer is #### 355. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: John drives for 3 hours at 60 mph, so he covers a distance of 3 x 60 = 180 miles. ******\n\nStep 2: He turns around and spends 2 hours in standstill traffic, so he doesn't cover any distance. ****** \n\nStep 3: He then drives at 30 mph for 0.5 hours, covering a distance of 0.5 x 30 = 15 miles. ******\n\nStep 4: He drives the remaining 2 hours at 80 mph, covering a distance of 2 x 80 = 160 miles. ******\n\nStep 5: In total, John has driven 180 + 15 + 160 = 355 miles. ******\n\nStep 6: Since he turned around, he is now 355 miles away from home. ******\n\nThe answer is #### 355. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: John drives for 3 hours at a speed of 60 mph, so he covers a distance of 3 * 60 = 180 miles.\n\nStep 2: He turns around and tries to get home in 4 hours. He spends the first 2 hours in standstill traffic, so he doesn't cover any distance.\n\nStep 3: He then spends the next half-hour driving at a speed of 30 mph, so he covers a distance of 0.5 * 30 = 15 miles.\n\nStep 4: He spends the remaining time of 4 - 2.5 = 1.5 hours driving at a speed of 80 mph, so he covers a distance of 1.5 * 80 = 120 miles.\n\nStep 5: In total, John covers a distance of 180 + 15 + 120 = 315 miles.\n\nStep 6: The answer is #### 315. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: John drives for 3 hours at a speed of 60 mph, so he covers a distance of 3 * 60 = 180 miles.\n\nStep 2: He turns around and tries to get home in 4 hours. He spends the first 2 hours in standstill traffic, so he doesn't cover any distance.\n\nStep 3: He then spends the next half-hour driving at a speed of 30 mph, so he covers a distance of 0.5 * 30 = 15 miles.\n\nStep 4: He spends the remaining time of 4 - 2.5 = 1.5 hours driving at a speed of 80 mph, so he covers a distance of 1.5 * 80 = 120 miles.\n\nStep 5: In total, John covers a distance of 180 + 15 + 120 = 315 miles.\n\nStep 6: The answer is #### 315. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: John drives for 3 hours at 60 mph. ****** Step 2: This means he covers a distance of 3 * 60 = 180 miles. ****** Step 3: Then he turns around and tries to get home in 4 hours. ****** Step 4: He spends the first 2 hours in standstill traffic, so he doesn't cover any distance. ****** Step 5: Then he drives at 30 mph for half an hour, which is 0.5 hours. ****** Step 6: During this time, he covers a distance of 0.5 * 30 = 15 miles. ****** Step 7: After that, he drives at 80 mph for the remaining 2 hours. ****** Step 8: During this time, he covers a distance of 2 * 80 = 160 miles. ****** Step 9: In total, he has driven 180 miles going out, and 15 + 160 = 175 miles coming back. ****** Step 10: So, he is now 180 - 175 = 5 miles away from home. ****** Step 11: The answer is #### 5. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: John drives for 3 hours at 60 mph. ****** Step 2: This means he covers a distance of 3 * 60 = 180 miles. ****** Step 3: Then he turns around and tries to get home in 4 hours. ****** Step 4: He spends the first 2 hours in standstill traffic, so he doesn't cover any distance. ****** Step 5: Then he drives at 30 mph for half an hour, which is 0.5 hours. ****** Step 6: During this time, he covers a distance of 0.5 * 30 = 15 miles. ****** Step 7: After that, he drives at 80 mph for the remaining 2 hours. ****** Step 8: During this time, he covers a distance of 2 * 80 = 160 miles. ****** Step 9: In total, he has driven 180 miles going out, and 15 + 160 = 175 miles coming back. ****** Step 10: So, he is now 180 - 175 = 5 miles away from home. ****** Step 11: The answer is #### 5. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: John drives for 3 hours at 60 mph, so he covers a distance of 3 * 60 = 180 miles.\n\nStep 2: Then, he spends 2 hours in standstill traffic, so his position doesn't change.\n\nStep 3: Next, he drives for half an hour at 30 mph, covering a distance of 0.5 * 30 = 15 miles.\n\nStep 4: Finally, he drives for the remaining 2 hours at 80 mph, covering a distance of 2 * 80 = 160 miles.\n\nStep 5: In total, John drives a distance of 180 + 15 + 160 = 355 miles.\n\nStep 6: Since he turned around after 3 hours, he is 355 miles away from home at the end of the 4 hours.\n\n#### 355******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: John drives for 3 hours at 60 mph, so he covers a distance of 3 * 60 = 180 miles.\n\nStep 2: Then, he spends 2 hours in standstill traffic, so his position doesn't change.\n\nStep 3: Next, he drives for half an hour at 30 mph, covering a distance of 0.5 * 30 = 15 miles.\n\nStep 4: Finally, he drives for the remaining 2 hours at 80 mph, covering a distance of 2 * 80 = 160 miles.\n\nStep 5: In total, John drives a distance of 180 + 15 + 160 = 355 miles.\n\nStep 6: Since he turned around after 3 hours, he is 355 miles away from home at the end of the 4 hours.\n\n#### 355******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: John drives for 3 hours at a speed of 60 mph. ******\n\nDistance = Speed * Time = 60 * 3 = 180 miles\n\nStep 2: He turns around and tries to get home in 4 hours. ******\n\nStep 3: He spends the first 2 hours in standstill traffic, so he doesn't cover any distance. ******\n\nStep 4: He drives at 30 mph for half an hour (0.5 hours). ******\n\nDistance = Speed * Time = 30 * 0.5 = 15 miles\n\nStep 5: He drives at 80 mph for the remaining 2 hours. ******\n\nDistance = Speed * Time = 80 * 2 = 160 miles\n\nStep 6: Total distance driven in the return trip = 180 (initial distance) + 15 (distance in the first half hour) + 160 (distance in the last 2 hours) = 355 miles\n\nStep 7: The answer is #### 355. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: John drives for 3 hours at a speed of 60 mph. ******\n\nDistance = Speed * Time = 60 * 3 = 180 miles\n\nStep 2: He turns around and tries to get home in 4 hours. ******\n\nStep 3: He spends the first 2 hours in standstill traffic, so he doesn't cover any distance. ******\n\nStep 4: He drives at 30 mph for half an hour (0.5 hours). ******\n\nDistance = Speed * Time = 30 * 0.5 = 15 miles\n\nStep 5: He drives at 80 mph for the remaining 2 hours. ******\n\nDistance = Speed * Time = 80 * 2 = 160 miles\n\nStep 6: Total distance driven in the return trip = 180 (initial distance) + 15 (distance in the first half hour) + 160 (distance in the last 2 hours) = 355 miles\n\nStep 7: The answer is #### 355. ******"]
+Answer Probs: {0: -10.804068326950073, 1: -20.998233318328857, 2: 0, 3: 0, 4: 0.0, 5: 0.0, 6: 0, 7: -12.506866917014122, 8: -14.187494292855263, 9: -15.483711667358875}
+>> Processing time: 26.70609049499035
+>> Answer lists: ['355', '355', '315', '315', '5', '5', '355', '355', '355', '355']
+>> Original Correct: 355, False
+>> Soft SC  Correct: 315, False
+>> Golden    Answer: 45
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.11it/s, est. speed input: 1278.13 toks/s, output: 273.09 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.11it/s, est. speed input: 1278.13 toks/s, output: 273.09 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 0.9071275900350884 sec
+Cluster Indices: {0: [5, 6, 9], 1: [1, 2, 3, 4], 2: [7], 3: [0], 4: [8]}
+Selected Indexes: [5, 1, 7, 0, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.46s/it, est. speed input: 805.15 toks/s, output: 33.46 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.08it/s, est. speed input: 3710.94 toks/s, output: 158.45 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.14it/s, est. speed input: 3710.94 toks/s, output: 158.45 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.602997355046682 sec
+Cluster Indices: {0: [4, 5, 8, 9], 1: [2, 6], 2: [1], 3: [0], 4: [3, 7]}
+Selected Indexes: [4, 6, 1, 0, 7]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.87s/it, est. speed input: 648.24 toks/s, output: 34.74 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.61it/s, est. speed input: 2440.73 toks/s, output: 148.60 toks/s]Processed prompts: 100%|██████████| 5/5 [00:04<00:00,  1.25it/s, est. speed input: 1503.90 toks/s, output: 133.52 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 4.025368236936629 sec
+>>> 6th Gen: 
+
+Step 3: For the remaining 5 hours, she receives overtime pay, which is 1.2 times her regular rate. ******
+
+Step 4: Her overtime rate is $10 * 1.2 = $12 per hour. ******
+
+Step 5: For the 5 overtime hours, her earnings are 5 * $12 = $60. ******
+
+Step 6: Her total earnings for the week are $400 (regular hours) + $60 (overtime hours) = $460. ******
+
+Step 7: The answer is #### 460. ******
+>>> 6th sentence logprob checked!
+>>> 7th Gen: 
+
+Step 3: For the remaining 5 hours, she receives overtime pay which is 1.2 times her regular rate. ******
+
+Step 4: Overtime rate is $10 * 1.2 = $12 per hour. ******
+
+Step 5: For the 5 overtime hours, her earnings are 5 * $12 = $60. ******
+
+Step 6: Total earnings for the week are $400 (from regular hours) + $60 (from overtime) = $460. ******
+
+Step 7: The answer is #### 460. ******
+>>> 7th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [0, 2, 3, 9], 3: [1], 4: [8]}
+Selected Indexes: [4, 6, 2, 1, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.20it/s, est. speed input: 1598.57 toks/s, output: 2.41 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.43it/s, est. speed input: 1787.05 toks/s, output: 33.40 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.30it/s, est. speed input: 4152.00 toks/s, output: 124.15 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.5290987300686538 sec
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [0, 1], 3: [6, 7], 4: [8, 9]}
+Selected Indexes: [4, 2, 0, 6, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.21it/s, est. speed input: 1604.16 toks/s, output: 2.41 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.47it/s, est. speed input: 1843.20 toks/s, output: 32.72 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.00it/s, est. speed input: 3883.89 toks/s, output: 125.42 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.04it/s, est. speed input: 3883.89 toks/s, output: 125.42 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.6555191710358486 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.19it/s, est. speed input: 1580.48 toks/s, output: 2.38 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.23it/s, est. speed input: 1601.21 toks/s, output: 31.75 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.00it/s, est. speed input: 3892.63 toks/s, output: 140.54 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.6773578479187563 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [0, 1], 3: [2, 3], 4: [8, 9]}
+Selected Indexes: [4, 6, 0, 2, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.18it/s, est. speed input: 1562.44 toks/s, output: 2.35 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.84it/s, est. speed input: 2239.44 toks/s, output: 23.71 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.23it/s, est. speed input: 5581.14 toks/s, output: 89.73 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.1937933779554442 sec
+>>> 2th Gen:  Step 7: The answer is #### 460. ******
+>>> 2th sentence logprob checked!
+>>> 3th Gen:  Step 7: The answer is #### 460. ******
+>>> 3th sentence logprob checked!
+>>> 4th Gen:  Step 7: The answer is #### 460. ******
+>>> 4th sentence logprob checked!
+>>> 5th Gen:  Step 7: The answer is #### 460. ******
+>>> 5th sentence logprob checked!
+>>> 6th Gen:  Step 7: The answer is #### 460. ******
+>>> 6th sentence logprob checked!
+>>> 7th Gen:  Step 7: The answer is #### 460. ******
+>>> 7th sentence logprob checked!
+>>> 8th Gen:  Step 7: The answer is #### 460. ******
+>>> 8th sentence logprob checked!
+>>> 9th Gen:  Step 7: The answer is #### 460. ******
+>>> 9th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+Found EoS token, Break
+completions: ["<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Eliza's regular rate is $10 per hour for the first 40 hours. ******\n\nStep 2: For the first 40 hours, her earnings are 40 * $10 = $400. ******\n\nStep 3: For the remaining 5 hours, she receives overtime pay, which is 1.2 times her regular rate. ******\n\nStep 4: Her overtime rate is $10 * 1.2 = $12 per hour. ******\n\nStep 5: For the 5 overtime hours, her earnings are 5 * $12 = $60. ******\n\nStep 6: Her total earnings for the week are $400 (regular hours) + $60 (overtime hours) = $460. ******\n\nStep 7: The answer is #### 460. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Eliza's regular rate is $10 per hour for the first 40 hours. ******\n\nStep 2: For the first 40 hours, her earnings are 40 * $10 = $400. ******\n\nStep 3: For the remaining 5 hours, she receives overtime pay, which is 1.2 times her regular rate. ******\n\nStep 4: Her overtime rate is $10 * 1.2 = $12 per hour. ******\n\nStep 5: For the 5 overtime hours, her earnings are 5 * $12 = $60. ******\n\nStep 6: Her total earnings for the week are $400 (regular hours) + $60 (overtime hours) = $460. ******\n\nStep 7: The answer is #### 460. ******", '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Eliza earns $10 per hour for the first 40 hours she works. ****** Step 2: For the first 40 hours, her earnings are 40 * $10 = $400. ****** Step 3: For the remaining 5 hours, she receives overtime pay, which is 1.2 times her regular hourly rate. ****** Step 4: Her overtime rate is $10 * 1.2 = $12 per hour. ****** Step 5: For the 5 overtime hours, her earnings are 5 * $12 = $60. ****** Step 6: Her total earnings for the week are $400 (from regular hours) + $60 (from overtime) = $460. ****** Step 7: The answer is #### 460. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Eliza earns $10 per hour for the first 40 hours she works. ****** Step 2: For the first 40 hours, her earnings are 40 * $10 = $400. ****** Step 3: For the remaining 5 hours, she receives overtime pay, which is 1.2 times her regular hourly rate. ****** Step 4: Her overtime rate is $10 * 1.2 = $12 per hour. ****** Step 5: For the 5 overtime hours, her earnings are 5 * $12 = $60. ****** Step 6: Her total earnings for the week are $400 (from regular hours) + $60 (from overtime) = $460. ****** Step 7: The answer is #### 460. ******', "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Eliza's regular rate is $10 per hour for the first 40 hours. ****** Step 2: She worked for 40 hours at $10 per hour, so she earned 40 * $10 = $400. ****** Step 3: For the remaining 5 hours, she worked overtime at 1.2 times her regular rate. ****** Step 4: Her overtime rate is $10 * 1.2 = $12 per hour. ****** Step 5: She earned $12 per hour for 5 hours, so she earned 5 * $12 = $60 for overtime. ****** Step 6: In total, she earned $400 + $60 = $460. ****** Step 7: The answer is #### 460. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Eliza's regular rate is $10 per hour for the first 40 hours. ****** Step 2: She worked for 40 hours at $10 per hour, so she earned 40 * $10 = $400. ****** Step 3: For the remaining 5 hours, she worked overtime at 1.2 times her regular rate. ****** Step 4: Her overtime rate is $10 * 1.2 = $12 per hour. ****** Step 5: She earned $12 per hour for 5 hours, so she earned 5 * $12 = $60 for overtime. ****** Step 6: In total, she earned $400 + $60 = $460. ****** Step 7: The answer is #### 460. ******", '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Eliza works for 40 hours at $10 per hour. ****** Step 2: Her earnings for the first 40 hours are 40 * $10 = $400. ****** Step 3: For the remaining 5 hours (45 - 40 = 5), she receives overtime pay of 1.2 times her regular hourly rate. ****** Step 4: Overtime pay is 1.2 * $10 = $12 per hour. ****** Step 5: Earnings for the overtime hours are 5 * $12 = $60. ****** Step 6: Total earnings are the sum of earnings for regular hours and overtime hours, which is $400 + $60 = $460. ****** Step 7: The answer is #### 460. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Eliza works for 40 hours at $10 per hour. ****** Step 2: Her earnings for the first 40 hours are 40 * $10 = $400. ****** Step 3: For the remaining 5 hours (45 - 40 = 5), she receives overtime pay of 1.2 times her regular hourly rate. ****** Step 4: Overtime pay is 1.2 * $10 = $12 per hour. ****** Step 5: Earnings for the overtime hours are 5 * $12 = $60. ****** Step 6: Total earnings are the sum of earnings for regular hours and overtime hours, which is $400 + $60 = $460. ****** Step 7: The answer is #### 460. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Eliza earns $10 per hour for the first 40 hours she works. ****** Step 2: For the first 40 hours, she earns 40 * $10 = $400. ****** Step 3: For the remaining 5 hours (45 - 40 = 5), she receives overtime pay which is 1.2 times her regular hourly rate. ****** Step 4: Overtime rate is 1.2 * $10 = $12 per hour. ****** Step 5: For the 5 overtime hours, she earns 5 * $12 = $60. ****** Step 6: In total, her earnings are $400 (for regular hours) + $60 (for overtime) = $460. ****** Step 7: The answer is #### 460. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Eliza earns $10 per hour for the first 40 hours she works. ****** Step 2: For the first 40 hours, she earns 40 * $10 = $400. ****** Step 3: For the remaining 5 hours (45 - 40 = 5), she receives overtime pay which is 1.2 times her regular hourly rate. ****** Step 4: Overtime rate is 1.2 * $10 = $12 per hour. ****** Step 5: For the 5 overtime hours, she earns 5 * $12 = $60. ****** Step 6: In total, her earnings are $400 (for regular hours) + $60 (for overtime) = $460. ****** Step 7: The answer is #### 460. ******']
+Answer Probs: {0: 0, 1: 0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 0.0, 6: 0.0, 7: 0.0, 8: 0.0, 9: 0.0}
+>> Processing time: 12.80221300094854
+>> Answer lists: ['460', '460', '460', '460', '460', '460', '460', '460', '460', '460']
+>> Original Correct: 460, True
+>> Soft SC  Correct: 460, True
+>> Golden    Answer: 460
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:04<00:00,  4.70s/it, est. speed input: 245.91 toks/s, output: 132.63 toks/s]Processed prompts: 100%|██████████| 1/1 [00:04<00:00,  4.71s/it, est. speed input: 245.91 toks/s, output: 132.63 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (4) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 4.708175804000348 sec
+>>> 7th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The program had 60 downloads in the first month. ******
+
+Step 2: The number of downloads in the second month was three times as many as the downloads in the first month, so it was 3 * 60 = 180 downloads. ******
+
+Step 3: In the third month, the downloads reduced by 30%, which means it's 70% of the original number, so it's 0.7 * 180 = 126 downloads. ******
+
+Step 4: The total number of downloads over the three months is the sum of the downloads in each month: 60 + 180 + 126 = 366. ******
+
+Step 5: The answer is #### 366. ******
+>>> 7th sentence logprob checked!
+>>> 8th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The program had 60 downloads in the first month. ******
+
+Step 2: In the second month, the number of downloads was three times as many as the downloads in the first month, so it's 3 * 60 = 180 downloads. ******
+
+Step 3: In the third month, the number of downloads was reduced by 30%, which means it's 180 * (1 - 0.3) = 180 * 0.7 = 126 downloads. ******
+
+Step 4: The total number of downloads over the three months is 60 + 180 + 126 = 366 downloads. ******
+
+The answer is #### 366. ******
+>>> 8th sentence logprob checked!
+>>> 9th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The program had 60 downloads in the first month. ******
+
+Step 2: The number of downloads in the second month was three times as many as the downloads in the first month, so it's 3 * 60 = 180 downloads. ******
+
+Step 3: In the third month, the downloads were reduced by 30%, so we need to find 30% of 180 and subtract it from 180.
+
+30% of 180 = 0.3 * 180 = 54
+
+So, the downloads in the third month are 180 - 54 = 126.
+
+Step 4: Now, we add up the downloads for all three months: 60 + 180 + 126 = 366.
+
+Step 5: The answer is #### 366. ******
+>>> 9th sentence logprob checked!
+Cluster Indices: {0: [0, 1, 2, 3, 4, 5, 6], 1: [8], 2: [9], 3: [7], 4: []}
+Selected Indexes: [0, 8, 9, 7, 6]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.21it/s, est. speed input: 1580.05 toks/s, output: 2.42 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.26it/s, est. speed input: 2714.47 toks/s, output: 46.60 toks/s]Processed prompts: 100%|██████████| 5/5 [00:05<00:00,  1.30s/it, est. speed input: 1164.30 toks/s, output: 74.43 toks/s]Processed prompts: 100%|██████████| 5/5 [00:05<00:00,  1.08s/it, est. speed input: 1164.30 toks/s, output: 74.43 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 5.428199387039058 sec
+>>> 8th Gen: 
+
+Step 2: The number of downloads in the second month was three times as many as the downloads in the first month, so it was 3 * 60 = 180 downloads. ******
+
+Step 3: In the third month, the number of downloads was reduced by 30%, so it was 180 - (30% of 180) = 180 - 54 = 126 downloads. ******
+
+Step 4: The total number of downloads over the three months is the sum of the downloads in each month: 60 + 180 + 126 = 366. ******
+
+Step 5: The answer is #### 366. ******
+>>> 8th sentence logprob checked!
+>>> 9th Gen: 
+
+Step 2: The number of downloads in the second month was three times as many as the downloads in the first month, so it's 3 * 60 = 180 downloads. ******
+
+Step 3: Then, in the third month, the downloads were reduced by 30%. To find the number of downloads in the third month, we need to find 30% of 180 and subtract it from 180. 30% of 180 is 0.3 * 180 = 54. So, the number of downloads in the third month is 180 - 54 = 126. ******
+
+Step 4: To find the total number of downloads over the three months, we add the downloads in each month: 60 + 180 + 126 = 366. ******
+
+Step 5: The answer is #### 366. ******
+>>> 9th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [0, 1], 3: [6, 7, 8], 4: [9]}
+Selected Indexes: [4, 2, 0, 8, 9]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.19it/s, est. speed input: 1579.26 toks/s, output: 2.38 toks/s]Processed prompts: 100%|██████████| 5/5 [00:04<00:00,  1.09it/s, est. speed input: 1424.51 toks/s, output: 63.34 toks/s]Processed prompts: 100%|██████████| 5/5 [00:04<00:00,  1.09it/s, est. speed input: 1424.51 toks/s, output: 63.34 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 4.591114574111998 sec
+>>> 4th Gen: 
+
+Step 3: Then, the number of downloads was reduced by 30% in the third month. To find the number of downloads in the third month, multiply the number of downloads in the second month by 0.7 (since 100% - 30% = 70%). So, the number of downloads in the third month is 180 x 0.7 = 126. ******
+
+Step 4: To find the total number of downloads over the three months, add the number of downloads in each month: 60 + 180 + 126 = 366. ******
+
+Step 5: The answer is #### 366. ******
+>>> 4th sentence logprob checked!
+>>> 5th Gen: 
+
+Step 3: Then, in the third month, the downloads were reduced by 30%. To find the number of downloads in the third month, we need to find 30% of the downloads in the second month and subtract it from the second month's downloads. 30% of 180 is 0.3 x 180 = 54. So, the number of downloads in the third month is 180 - 54 = 126. ******
+
+Step 4: To find the total number of downloads over the three months, we add the downloads from each month: 60 + 180 + 126 = 366. ******
+
+Step 5: The answer is #### 366. ******
+>>> 5th sentence logprob checked!
+Cluster Indices: {0: [5, 8, 9], 1: [6, 7], 2: [0, 1], 3: [4], 4: [2, 3]}
+Selected Indexes: [8, 6, 0, 4, 2]
+Found EoS token, Break
+completions: ["<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The program had 60 downloads in the first month. ******\n\nStep 2: The number of downloads in the second month was three times as many as the downloads in the first month, so it's 3 * 60 = 180 downloads. ******\n\nStep 3: In the third month, the downloads were reduced by 30%, so we need to find 30% of 180 and subtract it from 180.\n\n30% of 180 = 0.3 * 180 = 54\n\nSo, the downloads in the third month are 180 - 54 = 126.\n\nStep 4: Now, we add up the downloads for all three months: 60 + 180 + 126 = 366.\n\nStep 5: The answer is #### 366. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The program had 60 downloads in the first month. ******\n\nStep 2: The number of downloads in the second month was three times as many as the downloads in the first month, so it's 3 * 60 = 180 downloads. ******\n\nStep 3: In the third month, the downloads were reduced by 30%, so we need to find 30% of 180 and subtract it from 180.\n\n30% of 180 = 0.3 * 180 = 54\n\nSo, the downloads in the third month are 180 - 54 = 126.\n\nStep 4: Now, we add up the downloads for all three months: 60 + 180 + 126 = 366.\n\nStep 5: The answer is #### 366. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The program had 60 downloads in the first month. ******\n\nStep 2: In the second month, the number of downloads was three times as many as the downloads in the first month, so it's 3 * 60 = 180 downloads. ******\n\nStep 3: In the third month, the number of downloads was reduced by 30%, which means it's 180 * (1 - 0.3) = 180 * 0.7 = 126 downloads. ******\n\nStep 4: The total number of downloads over the three months is 60 + 180 + 126 = 366 downloads. ******\n\nThe answer is #### 366. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The program had 60 downloads in the first month. ******\n\nStep 2: In the second month, the number of downloads was three times as many as the downloads in the first month, so it's 3 * 60 = 180 downloads. ******\n\nStep 3: In the third month, the number of downloads was reduced by 30%, which means it's 180 * (1 - 0.3) = 180 * 0.7 = 126 downloads. ******\n\nStep 4: The total number of downloads over the three months is 60 + 180 + 126 = 366 downloads. ******\n\nThe answer is #### 366. ******", '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The program had 60 downloads in the first month. ******\n\nStep 2: The number of downloads in the second month was three times as many as the downloads in the first month, so it was 3 x 60 = 180 downloads. ******\n\nStep 3: Then, the number of downloads was reduced by 30% in the third month. To find the number of downloads in the third month, multiply the number of downloads in the second month by 0.7 (since 100% - 30% = 70%). So, the number of downloads in the third month is 180 x 0.7 = 126. ******\n\nStep 4: To find the total number of downloads over the three months, add the number of downloads in each month: 60 + 180 + 126 = 366. ******\n\nStep 5: The answer is #### 366. ******', "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The program had 60 downloads in the first month. ******\n\nStep 2: The number of downloads in the second month was three times as many as the downloads in the first month, so it was 3 x 60 = 180 downloads. ******\n\nStep 3: Then, in the third month, the downloads were reduced by 30%. To find the number of downloads in the third month, we need to find 30% of the downloads in the second month and subtract it from the second month's downloads. 30% of 180 is 0.3 x 180 = 54. So, the number of downloads in the third month is 180 - 54 = 126. ******\n\nStep 4: To find the total number of downloads over the three months, we add the downloads from each month: 60 + 180 + 126 = 366. ******\n\nStep 5: The answer is #### 366. ******", '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The program had 60 downloads in the first month. ******\n\nStep 2: The number of downloads in the second month was three times as many as the downloads in the first month, so it was 3 * 60 = 180 downloads. ******\n\nStep 3: In the third month, the number of downloads was reduced by 30%, so it was 180 - (30% of 180) = 180 - 54 = 126 downloads. ******\n\nStep 4: The total number of downloads over the three months is the sum of the downloads in each month: 60 + 180 + 126 = 366. ******\n\nStep 5: The answer is #### 366. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The program had 60 downloads in the first month. ******\n\nStep 2: The number of downloads in the second month was three times as many as the downloads in the first month, so it was 3 * 60 = 180 downloads. ******\n\nStep 3: In the third month, the number of downloads was reduced by 30%, so it was 180 - (30% of 180) = 180 - 54 = 126 downloads. ******\n\nStep 4: The total number of downloads over the three months is the sum of the downloads in each month: 60 + 180 + 126 = 366. ******\n\nStep 5: The answer is #### 366. ******', "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The program had 60 downloads in the first month. ******\n\nStep 2: The number of downloads in the second month was three times as many as the downloads in the first month, so it's 3 * 60 = 180 downloads. ******\n\nStep 3: Then, in the third month, the downloads were reduced by 30%. To find the number of downloads in the third month, we need to find 30% of 180 and subtract it from 180. 30% of 180 is 0.3 * 180 = 54. So, the number of downloads in the third month is 180 - 54 = 126. ******\n\nStep 4: To find the total number of downloads over the three months, we add the downloads in each month: 60 + 180 + 126 = 366. ******\n\nStep 5: The answer is #### 366. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The program had 60 downloads in the first month. ******\n\nStep 2: The number of downloads in the second month was three times as many as the downloads in the first month, so it's 3 * 60 = 180 downloads. ******\n\nStep 3: Then, in the third month, the downloads were reduced by 30%. To find the number of downloads in the third month, we need to find 30% of 180 and subtract it from 180. 30% of 180 is 0.3 * 180 = 54. So, the number of downloads in the third month is 180 - 54 = 126. ******\n\nStep 4: To find the total number of downloads over the three months, we add the downloads in each month: 60 + 180 + 126 = 366. ******\n\nStep 5: The answer is #### 366. ******"]
+Answer Probs: {0: 0, 1: 0, 2: 0, 3: 0, 4: -8.673980325460434, 5: -11.10193482041359, 6: 0, 7: -11.535720765590668, 8: -9.44845375418663, 9: -10.434805773198605}
+>> Processing time: 14.818702193908393
+>> Answer lists: ['366', '366', '366', '366', '366', '366', '366', '366', '366', '366']
+>> Original Correct: 366, True
+>> Soft SC  Correct: 366, True
+>> Golden    Answer: 366
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.13it/s, est. speed input: 1309.48 toks/s, output: 293.49 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.13it/s, est. speed input: 1309.48 toks/s, output: 293.49 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (1) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 0.8901253669755533 sec
+Cluster Indices: {0: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 1: [], 2: [], 3: [], 4: []}
+Selected Indexes: [0, 9, 8, 7, 6]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.60s/it, est. speed input: 740.60 toks/s, output: 28.72 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.07it/s, est. speed input: 3642.83 toks/s, output: 141.29 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.6400731990579516 sec
+Cluster Indices: {0: [5], 1: [2, 3, 6, 7], 2: [8], 3: [0, 1, 4], 4: [9]}
+Selected Indexes: [5, 2, 8, 0, 9]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.37s/it, est. speed input: 880.08 toks/s, output: 30.57 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.57it/s, est. speed input: 4314.29 toks/s, output: 152.07 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.4127433450194076 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [0, 1], 3: [2, 3], 4: [8, 9]}
+Selected Indexes: [4, 6, 0, 2, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.42s/it, est. speed input: 867.89 toks/s, output: 30.37 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.46it/s, est. speed input: 4261.15 toks/s, output: 153.82 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.4547089390689507 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [0, 1], 3: [2, 3], 4: [8, 9]}
+Selected Indexes: [4, 6, 0, 2, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.44s/it, est. speed input: 868.04 toks/s, output: 31.92 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.41it/s, est. speed input: 4263.83 toks/s, output: 158.02 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.479815078084357 sec
+Cluster Indices: {0: [4, 5, 9], 1: [2, 3], 2: [0, 1], 3: [6, 7], 4: [8]}
+Selected Indexes: [4, 2, 0, 6, 8]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.46s/it, est. speed input: 873.79 toks/s, output: 31.57 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.31it/s, est. speed input: 4218.56 toks/s, output: 158.82 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.5225769829703495 sec
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [0, 1], 3: [8, 9], 4: [6, 7]}
+Selected Indexes: [4, 2, 0, 8, 6]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.90s/it, est. speed input: 684.45 toks/s, output: 40.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  3.28it/s, est. speed input: 3242.98 toks/s, output: 190.23 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.50it/s, est. speed input: 3242.98 toks/s, output: 190.23 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.015489974990487 sec
+>>> 7th Gen:  Step 7: To find the total cost, add the cost of the donuts, mini cupcakes, and mini cheesecakes: $204 + $160 + $330 = #### 694. ******
+>>> 7th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [8], 2: [2, 3, 9], 3: [0, 1], 4: [6, 7]}
+Selected Indexes: [4, 8, 2, 0, 6]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.23s/it, est. speed input: 1082.69 toks/s, output: 21.10 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.40it/s, est. speed input: 4641.46 toks/s, output: 101.46 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.47it/s, est. speed input: 4641.46 toks/s, output: 101.46 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.4519040830200538 sec
+>>> 0th Gen:  Step 8: The answer is #### 694. ******
+>>> 0th sentence logprob checked!
+>>> 1th Gen:  Step 8: The answer is #### 694. ******
+>>> 1th sentence logprob checked!
+>>> 4th Gen:  Step 8: The answer is #### 694. ******
+>>> 4th sentence logprob checked!
+>>> 5th Gen:  Step 8: The answer is #### 694. ******
+>>> 5th sentence logprob checked!
+>>> 6th Gen:  Step 8: The answer is #### 694. ******
+>>> 6th sentence logprob checked!
+>>> 7th Gen:  Step 8: The answer is #### 694. ******
+>>> 7th sentence logprob checked!
+>>> 8th Gen:  Step 8: The answer is #### 694. ******
+>>> 8th sentence logprob checked!
+>>> 9th Gen:  Step 8: The answer is #### 694. ******
+>>> 9th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [8, 9], 2: [2, 3], 3: [0, 1], 4: [6, 7]}
+Selected Indexes: [4, 8, 2, 0, 6]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.12it/s, est. speed input: 1518.29 toks/s, output: 2.25 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  5.03it/s, est. speed input: 5623.35 toks/s, output: 28.32 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.16it/s, est. speed input: 5623.35 toks/s, output: 28.32 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.2129013220546767 sec
+>>> 4th Gen:  Step 9: The answer is #### 694. ******
+>>> 4th sentence logprob checked!
+>>> 5th Gen:  Step 9: The answer is #### 694. ******
+>>> 5th sentence logprob checked!
+Cluster Indices: {0: [4, 5], 1: [8, 9], 2: [6, 7], 3: [0, 1], 4: [2, 3]}
+Selected Indexes: [4, 8, 6, 0, 2]
+Found EoS token, Break
+completions: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Toula bought 3 dozen donuts, which cost $68 per dozen. ****** Step 2: So, the cost of donuts is 3 * $68 = $204. ****** Step 3: She bought 2 dozen mini cupcakes, which cost $80 per dozen. ****** Step 4: So, the cost of cupcakes is 2 * $80 = $160. ****** Step 5: She bought 6 dozen mini cheesecakes, which cost $55 per dozen. ****** Step 6: So, the cost of cheesecakes is 6 * $55 = $330. ****** Step 7: The total cost is the sum of the cost of donuts, cupcakes, and cheesecakes: $204 + $160 + $330 = $694. ****** Step 8: The answer is #### 694. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Toula bought 3 dozen donuts, which cost $68 per dozen. ****** Step 2: So, the cost of donuts is 3 * $68 = $204. ****** Step 3: She bought 2 dozen mini cupcakes, which cost $80 per dozen. ****** Step 4: So, the cost of cupcakes is 2 * $80 = $160. ****** Step 5: She bought 6 dozen mini cheesecakes, which cost $55 per dozen. ****** Step 6: So, the cost of cheesecakes is 6 * $55 = $330. ****** Step 7: The total cost is the sum of the cost of donuts, cupcakes, and cheesecakes: $204 + $160 + $330 = $694. ****** Step 8: The answer is #### 694. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Toula bought 3 dozen donuts, which cost $68 per dozen. ****** Step 2: The total cost of the donuts is 3 * $68 = $204. ****** Step 3: She also bought 2 dozen mini cupcakes, which cost $80 per dozen. ****** Step 4: The total cost of the mini cupcakes is 2 * $80 = $160. ****** Step 5: Additionally, she bought 6 dozen mini cheesecakes for $55 per dozen. ****** Step 6: The total cost of the mini cheesecakes is 6 * $55 = $330. ****** Step 7: To find the total cost, add the cost of the donuts, mini cupcakes, and mini cheesecakes: $204 + $160 + $330 = $694. ****** Step 8: The answer is #### 694. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Toula bought 3 dozen donuts, which cost $68 per dozen. ****** Step 2: The total cost of the donuts is 3 * $68 = $204. ****** Step 3: She also bought 2 dozen mini cupcakes, which cost $80 per dozen. ****** Step 4: The total cost of the mini cupcakes is 2 * $80 = $160. ****** Step 5: Additionally, she bought 6 dozen mini cheesecakes for $55 per dozen. ****** Step 6: The total cost of the mini cheesecakes is 6 * $55 = $330. ****** Step 7: To find the total cost, add the cost of the donuts, mini cupcakes, and mini cheesecakes: $204 + $160 + $330 = $694. ****** Step 8: The answer is #### 694. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Toula bought 3 dozen donuts, which cost $68 per dozen. ****** Step 2: So, the cost of donuts is 3 x $68 = $204. ****** Step 3: She bought 2 dozen mini cupcakes, which cost $80 per dozen. ****** Step 4: So, the cost of mini cupcakes is 2 x $80 = $160. ****** Step 5: She bought 6 dozen mini cheesecakes, which cost $55 per dozen. ****** Step 6: So, the cost of mini cheesecakes is 6 x $55 = $330. ****** Step 7: The total cost is the sum of the costs of donuts, mini cupcakes, and mini cheesecakes. ****** Step 8: Total cost = $204 + $160 + $330 = $694. ****** Step 9: The answer is #### 694. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Toula bought 3 dozen donuts, which cost $68 per dozen. ****** Step 2: So, the cost of donuts is 3 x $68 = $204. ****** Step 3: She bought 2 dozen mini cupcakes, which cost $80 per dozen. ****** Step 4: So, the cost of mini cupcakes is 2 x $80 = $160. ****** Step 5: She bought 6 dozen mini cheesecakes, which cost $55 per dozen. ****** Step 6: So, the cost of mini cheesecakes is 6 x $55 = $330. ****** Step 7: The total cost is the sum of the costs of donuts, mini cupcakes, and mini cheesecakes. ****** Step 8: Total cost = $204 + $160 + $330 = $694. ****** Step 9: The answer is #### 694. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Toula bought 3 dozen donuts, which cost $68 per dozen. ****** Step 2: The total cost of donuts is 3 * $68 = $204. ****** Step 3: She bought 2 dozen mini cupcakes, which cost $80 per dozen. ****** Step 4: The total cost of cupcakes is 2 * $80 = $160. ****** Step 5: She bought 6 dozen mini cheesecakes, which cost $55 per dozen. ****** Step 6: The total cost of cheesecakes is 6 * $55 = $330. ****** Step 7: To find the total cost, add the cost of donuts, cupcakes, and cheesecakes: $204 + $160 + $330 = $694. ****** Step 8: The answer is #### 694. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Toula bought 3 dozen donuts, which cost $68 per dozen. ****** Step 2: The total cost of donuts is 3 * $68 = $204. ****** Step 3: She bought 2 dozen mini cupcakes, which cost $80 per dozen. ****** Step 4: The total cost of cupcakes is 2 * $80 = $160. ****** Step 5: She bought 6 dozen mini cheesecakes, which cost $55 per dozen. ****** Step 6: The total cost of cheesecakes is 6 * $55 = $330. ****** Step 7: To find the total cost, add the cost of donuts, cupcakes, and cheesecakes: $204 + $160 + $330 = $694. ****** Step 8: The answer is #### 694. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Toula bought 3 dozen donuts, which cost $68 per dozen. ****** Step 2: The cost of the donuts is 3 x $68 = $204. ****** Step 3: She also bought 2 dozen mini cupcakes, which cost $80 per dozen. ****** Step 4: The cost of the cupcakes is 2 x $80 = $160. ****** Step 5: Additionally, she bought 6 dozen mini cheesecakes for $55 per dozen. ****** Step 6: The cost of the cheesecakes is 6 x $55 = $330. ****** Step 7: To find the total cost, add the costs of the donuts, cupcakes, and cheesecakes: $204 + $160 + $330 = $694. ****** Step 8: The answer is #### 694. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Toula bought 3 dozen donuts, which cost $68 per dozen. ****** Step 2: The cost of the donuts is 3 x $68 = $204. ****** Step 3: She also bought 2 dozen mini cupcakes, which cost $80 per dozen. ****** Step 4: The cost of the cupcakes is 2 x $80 = $160. ****** Step 5: Additionally, she bought 6 dozen mini cheesecakes for $55 per dozen. ****** Step 6: The cost of the cheesecakes is 6 x $55 = $330. ****** Step 7: To find the total cost, add the costs of the donuts, cupcakes, and cheesecakes: $204 + $160 + $330 = $694. ****** Step 8: The answer is #### 694. ******']
+Answer Probs: {0: 0.0, 1: 0.0, 2: 0, 3: 0, 4: 0.0, 5: 0.0, 6: 0.0, 7: 0.0, 8: 0.0, 9: 0.0}
+>> Processing time: 13.378733217017725
+>> Answer lists: ['694', '694', '694', '694', '694', '694', '694', '694', '694', '694']
+>> Original Correct: 694, True
+>> Soft SC  Correct: 694, True
+>> Golden    Answer: 694
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:06<00:00,  6.41s/it, est. speed input: 181.74 toks/s, output: 190.95 toks/s]Processed prompts: 100%|██████████| 1/1 [00:06<00:00,  6.41s/it, est. speed input: 181.74 toks/s, output: 190.95 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 6.41357519000303 sec
+>>> 5th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The initial cost of planting the tree is $90. ******
+
+Step 2: Each year, the tree grows 7 lemons, which can be sold for $1.5 each. This means the total revenue from selling lemons is 7 x $1.5 = $10.50 per year. ******
+
+Step 3: However, it costs $3 to water and feed the tree each year, so the net profit is $10.50 - $3 = $7.50 per year. ******
+
+Step 4: Since the initial cost of planting the tree is $90, Carlos needs to earn at least $90 in profit to break even. Since he earns $7.50 per year, it will take him:
+
+$90 / $7.50 = 12 years
+
+to earn enough to break even and start earning money on the lemon tree. ******
+
+Step 5: The answer is #### 12. ******
+>>> 5th sentence logprob checked!
+>>> 6th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The initial cost of planting the tree is $90. ******
+
+Step 2: Each year, the tree will grow 7 lemons, which can be sold for $1.5 each. This means the total revenue per year is 7 x $1.5 = $10.50.
+
+Step 3: However, it costs $3 per year to water and feed the tree, so the net profit per year is $10.50 - $3 = $7.50.
+
+Step 4: The tree will start earning money when the net profit is greater than the initial cost of planting the tree. Since the initial cost is $90, the tree needs to make a profit of at least $90.
+
+Step 5: To find out how many years it will take for the tree to earn $90, divide the initial cost by the net profit per year: $90 ÷ $7.50 = 12 years.
+
+Step 6: The answer is #### 12. ******
+>>> 6th sentence logprob checked!
+>>> 7th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The initial cost of planting the tree is $90. ******
+
+Step 2: Each year, the tree will grow 7 lemons, which can be sold for $1.5 each. This means the tree will earn $10.5 per year (7 lemons * $1.5 per lemon). ******
+
+Step 3: However, it costs $3 per year to water and feed the tree. This means the net earnings per year are $10.5 - $3 = $7.5. ******
+
+Step 4: To find out how many years it will take for the tree to start earning money, we need to find out how many years it will take for the tree to pay off the initial cost of $90. ******
+
+Step 5: To do this, we can divide the initial cost by the net earnings per year: $90 ÷ $7.5 = 12 years. ******
+
+Step 6: Therefore, it will take Carlos 12 years before he starts earning money on the lemon tree. ******
+
+The answer is #### 12. ******
+>>> 7th sentence logprob checked!
+>>> 8th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The initial cost of planting the tree is $90. ******
+
+Step 2: Each year, the tree grows 7 lemons, which can be sold for $1.5 each. So, the total revenue per year is 7 x $1.5 = $10.50. ******
+
+Step 3: However, it costs $3 per year to water and feed the tree, so the net revenue per year is $10.50 - $3 = $7.50. ******
+
+Step 4: The tree needs to break even, meaning the revenue should be greater than the initial cost. Let's calculate the break-even point:
+
+Initial cost = $90
+Net revenue per year = $7.50
+
+To find the number of years it takes to break even, divide the initial cost by the net revenue:
+
+$90 ÷ $7.50 = 12 years
+
+Step 5: Since the tree will start earning money after breaking even, it will take 12 years for Carlos to start earning money on the lemon tree.
+
+The answer is #### 12. ******
+>>> 8th sentence logprob checked!
+>>> 9th Gen: <|start_header_id|>assistant<|end_header_id|>
+
+Step 1: The tree costs $90 to plant, so Carlos has to subtract that from his initial amount. Let's assume he has enough money to plant the tree.
+
+Step 2: Each year, the tree will grow 7 lemons, which he can sell for $1.5 each. So, he earns $7 * $1.5 = $10.50 each year.
+
+Step 3: It costs $3 a year to water and feed the tree, so he has to subtract that from his earnings. He earns $10.50 and spends $3, so his net earnings are $10.50 - $3 = $7.50.
+
+Step 4: Since he has to break even, he needs to earn enough to cover the initial cost of planting the tree. He needs to earn $90. Since he earns $7.50 each year, he needs to earn $90 / $7.50 = 12 years.
+
+Step 5: The answer is #### 12.******
+>>> 9th sentence logprob checked!
+Cluster Indices: {0: [5, 6, 8], 1: [1, 2, 4], 2: [0, 3], 3: [9], 4: [7]}
+Selected Indexes: [5, 1, 0, 9, 7]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.19it/s, est. speed input: 1624.74 toks/s, output: 2.38 toks/s]Processed prompts:  80%|████████  | 4/5 [00:02<00:00,  1.96it/s, est. speed input: 2492.01 toks/s, output: 48.13 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.34it/s, est. speed input: 3045.94 toks/s, output: 93.45 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.153521561063826 sec
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [8, 9], 3: [0, 1], 4: [2, 3]}
+Selected Indexes: [4, 6, 8, 0, 2]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.17it/s, est. speed input: 1612.86 toks/s, output: 2.34 toks/s]Processed prompts:  80%|████████  | 4/5 [00:04<00:01,  1.14s/it, est. speed input: 1207.55 toks/s, output: 41.06 toks/s]slurmstepd-n02: error: *** STEP 19744.0 ON n02 CANCELLED AT 2024-08-10T19:03:06 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd-n02: error: *** JOB 19744 ON n02 CANCELLED AT 2024-08-10T19:03:06 ***
+srun: got SIGCONT
+srun: forcing job termination

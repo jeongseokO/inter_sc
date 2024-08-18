@@ -1,0 +1,26 @@
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/jeongseokoh/.cache/huggingface/token
+Login successful
+Inter SC_beam
+Num Path: 10 + 5 x 2, Interval: 85
+INFO 08-11 13:17:24 llm_engine.py:161] Initializing an LLM engine (v0.5.0.post1) with config: model='meta-llama/Meta-Llama-3-8B-Instruct', speculative_config=None, tokenizer='meta-llama/Meta-Llama-3-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir='../../hub/model/', load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=0, served_model_name=meta-llama/Meta-Llama-3-8B-Instruct)
+INFO 08-11 13:17:28 weight_utils.py:218] Using model weights format ['*.safetensors']
+INFO 08-11 13:17:32 model_runner.py:160] Loading model weights took 14.9595 GB
+INFO 08-11 13:17:34 gpu_executor.py:83] # GPU blocks: 13407, # CPU blocks: 2048
+INFO 08-11 13:17:37 model_runner.py:889] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 08-11 13:17:37 model_runner.py:893] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 08-11 13:17:46 model_runner.py:965] Graph capturing finished in 9 secs.
+Model: llama3_8b is selected
+Dataset: gsm8k is selected
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py", line 904, in <module>
+[rank0]:     main()
+[rank0]:   File "/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py", line 889, in main
+[rank0]:     results = parallel_process(context=c_dataset, question=q_dataset, answer=a_dataset, option=o_dataset, cot_ex=cot_ex, model=model, model_name=selected_model, dataset=selected_dataset)
+[rank0]:   File "/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py", line 511, in parallel_process
+[rank0]:     original_answer_completion, logProb, ansProb = get_completion(context=c, question=q, choices=o, cot_ex=cot_ex, model=model, model_name=model_name, dataset=dataset)
+[rank0]:   File "/data2/jeongseokoh/jeongseokoh/inter_SC/inter_SC_llm.py", line 308, in get_completion
+[rank0]:     generated_texts, top_k_indices, top_k_completions, logProb, ans_prob, past_probs = generate_and_filter(init=True, conversations=current_conversations, n_generate=n_initial, n_filter=n_intermediate, prompt_length=prompt_length, former_prob=0, tokenizer=tokenizer, last_avg_probs=[], step=step)
+[rank0]: TypeError: generate_and_filter() got an unexpected keyword argument 'last_avg_probs'
+srun: error: n02: task 0: Exited with exit code 1

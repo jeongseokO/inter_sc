@@ -1,0 +1,340 @@
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/jeongseokoh/.cache/huggingface/token
+Login successful
+Inter SC_beam
+Num Path: 10 + 5 x 2, Interval: 85
+INFO 08-11 18:06:10 llm_engine.py:161] Initializing an LLM engine (v0.5.0.post1) with config: model='meta-llama/Meta-Llama-3-8B-Instruct', speculative_config=None, tokenizer='meta-llama/Meta-Llama-3-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir='../../hub/model/', load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=0, served_model_name=meta-llama/Meta-Llama-3-8B-Instruct)
+INFO 08-11 18:06:14 weight_utils.py:218] Using model weights format ['*.safetensors']
+INFO 08-11 18:06:18 model_runner.py:160] Loading model weights took 14.9595 GB
+INFO 08-11 18:06:20 gpu_executor.py:83] # GPU blocks: 13407, # CPU blocks: 2048
+INFO 08-11 18:06:23 model_runner.py:889] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 08-11 18:06:23 model_runner.py:893] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 08-11 18:06:32 model_runner.py:965] Graph capturing finished in 9 secs.
+Model: llama3_8b is selected
+Dataset: gsm8k is selected
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.35it/s, est. speed input: 1576.24 toks/s, output: 270.82 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.35it/s, est. speed input: 1576.24 toks/s, output: 270.82 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (1) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 0.7494185450486839 sec
+Added Probs: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Cluster Indices: {0: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 1: [], 2: [], 3: [], 4: []}
+Selected Indexes: [0, 1, 2, 3, 4]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.59s/it, est. speed input: 742.41 toks/s, output: 35.74 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.13it/s, est. speed input: 3711.38 toks/s, output: 178.67 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (2) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 1.6073823909973726 sec
+Added Probs: [-0.05110269350310167, -0.06064349899486619, -0.05110269350310167, -0.06064349899486619, -0.05110269350310167, -0.06064349899486619, -0.05110269350310167, -0.06064349899486619, -0.05110269350310167, -0.06064349899486619]
+Cluster Indices: {0: [1, 3, 5, 7, 9], 1: [0, 2, 4, 6, 8], 2: [], 3: [], 4: []}
+Selected Indexes: [1, 0, 3, 5, 7]
+step: 2
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.63s/it, est. speed input: 742.02 toks/s, output: 36.73 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.01it/s, est. speed input: 3645.41 toks/s, output: 182.87 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (4) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 1.6761874069925398 sec
+Added Probs: [-0.08311936929821968, -0.09260751099526128, -0.06328890606378898, -0.07290429067917359, -0.08311936929821968, -0.09260751099526128, -0.08311936929821968, -0.09260751099526128, -0.08311936929821968, -0.09260751099526128]
+Cluster Indices: {0: [1, 5, 7, 9], 1: [0, 4, 6, 8], 2: [2], 3: [3], 4: []}
+Selected Indexes: [1, 0, 2, 3, 5]
+step: 3
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.50s/it, est. speed input: 827.42 toks/s, output: 33.34 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.76it/s, est. speed input: 2769.86 toks/s, output: 121.03 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.79it/s, est. speed input: 3462.08 toks/s, output: 158.38 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.8106313109165058 sec
+Added Probs: [-0.12438102811574936, -0.1675741494848178, -0.10223083723159064, -0.10223083723159064, -0.066424700371716, -0.11217347597866728, -0.08685173928190809, -0.1140930467007453, -0.12438102811574936, -0.1675741494848178]
+Cluster Indices: {0: [5, 7], 1: [0, 8], 2: [4, 6], 3: [2, 3], 4: [1, 9]}
+Selected Indexes: [5, 0, 4, 2, 1]
+step: 4
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.16s/it, est. speed input: 1103.34 toks/s, output: 22.45 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.38it/s, est. speed input: 2572.70 toks/s, output: 68.77 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.37it/s, est. speed input: 4279.24 toks/s, output: 136.17 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.4955950089497492 sec
+Added Probs: [-0.10069115166589031, -0.10069115166589031, -0.15675175189971924, -0.15675175189971924, -0.05934665852882823, -0.05934665852882823, -0.14238421412614677, -0.14238421412614677, -0.1907128608504007, -0.2090649374926737]
+Cluster Indices: {0: [4, 5], 1: [3, 8], 2: [6, 7], 3: [0, 1], 4: [2, 9]}
+Selected Indexes: [4, 3, 6, 0, 2]
+step: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.20it/s, est. speed input: 1546.12 toks/s, output: 2.40 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  3.26it/s, est. speed input: 3590.75 toks/s, output: 22.29 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.64it/s, est. speed input: 5985.15 toks/s, output: 58.50 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.0882285370025784 sec
+Added Probs: [-0.05934665852882823, -0.05934665852882823, -0.14547464744650201, -0.14547464744650201, -0.14084591312067848, -0.20660739708289827, -0.10069115166589031, -0.10069115166589031, -0.14547464744650201, -0.14547464744650201]
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+step: 6
+Found EoS token, Break
+completions: ["<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at $2 per egg, so she makes 9 * $2 = $18. ****** Step 5: The answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at $2 per egg, so she makes 9 * $2 = $18. ****** Step 5: The answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******\n\nStep 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******\n\nStep 5: The total amount she makes is 9 eggs * $2 per egg = $18. ******\n\nThe answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******\n\nStep 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******\n\nStep 5: The total amount she makes is 9 eggs * $2 per egg = $18. ******\n\nThe answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******\n\nStep 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******\n\nStep 5: The total amount she makes is 9 eggs x $2 per egg = $18. ******\n\nThe answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******\n\nStep 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******\n\nStep 5: The total amount she makes is 9 eggs x $2 per egg = $18. ******\n\nThe answer is #### 18.******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ****** Step 5: The answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ****** Step 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ****** Step 3: She bakes 4 eggs for muffins, so she has 13 - 4 = 9 eggs left. ****** Step 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg, so she makes 9 * $2 = $18. ****** Step 5: The answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******\n\nStep 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******\n\nStep 5: The total amount she makes is 9 eggs x $2 per egg = $18. ******\n\nThe answer is #### 18. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Janet's ducks lay 16 eggs per day. ******\n\nStep 2: She eats 3 eggs for breakfast, so she has 16 - 3 = 13 eggs left. ******\n\nStep 3: She bakes muffins with 4 eggs, leaving her with 13 - 4 = 9 eggs. ******\n\nStep 4: She sells the remaining 9 eggs at the farmers' market for $2 per egg. ******\n\nStep 5: The total amount she makes is 9 eggs x $2 per egg = $18. ******\n\nThe answer is #### 18. ******"]
+Answer Probs: []
+>> Processing time: 8.928921752027236
+>> Answer lists: ['18', '18', '18', '18', '18', '18', '18', '18', '18', '18']
+>> Original Correct: 18, True
+>> Soft SC  Correct: 18, True
+>> Golden    Answer: 18
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.43it/s, est. speed input: 1606.23 toks/s, output: 285.04 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.42it/s, est. speed input: 1606.23 toks/s, output: 285.04 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (2) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 0.7045024090912193 sec
+Added Probs: [-0.05836120843887329, -0.05836120843887329, -0.05836120843887329, -0.05836120843887329, -0.05836120843887329, -0.05836120843887329, -0.05836120843887329, -0.05836120843887329, -0.08336120843887329, -0.08336120843887329]
+Cluster Indices: {0: [0, 2, 3, 4, 5, 8, 9], 1: [1, 6, 7], 2: [], 3: [], 4: []}
+Selected Indexes: [0, 1, 2, 3, 4]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.46s/it, est. speed input: 785.99 toks/s, output: 34.95 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.43it/s, est. speed input: 3929.25 toks/s, output: 174.71 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (4) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 1.469949099002406 sec
+Added Probs: [-0.06280696003333382, -0.08642489247851902, -0.06789335478907046, -0.09162431822882758, -0.06280696003333382, -0.08642489247851902, -0.06280696003333382, -0.08642489247851902, -0.06280696003333382, -0.08642489247851902]
+Cluster Indices: {0: [1, 5, 7, 9], 1: [0, 4, 6, 8], 2: [2], 3: [3], 4: []}
+Selected Indexes: [1, 0, 2, 3, 5]
+step: 2
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.45s/it, est. speed input: 806.88 toks/s, output: 34.39 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.98it/s, est. speed input: 1953.77 toks/s, output: 90.55 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.78it/s, est. speed input: 3255.93 toks/s, output: 160.52 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.8124803060200065 sec
+Added Probs: [-0.08293600465570178, -0.1401025624160307, -0.08091979673211004, -0.1299017784850938, -0.05722365580813985, -0.05722365580813985, -0.0809588508946555, -0.0809588508946555, -0.08293600465570178, -0.1401025624160307]
+Cluster Indices: {0: [2, 4, 5], 1: [3], 2: [6, 7], 3: [1, 9], 4: [0, 8]}
+Selected Indexes: [4, 3, 6, 1, 0]
+step: 3
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.12s/it, est. speed input: 1067.37 toks/s, output: 22.27 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.45it/s, est. speed input: 5356.06 toks/s, output: 113.12 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.1341423289850354 sec
+Added Probs: [-0.07094270842415946, -0.09589382539312523, -0.11249226178090597, -0.11249226178090597, -0.0911256326250283, -0.11662716473021158, -0.12113034042219321, -0.12113034042219321, -0.09279311170060951, -0.1183149789164706]
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [0, 1], 3: [2, 3], 4: [8, 9]}
+Selected Indexes: [4, 6, 0, 2, 8]
+step: 4
+Found EoS token, Break
+completions: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: A robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ****** Step 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: A robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ****** Step 4: The answer is #### 3.******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ****** Step 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ****** Step 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2 / 2 = 1 bolt. ****** Step 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ****** Step 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: A robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ****** Step 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: A robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ****** Step 4: The answer is #### 3.******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ****** Step 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, the robe takes 2 bolts of blue fiber and 1 bolt of white fiber, which is 2 + 1 = 3 bolts. ****** Step 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ****** Step 4: The answer is #### 3. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: The robe takes 2 bolts of blue fiber. ****** Step 2: It takes half that much white fiber, which is 2/2 = 1 bolt. ****** Step 3: In total, it takes 2 bolts of blue fiber and 1 bolt of white fiber. ****** Step 4: The answer is #### 3.******']
+Answer Probs: []
+>> Processing time: 5.230620127986185
+>> Answer lists: ['3', '3', '3', '3', '3', '3', '3', '3', '3', '3']
+>> Original Correct: 3, True
+>> Soft SC  Correct: 3, True
+>> Golden    Answer: 3
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.44s/it, est. speed input: 798.63 toks/s, output: 165.27 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.44s/it, est. speed input: 798.63 toks/s, output: 165.27 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (4) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 1.4433092459803447 sec
+Added Probs: [-0.035006637871265414, -0.035006637871265414, -0.035006637871265414, -0.035006637871265414, -0.035006637871265414, -0.035006637871265414, -0.08936693668365478, -0.08936693668365478, -0.0983630870950633, -0.0981183867065274]
+Cluster Indices: {0: [0, 1, 2, 3, 4, 5], 1: [9], 2: [8], 3: [6, 7], 4: []}
+Selected Indexes: [0, 9, 8, 6, 1]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.51s/it, est. speed input: 779.13 toks/s, output: 35.02 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.30it/s, est. speed input: 1334.93 toks/s, output: 71.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.73it/s, est. speed input: 2471.83 toks/s, output: 163.30 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.10it/s, est. speed input: 2471.83 toks/s, output: 163.30 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.393961531925015 sec
+Added Probs: [-0.09315729833074979, -0.09315729833074979, -0.15345526589166134, -0.15799850088740708, -0.0930365010031632, -0.16421226371418346, -0.10758839547634125, -0.10758839547634125, -0.09315729833074979, -0.09315729833074979]
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2], 3: [0, 1, 8, 9], 4: [3]}
+Selected Indexes: [4, 6, 2, 0, 3]
+step: 2
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.06s/it, est. speed input: 611.90 toks/s, output: 43.78 toks/s]Processed prompts:  40%|████      | 2/5 [00:02<00:02,  1.08it/s, est. speed input: 1148.33 toks/s, output: 84.89 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.25it/s, est. speed input: 2765.13 toks/s, output: 215.02 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.2303275680169463 sec
+Added Probs: [-0.14229865024022967, -0.169623049158676, -0.1901547340589149, -0.22935057971991746, -0.1988475411755484, -0.24699988345946036, -0.17850709226086875, -0.23049708514236936, -0.19172079154810348, -0.19172079154810348]
+Cluster Indices: {0: [5, 8, 9], 1: [3, 7], 2: [0, 2, 6], 3: [1], 4: [4]}
+Selected Indexes: [8, 3, 0, 1, 4]
+step: 3
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.43s/it, est. speed input: 916.78 toks/s, output: 27.36 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.26it/s, est. speed input: 1439.71 toks/s, output: 61.20 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.89it/s, est. speed input: 1913.08 toks/s, output: 93.75 toks/s]Processed prompts:  80%|████████  | 4/5 [00:02<00:00,  2.68it/s, est. speed input: 2383.53 toks/s, output: 131.22 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.44it/s, est. speed input: 2447.96 toks/s, output: 139.11 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  1.92it/s, est. speed input: 2447.96 toks/s, output: 139.11 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.614097633981146 sec
+Added Probs: [-0.21744992531397764, -0.33154554665088654, -0.23198259050828696, -0.26876734618482917, -0.17395106818474515, -0.19158135060693177, -0.21138420843914763, -0.23431044757366182, -0.22987532706221164, -0.2878129169852896]
+Cluster Indices: {0: [4, 5], 1: [8, 9], 2: [2, 3, 7], 3: [0, 1], 4: [6]}
+Selected Indexes: [4, 8, 2, 0, 6]
+step: 4
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.19it/s, est. speed input: 1580.74 toks/s, output: 2.38 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.87it/s, est. speed input: 3299.67 toks/s, output: 26.81 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.95it/s, est. speed input: 4289.74 toks/s, output: 68.41 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.29it/s, est. speed input: 4289.74 toks/s, output: 68.41 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.5322373330127448 sec
+Added Probs: [-0.15834007488611418, -0.15834007488611418, -0.22987532706221164, -0.22987532706221164, -0.2667704187817388, -0.5032339053364788, -0.21744992531397764, -0.21744992531397764, -0.20076087284833194, -0.20076087284833194]
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [0, 1], 3: [2, 3], 4: [8, 9]}
+Selected Indexes: [4, 6, 0, 2, 8]
+step: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.17it/s, est. speed input: 1545.95 toks/s, output: 2.35 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s, est. speed input: 5396.88 toks/s, output: 31.23 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.11it/s, est. speed input: 5396.88 toks/s, output: 31.23 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.229991227039136 sec
+Added Probs: [-0.2557959325567505, -0.2557959325567505, -0.21744992531397764, -0.21744992531397764, -0.15834007488611418, -0.15834007488611418, -0.22987532706221164, -0.22987532706221164, -0.20076087284833194, -0.20076087284833194]
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+step: 5
+Found EoS token, Break
+completions: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 130% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he sold the house for $120,000, his profit is $120,000 - $130,000 = -$10,000. ****** Step 5: However, this is a loss, not a profit. ****** Step 6: The answer is #### -10,000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000. ****** Step 2: He puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 130% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he sold the house for $120,000, his profit is $120,000 - $130,000 = -$10,000. ****** Step 5: However, this is a loss, not a profit. ****** Step 6: The answer is #### -10,000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******\n\nStep 2: The value of the house increased by 150%, so the new value is 1.5 times the original value. The original value was $80,000, so the new value is 1.5 * $80,000 = $120,000. ******\n\nStep 3: Since Josh spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ******\n\nStep 4: The answer is #### -10,000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******\n\nStep 2: The value of the house increased by 150%, so the new value is 1.5 times the original value. The original value was $80,000, so the new value is 1.5 * $80,000 = $120,000. ******\n\nStep 3: Since Josh spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ******\n\nStep 4: The answer is #### -10,000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is $80,000 + (150% of $80,000) = $80,000 + $120,000 = $200,000. ****** Step 4: Josh sold the house for $200,000, so his profit is $200,000 - $130,000 = $70,000. ****** Step 5: The answer is #### 70000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is $80,000 + (150% of $80,000) = $80,000 + $120,000 = $200,000. ****** Step 4: Josh sold the house for $200,000, so his profit is $200,000 - $130,000 = $70,000. ****** Step 5: The answer is #### 70000. ******', "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******\n\nStep 2: The value of the house increases by 150%, so the new value is 1.5 times the original value. The original value is $80,000, so the new value is 1.5 * $80,000 = $120,000. ******\n\nStep 3: The profit is the difference between the new value and the total cost. The profit is $120,000 - $130,000 = -$10,000. However, this is a loss, not a profit. *******\n\nStep 4: Since Josh didn't make a profit, the answer is #### 0. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000 and puts in $50,000 in repairs, so the total cost is $80,000 + $50,000 = $130,000. ******\n\nStep 2: The value of the house increases by 150%, so the new value is 1.5 times the original value. The original value is $80,000, so the new value is 1.5 * $80,000 = $120,000. ******\n\nStep 3: The profit is the difference between the new value and the total cost. The profit is $120,000 - $130,000 = -$10,000. However, this is a loss, not a profit. *******\n\nStep 4: Since Josh didn't make a profit, the answer is #### 0. ******", '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 150% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ****** Step 5: The answer is #### -10000. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Josh buys the house for $80,000 and puts in $50,000 in repairs. ****** Step 2: The total amount he spent is $80,000 + $50,000 = $130,000. ****** Step 3: The value of the house increased by 150%, so the new value is 150% of the original value, which is 1.5 x $80,000 = $120,000. ****** Step 4: Since he spent $130,000 and the house is now worth $120,000, he made a loss of $130,000 - $120,000 = $10,000. ****** Step 5: The answer is #### -10000. ******']
+Answer Probs: []
+>> Processing time: 11.622420625993982
+>> Answer lists: ['-10000', '-10000', '-10000', '-10000', '70000', '70000', '0', '0', '-10000', '-10000']
+>> Original Correct: -10000, False
+>> Soft SC  Correct: 70000, True
+>> Golden    Answer: 70000
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.32it/s, est. speed input: 1497.95 toks/s, output: 282.42 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.32it/s, est. speed input: 1497.95 toks/s, output: 282.42 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:1473: ConvergenceWarning: Number of distinct clusters (3) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+Generation job: 0.7607021410949528 sec
+Added Probs: [-0.022656064141880383, -0.022656064141880383, -0.022656064141880383, -0.022656064141880383, -0.022656064141880383, -0.022656064141880383, -0.022656064141880383, -0.022656064141880383, -0.08474056736419075, -0.15131351822300962]
+Cluster Indices: {0: [0, 1, 2, 3, 4, 5, 6, 7], 1: [9], 2: [8], 3: [], 4: []}
+Selected Indexes: [0, 9, 8, 1, 2]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.14s/it, est. speed input: 1009.13 toks/s, output: 24.48 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.47it/s, est. speed input: 1541.12 toks/s, output: 54.02 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.46it/s, est. speed input: 3545.13 toks/s, output: 152.75 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.07it/s, est. speed input: 3545.13 toks/s, output: 152.75 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.6408756609307602 sec
+Added Probs: [-0.04954430367797613, -0.17909520377918164, -0.19732448519492635, -0.20105145491805732, -0.1275788965550336, -0.1275788965550336, -0.04954430367797613, -0.17909520377918164, -0.04954430367797613, -0.17909520377918164]
+Cluster Indices: {0: [4, 5], 1: [0, 6, 8], 2: [3], 3: [1, 7, 9], 4: [2]}
+Selected Indexes: [4, 0, 3, 1, 2]
+step: 2
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.47s/it, est. speed input: 793.66 toks/s, output: 31.94 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.45it/s, est. speed input: 1459.09 toks/s, output: 66.41 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.01it/s, est. speed input: 3550.33 toks/s, output: 173.76 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.674422373995185 sec
+Added Probs: [-0.18946106786077674, -0.21538185790694994, -0.05394646697319471, -0.05394646697319471, -0.1685991042558058, -0.1685991042558058, -0.12144312784075736, -0.12144312784075736, -0.19600299426487514, -0.20954795604870644]
+Cluster Indices: {0: [4, 5, 9], 1: [0, 1], 2: [6, 7], 3: [2, 3], 4: [8]}
+Selected Indexes: [4, 0, 6, 2, 8]
+step: 3
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.15s/it, est. speed input: 1056.84 toks/s, output: 22.60 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.63it/s, est. speed input: 3683.22 toks/s, output: 102.34 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.05it/s, est. speed input: 3683.22 toks/s, output: 102.34 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.6526076960144565 sec
+Added Probs: [-0.14528220685872625, -0.14528220685872625, -0.21205580181935255, -0.391333997420881, -0.10335585348149563, -0.10335585348149563, -0.04623982883416689, -0.04623982883416689, -0.16769145064883761, -0.16769145064883761]
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [8, 9], 3: [6, 7], 4: [0, 1]}
+Selected Indexes: [4, 2, 8, 6, 0]
+step: 4
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.23it/s, est. speed input: 1512.63 toks/s, output: 2.46 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  5.33it/s, est. speed input: 5446.95 toks/s, output: 30.22 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.44it/s, est. speed input: 5446.95 toks/s, output: 30.22 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.1385208839783445 sec
+Added Probs: [-0.10335585348149563, -0.10335585348149563, -0.1839259505576017, -0.1839259505576017, -0.16769145064883761, -0.16769145064883761, -0.04623982883416689, -0.04623982883416689, -0.14528220685872625, -0.14528220685872625]
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [6, 7], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 2, 6, 0, 8]
+step: 5
+Found EoS token, Break
+completions: ['<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints 3 times a week. ****** \nStep 2: So, he runs a total of 3 x 3 = 9 sprints a week. ****** \nStep 3: Each sprint is 60 meters, so the total distance he runs is 9 x 60 = 540 meters. ****** \nStep 4: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints 3 times a week. ****** \nStep 2: So, he runs a total of 3 x 3 = 9 sprints a week. ****** \nStep 3: Each sprint is 60 meters, so the total distance he runs is 9 x 60 = 540 meters. ****** \nStep 4: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints each time. ****** Step 2: He runs 60 meters each sprint. ****** Step 3: So, he runs 3 * 60 = 180 meters each time. ****** Step 4: He does this 3 times a week, so he runs 180 * 3 = 540 meters a week. ****** Step 5: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints each time. ****** Step 2: He runs 60 meters each sprint. ****** Step 3: So, he runs 3 * 60 = 180 meters each time. ****** Step 4: He does this 3 times a week, so he runs 180 * 3 = 540 meters a week. ****** Step 5: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so he runs 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so he runs 9 * 60 = 540 meters a week. ****** Step 4: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so he runs 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so he runs 9 * 60 = 540 meters a week. ****** Step 4: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints 3 times a week. ****** Step 2: That means he runs a total of 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ****** Step 4: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints 3 times a week. ****** Step 2: That means he runs a total of 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ****** Step 4: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so in total he runs 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ****** Step 4: The answer is #### 540. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: James runs 3 sprints per day. ****** Step 2: He runs 3 days a week, so in total he runs 3 * 3 = 9 sprints a week. ****** Step 3: Each sprint is 60 meters, so the total distance he runs is 9 * 60 = 540 meters. ****** Step 4: The answer is #### 540. ******']
+Answer Probs: []
+>> Processing time: 7.004646965069696
+>> Answer lists: ['540', '540', '540', '540', '540', '540', '540', '540', '540', '540']
+>> Original Correct: 540, True
+>> Soft SC  Correct: 540, True
+>> Golden    Answer: 540
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.43s/it, est. speed input: 842.65 toks/s, output: 181.21 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.43s/it, est. speed input: 842.65 toks/s, output: 181.21 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.4388852460542694 sec
+Added Probs: [-0.03930414840579033, -0.03930414840579033, -0.03930414840579033, -0.03930414840579033, -0.07696815918792378, -0.07696815918792378, -0.0913874792555968, -0.1641218850487157, -0.12680769377741322, -0.16927228992184004]
+Cluster Indices: {0: [4, 5], 1: [8], 2: [9], 3: [7], 4: [0, 1, 2, 3, 6]}
+Selected Indexes: [4, 8, 9, 7, 0]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.28s/it, est. speed input: 963.63 toks/s, output: 26.61 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.17it/s, est. speed input: 2275.18 toks/s, output: 79.28 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  3.12it/s, est. speed input: 3086.17 toks/s, output: 125.20 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.49it/s, est. speed input: 3086.17 toks/s, output: 125.20 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.0163852410623804 sec
+Added Probs: [-0.04341793595216213, -0.04341793595216213, -0.14743306168488093, -0.18675759535724834, -0.21768321158134774, -0.24049442686060424, -0.1551556806815298, -0.22492946913609138, -0.1128800559875577, -0.11582246284152187]
+Cluster Indices: {0: [4, 5], 1: [0, 1, 8, 9], 2: [2, 3], 3: [6], 4: [7]}
+Selected Indexes: [4, 0, 2, 6, 7]
+step: 2
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.43s/it, est. speed input: 884.18 toks/s, output: 28.05 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.44it/s, est. speed input: 2458.87 toks/s, output: 86.65 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.41it/s, est. speed input: 3317.06 toks/s, output: 138.41 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.63it/s, est. speed input: 3317.06 toks/s, output: 138.41 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.911594389937818 sec
+Added Probs: [-0.20733244999034986, -0.20809260828305134, -0.0707051015817202, -0.3511631195583651, -0.13851448599203134, -0.18299174110094707, -0.14160965409195214, -0.345845318176377, -0.23181619218417576, -0.28286611228375824]
+Cluster Indices: {0: [4, 5], 1: [2, 6, 7], 2: [0, 1], 3: [8, 9], 4: [3]}
+Selected Indexes: [4, 2, 0, 8, 3]
+step: 3
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.19s/it, est. speed input: 1110.94 toks/s, output: 21.88 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.75it/s, est. speed input: 1960.42 toks/s, output: 46.77 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.38it/s, est. speed input: 2466.49 toks/s, output: 70.74 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.06it/s, est. speed input: 2946.62 toks/s, output: 98.22 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  3.35it/s, est. speed input: 3215.54 toks/s, output: 120.94 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.50it/s, est. speed input: 3215.54 toks/s, output: 120.94 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.0128184700151905 sec
+Added Probs: [-0.22175210636595022, -0.3336357471567613, -0.1822525613255553, -0.19720261003992973, -0.1855959834591035, -0.1855959834591035, -0.1843992437828671, -0.1843992437828671, -0.36923843387807354, -0.39314923790239154]
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3, 9], 3: [0, 1], 4: [8]}
+Selected Indexes: [4, 6, 2, 0, 8]
+step: 4
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.17it/s, est. speed input: 1557.80 toks/s, output: 2.34 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.83it/s, est. speed input: 2240.16 toks/s, output: 23.61 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.45it/s, est. speed input: 2765.35 toks/s, output: 50.34 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.67it/s, est. speed input: 4198.23 toks/s, output: 110.85 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.20it/s, est. speed input: 4198.23 toks/s, output: 110.85 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.5726900789886713 sec
+Added Probs: [-0.1855959834591035, -0.1855959834591035, -0.17635474939431464, -0.17635474939431464, -0.1756997182328477, -0.20218633734068628, -0.1992304080631584, -0.1992304080631584, -0.31741086078119707, -0.31741086078119707]
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+step: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.16it/s, est. speed input: 1557.00 toks/s, output: 2.33 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.06it/s, est. speed input: 2549.76 toks/s, output: 37.05 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.56it/s, est. speed input: 2992.27 toks/s, output: 70.91 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.60it/s, est. speed input: 3085.21 toks/s, output: 93.90 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.32it/s, est. speed input: 3085.21 toks/s, output: 93.90 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.164043662021868 sec
+Added Probs: [-0.14796856633926692, -0.1749414795637131, -0.1992304080631584, -0.1992304080631584, -0.1756311204793642, -0.1756311204793642, -0.1855959834591035, -0.1855959834591035, -0.34485001568376583, -0.4000256482673728]
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [0, 1, 8], 3: [2, 3], 4: [9]}
+Selected Indexes: [4, 6, 0, 2, 9]
+step: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.12it/s, est. speed input: 1488.15 toks/s, output: 2.23 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.83it/s, est. speed input: 3286.72 toks/s, output: 24.54 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.09it/s, est. speed input: 5519.87 toks/s, output: 67.07 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.2358968849293888 sec
+Added Probs: [-0.16061003780678698, -0.16061003780678698, -0.1855959834591035, -0.1855959834591035, -0.13631043687011257, -0.13631043687011257, -0.1992304080631584, -0.1992304080631584, -0.3701386745462472, -0.3701386745462472]
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [8, 9], 4: [0, 1]}
+Selected Indexes: [4, 6, 2, 8, 0]
+step: 5
+Found EoS token, Break
+completions: ["<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi's flock has 20 chickens. ****** Step 2: Each chicken needs 3 cups of feed, so the total feed needed per meal is 20 * 3 = 60 cups. ****** Step 3: In the morning, she gives 15 cups of feed. ****** Step 4: In the afternoon, she gives 25 cups of feed. ****** Step 5: So far, she has given 15 + 25 = 40 cups of feed. ****** Step 6: She still needs to give 60 - 40 = 20 cups of feed in the final meal. ****** Step 7: The answer is #### 20. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi's flock has 20 chickens. ****** Step 2: Each chicken needs 3 cups of feed, so the total feed needed per meal is 20 * 3 = 60 cups. ****** Step 3: In the morning, she gives 15 cups of feed. ****** Step 4: In the afternoon, she gives 25 cups of feed. ****** Step 5: So far, she has given 15 + 25 = 40 cups of feed. ****** Step 6: She still needs to give 60 - 40 = 20 cups of feed in the final meal. ****** Step 7: The answer is #### 20. ******", '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi needs to give each chicken 3 cups of feed per day. Since she has 20 chickens, she needs 20 x 3 = 60 cups of feed per day. ****** Step 2: She has already given them 15 cups in the morning and 25 cups in the afternoon. ****** Step 3: She still needs to give them 60 - (15 + 25) = 60 - 40 = 20 cups of feed in the final meal. ****** Step 4: The answer is #### 20. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi needs to give each chicken 3 cups of feed per day. Since she has 20 chickens, she needs 20 x 3 = 60 cups of feed per day. ****** Step 2: She has already given them 15 cups in the morning and 25 cups in the afternoon. ****** Step 3: She still needs to give them 60 - (15 + 25) = 60 - 40 = 20 cups of feed in the final meal. ****** Step 4: The answer is #### 20. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi gives 15 cups of feed in the morning. ****** Step 2: She gives 25 cups of feed in the afternoon. ****** Step 3: In total, she has given 15 + 25 = 40 cups of feed so far. ****** Step 4: She needs to give feed to 20 chickens, and each chicken needs 3 cups of feed. ****** Step 5: So, she needs to give 20 * 3 = 60 cups of feed in total. ****** Step 6: Since she has already given 40 cups, she needs to give 60 - 40 = 20 cups of feed in the final meal. ****** Step 7: The answer is #### 20. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi gives 15 cups of feed in the morning. ****** Step 2: She gives 25 cups of feed in the afternoon. ****** Step 3: In total, she has given 15 + 25 = 40 cups of feed so far. ****** Step 4: She needs to give feed to 20 chickens, and each chicken needs 3 cups of feed. ****** Step 5: So, she needs to give 20 * 3 = 60 cups of feed in total. ****** Step 6: Since she has already given 40 cups, she needs to give 60 - 40 = 20 cups of feed in the final meal. ****** Step 7: The answer is #### 20. ******', "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi's chickens need 3 cups of feed each, and there are 20 chickens. ****** Step 2: So, in total, they need 20 * 3 = 60 cups of feed per day. ****** Step 3: She has already given them 15 cups in the morning and 25 cups in the afternoon. ****** Step 4: She still needs to give them 60 - (15 + 25) = 60 - 40 = 20 cups of feed. ****** Step 5: The answer is #### 20. ******", "<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi's chickens need 3 cups of feed each, and there are 20 chickens. ****** Step 2: So, in total, they need 20 * 3 = 60 cups of feed per day. ****** Step 3: She has already given them 15 cups in the morning and 25 cups in the afternoon. ****** Step 4: She still needs to give them 60 - (15 + 25) = 60 - 40 = 20 cups of feed. ****** Step 5: The answer is #### 20. ******", '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi gives 15 cups of feed in the morning. ****** Step 2: She gives 25 cups of feed in the afternoon. ****** Step 3: She needs to give 3 cups of feed to each of the 20 chickens. ****** Step 4: So, in total, she needs to give 20 * 3 = 60 cups of feed. ****** Step 5: She has already given 15 + 25 = 40 cups of feed. ****** Step 6: To find out how many cups of feed she needs to give in the final meal, subtract the total cups of feed she has already given from the total cups of feed needed: 60 - 40 = 20. ****** Step 7: The answer is #### 20. ******', '<|start_header_id|>assistant<|end_header_id|>\n\nStep 1: Wendi gives 15 cups of feed in the morning. ****** Step 2: She gives 25 cups of feed in the afternoon. ****** Step 3: She needs to give 3 cups of feed to each of the 20 chickens. ****** Step 4: So, in total, she needs to give 20 * 3 = 60 cups of feed. ****** Step 5: She has already given 15 + 25 = 40 cups of feed. ****** Step 6: To find out how many cups of feed she needs to give in the final meal, subtract the total cups of feed she has already given from the total cups of feed needed: 60 - 40 = 20. ****** Step 7: The answer is #### 20. ******']
+Answer Probs: []
+>> Processing time: 12.545370236970484
+>> Answer lists: ['20', '20', '20', '20', '20', '20', '20', '20', '20', '20']
+>> Original Correct: 20, True
+>> Soft SC  Correct: 20, True
+>> Golden    Answer: 20
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.47s/it, est. speed input: 332.92 toks/s, output: 104.05 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.47s/it, est. speed input: 332.92 toks/s, output: 104.05 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 3.4721216320758685 sec
+Added Probs: [-0.03440350294113159, -0.03440350294113159, -0.03440350294113159, -0.03440350294113159, -0.14788291033576517, -0.0827703512296444, -0.0827703512296444, -0.1389876902103424, -0.2090563941001892, -0.17293166594449863]
+Cluster Indices: {0: [5, 6, 7], 1: [0, 1, 2, 3], 2: [8], 3: [9], 4: [4]}
+Selected Indexes: [5, 0, 8, 9, 4]
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.27it/s, est. speed input: 1624.62 toks/s, output: 2.53 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.26it/s, est. speed input: 1555.48 toks/s, output: 39.14 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.70it/s, est. speed input: 2653.77 toks/s, output: 108.19 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.69it/s, est. speed input: 2735.97 toks/s, output: 127.98 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.28it/s, est. speed input: 2735.97 toks/s, output: 127.98 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.2084936670726165 sec
+Added Probs: [-0.16511222139581458, -0.2786340847611427, -0.16890414714813232, -0.2112223304606773, -0.18671287189830432, -0.23129490939053624, -0.17293166594449863, -0.17293166594449863, -0.10509851765125355, -0.15034369838998674]
+Cluster Indices: {0: [4, 5], 1: [6, 7], 2: [2, 3], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 6, 2, 0, 8]
+step: 2
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.23it/s, est. speed input: 1582.33 toks/s, output: 2.46 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.39it/s, est. speed input: 1712.22 toks/s, output: 35.39 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:01,  1.74it/s, est. speed input: 1987.81 toks/s, output: 66.30 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.60it/s, est. speed input: 2612.57 toks/s, output: 124.39 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.13it/s, est. speed input: 2612.57 toks/s, output: 124.39 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 2.360678064986132 sec
+Added Probs: [-0.17418627864436098, -0.2611372522553619, -0.17293166594449863, -0.17293166594449863, -0.18473654593292035, -0.17031085053715136, -0.12464353968115414, -0.12464353968115414, -0.15289584727122865, -0.2660648294642002]
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [6, 7], 3: [1, 9], 4: [0, 8]}
+Selected Indexes: [5, 2, 6, 1, 8]
+step: 2
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.20it/s, est. speed input: 1541.57 toks/s, output: 2.40 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.86it/s, est. speed input: 2192.44 toks/s, output: 24.09 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.34it/s, est. speed input: 2609.18 toks/s, output: 49.37 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.37it/s, est. speed input: 4243.43 toks/s, output: 113.83 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.4966187559766695 sec
+Added Probs: [-0.15216297302089754, -0.15216297302089754, -0.17293166594449863, -0.17293166594449863, -0.11894748419050187, -0.14294586171869372, -0.21667747285740435, -0.22941442451825955, -0.12567572082792008, -0.14032144750560727]
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [6, 7], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 2, 6, 0, 8]
+step: 2
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.20it/s, est. speed input: 1539.08 toks/s, output: 2.40 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.96it/s, est. speed input: 3308.70 toks/s, output: 25.84 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.19it/s, est. speed input: 3580.34 toks/s, output: 53.17 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.37it/s, est. speed input: 4310.09 toks/s, output: 85.05 toks/s]
+/data2/jeongseokoh/miniconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2361: DataConversionWarning: Data was converted to boolean for metric jaccard
+  warnings.warn(msg, DataConversionWarning)
+Generation job: 1.4927562379743904 sec
+Added Probs: [-0.10782289933815277, -0.10782289933815277, -0.17293166594449863, -0.17293166594449863, -0.18206926538712448, -0.18206926538712448, -0.15216297302089754, -0.15216297302089754, -0.10274219512939453, -0.10274219512939453]
+Cluster Indices: {0: [4, 5], 1: [2, 3], 2: [6, 7], 3: [0, 1], 4: [8, 9]}
+Selected Indexes: [4, 2, 6, 0, 8]
+step: 2
+srun: got SIGCONT
+slurmstepd-n02: error: *** JOB 19830 ON n02 CANCELLED AT 2024-08-11T18:07:37 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.18it/s, est. speed input: 1518.93 toks/s, output: 2.37 toks/s]slurmstepd-n02: error: *** STEP 19830.0 ON n02 CANCELLED AT 2024-08-11T18:07:37 ***
+srun: forcing job termination

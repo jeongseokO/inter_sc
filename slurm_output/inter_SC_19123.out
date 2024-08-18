@@ -1,0 +1,96 @@
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/jeongseokoh/.cache/huggingface/token
+Login successful
+Inter SC
+Num Path: {args.n_inter} + {n_filter} x {n_output_per_one}
+INFO 08-06 19:27:27 llm_engine.py:161] Initializing an LLM engine (v0.5.0.post1) with config: model='meta-llama/Meta-Llama-3-8B-Instruct', speculative_config=None, tokenizer='meta-llama/Meta-Llama-3-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir='../../hub/model/', load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=0, served_model_name=meta-llama/Meta-Llama-3-8B-Instruct)
+INFO 08-06 19:27:31 weight_utils.py:218] Using model weights format ['*.safetensors']
+INFO 08-06 19:27:35 model_runner.py:160] Loading model weights took 14.9595 GB
+INFO 08-06 19:27:36 gpu_executor.py:83] # GPU blocks: 13407, # CPU blocks: 2048
+INFO 08-06 19:27:40 model_runner.py:889] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 08-06 19:27:40 model_runner.py:893] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 08-06 19:27:49 model_runner.py:965] Graph capturing finished in 9 secs.
+Model: llama3_8b is selected
+Dataset: gsm8k is selected
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.19s/it, est. speed input: 290.89 toks/s, output: 626.24 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.19s/it, est. speed input: 290.89 toks/s, output: 626.24 toks/s]
+Second job: 3.2266350309946574 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.11it/s, est. speed input: 1138.87 toks/s, output: 35.41 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.37it/s, est. speed input: 1359.68 toks/s, output: 95.13 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.11it/s, est. speed input: 2582.15 toks/s, output: 248.43 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.51it/s, est. speed input: 2582.15 toks/s, output: 248.43 toks/s]
+Last job: 2.005005732004065 sec
+>> Processing time: 5.302742800966371
+>> Answer lists: ['18', '18', '18', '18', '18', '18', '18', '18', '18', '18', '18', '18', '18', '18', '18', '18', '18', '18', '18', '18']
+>> Original Correct: 18, True
+>> Golden    Answer: 18
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.09s/it, est. speed input: 289.04 toks/s, output: 517.47 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.09s/it, est. speed input: 289.04 toks/s, output: 517.47 toks/s]
+Second job: 3.0898898899904452 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.55it/s, est. speed input: 1500.54 toks/s, output: 6.18 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.72it/s, est. speed input: 7476.97 toks/s, output: 30.90 toks/s]
+Last job: 0.6581671800231561 sec
+>> Processing time: 3.7490055990056135
+>> Answer lists: ['3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3']
+>> Original Correct: 3, True
+>> Golden    Answer: 3
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.20s/it, est. speed input: 286.01 toks/s, output: 625.14 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.20s/it, est. speed input: 286.01 toks/s, output: 625.14 toks/s]
+Second job: 3.2018139319843613 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:04<00:16,  4.00s/it, est. speed input: 253.74 toks/s, output: 93.50 toks/s]Processed prompts:  40%|████      | 2/5 [00:04<00:05,  1.71s/it, est. speed input: 494.16 toks/s, output: 181.35 toks/s]Processed prompts:  60%|██████    | 3/5 [00:04<00:02,  1.04s/it, est. speed input: 700.62 toks/s, output: 256.55 toks/s]Processed prompts:  80%|████████  | 4/5 [00:04<00:00,  1.31it/s, est. speed input: 866.72 toks/s, output: 298.44 toks/s]Processed prompts: 100%|██████████| 5/5 [00:04<00:00,  1.06it/s, est. speed input: 1077.60 toks/s, output: 376.68 toks/s]
+Last job: 4.7432081020087935 sec
+>> Processing time: 7.946775320975576
+>> Answer lists: ['30000', '30000', '40000', '40000', '30000', '40000', '40000', '30000', '40000', '40000', '30000', '40000', '40000', '30000', '40000', '-10000', '30000', '40000', '-10000', '-10000']
+>> Original Correct: 40000, False
+>> Golden    Answer: 70000
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:02<00:00,  2.76s/it, est. speed input: 325.74 toks/s, output: 507.06 toks/s]Processed prompts: 100%|██████████| 1/1 [00:02<00:00,  2.76s/it, est. speed input: 325.74 toks/s, output: 507.06 toks/s]
+Second job: 2.76683427602984 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.54it/s, est. speed input: 1490.47 toks/s, output: 6.17 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.71it/s, est. speed input: 7473.58 toks/s, output: 30.84 toks/s]
+Last job: 0.6594155899947509 sec
+>> Processing time: 3.427377234038431
+>> Answer lists: ['540', '540', '540', '540', '540', '540', '540', '540', '540', '540', '540', '540', '540', '540', '540', '540', '540', '540', '540', '540']
+>> Original Correct: 540, True
+>> Golden    Answer: 540
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.38s/it, est. speed input: 288.06 toks/s, output: 591.49 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.38s/it, est. speed input: 288.06 toks/s, output: 591.49 toks/s]
+Second job: 3.3843121910467744 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.56s/it, est. speed input: 686.71 toks/s, output: 71.61 toks/s]Processed prompts:  40%|████      | 2/5 [00:02<00:04,  1.42s/it, est. speed input: 743.43 toks/s, output: 105.56 toks/s]Processed prompts:  60%|██████    | 3/5 [00:03<00:01,  1.03it/s, est. speed input: 969.20 toks/s, output: 178.68 toks/s]Processed prompts:  80%|████████  | 4/5 [00:03<00:00,  1.44it/s, est. speed input: 1196.56 toks/s, output: 263.49 toks/s]Processed prompts: 100%|██████████| 5/5 [00:04<00:00,  1.31it/s, est. speed input: 1200.25 toks/s, output: 303.75 toks/s]Processed prompts: 100%|██████████| 5/5 [00:04<00:00,  1.12it/s, est. speed input: 1200.25 toks/s, output: 303.75 toks/s]
+Last job: 4.486521749000531 sec
+>> Processing time: 7.872405267960858
+>> Answer lists: ['20', '20', '20', '20', '20', '20', '20', '20', '20', '20', '20', '20', '20', '20', '20', '20', '20', '20', '20', '20']
+>> Original Correct: 20, True
+>> Golden    Answer: 20
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.18s/it, est. speed input: 288.88 toks/s, output: 628.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.19s/it, est. speed input: 288.88 toks/s, output: 628.00 toks/s]
+Second job: 3.188933485012967 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.24s/it, est. speed input: 454.65 toks/s, output: 87.36 toks/s]Processed prompts:  60%|██████    | 3/5 [00:02<00:01,  1.38it/s, est. speed input: 1163.86 toks/s, output: 242.66 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.55it/s, est. speed input: 1831.04 toks/s, output: 407.85 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  1.79it/s, est. speed input: 1831.04 toks/s, output: 407.85 toks/s]
+Last job: 2.797432046965696 sec
+>> Processing time: 5.987993598042522
+>> Answer lists: ['64', '64', '64', '64', '64', '64', '64', '64', '64', '64', '64', '64', '64', '64', '64', '64', '64', '64', '64', '64']
+>> Original Correct: 64, True
+>> Golden    Answer: 64
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.17s/it, est. speed input: 286.50 toks/s, output: 631.75 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.17s/it, est. speed input: 286.50 toks/s, output: 631.75 toks/s]
+Second job: 3.1696450330200605 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.06s/it, est. speed input: 949.24 toks/s, output: 49.02 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  5.23it/s, est. speed input: 4136.04 toks/s, output: 211.93 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.11it/s, est. speed input: 4136.04 toks/s, output: 211.93 toks/s]
+Last job: 1.2297804389963858 sec
+>> Processing time: 4.401157069019973
+>> Answer lists: ['260', '260', '260', '260', '260', '260', '260', '260', '260', '260', '260', '260', '260', '260', '260', '260', '260', '260', '260', '260']
+>> Original Correct: 260, True
+>> Golden    Answer: 260
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.22s/it, est. speed input: 289.54 toks/s, output: 621.99 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.22s/it, est. speed input: 289.54 toks/s, output: 621.99 toks/s]
+Second job: 3.219563022023067 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:04<00:18,  4.69s/it, est. speed input: 219.86 toks/s, output: 101.08 toks/s]Processed prompts:  40%|████      | 2/5 [00:05<00:07,  2.34s/it, est. speed input: 382.97 toks/s, output: 181.64 toks/s]Processed prompts:  60%|██████    | 3/5 [00:06<00:03,  1.82s/it, est. speed input: 468.97 toks/s, output: 238.05 toks/s]Processed prompts:  80%|████████  | 4/5 [00:06<00:01,  1.21s/it, est. speed input: 601.00 toks/s, output: 325.12 toks/s]Processed prompts: 100%|██████████| 5/5 [00:07<00:00,  1.17it/s, est. speed input: 726.72 toks/s, output: 431.52 toks/s]Processed prompts: 100%|██████████| 5/5 [00:07<00:00,  1.42s/it, est. speed input: 726.72 toks/s, output: 431.52 toks/s]
+Last job: 7.105361327994615 sec
+>> Processing time: 10.326616547012236
+>> Answer lists: ['80', '100', '80', '180', '100', '80', '180', '100', '80', '180', '100', '100', '180', '100', '100', '80', '100', '100', '80', '120']
+>> Original Correct: 100, False
+>> Golden    Answer: 160
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.21s/it, est. speed input: 301.25 toks/s, output: 623.05 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.21s/it, est. speed input: 301.25 toks/s, output: 623.05 toks/s]
+Second job: 3.2142139020143077 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:05<00:22,  5.68s/it, est. speed input: 187.74 toks/s, output: 108.39 toks/s]Processed prompts:  40%|████      | 2/5 [00:06<00:08,  2.68s/it, est. speed input: 341.05 toks/s, output: 204.57 toks/s]Processed prompts:  60%|██████    | 3/5 [00:06<00:03,  1.66s/it, est. speed input: 477.13 toks/s, output: 290.21 toks/s]Processed prompts:  80%|████████  | 4/5 [00:06<00:01,  1.06s/it, est. speed input: 624.03 toks/s, output: 387.60 toks/s]Processed prompts: 100%|██████████| 5/5 [00:08<00:00,  1.27s/it, est. speed input: 628.18 toks/s, output: 397.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:08<00:00,  1.70s/it, est. speed input: 628.18 toks/s, output: 397.04 toks/s]
+Last job: 8.504707447020337 sec
+>> Processing time: 11.72056917694863
+>> Answer lists: ['315', '355', '355', '355', '355', '355', '355', '315', '355', '355', '315', '355', '355', '315', '355', '175', '315', '355', '175', '355']
+>> Original Correct: 355, False
+>> Golden    Answer: 45
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.21s/it, est. speed input: 287.51 toks/s, output: 622.04 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.21s/it, est. speed input: 287.51 toks/s, output: 622.04 toks/s]
+Second job: 3.2142139229690656 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.63s/it, est. speed input: 627.33 toks/s, output: 69.91 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.69it/s, est. speed input: 2899.17 toks/s, output: 350.84 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.83it/s, est. speed input: 2899.17 toks/s, output: 350.84 toks/s]
+Last job: 1.7756943500135094 sec
+>> Processing time: 4.991135520976968
+>> Answer lists: ['460', '460', '460', '460', '460', '460', '460', '460', '460', '460', '460', '460', '460', '460', '460', '460', '460', '460', '460', '460']
+>> Original Correct: 460, True
+>> Golden    Answer: 460
+Total Accuracy: 0.7

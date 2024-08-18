@@ -1,0 +1,376 @@
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/jeongseokoh/.cache/huggingface/token
+Login successful
+Inter SC
+Num Path: 10 + 5 x 2
+INFO 08-08 01:12:08 llm_engine.py:161] Initializing an LLM engine (v0.5.0.post1) with config: model='meta-llama/Meta-Llama-3-8B-Instruct', speculative_config=None, tokenizer='meta-llama/Meta-Llama-3-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir='../../hub/model/', load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=0, served_model_name=meta-llama/Meta-Llama-3-8B-Instruct)
+INFO 08-08 01:12:11 weight_utils.py:218] Using model weights format ['*.safetensors']
+INFO 08-08 01:12:14 model_runner.py:160] Loading model weights took 14.9595 GB
+INFO 08-08 01:12:15 gpu_executor.py:83] # GPU blocks: 13407, # CPU blocks: 2048
+INFO 08-08 01:12:18 model_runner.py:889] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 08-08 01:12:18 model_runner.py:893] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 08-08 01:12:26 model_runner.py:965] Graph capturing finished in 8 secs.
+Model: llama3_8b is selected
+Dataset: gsm8k is selected
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.51s/it, est. speed input: 615.11 toks/s, output: 331.05 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.51s/it, est. speed input: 615.11 toks/s, output: 331.05 toks/s]
+Generation job: 1.520251692039892 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.99s/it, est. speed input: 491.21 toks/s, output: 50.17 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.51it/s, est. speed input: 2455.64 toks/s, output: 250.83 toks/s]
+Generation job: 2.001076139975339 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:05,  1.46s/it, est. speed input: 702.42 toks/s, output: 40.96 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.24it/s, est. speed input: 3336.74 toks/s, output: 194.56 toks/s]
+Generation job: 1.5499389979522675 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1591.03 toks/s, output: 3.01 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.52it/s, est. speed input: 7954.98 toks/s, output: 15.03 toks/s]
+Generation job: 0.6734807449392974 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1588.50 toks/s, output: 3.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.50it/s, est. speed input: 7939.86 toks/s, output: 15.01 toks/s]
+Generation job: 0.6740557719022036 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1586.04 toks/s, output: 3.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.49it/s, est. speed input: 7927.10 toks/s, output: 14.98 toks/s]
+Generation job: 0.6749483169987798 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1591.21 toks/s, output: 3.01 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.52it/s, est. speed input: 7953.79 toks/s, output: 15.04 toks/s]
+Generation job: 0.6728822600562125 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1585.54 toks/s, output: 3.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.49it/s, est. speed input: 7925.55 toks/s, output: 14.98 toks/s]
+Generation job: 0.6748424188699573 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1586.92 toks/s, output: 3.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.50it/s, est. speed input: 7932.34 toks/s, output: 14.99 toks/s]
+Generation job: 0.6742848609574139 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1584.91 toks/s, output: 3.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.49it/s, est. speed input: 7922.04 toks/s, output: 14.98 toks/s]
+Generation job: 0.6752063760068268 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.50it/s, est. speed input: 1588.08 toks/s, output: 3.00 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.50it/s, est. speed input: 7938.01 toks/s, output: 15.01 toks/s]
+Generation job: 0.673996243160218 sec
+Number of conversations: 5
+>> Processing time: 10.510555732995272
+>> Answer lists: ['18', '18', '18', '18', '18']
+>> Original Correct: 18, True
+>> Golden    Answer: 18
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.48s/it, est. speed input: 604.49 toks/s, output: 338.84 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.48s/it, est. speed input: 604.49 toks/s, output: 338.84 toks/s]
+Generation job: 1.4773984698113054 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.22s/it, est. speed input: 769.77 toks/s, output: 34.32 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.53it/s, est. speed input: 1969.92 toks/s, output: 101.07 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.39it/s, est. speed input: 2448.80 toks/s, output: 139.73 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.10it/s, est. speed input: 2920.68 toks/s, output: 176.11 toks/s]
+Generation job: 1.619694807101041 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.60it/s, est. speed input: 1558.77 toks/s, output: 3.19 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.98it/s, est. speed input: 7730.18 toks/s, output: 15.96 toks/s]
+Generation job: 0.6338500520214438 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.61it/s, est. speed input: 1567.12 toks/s, output: 3.21 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.02it/s, est. speed input: 7806.76 toks/s, output: 16.05 toks/s]
+Generation job: 0.6301667839288712 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.58it/s, est. speed input: 1541.80 toks/s, output: 3.16 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.90it/s, est. speed input: 7706.73 toks/s, output: 15.79 toks/s]
+Generation job: 0.6404610828030854 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.58it/s, est. speed input: 1540.73 toks/s, output: 3.16 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.89it/s, est. speed input: 7701.26 toks/s, output: 15.78 toks/s]
+Generation job: 0.6406932519748807 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.58it/s, est. speed input: 1542.23 toks/s, output: 3.16 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.90it/s, est. speed input: 7709.02 toks/s, output: 15.80 toks/s]
+Generation job: 0.639970825985074 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.58it/s, est. speed input: 1538.96 toks/s, output: 3.15 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.88it/s, est. speed input: 7692.03 toks/s, output: 15.76 toks/s]
+Generation job: 0.641407297924161 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.58it/s, est. speed input: 1540.92 toks/s, output: 3.16 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.89it/s, est. speed input: 7701.83 toks/s, output: 15.78 toks/s]
+Generation job: 0.6408026309218258 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.58it/s, est. speed input: 1546.01 toks/s, output: 3.17 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.92it/s, est. speed input: 7727.61 toks/s, output: 15.84 toks/s]
+Generation job: 0.6387059038970619 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.60it/s, est. speed input: 1558.14 toks/s, output: 3.19 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.98it/s, est. speed input: 7788.54 toks/s, output: 15.96 toks/s]
+Generation job: 0.633638703962788 sec
+Number of conversations: 5
+>> Processing time: 8.840702677844092
+>> Answer lists: ['3', '3', '3', '3', '3']
+>> Original Correct: 3, True
+>> Golden    Answer: 3
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.49s/it, est. speed input: 612.30 toks/s, output: 334.59 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.49s/it, est. speed input: 612.30 toks/s, output: 334.59 toks/s]
+Generation job: 1.4962805521208793 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.97s/it, est. speed input: 489.03 toks/s, output: 50.68 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.53it/s, est. speed input: 2444.81 toks/s, output: 253.35 toks/s]
+Generation job: 1.981049549067393 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.01s/it, est. speed input: 505.56 toks/s, output: 49.81 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.49it/s, est. speed input: 2527.55 toks/s, output: 248.02 toks/s]
+Generation job: 2.0156023039016873 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.59s/it, est. speed input: 671.85 toks/s, output: 42.90 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.34it/s, est. speed input: 1219.88 toks/s, output: 82.47 toks/s]Processed prompts:  60%|██████    | 3/5 [00:02<00:01,  1.90it/s, est. speed input: 1588.74 toks/s, output: 121.33 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.49it/s, est. speed input: 2647.73 toks/s, output: 220.77 toks/s]
+Generation job: 2.0188419569749385 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.39it/s, est. speed input: 1529.42 toks/s, output: 2.78 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  5.50it/s, est. speed input: 5150.88 toks/s, output: 28.02 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.67it/s, est. speed input: 5150.88 toks/s, output: 28.02 toks/s]
+Generation job: 1.0789898061193526 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.40it/s, est. speed input: 1542.93 toks/s, output: 2.81 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.01it/s, est. speed input: 7720.96 toks/s, output: 14.02 toks/s]
+Generation job: 0.7208939180709422 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.42it/s, est. speed input: 1563.56 toks/s, output: 2.84 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.10it/s, est. speed input: 7821.48 toks/s, output: 14.21 toks/s]
+Generation job: 0.7113268051762134 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.42it/s, est. speed input: 1561.13 toks/s, output: 2.84 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.09it/s, est. speed input: 7803.24 toks/s, output: 14.19 toks/s]
+Generation job: 0.7124432390555739 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.42it/s, est. speed input: 1563.66 toks/s, output: 2.84 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.11it/s, est. speed input: 7816.30 toks/s, output: 14.21 toks/s]
+Generation job: 0.7113288748078048 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.42it/s, est. speed input: 1563.07 toks/s, output: 2.84 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.10it/s, est. speed input: 7813.15 toks/s, output: 14.21 toks/s]
+Generation job: 0.7115487940609455 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.42it/s, est. speed input: 1558.79 toks/s, output: 2.83 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.08it/s, est. speed input: 7791.47 toks/s, output: 14.17 toks/s]
+Generation job: 0.7135478619020432 sec
+Number of conversations: 5
+>> Processing time: 12.877165324054658
+>> Answer lists: ['-10000', '-10000', '-10000', '-10000', '-10000']
+>> Original Correct: -10000, False
+>> Golden    Answer: 70000
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.49s/it, est. speed input: 602.08 toks/s, output: 334.49 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 602.08 toks/s, output: 334.49 toks/s]
+Generation job: 1.49691529199481 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.08s/it, est. speed input: 875.91 toks/s, output: 33.19 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  4.04it/s, est. speed input: 3062.20 toks/s, output: 128.93 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  4.03it/s, est. speed input: 3827.42 toks/s, output: 160.35 toks/s]
+Generation job: 1.2484501549042761 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.62it/s, est. speed input: 1568.14 toks/s, output: 3.24 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.11it/s, est. speed input: 7861.03 toks/s, output: 16.21 toks/s]
+Generation job: 0.6238610050641 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.60it/s, est. speed input: 1545.77 toks/s, output: 3.20 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.99it/s, est. speed input: 7729.88 toks/s, output: 15.98 toks/s]
+Generation job: 0.6326074032112956 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.62it/s, est. speed input: 1563.95 toks/s, output: 3.23 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.08it/s, est. speed input: 7817.42 toks/s, output: 16.17 toks/s]
+Generation job: 0.625368086155504 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.62it/s, est. speed input: 1566.71 toks/s, output: 3.24 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.10it/s, est. speed input: 7831.08 toks/s, output: 16.20 toks/s]
+Generation job: 0.6243076219689101 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.62it/s, est. speed input: 1563.45 toks/s, output: 3.23 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.08it/s, est. speed input: 7815.12 toks/s, output: 16.16 toks/s]
+Generation job: 0.6255496658850461 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.62it/s, est. speed input: 1564.38 toks/s, output: 3.24 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.09it/s, est. speed input: 7819.51 toks/s, output: 16.17 toks/s]
+Generation job: 0.6252634970005602 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.62it/s, est. speed input: 1565.88 toks/s, output: 3.24 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.09it/s, est. speed input: 7827.03 toks/s, output: 16.19 toks/s]
+Generation job: 0.6246156410779804 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.62it/s, est. speed input: 1562.00 toks/s, output: 3.23 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.07it/s, est. speed input: 7807.13 toks/s, output: 16.15 toks/s]
+Generation job: 0.6262081319000572 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.62it/s, est. speed input: 1565.48 toks/s, output: 3.24 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  8.09it/s, est. speed input: 7825.00 toks/s, output: 16.18 toks/s]
+Generation job: 0.6249837388750166 sec
+Number of conversations: 5
+>> Processing time: 8.381213946966454
+>> Answer lists: ['540', '540', '540', '540', '540']
+>> Original Correct: 540, True
+>> Golden    Answer: 540
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 650.09 toks/s, output: 333.72 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 650.09 toks/s, output: 333.72 toks/s]
+Generation job: 1.5005600040312856 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.02s/it, est. speed input: 506.68 toks/s, output: 49.48 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.47it/s, est. speed input: 2533.11 toks/s, output: 247.37 toks/s]
+Generation job: 2.02922106301412 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:04,  1.24s/it, est. speed input: 866.73 toks/s, output: 33.89 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.01it/s, est. speed input: 1880.56 toks/s, output: 93.39 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.46it/s, est. speed input: 2206.26 toks/s, output: 120.69 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.50it/s, est. speed input: 2687.04 toks/s, output: 167.63 toks/s]
+Generation job: 2.0064466688781977 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.41it/s, est. speed input: 1546.75 toks/s, output: 2.82 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.05it/s, est. speed input: 7740.23 toks/s, output: 14.11 toks/s]
+Generation job: 0.7164937281049788 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.41it/s, est. speed input: 1543.81 toks/s, output: 2.82 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.04it/s, est. speed input: 7714.17 toks/s, output: 14.08 toks/s]
+Generation job: 0.7177798401098698 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.41it/s, est. speed input: 1544.69 toks/s, output: 2.82 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.04it/s, est. speed input: 7721.30 toks/s, output: 14.09 toks/s]
+Generation job: 0.717366473050788 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.41it/s, est. speed input: 1542.73 toks/s, output: 2.82 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.04it/s, est. speed input: 7711.54 toks/s, output: 14.07 toks/s]
+Generation job: 0.7182855980936438 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.41it/s, est. speed input: 1544.39 toks/s, output: 2.82 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.04it/s, est. speed input: 7720.03 toks/s, output: 14.09 toks/s]
+Generation job: 0.7175000119023025 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.41it/s, est. speed input: 1540.38 toks/s, output: 2.81 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.02it/s, est. speed input: 7699.81 toks/s, output: 14.05 toks/s]
+Generation job: 0.7193528418429196 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.41it/s, est. speed input: 1541.97 toks/s, output: 2.81 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.03it/s, est. speed input: 7707.38 toks/s, output: 14.06 toks/s]
+Generation job: 0.7187264650128782 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.41it/s, est. speed input: 1542.79 toks/s, output: 2.82 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.04it/s, est. speed input: 7711.83 toks/s, output: 14.07 toks/s]
+Generation job: 0.7184634970035404 sec
+Number of conversations: 5
+>> Processing time: 11.284169198945165
+>> Answer lists: ['20', '20', '20', '20', '20']
+>> Original Correct: 20, True
+>> Golden    Answer: 20
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 614.34 toks/s, output: 333.87 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 614.34 toks/s, output: 333.87 toks/s]
+Generation job: 1.4995344639755785 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.99s/it, est. speed input: 488.30 toks/s, output: 50.34 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.52it/s, est. speed input: 2441.28 toks/s, output: 251.68 toks/s]
+Generation job: 1.9942223068792373 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.77s/it, est. speed input: 575.78 toks/s, output: 44.03 toks/s]Processed prompts:  40%|████      | 2/5 [00:02<00:02,  1.15it/s, est. speed input: 1013.55 toks/s, output: 88.44 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.48it/s, est. speed input: 2533.67 toks/s, output: 237.47 toks/s]
+Generation job: 2.020291063003242 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1562.09 toks/s, output: 2.96 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.49it/s, est. speed input: 2478.99 toks/s, output: 38.90 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  2.84it/s, est. speed input: 2752.92 toks/s, output: 76.33 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.73it/s, est. speed input: 2747.00 toks/s, output: 104.18 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.58it/s, est. speed input: 2747.00 toks/s, output: 104.18 toks/s]
+Generation job: 1.9466268899850547 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1570.72 toks/s, output: 2.97 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.43it/s, est. speed input: 7933.19 toks/s, output: 14.87 toks/s]
+Generation job: 0.6800764359068125 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1566.94 toks/s, output: 2.97 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.42it/s, est. speed input: 7838.39 toks/s, output: 14.83 toks/s]
+Generation job: 0.6815304970368743 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1571.31 toks/s, output: 2.98 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.44it/s, est. speed input: 7854.40 toks/s, output: 14.88 toks/s]
+Generation job: 0.6797544171568006 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1571.63 toks/s, output: 2.98 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.44it/s, est. speed input: 7855.93 toks/s, output: 14.88 toks/s]
+Generation job: 0.6794956889934838 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1569.28 toks/s, output: 2.97 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.43it/s, est. speed input: 7844.27 toks/s, output: 14.86 toks/s]
+Generation job: 0.6805208039004356 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1571.58 toks/s, output: 2.98 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.44it/s, est. speed input: 7855.70 toks/s, output: 14.88 toks/s]
+Generation job: 0.6795597891323268 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1564.90 toks/s, output: 2.96 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.41it/s, est. speed input: 7821.77 toks/s, output: 14.81 toks/s]
+Generation job: 0.6824681519065052 sec
+Number of conversations: 5
+>> Processing time: 12.228364110924304
+>> Answer lists: ['64', '64', '64', '64', '64']
+>> Original Correct: 64, True
+>> Golden    Answer: 64
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 605.97 toks/s, output: 334.05 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 605.97 toks/s, output: 334.05 toks/s]
+Generation job: 1.498758452013135 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:07,  1.98s/it, est. speed input: 482.36 toks/s, output: 50.40 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.52it/s, est. speed input: 2411.48 toks/s, output: 251.98 toks/s]
+Generation job: 1.9914318991359323 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.03it/s, est. speed input: 1041.40 toks/s, output: 24.82 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  5.03it/s, est. speed input: 5065.28 toks/s, output: 124.74 toks/s]
+Generation job: 1.0015848649200052 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.53it/s, est. speed input: 1556.91 toks/s, output: 3.06 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.64it/s, est. speed input: 7780.49 toks/s, output: 15.27 toks/s]
+Generation job: 0.662089702906087 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1553.61 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.62it/s, est. speed input: 7765.93 toks/s, output: 15.24 toks/s]
+Generation job: 0.6634070961736143 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1552.15 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.61it/s, est. speed input: 7758.31 toks/s, output: 15.23 toks/s]
+Generation job: 0.66390938218683 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.27it/s, est. speed input: 1292.78 toks/s, output: 2.54 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.34it/s, est. speed input: 6461.89 toks/s, output: 12.68 toks/s]
+Generation job: 0.7956627439707518 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.53it/s, est. speed input: 1557.69 toks/s, output: 3.06 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.64it/s, est. speed input: 7786.38 toks/s, output: 15.28 toks/s]
+Generation job: 0.6617325360421091 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1553.99 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.62it/s, est. speed input: 7767.87 toks/s, output: 15.25 toks/s]
+Generation job: 0.6631084480322897 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1552.19 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.61it/s, est. speed input: 7758.90 toks/s, output: 15.23 toks/s]
+Generation job: 0.663847072981298 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.52it/s, est. speed input: 1553.88 toks/s, output: 3.05 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.62it/s, est. speed input: 7767.30 toks/s, output: 15.24 toks/s]
+Generation job: 0.6631315278355032 sec
+Number of conversations: 5
+>> Processing time: 9.93272102298215
+>> Answer lists: ['260', '260', '260', '260', '260']
+>> Original Correct: 260, True
+>> Golden    Answer: 260
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 621.81 toks/s, output: 333.94 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 621.81 toks/s, output: 333.94 toks/s]
+Generation job: 1.4993705318775028 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.00s/it, est. speed input: 490.41 toks/s, output: 49.99 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.50it/s, est. speed input: 2451.76 toks/s, output: 249.92 toks/s]
+Generation job: 2.007851405069232 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.04s/it, est. speed input: 506.59 toks/s, output: 49.14 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.46it/s, est. speed input: 2532.70 toks/s, output: 245.65 toks/s]
+Generation job: 2.0430532190948725 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.08s/it, est. speed input: 519.92 toks/s, output: 48.10 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.40it/s, est. speed input: 2599.28 toks/s, output: 240.45 toks/s]
+Generation job: 2.087204098002985 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.12s/it, est. speed input: 533.82 toks/s, output: 47.20 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.36it/s, est. speed input: 2668.82 toks/s, output: 235.97 toks/s]
+Generation job: 2.127200182992965 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.09s/it, est. speed input: 566.22 toks/s, output: 41.23 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.34it/s, est. speed input: 2759.61 toks/s, output: 221.05 toks/s]
+Generation job: 2.1482591689564288 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.24it/s, est. speed input: 1512.47 toks/s, output: 2.49 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:01,  1.55it/s, est. speed input: 1824.97 toks/s, output: 30.56 toks/s]Processed prompts:  80%|████████  | 4/5 [00:01<00:00,  3.26it/s, est. speed input: 3165.91 toks/s, output: 80.60 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.67it/s, est. speed input: 2960.31 toks/s, output: 102.20 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.41it/s, est. speed input: 2960.31 toks/s, output: 102.20 toks/s]
+Generation job: 2.083049055887386 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.23it/s, est. speed input: 1494.13 toks/s, output: 2.46 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.14it/s, est. speed input: 7578.31 toks/s, output: 12.27 toks/s]
+Generation job: 0.8232106829527766 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.25it/s, est. speed input: 1517.09 toks/s, output: 2.49 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.23it/s, est. speed input: 7621.96 toks/s, output: 12.46 toks/s]
+Generation job: 0.8107814679387957 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.25it/s, est. speed input: 1520.51 toks/s, output: 2.50 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.25it/s, est. speed input: 7600.72 toks/s, output: 12.49 toks/s]
+Generation job: 0.8088988489471376 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.25it/s, est. speed input: 1516.66 toks/s, output: 2.49 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.23it/s, est. speed input: 7581.11 toks/s, output: 12.46 toks/s]
+Generation job: 0.8110492259729654 sec
+Number of conversations: 5
+>> Processing time: 17.256266051903367
+>> Answer lists: ['160', '160', '160', '160', '160']
+>> Original Correct: 160, True
+>> Golden    Answer: 160
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 644.54 toks/s, output: 333.27 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 644.54 toks/s, output: 333.27 toks/s]
+Generation job: 1.5025032891426235 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.02s/it, est. speed input: 502.24 toks/s, output: 49.38 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.47it/s, est. speed input: 2510.90 toks/s, output: 246.89 toks/s]
+Generation job: 2.032718805829063 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.05s/it, est. speed input: 521.52 toks/s, output: 48.88 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.44it/s, est. speed input: 2607.31 toks/s, output: 244.36 toks/s]
+Generation job: 2.054077381035313 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.10s/it, est. speed input: 531.62 toks/s, output: 47.59 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.38it/s, est. speed input: 2657.81 toks/s, output: 237.94 toks/s]
+Generation job: 2.1093259560875595 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.75s/it, est. speed input: 668.15 toks/s, output: 41.22 toks/s]Processed prompts:  40%|████      | 2/5 [00:01<00:02,  1.25it/s, est. speed input: 1241.47 toks/s, output: 81.91 toks/s]Processed prompts:  60%|██████    | 3/5 [00:02<00:01,  1.85it/s, est. speed input: 1654.04 toks/s, output: 112.44 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.36it/s, est. speed input: 2756.57 toks/s, output: 196.05 toks/s]
+Generation job: 2.125076522817835 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.26it/s, est. speed input: 1497.47 toks/s, output: 2.51 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.37it/s, est. speed input: 6166.67 toks/s, output: 24.56 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  5.12it/s, est. speed input: 6166.67 toks/s, output: 24.56 toks/s]
+Generation job: 0.9857959561049938 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.29it/s, est. speed input: 1544.21 toks/s, output: 2.59 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.47it/s, est. speed input: 7773.45 toks/s, output: 12.94 toks/s]
+Generation job: 0.781001006020233 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.29it/s, est. speed input: 1538.46 toks/s, output: 2.58 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.45it/s, est. speed input: 7708.38 toks/s, output: 12.89 toks/s]
+Generation job: 0.7838537781499326 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.29it/s, est. speed input: 1538.50 toks/s, output: 2.58 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.45it/s, est. speed input: 7690.67 toks/s, output: 12.89 toks/s]
+Generation job: 0.7838059191126376 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.29it/s, est. speed input: 1538.98 toks/s, output: 2.58 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.45it/s, est. speed input: 7692.62 toks/s, output: 12.90 toks/s]
+Generation job: 0.7836114699020982 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:03,  1.29it/s, est. speed input: 1541.72 toks/s, output: 2.58 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  6.46it/s, est. speed input: 7706.84 toks/s, output: 12.92 toks/s]
+Generation job: 0.7823703580070287 sec
+Number of conversations: 5
+>> Processing time: 14.729664271930233
+>> Answer lists: ['355', '355', '355', '355', '355']
+>> Original Correct: 355, False
+>> Golden    Answer: 45
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 615.40 toks/s, output: 333.36 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it, est. speed input: 615.40 toks/s, output: 333.36 toks/s]
+Generation job: 1.501802118960768 sec
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:02<00:08,  2.00s/it, est. speed input: 486.44 toks/s, output: 49.99 toks/s]Processed prompts: 100%|██████████| 5/5 [00:02<00:00,  2.50it/s, est. speed input: 2431.94 toks/s, output: 249.94 toks/s]
+Generation job: 2.0080686390865594 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:01<00:06,  1.55s/it, est. speed input: 660.36 toks/s, output: 42.60 toks/s]Processed prompts:  60%|██████    | 3/5 [00:01<00:00,  2.27it/s, est. speed input: 1854.09 toks/s, output: 116.60 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  3.32it/s, est. speed input: 2564.50 toks/s, output: 197.04 toks/s]Processed prompts: 100%|██████████| 5/5 [00:01<00:00,  2.51it/s, est. speed input: 2564.50 toks/s, output: 197.04 toks/s]
+Generation job: 2.0019907059613615 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1567.04 toks/s, output: 2.97 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.43it/s, est. speed input: 7833.16 toks/s, output: 14.86 toks/s]
+Generation job: 0.6804505209438503 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1568.38 toks/s, output: 2.98 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.44it/s, est. speed input: 7855.98 toks/s, output: 14.88 toks/s]
+Generation job: 0.6795938559807837 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1566.49 toks/s, output: 2.97 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.43it/s, est. speed input: 7834.85 toks/s, output: 14.86 toks/s]
+Generation job: 0.6806221208535135 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1567.38 toks/s, output: 2.97 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.43it/s, est. speed input: 7834.66 toks/s, output: 14.87 toks/s]
+Generation job: 0.680005193920806 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1568.87 toks/s, output: 2.98 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.44it/s, est. speed input: 7842.19 toks/s, output: 14.88 toks/s]
+Generation job: 0.6793706070166081 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.48it/s, est. speed input: 1562.16 toks/s, output: 2.96 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.41it/s, est. speed input: 7808.67 toks/s, output: 14.82 toks/s]
+Generation job: 0.6822870310861617 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1568.10 toks/s, output: 2.98 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.44it/s, est. speed input: 7838.33 toks/s, output: 14.87 toks/s]
+Generation job: 0.6797220860607922 sec
+Number of conversations: 5
+Processed prompts:   0%|          | 0/5 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  20%|██        | 1/5 [00:00<00:02,  1.49it/s, est. speed input: 1568.10 toks/s, output: 2.98 toks/s]Processed prompts: 100%|██████████| 5/5 [00:00<00:00,  7.44it/s, est. speed input: 7838.32 toks/s, output: 14.87 toks/s]
+Generation job: 0.6797180369030684 sec
+Number of conversations: 5
+>> Processing time: 10.957708610920236
+>> Answer lists: ['460', '460', '460', '460', '460']
+>> Original Correct: 460, True
+>> Golden    Answer: 460
+Total Accuracy: 0.8
